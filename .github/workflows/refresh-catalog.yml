@@ -1,0 +1,33 @@
+name: Renovar catálogo de produtos
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"  # toda segunda-feira, 06:00 (Brasília, UTC-3)
+  workflow_dispatch: {}    # permite rodar manualmente pela aba Actions
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Buscar produtos em alta por nicho
+        env:
+          SHOPEE_AFFILIATE_APP_ID: ${{ secrets.SHOPEE_AFFILIATE_APP_ID }}
+          SHOPEE_AFFILIATE_SECRET: ${{ secrets.SHOPEE_AFFILIATE_SECRET }}
+        run: python scripts/find_products.py
+
+      - name: Salvar catálogo atualizado
+        run: |
+          git config user.name "shopee-autopilot-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/catalogo_produtos.json
+          git diff --cached --quiet || git commit -m "chore: renova catálogo de produtos"
+          git push

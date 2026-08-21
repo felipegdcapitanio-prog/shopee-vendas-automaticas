@@ -1,0 +1,33 @@
+name: Postagem diária no Telegram
+
+on:
+  schedule:
+    - cron: "0 15 * * *"  # 12:00 (Brasília, UTC-3) todo dia
+  workflow_dispatch: {}     # permite rodar manualmente pela aba Actions
+
+permissions:
+  contents: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Postar produtos novos no grupo/canal
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/post_to_telegram.py --limit 5
+
+      - name: Salvar progresso (produtos já postados)
+        run: |
+          git config user.name "shopee-autopilot-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/posted_ids.json data/log_postagens.json
+          git diff --cached --quiet || git commit -m "chore: registra postagens do dia"
+          git push

@@ -1,0 +1,30 @@
+[
+  {
+    "itemId": 24714631849,
+    "ok": false,
+    "error": "HTTP Error 400: Bad Request",
+    "ts": 1787352940
+  },
+  {
+    "itemId": 47352531874,
+    "ok": false,
+    "error": "HTTP Error 400: Bad Request",
+    "ts": 1787352944
+  },
+  {
+    "itemId": 24714631849,
+    "ok": false,
+    "error": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: chat not found\"}",
+    "ts": 1787352963
+  },
+  {
+    "itemId": 24714631849,
+    "ok": true,
+    "ts": 1787352990
+  },
+  {
+    "itemId": 20599569632,
+    "ok": true,
+    "ts": 1787353078
+  }
+]
