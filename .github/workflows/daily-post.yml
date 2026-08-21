@@ -1,9 +1,9 @@
-name: Postagem diária no Telegram
+name: Postagem no Telegram a cada 30 min
 
 on:
   schedule:
-    - cron: "0 15 * * *"  # 12:00 (Brasília, UTC-3) todo dia
-  workflow_dispatch: {}     # permite rodar manualmente pela aba Actions
+    - cron: "*/30 * * * *"  # a cada 30 minutos, o dia todo (~48 posts/dia)
+  workflow_dispatch: {}      # permite rodar manualmente pela aba Actions
 
 permissions:
   contents: write
@@ -18,11 +18,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Postar produtos novos no grupo/canal
+      - name: Postar produto novo no grupo/canal
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python scripts/post_to_telegram.py --limit 5
+        run: python scripts/post_to_telegram.py
 
       - name: Salvar progresso (produtos já postados)
         run: |

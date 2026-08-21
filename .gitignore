@@ -3,3 +3,4 @@
 !.env.example
 node_modules/
 data/daily-post-run.log
+data/refresh-catalog-run.log

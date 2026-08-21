@@ -1,17 +1,17 @@
 """Publicador: posta os produtos do catálogo no grupo/canal do Telegram,
 um por vez, com imagem + legenda + link de afiliado.
 
-Por padrão só posta produtos que ainda não foram postados (controle em
-data/posted_ids.json), priorizando maior desconto, até --limit por execução.
-Isso é o que permite rodar isto todo dia (local ou via GitHub Actions) sem
-repetir produto.
+Prioriza sempre produto nunca postado; quando esses acabam, passa a
+reciclar os já postados há mais tempo (respeitando um cooldown mínimo em
+dias), sempre desempatando por maior desconto. Isso permite rodar isto
+com alta frequência (ex: a cada 30 min, 48x/dia) sem esgotar o catálogo.
 
 Uso:
-    python scripts/post_to_telegram.py                 # posta até 5 produtos novos (padrão)
-    python scripts/post_to_telegram.py --dry-run        # só mostra o que seria postado
+    python scripts/post_to_telegram.py                  # posta 1 produto (padrão, pensado pra rodar de 30 em 30 min)
+    python scripts/post_to_telegram.py --dry-run         # só mostra o que seria postado
     python scripts/post_to_telegram.py --niche "Maquiagem"
     python scripts/post_to_telegram.py --limit 10
-    python scripts/post_to_telegram.py --ignore-posted  # ignora o controle e considera o catálogo todo
+    python scripts/post_to_telegram.py --cooldown-days 3 # muda o mínimo de dias antes de repetir um produto
 """
 
 import argparse
@@ -33,7 +33,8 @@ LOG_PATH = os.path.join(ROOT, "data", "log_postagens.json")
 POSTED_PATH = os.path.join(ROOT, "data", "posted_ids.json")
 
 DELAY_BETWEEN_POSTS = 3  # segundos, evita rate limit do Telegram
-DEFAULT_DAILY_LIMIT = 5
+DEFAULT_LIMIT = 1  # 1 por execução, pensado pra rodar a cada 30 min (48/dia)
+DEFAULT_COOLDOWN_DAYS = 5  # dias mínimos antes de repetir um produto
 
 
 def load_env(path):
@@ -52,17 +53,22 @@ def load_env(path):
     return values
 
 
-def load_posted_ids():
+def load_posted_map():
+    """itemId -> timestamp da última vez que foi postado (0 = nunca)."""
     if not os.path.exists(POSTED_PATH):
-        return set()
+        return {}
     with open(POSTED_PATH, "r", encoding="utf-8") as f:
-        return set(json.load(f))
+        data = json.load(f)
+    if isinstance(data, list):  # formato antigo (lista simples): migra tratando como "postado agora"
+        now = int(time.time())
+        return {item_id: now for item_id in data}
+    return {int(k): v for k, v in data.items()}
 
 
-def save_posted_ids(ids):
+def save_posted_map(posted_map):
     os.makedirs(os.path.dirname(POSTED_PATH), exist_ok=True)
     with open(POSTED_PATH, "w", encoding="utf-8") as f:
-        json.dump(sorted(ids), f, ensure_ascii=False, indent=2)
+        json.dump({str(k): v for k, v in posted_map.items()}, f, ensure_ascii=False, indent=2)
 
 
 def fmt_price(v):
@@ -130,8 +136,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="não posta, só mostra o que seria enviado")
     parser.add_argument("--niche", default=None, help="filtra por nicho exato")
-    parser.add_argument("--limit", type=int, default=DEFAULT_DAILY_LIMIT, help=f"quantidade máxima de posts (padrão {DEFAULT_DAILY_LIMIT})")
-    parser.add_argument("--ignore-posted", action="store_true", help="ignora o controle de já-postados")
+    parser.add_argument("--limit", type=int, default=DEFAULT_LIMIT, help=f"quantidade máxima de posts (padrão {DEFAULT_LIMIT})")
+    parser.add_argument("--cooldown-days", type=float, default=DEFAULT_COOLDOWN_DAYS, help=f"dias mínimos antes de repetir um produto (padrão {DEFAULT_COOLDOWN_DAYS})")
     args = parser.parse_args()
 
     env = load_env(ENV_PATH)
@@ -149,22 +155,29 @@ def main():
     if args.niche:
         catalog = [p for p in catalog if p["niche"] == args.niche]
 
-    posted_ids = load_posted_ids()
-    if not args.ignore_posted:
-        catalog = [p for p in catalog if p["itemId"] not in posted_ids]
+    posted_map = load_posted_map()
+    cooldown_seconds = args.cooldown_days * 86400
+    now = time.time()
 
-    # prioriza maior desconto primeiro (gatilho de atração de lead)
-    catalog = sorted(catalog, key=lambda p: p["discountRate"], reverse=True)
+    eligible = [
+        p for p in catalog
+        if (now - posted_map.get(p["itemId"], 0)) >= cooldown_seconds
+    ]
+
+    # nunca-postado primeiro (last_posted=0), depois o postado há mais tempo;
+    # desempate por maior desconto (gatilho de atração de lead)
+    eligible.sort(key=lambda p: (posted_map.get(p["itemId"], 0), -p["discountRate"]))
 
     if args.limit:
-        catalog = catalog[: args.limit]
+        eligible = eligible[: args.limit]
 
-    if not catalog:
-        print("Nada novo para postar (catálogo esgotado ou já todo postado). Rode find_products.py para renovar.")
+    if not eligible:
+        print(f"Nada elegível pra postar agora (tudo em cooldown de {args.cooldown_days} dias). Rode find_products.py pra renovar o catálogo.")
         return
 
+    catalog = eligible
     log = []
-    newly_posted = set()
+    newly_posted = {}
     for i, p in enumerate(catalog, 1):
         caption = build_caption(p)
         print(f"\n[{i}/{len(catalog)}] {p['productName'][:60]}")
@@ -179,7 +192,7 @@ def main():
             print(f"  -> {'enviado' if ok else 'falhou: ' + str(result)}")
             log.append({"itemId": p["itemId"], "ok": ok, "ts": int(time.time())})
             if ok:
-                newly_posted.add(p["itemId"])
+                newly_posted[p["itemId"]] = int(time.time())
         except urllib.error.HTTPError as e:
             body = e.read().decode("utf-8", errors="replace")
             print(f"  -> erro HTTP {e.code}: {body}")
@@ -202,7 +215,8 @@ def main():
         print(f"\nLog salvo em: {LOG_PATH}")
 
     if newly_posted and not args.dry_run:
-        save_posted_ids(posted_ids | newly_posted)
+        posted_map.update(newly_posted)
+        save_posted_map(posted_map)
         print(f"{len(newly_posted)} produto(s) marcado(s) como postado(s) em {POSTED_PATH}")
 
 

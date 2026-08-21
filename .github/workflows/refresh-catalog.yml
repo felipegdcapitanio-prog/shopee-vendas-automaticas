@@ -2,8 +2,8 @@ name: Renovar catálogo de produtos
 
 on:
   schedule:
-    - cron: "0 9 * * 1"  # toda segunda-feira, 06:00 (Brasília, UTC-3)
-  workflow_dispatch: {}    # permite rodar manualmente pela aba Actions
+    - cron: "0 9 * * *"  # todo dia, 06:00 (Brasília, UTC-3) — precisa ser diário pra sustentar 48 posts/dia
+  workflow_dispatch: {}   # permite rodar manualmente pela aba Actions
 
 permissions:
   contents: write
@@ -24,10 +24,13 @@ jobs:
           SHOPEE_AFFILIATE_SECRET: ${{ secrets.SHOPEE_AFFILIATE_SECRET }}
         run: python scripts/find_products.py
 
-      - name: Salvar catálogo atualizado
+      - name: Gerar lote de conteúdo pro WhatsApp (postagem manual)
+        run: python scripts/generate_whatsapp_digest.py
+
+      - name: Salvar catálogo e lote atualizados
         run: |
           git config user.name "shopee-autopilot-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/catalogo_produtos.json
-          git diff --cached --quiet || git commit -m "chore: renova catálogo de produtos"
+          git add data/catalogo_produtos.json data/whatsapp_posted_ids.json data/whatsapp_digests/
+          git diff --cached --quiet || git commit -m "chore: renova catálogo e lote de WhatsApp"
           git push

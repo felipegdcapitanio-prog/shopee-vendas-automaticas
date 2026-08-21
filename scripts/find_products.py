@@ -1,6 +1,8 @@
 """Garimpeiro: busca produtos por nicho na Shopee Affiliate API,
-filtra por venda + nota + comissão, prioriza desconto, e salva
-um catálogo consolidado em data/catalogo_produtos.json.
+filtra por venda + nota + comissão, prioriza desconto, e MESCLA com o
+catálogo existente em data/catalogo_produtos.json (não sobrescreve —
+soma produto novo aos que já tem, até um teto por nicho). Pensado pra
+rodar todo dia, alimentando um volume alto de postagem (ex: 48/dia).
 
 Uso:
     python scripts/find_products.py
@@ -26,13 +28,13 @@ OUT_PATH = os.path.join(ROOT, "data", "catalogo_produtos.json")
 SORT_BY_SALES = 2
 
 NICHES = {
-    "Beleza & Skincare": ["skincare facial", "creme hidratante rosto"],
-    "Maquiagem": ["batom", "paleta de sombra"],
-    "Moda Feminina": ["vestido feminino", "blusa feminina"],
-    "Calçados": ["tênis feminino", "sandália feminina"],
-    "Decoração de Casa": ["decoração quarto", "enfeite sala de estar"],
-    "Ferramentas": ["kit ferramentas", "furadeira parafusadeira"],
-    "Iluminação": ["luminária led", "fita led"],
+    "Beleza & Skincare": ["skincare facial", "creme hidratante rosto", "protetor solar facial", "sérum facial"],
+    "Maquiagem": ["batom", "paleta de sombra", "base facial", "máscara de cílios"],
+    "Moda Feminina": ["vestido feminino", "blusa feminina", "conjunto feminino", "short feminino"],
+    "Calçados": ["tênis feminino", "sandália feminina", "rasteirinha feminina", "bota feminina"],
+    "Decoração de Casa": ["decoração quarto", "enfeite sala de estar", "organizador cozinha", "cortina blackout"],
+    "Ferramentas": ["kit ferramentas", "furadeira parafusadeira", "trena a laser", "parafuso caixa"],
+    "Iluminação": ["luminária led", "fita led", "abajur quarto", "pisca pisca led"],
 }
 
 # critérios mínimos de qualidade
@@ -40,7 +42,7 @@ MIN_RATING = 4.0
 MIN_SALES = 10
 MIN_COMMISSION = 0.08  # 8%
 PER_KEYWORD_LIMIT = 20
-TOP_PER_NICHE = 5
+MAX_PER_NICHE = 40  # teto do catálogo por nicho (evita crescer sem limite)
 
 
 def load_env(path):
@@ -113,6 +115,33 @@ def score(node):
     return (discount * 3) + (commission * 100) + min(sales, 500) / 10
 
 
+def to_entry(niche, n):
+    return {
+        "niche": niche,
+        "itemId": n.get("itemId"),
+        "productName": n.get("productName"),
+        "priceMin": n.get("priceMin"),
+        "priceMax": n.get("priceMax"),
+        "discountRate": int(n.get("priceDiscountRate") or 0),
+        "commissionRate": float(n.get("commissionRate") or 0),
+        "sales": int(n.get("sales") or 0),
+        "ratingStar": n.get("ratingStar"),
+        "imageUrl": n.get("imageUrl"),
+        "offerLink": n.get("offerLink"),
+    }
+
+
+def load_existing_catalog():
+    if not os.path.exists(OUT_PATH):
+        return {}
+    with open(OUT_PATH, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    by_niche = {}
+    for p in data.get("products", []):
+        by_niche.setdefault(p["niche"], {})[p["itemId"]] = p
+    return by_niche
+
+
 def main():
     env = load_env(ENV_PATH)
     app_id = env.get("SHOPEE_AFFILIATE_APP_ID")
@@ -121,10 +150,15 @@ def main():
         print("ERRO: credenciais não encontradas no .env")
         return
 
+    existing_by_niche = load_existing_catalog()
     catalog = []
+    total_new = 0
+
     for niche, keywords in NICHES.items():
         print(f"\n== {niche} ==")
-        seen_in_niche = {}
+        pool = dict(existing_by_niche.get(niche, {}))  # itemId -> entry, começa com o que já tinha
+        before = len(pool)
+
         for kw in keywords:
             print(f"  buscando: {kw}")
             nodes = query_products(app_id, secret, kw)
@@ -133,34 +167,25 @@ def main():
                 if not qualifies(n):
                     continue
                 item_id = n.get("itemId")
-                if item_id in seen_in_niche:
-                    continue
-                seen_in_niche[item_id] = n
+                pool[item_id] = to_entry(niche, n)  # atualiza dados (preço/desconto podem mudar)
             time.sleep(0.4)  # respeitar rate limit
 
-        ranked = sorted(seen_in_niche.values(), key=score, reverse=True)[:TOP_PER_NICHE]
-        print(f"  -> {len(ranked)} produtos selecionados após filtro (nota>={MIN_RATING}, vendas>={MIN_SALES}, comissão>={MIN_COMMISSION*100:.0f}%)")
+        total_new += max(0, len(pool) - before)
 
-        for n in ranked:
-            catalog.append({
-                "niche": niche,
-                "itemId": n.get("itemId"),
-                "productName": n.get("productName"),
-                "priceMin": n.get("priceMin"),
-                "priceMax": n.get("priceMax"),
-                "discountRate": int(n.get("priceDiscountRate") or 0),
-                "commissionRate": float(n.get("commissionRate") or 0),
-                "sales": int(n.get("sales") or 0),
-                "ratingStar": n.get("ratingStar"),
-                "imageUrl": n.get("imageUrl"),
-                "offerLink": n.get("offerLink"),
-            })
+        ranked = sorted(pool.values(), key=lambda p: score({
+            "priceDiscountRate": p["discountRate"],
+            "sales": p["sales"],
+            "commissionRate": p["commissionRate"],
+        }), reverse=True)[:MAX_PER_NICHE]
+
+        print(f"  -> catálogo do nicho: {len(ranked)} produtos (era {before}, {len(pool) - before} novos/atualizados nesta rodada)")
+        catalog.extend(ranked)
 
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump({"generated_at": int(time.time()), "products": catalog}, f, ensure_ascii=False, indent=2)
 
-    print(f"\nTotal no catálogo: {len(catalog)} produtos")
+    print(f"\nTotal no catálogo: {len(catalog)} produtos ({total_new} novos/atualizados nesta rodada)")
     print(f"Salvo em: {OUT_PATH}")
 
 
