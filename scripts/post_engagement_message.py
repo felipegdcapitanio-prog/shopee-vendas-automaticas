@@ -110,7 +110,7 @@ def main():
         if args.dry_run:
             continue
         try:
-            result = send_photo(token, chat_id, p["imageUrl"], caption)
+            result = send_photo(token, chat_id, p["imageUrl"], caption, offer_link=p["offerLink"])
             ok = result.get("ok", False)
             print(f"  -> {'enviado' if ok else 'falhou: ' + str(result)}")
             log_entries.append({"itemId": p["itemId"], "ok": ok, "ts": int(time.time()), "special": "sabadao"})

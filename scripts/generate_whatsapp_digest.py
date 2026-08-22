@@ -115,16 +115,17 @@ def write_html_page(products, out_path, date_label):
         caption = build_caption(p, style="whatsapp")
         caption_escaped = html.escape(caption)
         niche_escaped = html.escape(p["niche"])
+        offer_link_escaped = html.escape(p["offerLink"])
         cards.append(f"""
     <article class="card" data-index="{i}" data-item-id="{p['itemId']}" data-image-url="{html.escape(p['imageUrl'])}">
-      <div class="media"><img src="{p['imageUrl']}" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
+      <a class="media" href="{offer_link_escaped}" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="{p['imageUrl']}" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
       <div class="body">
         <span class="tag">{niche_escaped} &middot; {i}/{len(products)}</span>
         <pre class="caption">{caption_escaped}</pre>
         <div class="actions">
           <button class="copy-img-btn">🖼️ Copiar imagem</button>
           <button class="copy-btn">Copiar legenda</button>
-          <a class="img-link" href="{p['imageUrl']}" target="_blank" rel="noopener">Abrir imagem</a>
+          <a class="img-link" href="{p['imageUrl']}" target="_blank" rel="noopener">Baixar imagem</a>
           <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
         </div>
       </div>
@@ -147,7 +148,7 @@ def write_html_page(products, out_path, date_label):
   .grid{{ display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:18px; max-width:1100px; }}
   .card{{ background:#fff; border:1px solid var(--line); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; }}
   .card.done{{ opacity:.5; }}
-  .media{{ position:relative; aspect-ratio:1/1; background:#f2eae8; }}
+  .media{{ display:block; position:relative; aspect-ratio:1/1; background:#f2eae8; cursor:pointer; }}
   .media img{{ width:100%; height:100%; object-fit:cover; display:block; }}
   .posted-badge{{ display:none; position:absolute; top:10px; left:10px; background:var(--ok); color:#fff; font-size:11.5px; font-weight:700; padding:4px 10px; border-radius:99px; }}
   .card.done .posted-badge{{ display:inline-block; }}
@@ -165,7 +166,7 @@ def write_html_page(products, out_path, date_label):
 </style></head>
 <body>
   <h1>Fila de postagem — WhatsApp</h1>
-  <p class="sub">{len(products)} produtos. 1) Clica em "🖼️ Copiar imagem" — 2) cola direto no WhatsApp (Ctrl+V) — 3) clica em "Copiar legenda" e cola embaixo. Sem precisar baixar nem salvar nada na mão. O card marca "✓ Postado" sozinho depois que você copiar — e continua marcado mesmo se a fila for atualizada de novo amanhã, então nunca fica em dúvida do que já foi postado.</p>
+  <p class="sub">{len(products)} produtos. 1) Clica em "🖼️ Copiar imagem" — 2) cola direto no WhatsApp (Ctrl+V) — 3) clica em "Copiar legenda" e cola embaixo. Sem precisar baixar nem salvar nada na mão. A foto de cada card também é clicável e abre o produto na Shopee, pra conferir antes de postar. O card marca "✓ Postado" sozinho depois que você copiar — e continua marcado mesmo se a fila for atualizada de novo amanhã, então nunca fica em dúvida do que já foi postado.</p>
   <div class="progress">
     <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
     <span class="progress-label" id="progressLabel">0 de {len(products)} já postados</span>

@@ -111,14 +111,20 @@ def save_posted_map(posted_map):
         json.dump({str(k): v for k, v in posted_map.items()}, f, ensure_ascii=False, indent=2)
 
 
-def send_photo(token, chat_id, photo_url, caption):
+def send_photo(token, chat_id, photo_url, caption, offer_link=None):
     url = f"https://api.telegram.org/bot{token}/sendPhoto"
-    data = urllib.parse.urlencode({
+    fields = {
         "chat_id": chat_id,
         "photo": photo_url,
         "caption": caption,
         "parse_mode": "HTML",
-    }).encode("utf-8")
+    }
+    if offer_link:
+        # botão embaixo da foto -- clicável direto, sem precisar tocar no link de texto
+        fields["reply_markup"] = json.dumps({
+            "inline_keyboard": [[{"text": "🛒 Ver oferta e comprar", "url": offer_link}]]
+        })
+    data = urllib.parse.urlencode(fields).encode("utf-8")
     req = urllib.request.Request(url, data=data, method="POST")
     with urllib.request.urlopen(req, timeout=20) as resp:
         return json.loads(resp.read().decode("utf-8"))
@@ -205,7 +211,7 @@ def main():
             continue
 
         try:
-            result = send_photo(token, chat_id, p["imageUrl"], caption)
+            result = send_photo(token, chat_id, p["imageUrl"], caption, offer_link=p["offerLink"])
             ok = result.get("ok", False)
             print(f"  -> {'enviado' if ok else 'falhou: ' + str(result)}")
             log.append({"itemId": p["itemId"], "ok": ok, "ts": int(time.time())})
