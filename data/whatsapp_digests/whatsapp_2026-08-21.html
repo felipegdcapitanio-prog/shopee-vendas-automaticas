@@ -7,12 +7,18 @@
   *{box-sizing:border-box;}
   body{ margin:0; background:var(--paper); color:var(--ink); font-family:system-ui,sans-serif; padding:24px; }
   h1{ font-size:20px; margin:0 0 4px; }
-  p.sub{ color:var(--ink-soft); font-size:13.5px; margin:0 0 24px; }
+  p.sub{ color:var(--ink-soft); font-size:13.5px; margin:0 0 16px; }
+  .progress{ display:flex; align-items:center; gap:12px; margin:0 0 24px; max-width:1100px; }
+  .progress-bar{ flex:1; height:8px; background:var(--line); border-radius:99px; overflow:hidden; }
+  .progress-fill{ height:100%; width:0%; background:var(--ok); border-radius:99px; transition:width .3s ease; }
+  .progress-label{ font-size:13px; font-weight:700; color:var(--ink-soft); white-space:nowrap; font-variant-numeric:tabular-nums; }
   .grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:18px; max-width:1100px; }
   .card{ background:#fff; border:1px solid var(--line); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; }
-  .card.done{ opacity:.45; }
-  .media{ aspect-ratio:1/1; background:#f2eae8; }
+  .card.done{ opacity:.5; }
+  .media{ position:relative; aspect-ratio:1/1; background:#f2eae8; }
   .media img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .posted-badge{ display:none; position:absolute; top:10px; left:10px; background:var(--ok); color:#fff; font-size:11.5px; font-weight:700; padding:4px 10px; border-radius:99px; }
+  .card.done .posted-badge{ display:inline-block; }
   .body{ padding:14px 16px 16px; display:flex; flex-direction:column; gap:10px; }
   .tag{ font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--accent-strong); }
   .caption{ font-family:inherit; font-size:12.5px; white-space:pre-wrap; background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:10px; margin:0; max-height:220px; overflow-y:auto; }
@@ -20,321 +26,591 @@
   .copy-btn{ font-family:inherit; font-size:13px; font-weight:700; padding:9px 14px; border-radius:8px; border:none; background:var(--accent); color:#fff; cursor:pointer; }
   .copy-btn.copied{ background:var(--ok); }
   .img-link{ font-size:12.5px; color:var(--accent-strong); }
+  .undo-btn{ display:none; font-family:inherit; font-size:12px; padding:6px 10px; border-radius:8px; border:1px solid var(--line); background:none; color:var(--ink-soft); cursor:pointer; }
+  .card.done .undo-btn{ display:inline-block; }
 </style></head>
 <body>
   <h1>Fila de postagem — WhatsApp</h1>
-  <p class="sub">12 produtos. Clica em "Copiar legenda", cola no WhatsApp junto com a imagem (abre em nova aba pra salvar), manda. O card fica esmaecido depois que você copiar, só de referência visual.</p>
+  <p class="sub">20 produtos. Clica em "Copiar legenda", cola no WhatsApp junto com a imagem (abre em nova aba pra salvar), manda. O card marca "✓ Postado" sozinho depois que você copiar — e continua marcado mesmo se a fila for atualizada de novo amanhã, então nunca fica em dúvida do que já foi postado.</p>
+  <div class="progress">
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    <span class="progress-label" id="progressLabel">0 de 20 já postados</span>
+  </div>
   <div class="grid">
-    <article class="card" data-index="1">
-      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-m4ozs3fxwz4126" alt="" loading="lazy"></div>
+    <article class="card" data-index="1" data-item-id="19697980846">
+      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-81z1k-mhqkzkrt4w03ba" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
       <div class="body">
-        <span class="tag">Maquiagem &middot; 1/12</span>
-        <pre class="caption">Se você é apaixonada por make, guarda esse:
+        <span class="tag">Iluminação &middot; 1/20</span>
+        <pre class="caption">Pra deixar seu cantinho mais aconchegante:
 
-🚨 DESCONTÃO DO DIA 🚨
-📉 *-57% OFF*
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-56% OFF*
 
-*Base Liquida Facial Solft Matte bege  Ruby Rose*
+*Ventilador Luminária Led 6 Pás Lâmpada Soquete Bocal E27 Teto 3 Cores Luz Branco Amarelo Bivolt*
 
-*R$ 12,99* _(de R$ 30,21)_
+De ~R$ 90,89~ por *R$ 39,99*
 
-⭐ 4.9  ·  🛍️ 1734 vendidos  ·  💄 Maquiagem
+⭐ 4.8  ·  🛍️ 2315 vendidos  ·  💡 Iluminação
 
 👉 *Garanta o seu aqui:*
-https://s.shopee.com.br/2Vr71ER0g0
+https://s.shopee.com.br/AUtORbEVu1
+
+_Enquanto durar o estoque, vale a pena garantir._</pre>
+        <div class="actions">
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-81z1k-mhqkzkrt4w03ba" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="2" data-item-id="27503599681">
+      <div class="media"><img src="https://cf.shopee.com.br/file/9639de708715a6596503cca30b852015" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
+      <div class="body">
+        <span class="tag">Maquiagem &middot; 2/20</span>
+        <pre class="caption">Aquele produtinho que não pode faltar na nécessaire:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-55% OFF*
+
+*Doze Cores À Prova D&#x27;água De Suor , Não É Fácil De Desbotar , Copo Antiaderente , Caneta De Batom Monocromática Para Lin*
+
+*R$ 4,42* _(de R$ 9,82)_
+
+⭐ 4.8  ·  🛍️ 7126 vendidos  ·  💄 Maquiagem
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/112J87ktF1
 
 _Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
         <div class="actions">
           <button class="copy-btn">Copiar legenda</button>
-          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-m4ozs3fxwz4126" target="_blank" rel="noopener">Abrir imagem</a>
+          <a class="img-link" href="https://cf.shopee.com.br/file/9639de708715a6596503cca30b852015" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
         </div>
       </div>
     </article>
-    <article class="card" data-index="2">
-      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-ltdnldgr2fco96" alt="" loading="lazy"></div>
+    <article class="card" data-index="3" data-item-id="24321183394">
+      <div class="media"><img src="https://cf.shopee.com.br/file/sg-11134301-7rcdg-lsnz818nlk57ad" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
       <div class="body">
-        <span class="tag">Moda Feminina &middot; 2/12</span>
+        <span class="tag">Maquiagem &middot; 3/20</span>
+        <pre class="caption">Se você é apaixonada por make, guarda esse:
+
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-55% OFF*
+
+*Jet Black Mascara-Comprimento Volumoso , Lift &amp; Curl , Maquiagem À Prova D&#x27;água E De Manchas*
+
+*R$ 5,81* _(de R$ 12,91)_
+
+⭐ 4.8  ·  🛍️ 1563 vendidos  ·  💄 Maquiagem
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/8plAYsBhMO
+
+_Enquanto durar o estoque, vale a pena garantir._</pre>
+        <div class="actions">
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134301-7rcdg-lsnz818nlk57ad" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="4" data-item-id="47305656878">
+      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134201-820lq-mqyg6ce1lb0k87" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
+      <div class="body">
+        <span class="tag">Decoração de Casa &middot; 4/20</span>
+        <pre class="caption">Um toque a mais no cantinho que você mais gosta:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-55% OFF*
+
+*Espelho Redondo Decorativo Adnet Alça Couro Suporte 60cm Sala Quarto Banheiro*
+
+De ~R$ 44,33~ por *R$ 19,95*
+
+⭐ 4.9  ·  🛍️ 5774 vendidos  ·  🏠 Decoração de Casa
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/1qbQ7fLNqL
+
+_Esse tipo de oferta não dura muito, viu?_</pre>
+        <div class="actions">
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134201-820lq-mqyg6ce1lb0k87" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="5" data-item-id="21439079319">
+      <div class="media"><img src="https://cf.shopee.com.br/file/fad3cbfa5d2d9eb5847b28d5e432cae3" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
+      <div class="body">
+        <span class="tag">Iluminação &middot; 5/20</span>
+        <pre class="caption">Detalhe pequeno, diferença grande no ambiente:
+
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-55% OFF*
+
+*Fita Led Neon Mangueira 5 Metros Alto Brilho Flexivel Siliconada IP65 Com ou Sem Fonte*
+
+Tava R$ 37,53, agora só *R$ 16,89*
+
+⭐ 4.9  ·  🛍️ 3384 vendidos  ·  💡 Iluminação
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/9pdheNLaZB
+
+_Esse tipo de oferta não dura muito, viu?_</pre>
+        <div class="actions">
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/fad3cbfa5d2d9eb5847b28d5e432cae3" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="6" data-item-id="28071401696">
+      <div class="media"><img src="https://cf.shopee.com.br/file/sg-11134201-7ratp-manvzqgn5jkh6c" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
+      <div class="body">
+        <span class="tag">Maquiagem &middot; 6/20</span>
+        <pre class="caption">Aquele produtinho que não pode faltar na nécessaire:
+
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-53% OFF*
+
+*DIKALU Paleta De Sombras De 9 Cores Romântica Flor De Cerejeira Pérola Maquiagem Para Os Olhos Presente De Dia Dos Namor*
+
+*R$ 10,86* _(de R$ 23,11)_
+
+⭐ 4.9  ·  🛍️ 708 vendidos  ·  💄 Maquiagem
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/50YRtTa3wu
+
+_Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
+        <div class="actions">
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-7ratp-manvzqgn5jkh6c" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="7" data-item-id="22297711029">
+      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-m0ygzazro8cg77" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
+      <div class="body">
+        <span class="tag">Moda Feminina &middot; 7/20</span>
         <pre class="caption">Se você ama uma peça coringa, olha essa:
 
 🚨 DESCONTÃO DO DIA 🚨
-📉 *-57% OFF*
+📉 *-53% OFF*
 
-*Shorts Cinta Modelador Levanta Empina Bumbum Feminina Alta Compressão Shortinho*
+*KIT 3: Baby Tee Feminina - Blusa Slim Fit Manga Curta - Blusa de Compressão*
 
-Tava R$ 60,44, agora só *R$ 25,99*
+*R$ 42,30* _(de R$ 90,00)_
 
-⭐ 4.9  ·  🛍️ 5961 vendidos  ·  👗 Moda Feminina
+⭐ 4.8  ·  🛍️ 4830 vendidos  ·  👗 Moda Feminina
 
 👉 *Garanta o seu aqui:*
-https://s.shopee.com.br/BTCEx9Mdy
+https://s.shopee.com.br/3qMUbgvPCq
 
 _Esse tipo de oferta não dura muito, viu?_</pre>
         <div class="actions">
           <button class="copy-btn">Copiar legenda</button>
-          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-ltdnldgr2fco96" target="_blank" rel="noopener">Abrir imagem</a>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-m0ygzazro8cg77" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
         </div>
       </div>
     </article>
-    <article class="card" data-index="3">
-      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-7qukw-li3gn37h6v5h4a" alt="" loading="lazy"></div>
+    <article class="card" data-index="8" data-item-id="22598314126">
+      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-m85ec5iriju9db" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
       <div class="body">
-        <span class="tag">Calçados &middot; 3/12</span>
-        <pre class="caption">Sapato bom é sinônimo de dia mais leve:
+        <span class="tag">Calçados &middot; 8/20</span>
+        <pre class="caption">Pra quem vive em pé o dia todo, esse aqui ajuda:
 
 💥 PREÇO IMPERDÍVEL 💥
-📉 *-57% OFF*
+📉 *-53% OFF*
 
-*Tenis liso EC moda conforto tenis meia calce facil*
+*Bota Botina Feminina Texana Macia Country Cowboy Bico Quadrado Confortável Zíper E Rebites*
 
-Tava R$ 49,91, agora só *R$ 21,46*
+*R$ 69,90* _(de R$ 148,72)_
 
-⭐ 4.7  ·  🛍️ 5187 vendidos  ·  👟 Calçados
+⭐ 4.8  ·  🛍️ 1162 vendidos  ·  👟 Calçados
 
 👉 *Garanta o seu aqui:*
-https://s.shopee.com.br/2Vr6ut5e8n
+https://s.shopee.com.br/3LQE0mNZPO
 
-_Enquanto durar o estoque, vale a pena garantir._</pre>
+_Depois não diz que não avisei 👀_</pre>
         <div class="actions">
           <button class="copy-btn">Copiar legenda</button>
-          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7qukw-li3gn37h6v5h4a" target="_blank" rel="noopener">Abrir imagem</a>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-m85ec5iriju9db" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
         </div>
       </div>
     </article>
-    <article class="card" data-index="4">
-      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-m6mkst7i0k7bad" alt="" loading="lazy"></div>
+    <article class="card" data-index="9" data-item-id="23293827748">
+      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-m8luys2i8oep28" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
       <div class="body">
-        <span class="tag">Decoração de Casa &middot; 4/12</span>
-        <pre class="caption">Casa arrumada, mente mais leve — começa por aqui:
+        <span class="tag">Calçados &middot; 9/20</span>
+        <pre class="caption">Sapato bom é sinônimo de dia mais leve:
 
-🚨 DESCONTÃO DO DIA 🚨
-📉 *-57% OFF*
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-53% OFF*
 
-*Cortina Blackout premium de 6,00x2,80  Diversas Cores e Tamanhos Tecido de 2 a 6 metros de largura*
+*Bota Feminina GiGiL Cano Longo Enrugado Slouch Bico Fino Salto Bloco Médio Elegante Clássica Casual*
 
-*R$ 58,89* _(de R$ 136,95)_
+De ~R$ 297,85~ por *R$ 139,99*
 
-⭐ 4.9  ·  🛍️ 3940 vendidos  ·  🏠 Decoração de Casa
+⭐ 4.9  ·  🛍️ 2457 vendidos  ·  👟 Calçados
 
 👉 *Garanta o seu aqui:*
-https://s.shopee.com.br/1VyZpPzLal
-
-_Enquanto durar o estoque, vale a pena garantir._</pre>
-        <div class="actions">
-          <button class="copy-btn">Copiar legenda</button>
-          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-m6mkst7i0k7bad" target="_blank" rel="noopener">Abrir imagem</a>
-        </div>
-      </div>
-    </article>
-    <article class="card" data-index="5">
-      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-820l9-mn1uzb42hx4yd8" alt="" loading="lazy"></div>
-      <div class="body">
-        <span class="tag">Decoração de Casa &middot; 5/12</span>
-        <pre class="caption">Se você ama enfeitar os cantinhos de casa, olha isso:
-
-🚨 DESCONTÃO DO DIA 🚨
-📉 *-57% OFF*
-
-*Prateleiras para Banheiro com Suporte e Alto Adesivos – Organizador de Shampoo, Sabonete, Cozinha e Lavanderia*
-
-De ~R$ 29,95~ por *R$ 12,88*
-
-⭐ 4.8  ·  🛍️ 6543 vendidos  ·  🏠 Decoração de Casa
-
-👉 *Garanta o seu aqui:*
-https://s.shopee.com.br/7VFmyRTZJu
+https://s.shopee.com.br/40fuo0L23S
 
 _Esse tipo de oferta não dura muito, viu?_</pre>
         <div class="actions">
           <button class="copy-btn">Copiar legenda</button>
-          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820l9-mn1uzb42hx4yd8" target="_blank" rel="noopener">Abrir imagem</a>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-m8luys2i8oep28" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
         </div>
       </div>
     </article>
-    <article class="card" data-index="6">
-      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-820m7-mr73w9vaa9dx8c" alt="" loading="lazy"></div>
+    <article class="card" data-index="10" data-item-id="22198813710">
+      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-md1js8nzgjr517" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
       <div class="body">
-        <span class="tag">Ferramentas &middot; 6/12</span>
+        <span class="tag">Ferramentas &middot; 10/20</span>
         <pre class="caption">Pra deixar tudo mais fácil aí na sua casa:
 
 🚨 DESCONTÃO DO DIA 🚨
-📉 *-57% OFF*
+📉 *-53% OFF*
 
-*Parafusadeira Furadeira de Impacto 48V Sem Fio 2 Baterias 3 Funções com Maleta e Acessórios Kit Completo*
+*Kit Parafusadeira Elétrica/Furadeira 48 Peças À Bateria Sem Fio Carregador Usb Portátil Leve*
 
-De ~R$ 302,30~ por *R$ 129,99*
+De ~R$ 80,81~ por *R$ 37,98*
 
-⭐ 4.9  ·  🛍️ 755 vendidos  ·  🛠️ Ferramentas
-
-👉 *Garanta o seu aqui:*
-https://s.shopee.com.br/9KhR3SAIGG
-
-_Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
-        <div class="actions">
-          <button class="copy-btn">Copiar legenda</button>
-          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820m7-mr73w9vaa9dx8c" target="_blank" rel="noopener">Abrir imagem</a>
-        </div>
-      </div>
-    </article>
-    <article class="card" data-index="7">
-      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-820lm-mp0iqq9oz5s398" alt="" loading="lazy"></div>
-      <div class="body">
-        <span class="tag">Iluminação &middot; 7/12</span>
-        <pre class="caption">Ilumina o cantinho e ainda cabe no bolso:
-
-🔥 OFERTA RELÂMPAGO 🔥
-📉 *-57% OFF*
-
-*1/2/3 Unidades Luminárias Solares Impermeáveis Prova De Chuva 100 Led Sensor Courtyard Light Promoção*
-
-*R$ 19,77* _(de R$ 45,98)_
-
-⭐ 4.8  ·  🛍️ 5122 vendidos  ·  💡 Iluminação
+⭐ 4.6  ·  🛍️ 3969 vendidos  ·  🛠️ Ferramentas
 
 👉 *Garanta o seu aqui:*
-https://s.shopee.com.br/9AO0r9Jabd
+https://s.shopee.com.br/8KotrcE6Hy
 
 _Enquanto durar o estoque, vale a pena garantir._</pre>
         <div class="actions">
           <button class="copy-btn">Copiar legenda</button>
-          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820lm-mp0iqq9oz5s398" target="_blank" rel="noopener">Abrir imagem</a>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-md1js8nzgjr517" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
         </div>
       </div>
     </article>
-    <article class="card" data-index="8">
-      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-81z1k-mha3muvkmrcw49" alt="" loading="lazy"></div>
+    <article class="card" data-index="11" data-item-id="20452224775">
+      <div class="media"><img src="https://cf.shopee.com.br/file/sg-11134201-8260p-mkcfopp4p5hc85" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
       <div class="body">
-        <span class="tag">Iluminação &middot; 8/12</span>
+        <span class="tag">Iluminação &middot; 11/20</span>
         <pre class="caption">Pra deixar seu cantinho mais aconchegante:
 
-🔥 OFERTA RELÂMPAGO 🔥
-📉 *-57% OFF*
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-53% OFF*
 
-*1/2/5 Unidade Fita De Luz Emergency Brightness Ideal Luz Uniforme Resposta Imediata Autonomia Estendida*
+*Kit 2 unidades Abajur La Finesse Cupula - Luminária Para Decoração Quarto e Sala*
 
-*R$ 9,90* _(de R$ 23,02)_
+De ~R$ 120,85~ por *R$ 56,80*
 
-⭐ 4.8  ·  🛍️ 4001 vendidos  ·  💡 Iluminação
+⭐ 4.9  ·  🛍️ 1820 vendidos  ·  💡 Iluminação
 
 👉 *Garanta o seu aqui:*
-https://s.shopee.com.br/8V8K3vQfGn
+https://s.shopee.com.br/30nNcBbdND
+
+_Esse tipo de oferta não dura muito, viu?_</pre>
+        <div class="actions">
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-8260p-mkcfopp4p5hc85" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="12" data-item-id="27877837197">
+      <div class="media"><img src="https://cf.shopee.com.br/file/sg-11134201-823qs-mp4mjshj553436" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
+      <div class="body">
+        <span class="tag">Beleza &amp; Skincare &middot; 12/20</span>
+        <pre class="caption">Não custa nada testar, o preço tá um convite:
+
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-52% OFF*
+
+*Batom Blush Multifuncional à Prova d&#x27;Água, Longa Duração, Cor Fácil, Delicado, Hidratante e Não Removível em Tom Rosa.*
+
+*R$ 10,94* _(de R$ 22,79)_
+
+⭐ 4.9  ·  🛍️ 1209 vendidos  ·  🧴 Beleza &amp; Skincare
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/6L3pTvHa5Z
 
 _Depois não diz que não avisei 👀_</pre>
         <div class="actions">
           <button class="copy-btn">Copiar legenda</button>
-          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-81z1k-mha3muvkmrcw49" target="_blank" rel="noopener">Abrir imagem</a>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-823qs-mp4mjshj553436" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
         </div>
       </div>
     </article>
-    <article class="card" data-index="9">
-      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-820lh-mmfkkij8dlvo84" alt="" loading="lazy"></div>
+    <article class="card" data-index="13" data-item-id="19897499204">
+      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-ltgtase2vocf0e" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
       <div class="body">
-        <span class="tag">Iluminação &middot; 9/12</span>
-        <pre class="caption">Uma luz certa muda todo o clima do ambiente:
+        <span class="tag">Maquiagem &middot; 13/20</span>
+        <pre class="caption">Se você é apaixonada por make, guarda esse:
 
 🔥 OFERTA RELÂMPAGO 🔥
-📉 *-57% OFF*
+📉 *-52% OFF*
 
-*Abajur De Mesa Touch LED Recarregável 3 Cores De Luz Branco Quente Frio Para Quarto*
+*Protetor Solar Facial com Base Toque Seco FPS 50 Alta Proteção Efeito Natural Sunless Envio Imediato*
 
-De ~R$ 60,00~ por *R$ 25,80*
+*R$ 28,95* _(de R$ 60,31)_
 
-⭐ 4.9  ·  🛍️ 2178 vendidos  ·  💡 Iluminação
+⭐ 4.8  ·  🛍️ 1445 vendidos  ·  💄 Maquiagem
 
 👉 *Garanta o seu aqui:*
-https://s.shopee.com.br/2gAXDZcu37
+https://s.shopee.com.br/19m2daWkd
 
-_Depois não diz que não avisei 👀_</pre>
+_Esse tipo de oferta não dura muito, viu?_</pre>
         <div class="actions">
           <button class="copy-btn">Copiar legenda</button>
-          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820lh-mmfkkij8dlvo84" target="_blank" rel="noopener">Abrir imagem</a>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-ltgtase2vocf0e" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
         </div>
       </div>
     </article>
-    <article class="card" data-index="10">
-      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-81z1k-mgpkcapi1hc470" alt="" loading="lazy"></div>
+    <article class="card" data-index="14" data-item-id="42773892328">
+      <div class="media"><img src="https://cf.shopee.com.br/file/sg-11134301-824g6-mf2gf8idjrpp2a" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
       <div class="body">
-        <span class="tag">Moda Feminina &middot; 10/12</span>
-        <pre class="caption">Aquela peça que combina com tudo:
+        <span class="tag">Maquiagem &middot; 14/20</span>
+        <pre class="caption">Bora dar um upgrade na make de hoje?
 
 💥 PREÇO IMPERDÍVEL 💥
-📉 *-56% OFF*
+📉 *-52% OFF*
 
-*Vestido Feminino Elegante Manga Princesa Tubinho Com Bojo Tendencia Natal*
+*Rímel Multifuncional OCHEAL – Volumizador , Alongamento E Ondulação , Efeito De Cílios 3D , À Prova D&#x27;água De Manchas ,*
 
-De ~R$ 90,68~ por *R$ 39,90*
+De ~R$ 16,08~ por *R$ 7,72*
 
-⭐ 4.9  ·  🛍️ 1741 vendidos  ·  👗 Moda Feminina
+⭐ 4.9  ·  🛍️ 6718 vendidos  ·  💄 Maquiagem
 
 👉 *Garanta o seu aqui:*
-https://s.shopee.com.br/904aepTQYh
+https://s.shopee.com.br/qit2Ag9aa
 
 _Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
         <div class="actions">
           <button class="copy-btn">Copiar legenda</button>
-          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-81z1k-mgpkcapi1hc470" target="_blank" rel="noopener">Abrir imagem</a>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134301-824g6-mf2gf8idjrpp2a" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
         </div>
       </div>
     </article>
-    <article class="card" data-index="11">
-      <div class="media"><img src="https://cf.shopee.com.br/file/f0ad9f25dced277a4744202d43c9b780" alt="" loading="lazy"></div>
+    <article class="card" data-index="15" data-item-id="19699232452">
+      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-ltrl4rveklk929" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
       <div class="body">
-        <span class="tag">Decoração de Casa &middot; 11/12</span>
-        <pre class="caption">Se você ama enfeitar os cantinhos de casa, olha isso:
+        <span class="tag">Calçados &middot; 15/20</span>
+        <pre class="caption">Pra quem vive em pé o dia todo, esse aqui ajuda:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-52% OFF*
+
+*Bota Botinha Feminina Casual Cano Curto Sem Salto Moda Blogueira Inverno com Zíper*
+
+*R$ 57,20* _(de R$ 119,17)_
+
+⭐ 4.8  ·  🛍️ 1487 vendidos  ·  👟 Calçados
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/3VjeD5Mw4R
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-ltrl4rveklk929" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="16" data-item-id="58211528061">
+      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-820le-mormti8v00zq7d" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
+      <div class="body">
+        <span class="tag">Ferramentas &middot; 16/20</span>
+        <pre class="caption">Praticidade pra resolver aquele probleminha em casa:
 
 🔥 OFERTA RELÂMPAGO 🔥
-📉 *-56% OFF*
+📉 *-52% OFF*
 
-*Cortina Blackout 2,20m x 1,30m Quarto Sala Blackout PVC corta 100 % a luz Varias Cores*
+*Parafusadeira Furadeira de Impacto a Bateria Recarregável Sem Fio 48v 2 Baterias Com Maleta Completo*
 
-De ~R$ 65,68~ por *R$ 28,90*
+*R$ 109,90* _(de R$ 228,96)_
 
-⭐ 4.8  ·  🛍️ 2319 vendidos  ·  🏠 Decoração de Casa
+⭐ 4.7  ·  🛍️ 1570 vendidos  ·  🛠️ Ferramentas
 
 👉 *Garanta o seu aqui:*
-https://s.shopee.com.br/qit2C1swp
+https://s.shopee.com.br/9AO0r9AvbD
 
-_Corre que costuma esgotar rápido!_</pre>
+_Depois não diz que não avisei 👀_</pre>
         <div class="actions">
           <button class="copy-btn">Copiar legenda</button>
-          <a class="img-link" href="https://cf.shopee.com.br/file/f0ad9f25dced277a4744202d43c9b780" target="_blank" rel="noopener">Abrir imagem</a>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820le-mormti8v00zq7d" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
         </div>
       </div>
     </article>
-    <article class="card" data-index="12">
-      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-820lh-mmacchpnrcow45" alt="" loading="lazy"></div>
+    <article class="card" data-index="17" data-item-id="58264684239">
+      <div class="media"><img src="https://cf.shopee.com.br/file/sg-11134201-825ad-mqxdc5tl1b7qcb" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
       <div class="body">
-        <span class="tag">Ferramentas &middot; 12/12</span>
-        <pre class="caption">Ferramenta boa facilita muito o dia a dia:
+        <span class="tag">Beleza &amp; Skincare &middot; 17/20</span>
+        <pre class="caption">Se cuidar também é sobre economizar sem abrir mão de qualidade.
 
-💥 PREÇO IMPERDÍVEL 💥
-📉 *-56% OFF*
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-50% OFF*
 
-*Kit Parafusadeira Doméstica Com Maleta 45 Peças Sem Fio Chaves Fenda Broca Philips Portátil USB*
+*Kit Clareador Facial - Sabonete Líquido + Protetor Solar Clareador 70 FPS + Sérum Multicorretivo Clareador*
 
-Tava R$ 80,66, agora só *R$ 35,49*
+*R$ 79,90* _(de R$ 159,80)_
 
-⭐ 4.8  ·  🛍️ 6234 vendidos  ·  🛠️ Ferramentas
+⭐ 4.9  ·  🛍️ 1746 vendidos  ·  🧴 Beleza &amp; Skincare
 
 👉 *Garanta o seu aqui:*
-https://s.shopee.com.br/gPSjWhHqJ
+https://s.shopee.com.br/5VUiajy7ug
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-825ad-mqxdc5tl1b7qcb" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="18" data-item-id="22793178216">
+      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-lzqpcawxfnv90d" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
+      <div class="body">
+        <span class="tag">Maquiagem &middot; 18/20</span>
+        <pre class="caption">Combina com qualquer produção, e o preço ajuda:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-50% OFF*
+
+*ORIGINAL-Max Lashes_Rimel com Serum para Crescimento de Cílios*
+
+*R$ 49,90* _(de R$ 99,80)_
+
+⭐ 4.8  ·  🛍️ 2302 vendidos  ·  💄 Maquiagem
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/2Vr71EZoD4
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-lzqpcawxfnv90d" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="19" data-item-id="22193558892">
+      <div class="media"><img src="https://cf.shopee.com.br/file/sg-11134201-7reof-m2qt1hr4xk13b3" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
+      <div class="body">
+        <span class="tag">Maquiagem &middot; 19/20</span>
+        <pre class="caption">Achado certeiro pra quem ama testar coisa nova:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-50% OFF*
+
+*Ahania Pincel De  Base Corretivo, Contorno Facial, Máscara Facial, Mistura Plana Pincel De Maquiagem*
+
+*R$ 10,00* _(de R$ 20,00)_
+
+⭐ 4.9  ·  🛍️ 1358 vendidos  ·  💄 Maquiagem
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/112JETWiir
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-7reof-m2qt1hr4xk13b3" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="20" data-item-id="22494463836">
+      <div class="media"><img src="https://cf.shopee.com.br/file/br-11134207-820m8-mr354uv7rx8l6f" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
+      <div class="body">
+        <span class="tag">Maquiagem &middot; 20/20</span>
+        <pre class="caption">Pra arrasar no make sem gastar uma fortuna:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-50% OFF*
+
+*Máscara Para Cílios Payot Boca Rosa #MeuVolumão*
+
+*R$ 14,86* _(de R$ 29,72)_
+
+⭐ 4.9  ·  🛍️ 2164 vendidos  ·  💄 Maquiagem
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/8fRkMZCKhN
 
 _Corre que costuma esgotar rápido!_</pre>
         <div class="actions">
           <button class="copy-btn">Copiar legenda</button>
-          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820lh-mmacchpnrcow45" target="_blank" rel="noopener">Abrir imagem</a>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820m8-mr354uv7rx8l6f" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
         </div>
       </div>
     </article></div>
 <script>
+var STORAGE_KEY = 'achadinhos_wpp_postados';
+
+function loadPosted(){
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+  catch(e) { return {}; }
+}
+function savePosted(map){
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(map)); } catch(e) {}
+}
+function updateProgress(){
+  var total = document.querySelectorAll('.card').length;
+  var done = document.querySelectorAll('.card.done').length;
+  document.getElementById('progressLabel').textContent = done + ' de ' + total + ' já postados';
+  document.getElementById('progressFill').style.width = (total ? (done/total*100) : 0) + '%';
+}
+
+var posted = loadPosted();
+document.querySelectorAll('.card').forEach(function(card){
+  var id = card.getAttribute('data-item-id');
+  if (posted[id]) {
+    card.classList.add('done');
+    card.querySelector('.copy-btn').textContent = 'Copiar de novo';
+  }
+});
+updateProgress();
+
 document.querySelectorAll('.copy-btn').forEach(function(btn){
   btn.addEventListener('click', function(){
-    var text = btn.closest('.card').querySelector('.caption').textContent;
+    var card = btn.closest('.card');
+    var id = card.getAttribute('data-item-id');
+    var text = card.querySelector('.caption').textContent;
     navigator.clipboard.writeText(text).then(function(){
+      var original = card.classList.contains('done') ? 'Copiar de novo' : 'Copiar legenda';
       btn.textContent = 'Copiado!';
       btn.classList.add('copied');
-      btn.closest('.card').classList.add('done');
-      setTimeout(function(){ btn.textContent = 'Copiar legenda'; }, 2000);
+      card.classList.add('done');
+      posted[id] = Date.now();
+      savePosted(posted);
+      updateProgress();
+      setTimeout(function(){ btn.textContent = 'Copiar de novo'; btn.classList.remove('copied'); }, 2000);
     });
+  });
+});
+
+document.querySelectorAll('.undo-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var card = btn.closest('.card');
+    var id = card.getAttribute('data-item-id');
+    delete posted[id];
+    savePosted(posted);
+    card.classList.remove('done');
+    card.querySelector('.copy-btn').textContent = 'Copiar legenda';
+    updateProgress();
   });
 });
 </script>

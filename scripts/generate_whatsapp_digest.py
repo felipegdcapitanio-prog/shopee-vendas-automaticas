@@ -104,14 +104,15 @@ def write_html_page(products, out_path, date_label):
         caption_escaped = html.escape(caption)
         niche_escaped = html.escape(p["niche"])
         cards.append(f"""
-    <article class="card" data-index="{i}">
-      <div class="media"><img src="{p['imageUrl']}" alt="" loading="lazy"></div>
+    <article class="card" data-index="{i}" data-item-id="{p['itemId']}">
+      <div class="media"><img src="{p['imageUrl']}" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
       <div class="body">
         <span class="tag">{niche_escaped} &middot; {i}/{len(products)}</span>
         <pre class="caption">{caption_escaped}</pre>
         <div class="actions">
           <button class="copy-btn">Copiar legenda</button>
           <a class="img-link" href="{p['imageUrl']}" target="_blank" rel="noopener">Abrir imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
         </div>
       </div>
     </article>""")
@@ -125,12 +126,18 @@ def write_html_page(products, out_path, date_label):
   *{{box-sizing:border-box;}}
   body{{ margin:0; background:var(--paper); color:var(--ink); font-family:system-ui,sans-serif; padding:24px; }}
   h1{{ font-size:20px; margin:0 0 4px; }}
-  p.sub{{ color:var(--ink-soft); font-size:13.5px; margin:0 0 24px; }}
+  p.sub{{ color:var(--ink-soft); font-size:13.5px; margin:0 0 16px; }}
+  .progress{{ display:flex; align-items:center; gap:12px; margin:0 0 24px; max-width:1100px; }}
+  .progress-bar{{ flex:1; height:8px; background:var(--line); border-radius:99px; overflow:hidden; }}
+  .progress-fill{{ height:100%; width:0%; background:var(--ok); border-radius:99px; transition:width .3s ease; }}
+  .progress-label{{ font-size:13px; font-weight:700; color:var(--ink-soft); white-space:nowrap; font-variant-numeric:tabular-nums; }}
   .grid{{ display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:18px; max-width:1100px; }}
   .card{{ background:#fff; border:1px solid var(--line); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; }}
-  .card.done{{ opacity:.45; }}
-  .media{{ aspect-ratio:1/1; background:#f2eae8; }}
+  .card.done{{ opacity:.5; }}
+  .media{{ position:relative; aspect-ratio:1/1; background:#f2eae8; }}
   .media img{{ width:100%; height:100%; object-fit:cover; display:block; }}
+  .posted-badge{{ display:none; position:absolute; top:10px; left:10px; background:var(--ok); color:#fff; font-size:11.5px; font-weight:700; padding:4px 10px; border-radius:99px; }}
+  .card.done .posted-badge{{ display:inline-block; }}
   .body{{ padding:14px 16px 16px; display:flex; flex-direction:column; gap:10px; }}
   .tag{{ font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--accent-strong); }}
   .caption{{ font-family:inherit; font-size:12.5px; white-space:pre-wrap; background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:10px; margin:0; max-height:220px; overflow-y:auto; }}
@@ -138,21 +145,71 @@ def write_html_page(products, out_path, date_label):
   .copy-btn{{ font-family:inherit; font-size:13px; font-weight:700; padding:9px 14px; border-radius:8px; border:none; background:var(--accent); color:#fff; cursor:pointer; }}
   .copy-btn.copied{{ background:var(--ok); }}
   .img-link{{ font-size:12.5px; color:var(--accent-strong); }}
+  .undo-btn{{ display:none; font-family:inherit; font-size:12px; padding:6px 10px; border-radius:8px; border:1px solid var(--line); background:none; color:var(--ink-soft); cursor:pointer; }}
+  .card.done .undo-btn{{ display:inline-block; }}
 </style></head>
 <body>
   <h1>Fila de postagem — WhatsApp</h1>
-  <p class="sub">{len(products)} produtos. Clica em "Copiar legenda", cola no WhatsApp junto com a imagem (abre em nova aba pra salvar), manda. O card fica esmaecido depois que você copiar, só de referência visual.</p>
+  <p class="sub">{len(products)} produtos. Clica em "Copiar legenda", cola no WhatsApp junto com a imagem (abre em nova aba pra salvar), manda. O card marca "✓ Postado" sozinho depois que você copiar — e continua marcado mesmo se a fila for atualizada de novo amanhã, então nunca fica em dúvida do que já foi postado.</p>
+  <div class="progress">
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    <span class="progress-label" id="progressLabel">0 de {len(products)} já postados</span>
+  </div>
   <div class="grid">{"".join(cards)}</div>
 <script>
+var STORAGE_KEY = 'achadinhos_wpp_postados';
+
+function loadPosted(){{
+  try {{ return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {{}}; }}
+  catch(e) {{ return {{}}; }}
+}}
+function savePosted(map){{
+  try {{ localStorage.setItem(STORAGE_KEY, JSON.stringify(map)); }} catch(e) {{}}
+}}
+function updateProgress(){{
+  var total = document.querySelectorAll('.card').length;
+  var done = document.querySelectorAll('.card.done').length;
+  document.getElementById('progressLabel').textContent = done + ' de ' + total + ' já postados';
+  document.getElementById('progressFill').style.width = (total ? (done/total*100) : 0) + '%';
+}}
+
+var posted = loadPosted();
+document.querySelectorAll('.card').forEach(function(card){{
+  var id = card.getAttribute('data-item-id');
+  if (posted[id]) {{
+    card.classList.add('done');
+    card.querySelector('.copy-btn').textContent = 'Copiar de novo';
+  }}
+}});
+updateProgress();
+
 document.querySelectorAll('.copy-btn').forEach(function(btn){{
   btn.addEventListener('click', function(){{
-    var text = btn.closest('.card').querySelector('.caption').textContent;
+    var card = btn.closest('.card');
+    var id = card.getAttribute('data-item-id');
+    var text = card.querySelector('.caption').textContent;
     navigator.clipboard.writeText(text).then(function(){{
+      var original = card.classList.contains('done') ? 'Copiar de novo' : 'Copiar legenda';
       btn.textContent = 'Copiado!';
       btn.classList.add('copied');
-      btn.closest('.card').classList.add('done');
-      setTimeout(function(){{ btn.textContent = 'Copiar legenda'; }}, 2000);
+      card.classList.add('done');
+      posted[id] = Date.now();
+      savePosted(posted);
+      updateProgress();
+      setTimeout(function(){{ btn.textContent = 'Copiar de novo'; btn.classList.remove('copied'); }}, 2000);
     }});
+  }});
+}});
+
+document.querySelectorAll('.undo-btn').forEach(function(btn){{
+  btn.addEventListener('click', function(){{
+    var card = btn.closest('.card');
+    var id = card.getAttribute('data-item-id');
+    delete posted[id];
+    savePosted(posted);
+    card.classList.remove('done');
+    card.querySelector('.copy-btn').textContent = 'Copiar legenda';
+    updateProgress();
   }});
 }});
 </script>

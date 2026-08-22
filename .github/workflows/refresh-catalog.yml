@@ -27,10 +27,16 @@ jobs:
       - name: Gerar lote de conteúdo pro WhatsApp (postagem manual)
         run: python scripts/generate_whatsapp_digest.py
 
-      - name: Salvar catálogo e lote atualizados
+      - name: Atualizar relatório de cliques que geraram venda
+        env:
+          SHOPEE_AFFILIATE_APP_ID: ${{ secrets.SHOPEE_AFFILIATE_APP_ID }}
+          SHOPEE_AFFILIATE_SECRET: ${{ secrets.SHOPEE_AFFILIATE_SECRET }}
+        run: python scripts/fetch_sales_report.py
+
+      - name: Salvar catálogo, lote e relatório atualizados
         run: |
           git config user.name "shopee-autopilot-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/catalogo_produtos.json data/whatsapp_posted_ids.json data/whatsapp_digests/
-          git diff --cached --quiet || git commit -m "chore: renova catálogo e lote de WhatsApp"
+          git add data/catalogo_produtos.json data/whatsapp_posted_ids.json data/whatsapp_digests/ data/relatorio_vendas.json
+          git diff --cached --quiet || git commit -m "chore: renova catálogo, lote de WhatsApp e relatório de vendas"
           git push
