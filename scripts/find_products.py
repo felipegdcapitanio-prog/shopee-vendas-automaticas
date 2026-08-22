@@ -28,21 +28,21 @@ OUT_PATH = os.path.join(ROOT, "data", "catalogo_produtos.json")
 SORT_BY_SALES = 2
 
 NICHES = {
-    "Beleza & Skincare": ["skincare facial", "creme hidratante rosto", "protetor solar facial", "sérum facial"],
-    "Maquiagem": ["batom", "paleta de sombra", "base facial", "máscara de cílios"],
-    "Moda Feminina": ["vestido feminino", "blusa feminina", "conjunto feminino", "short feminino"],
-    "Calçados": ["tênis feminino", "sandália feminina", "rasteirinha feminina", "bota feminina"],
-    "Decoração de Casa": ["decoração quarto", "enfeite sala de estar", "organizador cozinha", "cortina blackout"],
-    "Ferramentas": ["kit ferramentas", "furadeira parafusadeira", "trena a laser", "parafuso caixa"],
-    "Iluminação": ["luminária led", "fita led", "abajur quarto", "pisca pisca led"],
+    "Beleza & Skincare": ["skincare facial", "creme hidratante rosto", "protetor solar facial", "sérum facial", "esfoliante facial", "hidratante corporal"],
+    "Maquiagem": ["batom", "paleta de sombra", "base facial", "máscara de cílios", "pó compacto", "delineador"],
+    "Moda Feminina": ["vestido feminino", "blusa feminina", "conjunto feminino", "short feminino", "saia feminina", "cropped feminino"],
+    "Calçados": ["tênis feminino", "sandália feminina", "rasteirinha feminina", "bota feminina", "chinelo feminino", "sapatilha feminina"],
+    "Decoração de Casa": ["decoração quarto", "enfeite sala de estar", "organizador cozinha", "cortina blackout", "quadro decorativo", "tapete sala"],
+    "Ferramentas": ["kit ferramentas", "furadeira parafusadeira", "trena a laser", "parafuso caixa", "chave de fenda kit", "serra elétrica"],
+    "Iluminação": ["luminária led", "fita led", "abajur quarto", "pisca pisca led", "spot led", "luminária pendente"],
 }
 
 # critérios mínimos de qualidade
 MIN_RATING = 4.0
 MIN_SALES = 10
 MIN_COMMISSION = 0.08  # 8%
-PER_KEYWORD_LIMIT = 20
-MAX_PER_NICHE = 40  # teto do catálogo por nicho (evita crescer sem limite)
+PER_KEYWORD_LIMIT = 30
+MAX_PER_NICHE = 90  # teto do catálogo por nicho -- subiu pra sustentar 180 posts/dia com cooldown de 3 dias sem esgotar
 
 
 def load_env(path):
