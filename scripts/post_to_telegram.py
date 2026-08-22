@@ -122,7 +122,7 @@ def send_photo(token, chat_id, photo_url, caption, offer_link=None):
     if offer_link:
         # botão embaixo da foto -- clicável direto, sem precisar tocar no link de texto
         fields["reply_markup"] = json.dumps({
-            "inline_keyboard": [[{"text": "🛒 Ver oferta e comprar", "url": offer_link}]]
+            "inline_keyboard": [[{"text": "👉 COMPRAR AGORA", "url": offer_link}]]
         })
     data = urllib.parse.urlencode(fields).encode("utf-8")
     req = urllib.request.Request(url, data=data, method="POST")
