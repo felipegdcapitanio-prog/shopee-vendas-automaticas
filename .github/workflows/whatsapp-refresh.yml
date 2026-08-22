@@ -1,0 +1,35 @@
+name: Renovar fila do WhatsApp a cada hora
+
+on:
+  schedule:
+    - cron: "0 * * * *"  # todo hora, pra manter a fila sempre com produto fresco
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: whatsapp-queue
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gerar lote novo de conteúdo pro WhatsApp
+        run: python scripts/generate_whatsapp_digest.py
+
+      - name: Salvar fila atualizada
+        run: |
+          git config user.name "shopee-autopilot-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/whatsapp_posted_ids.json data/whatsapp_digests/
+          git diff --cached --quiet || git commit -m "chore: renova fila do WhatsApp"
+          git pull --rebase --autostash origin master
+          git push

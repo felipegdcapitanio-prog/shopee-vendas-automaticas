@@ -2,7 +2,7 @@ name: Renovar catálogo de produtos
 
 on:
   schedule:
-    - cron: "0 9 * * *"  # todo dia, 06:00 (Brasília, UTC-3) — precisa ser diário pra sustentar 48 posts/dia
+    - cron: "0 9 * * *"  # todo dia, 06:00 (Brasília, UTC-3)
   workflow_dispatch: {}   # permite rodar manualmente pela aba Actions
 
 permissions:
@@ -24,20 +24,26 @@ jobs:
           SHOPEE_AFFILIATE_SECRET: ${{ secrets.SHOPEE_AFFILIATE_SECRET }}
         run: python scripts/find_products.py
 
-      - name: Gerar lote de conteúdo pro WhatsApp (postagem manual)
-        run: python scripts/generate_whatsapp_digest.py
-
       - name: Atualizar relatório de cliques que geraram venda
         env:
           SHOPEE_AFFILIATE_APP_ID: ${{ secrets.SHOPEE_AFFILIATE_APP_ID }}
           SHOPEE_AFFILIATE_SECRET: ${{ secrets.SHOPEE_AFFILIATE_SECRET }}
         run: python scripts/fetch_sales_report.py
 
-      - name: Salvar catálogo, lote e relatório atualizados
+      - name: Reforçar nichos que já provaram vender
+        run: python scripts/boost_winning_niches.py
+        env:
+          SHOPEE_AFFILIATE_APP_ID: ${{ secrets.SHOPEE_AFFILIATE_APP_ID }}
+          SHOPEE_AFFILIATE_SECRET: ${{ secrets.SHOPEE_AFFILIATE_SECRET }}
+
+      - name: Separar os 4 produtos do dia pra conteúdo (carrossel Sophia)
+        run: python scripts/generate_content_brief.py
+
+      - name: Salvar catálogo, relatório e briefing atualizados
         run: |
           git config user.name "shopee-autopilot-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/catalogo_produtos.json data/whatsapp_posted_ids.json data/whatsapp_digests/ data/relatorio_vendas.json
-          git diff --cached --quiet || git commit -m "chore: renova catálogo, lote de WhatsApp e relatório de vendas"
+          git add data/catalogo_produtos.json data/relatorio_vendas.json data/content_brief_hoje.json data/content_brief_used.json
+          git diff --cached --quiet || git commit -m "chore: renova catálogo, relatório de vendas e briefing de conteúdo"
           git pull --rebase --autostash origin master
           git push

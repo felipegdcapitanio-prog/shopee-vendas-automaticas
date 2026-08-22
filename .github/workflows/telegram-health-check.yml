@@ -1,0 +1,34 @@
+name: Verificar saúde do robô do Telegram
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"  # a cada 2 horas
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Checar última postagem e alertar se estiver travado
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
+        run: python scripts/check_telegram_health.py
+
+      - name: Salvar status
+        run: |
+          git config user.name "shopee-autopilot-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/telegram_status.json
+          git diff --cached --quiet || git commit -m "chore: atualiza status de saude do telegram"
+          git pull --rebase --autostash origin master
+          git push
