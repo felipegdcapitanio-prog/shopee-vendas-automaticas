@@ -24,6 +24,7 @@ if hasattr(sys.stdout, "reconfigure"):
 
 sys.path.insert(0, os.path.dirname(__file__))
 from caption_builder import build_caption
+from sales_data import load_sales_map, effective_cooldown_days
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 CATALOG_PATH = os.path.join(ROOT, "data", "catalogo_produtos.json")
@@ -31,7 +32,7 @@ WHATSAPP_POSTED_PATH = os.path.join(ROOT, "data", "whatsapp_posted_ids.json")
 OUT_DIR = os.path.join(ROOT, "data", "whatsapp_digests")
 
 DEFAULT_COUNT = 20
-DEFAULT_COOLDOWN_DAYS = 5
+DEFAULT_COOLDOWN_DAYS = 3  # menos se o produto estiver vendendo bem, ver sales_data.py
 
 def load_posted_map():
     if not os.path.exists(WHATSAPP_POSTED_PATH):
@@ -57,14 +58,25 @@ def main():
 
     posted_map = load_posted_map()
     now = time.time()
-    cooldown_seconds = args.cooldown_days * 86400
+    sales_map = load_sales_map()
 
-    eligible = [p for p in catalog if (now - posted_map.get(p["itemId"], 0)) >= cooldown_seconds]
-    eligible.sort(key=lambda p: (posted_map.get(p["itemId"], 0), -p["discountRate"]))
+    def sort_key(p):
+        return (posted_map.get(p["itemId"], 0), -p["discountRate"])
+
+    eligible = [
+        p for p in catalog
+        if (now - posted_map.get(p["itemId"], 0)) >= effective_cooldown_days(p["itemId"], args.cooldown_days, sales_map) * 86400
+    ]
+    eligible.sort(key=sort_key)
     selected = eligible[: args.count]
 
+    if len(selected) < args.count:
+        chosen_ids = {p["itemId"] for p in selected}
+        rest = sorted((p for p in catalog if p["itemId"] not in chosen_ids), key=sort_key)
+        selected.extend(rest[: args.count - len(selected)])
+
     if not selected:
-        print("Nada elegível (tudo em cooldown). Rode find_products.py pra renovar o catálogo.")
+        print("Catálogo vazio -- rode find_products.py pra popular data/catalogo_produtos.json.")
         return
 
     os.makedirs(OUT_DIR, exist_ok=True)
@@ -104,12 +116,13 @@ def write_html_page(products, out_path, date_label):
         caption_escaped = html.escape(caption)
         niche_escaped = html.escape(p["niche"])
         cards.append(f"""
-    <article class="card" data-index="{i}" data-item-id="{p['itemId']}">
+    <article class="card" data-index="{i}" data-item-id="{p['itemId']}" data-image-url="{html.escape(p['imageUrl'])}">
       <div class="media"><img src="{p['imageUrl']}" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></div>
       <div class="body">
         <span class="tag">{niche_escaped} &middot; {i}/{len(products)}</span>
         <pre class="caption">{caption_escaped}</pre>
         <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
           <button class="copy-btn">Copiar legenda</button>
           <a class="img-link" href="{p['imageUrl']}" target="_blank" rel="noopener">Abrir imagem</a>
           <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
@@ -142,15 +155,17 @@ def write_html_page(products, out_path, date_label):
   .tag{{ font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--accent-strong); }}
   .caption{{ font-family:inherit; font-size:12.5px; white-space:pre-wrap; background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:10px; margin:0; max-height:220px; overflow-y:auto; }}
   .actions{{ display:flex; gap:8px; align-items:center; flex-wrap:wrap; }}
-  .copy-btn{{ font-family:inherit; font-size:13px; font-weight:700; padding:9px 14px; border-radius:8px; border:none; background:var(--accent); color:#fff; cursor:pointer; }}
-  .copy-btn.copied{{ background:var(--ok); }}
+  .copy-btn, .copy-img-btn{{ font-family:inherit; font-size:13px; font-weight:700; padding:9px 14px; border-radius:8px; border:none; cursor:pointer; }}
+  .copy-btn{{ background:var(--accent); color:#fff; }}
+  .copy-img-btn{{ background:var(--accent-soft); color:var(--accent-strong); }}
+  .copy-btn.copied, .copy-img-btn.copied{{ background:var(--ok); color:#fff; }}
   .img-link{{ font-size:12.5px; color:var(--accent-strong); }}
   .undo-btn{{ display:none; font-family:inherit; font-size:12px; padding:6px 10px; border-radius:8px; border:1px solid var(--line); background:none; color:var(--ink-soft); cursor:pointer; }}
   .card.done .undo-btn{{ display:inline-block; }}
 </style></head>
 <body>
   <h1>Fila de postagem — WhatsApp</h1>
-  <p class="sub">{len(products)} produtos. Clica em "Copiar legenda", cola no WhatsApp junto com a imagem (abre em nova aba pra salvar), manda. O card marca "✓ Postado" sozinho depois que você copiar — e continua marcado mesmo se a fila for atualizada de novo amanhã, então nunca fica em dúvida do que já foi postado.</p>
+  <p class="sub">{len(products)} produtos. 1) Clica em "🖼️ Copiar imagem" — 2) cola direto no WhatsApp (Ctrl+V) — 3) clica em "Copiar legenda" e cola embaixo. Sem precisar baixar nem salvar nada na mão. O card marca "✓ Postado" sozinho depois que você copiar — e continua marcado mesmo se a fila for atualizada de novo amanhã, então nunca fica em dúvida do que já foi postado.</p>
   <div class="progress">
     <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
     <span class="progress-label" id="progressLabel">0 de {len(products)} já postados</span>
@@ -182,6 +197,36 @@ document.querySelectorAll('.card').forEach(function(card){{
   }}
 }});
 updateProgress();
+
+async function fetchAsPngBlob(url){{
+  var resp = await fetch(url, {{ mode: 'cors' }});
+  var blob = await resp.blob();
+  var bitmap = await createImageBitmap(blob);
+  var canvas = document.createElement('canvas');
+  canvas.width = bitmap.width;
+  canvas.height = bitmap.height;
+  canvas.getContext('2d').drawImage(bitmap, 0, 0);
+  return new Promise(function(resolve){{ canvas.toBlob(resolve, 'image/png'); }});
+}}
+
+document.querySelectorAll('.copy-img-btn').forEach(function(btn){{
+  btn.addEventListener('click', async function(){{
+    var card = btn.closest('.card');
+    var url = card.getAttribute('data-image-url');
+    var original = btn.textContent;
+    try{{
+      var pngBlob = await fetchAsPngBlob(url);
+      await navigator.clipboard.write([new ClipboardItem({{ 'image/png': pngBlob }})]);
+      btn.textContent = 'Imagem copiada!';
+      btn.classList.add('copied');
+      setTimeout(function(){{ btn.textContent = original; btn.classList.remove('copied'); }}, 2000);
+    }} catch(e){{
+      btn.textContent = 'Não deu, abrindo...';
+      window.open(url, '_blank');
+      setTimeout(function(){{ btn.textContent = original; }}, 2500);
+    }}
+  }});
+}});
 
 document.querySelectorAll('.copy-btn').forEach(function(btn){{
   btn.addEventListener('click', function(){{

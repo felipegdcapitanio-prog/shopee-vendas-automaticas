@@ -37,6 +37,7 @@ if hasattr(sys.stdout, "reconfigure"):
 
 sys.path.insert(0, os.path.dirname(__file__))
 from caption_builder import build_caption
+from sales_data import load_sales_map, effective_cooldown_days
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 ENV_PATH = os.path.join(ROOT, ".env")
@@ -45,12 +46,12 @@ LOG_PATH = os.path.join(ROOT, "data", "log_postagens.json")
 POSTED_PATH = os.path.join(ROOT, "data", "posted_ids.json")
 
 DELAY_BETWEEN_POSTS = 3  # segundos, evita rate limit do Telegram
-DEFAULT_COOLDOWN_DAYS = 5  # dias mínimos antes de repetir um produto
+DEFAULT_COOLDOWN_DAYS = 3  # dias mínimos antes de repetir um produto (menos se ele estiver vendendo bem, ver sales_data.py)
 
 BR_UTC_OFFSET_HOURS = -3  # Brasil não tem mais horário de verão
-POSTS_PER_DAY_TARGET = 48
-SLOT_MINUTES = 24 * 60 / POSTS_PER_DAY_TARGET  # 30
-MAX_CATCHUP_PER_RUN = 10  # teto de segurança pra não inundar o canal se ficar horas sem rodar
+POSTS_PER_DAY_TARGET = 180  # a cada 8 min, 24h por dia
+SLOT_MINUTES = 8
+MAX_CATCHUP_PER_RUN = 25  # teto de segurança pra não inundar o canal se ficar horas sem rodar
 
 
 def br_now():
@@ -162,19 +163,34 @@ def main():
             print("Já está em dia com a meta de 48/dia neste horário. Nada a postar agora.")
             return
 
+    sales_map = load_sales_map()
+
+    def cooldown_seconds_for(item_id):
+        days = effective_cooldown_days(item_id, args.cooldown_days, sales_map)
+        return days * 86400
+
+    def sort_key(p):
+        return (posted_map.get(p["itemId"], 0), -p["discountRate"])
+
     eligible = [
         p for p in catalog
-        if (now - posted_map.get(p["itemId"], 0)) >= cooldown_seconds
+        if (now - posted_map.get(p["itemId"], 0)) >= cooldown_seconds_for(p["itemId"])
     ]
-
     # nunca-postado primeiro (last_posted=0), depois o postado há mais tempo;
     # desempate por maior desconto (gatilho de atração de lead)
-    eligible.sort(key=lambda p: (posted_map.get(p["itemId"], 0), -p["discountRate"]))
-
+    eligible.sort(key=sort_key)
     eligible = eligible[:run_limit]
 
+    if len(eligible) < run_limit:
+        # não tem produto suficiente fora do cooldown -- em vez de parar de
+        # postar, completa reciclando quem foi postado há mais tempo (a
+        # esteira de 8 em 8 min nunca pode ficar sem conteúdo)
+        chosen_ids = {p["itemId"] for p in eligible}
+        rest = sorted((p for p in catalog if p["itemId"] not in chosen_ids), key=sort_key)
+        eligible.extend(rest[: run_limit - len(eligible)])
+
     if not eligible:
-        print(f"Nada elegível pra postar agora (tudo em cooldown de {args.cooldown_days} dias). Rode find_products.py pra renovar o catálogo.")
+        print("Catálogo vazio -- rode find_products.py pra popular data/catalogo_produtos.json.")
         return
 
     catalog = eligible

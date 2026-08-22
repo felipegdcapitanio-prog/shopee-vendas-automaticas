@@ -1,19 +1,15 @@
-name: Postagem no Telegram a cada 8 min
+name: Mensagem de interação no Telegram
 
 on:
   schedule:
-    - cron: "*/8 * * * *"  # a cada 8 minutos, 24h por dia (~180 posts/dia, teto)
-  workflow_dispatch: {}      # permite rodar manualmente pela aba Actions
+    - cron: "0 12 * * *"  # todo dia, 09:00 (Brasília, UTC-3)
+  workflow_dispatch: {}
 
 permissions:
   contents: write
 
-concurrency:
-  group: telegram-post
-  cancel-in-progress: false
-
 jobs:
-  post:
+  engage:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,17 +18,17 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Postar produto novo no grupo/canal
+      - name: Mandar saudação do dia (+ especial de sábado)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python scripts/post_to_telegram.py
+        run: python scripts/post_engagement_message.py
 
-      - name: Salvar progresso (produtos já postados)
+      - name: Salvar progresso (caso tenha postado especial de sábado)
         run: |
           git config user.name "shopee-autopilot-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/posted_ids.json data/log_postagens.json
-          git diff --cached --quiet || git commit -m "chore: registra postagens do dia"
+          git diff --cached --quiet || git commit -m "chore: mensagem de interação do dia"
           git pull --rebase --autostash origin master
           git push

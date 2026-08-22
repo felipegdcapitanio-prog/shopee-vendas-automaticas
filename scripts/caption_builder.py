@@ -87,6 +87,12 @@ HIGH_DISCOUNT_HEADERS = [
     "💥 PREÇO IMPERDÍVEL 💥",
 ]
 
+SABADAO_HEADERS = [
+    "🎉 SABADÃO DE OFERTA 🎉",
+    "🔥 ESPECIAL DE SÁBADO 🔥",
+    "🛍️ TOP DO SABADÃO 🛍️",
+]
+
 NORMAL_HEADER_TEMPLATES = [
     "{e} ACHADINHO DO DIA {e}",
     "{e} VALE A PENA CONFERIR {e}",
@@ -109,7 +115,7 @@ def _fmt_price(v):
         return str(v)
 
 
-def build_caption(p, style="telegram"):
+def build_caption(p, style="telegram", theme=None):
     b, i, s = ("<b>", "<i>", "<s>") if style == "telegram" else ("*", "_", "~")
     b_, i_, s_ = ("</b>", "</i>", "</s>") if style == "telegram" else ("*", "_", "~")
 
@@ -121,7 +127,9 @@ def build_caption(p, style="telegram"):
 
     opener = random.choice(NICHE_OPENERS.get(niche, DEFAULT_OPENERS))
 
-    if discount >= 50:
+    if theme == "sabadao":
+        header = random.choice(SABADAO_HEADERS)
+    elif discount >= 50:
         header = random.choice(HIGH_DISCOUNT_HEADERS)
     else:
         header = random.choice(NORMAL_HEADER_TEMPLATES).format(e=emoji)
