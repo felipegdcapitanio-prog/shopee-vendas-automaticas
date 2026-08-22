@@ -21,6 +21,9 @@ from datetime import datetime
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
+sys.path.insert(0, os.path.dirname(__file__))
+from caption_builder import build_caption
+
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 CATALOG_PATH = os.path.join(ROOT, "data", "catalogo_produtos.json")
 WHATSAPP_POSTED_PATH = os.path.join(ROOT, "data", "whatsapp_posted_ids.json")
@@ -28,24 +31,6 @@ OUT_DIR = os.path.join(ROOT, "data", "whatsapp_digests")
 
 DEFAULT_COUNT = 20
 DEFAULT_COOLDOWN_DAYS = 5
-
-NICHE_EMOJI = {
-    "Beleza & Skincare": "🧴",
-    "Maquiagem": "💄",
-    "Moda Feminina": "👗",
-    "Calçados": "👟",
-    "Decoração de Casa": "🏠",
-    "Ferramentas": "🛠️",
-    "Iluminação": "💡",
-}
-
-
-def fmt_price(v):
-    try:
-        return f"{float(v):.2f}".replace(".", ",")
-    except (TypeError, ValueError):
-        return str(v)
-
 
 def load_posted_map():
     if not os.path.exists(WHATSAPP_POSTED_PATH):
@@ -58,36 +43,6 @@ def save_posted_map(m):
     os.makedirs(os.path.dirname(WHATSAPP_POSTED_PATH), exist_ok=True)
     with open(WHATSAPP_POSTED_PATH, "w", encoding="utf-8") as f:
         json.dump({str(k): v for k, v in m.items()}, f, ensure_ascii=False, indent=2)
-
-
-def build_caption_whatsapp(p):
-    price_min = float(p["priceMin"])
-    discount = p["discountRate"]
-    original = price_min / (1 - discount / 100) if discount > 0 else None
-    niche_emoji = NICHE_EMOJI.get(p["niche"], "🛍️")
-
-    lines = []
-    if discount >= 50:
-        lines.append("🔥 *OFERTA RELÂMPAGO* 🔥")
-    else:
-        lines.append(f"{niche_emoji} *ACHADINHO DO DIA* {niche_emoji}")
-    if discount > 0:
-        lines.append(f"📉 *-{discount}% OFF*")
-    lines.append("")
-    lines.append(f"*{p['productName'].strip()}*")
-    lines.append("")
-    if original:
-        lines.append(f"💸 De: ~R$ {fmt_price(original)}~")
-        lines.append(f"✅ Por: *R$ {fmt_price(price_min)}*")
-    else:
-        lines.append(f"✅ *R$ {fmt_price(price_min)}*")
-    lines.append("")
-    lines.append(f"⭐ {p['ratingStar']}  ·  🛍️ {p['sales']} vendidos  ·  {niche_emoji} {p['niche']}")
-    lines.append("")
-    lines.append(f"👉 *Garanta o seu aqui:*\n{p['offerLink']}")
-    lines.append("")
-    lines.append("⏳ _Oferta por tempo limitado, pode acabar a qualquer momento._")
-    return "\n".join(lines)
 
 
 def main():
@@ -122,7 +77,7 @@ def main():
         for i, p in enumerate(selected, 1):
             f.write(f"--- PRODUTO {i}/{len(selected)} ---\n")
             f.write(f"Imagem: {p['imageUrl']}\n\n")
-            f.write(build_caption_whatsapp(p))
+            f.write(build_caption(p, style="whatsapp"))
             f.write("\n\n")
 
     posted_map.update({p["itemId"]: int(now) for p in selected})

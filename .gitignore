@@ -2,5 +2,7 @@
 .env.*
 !.env.example
 node_modules/
+__pycache__/
+*.pyc
 data/daily-post-run.log
 data/refresh-catalog-run.log

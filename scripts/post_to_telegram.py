@@ -26,6 +26,9 @@ import urllib.request
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
+sys.path.insert(0, os.path.dirname(__file__))
+from caption_builder import build_caption
+
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 ENV_PATH = os.path.join(ROOT, ".env")
 CATALOG_PATH = os.path.join(ROOT, "data", "catalogo_produtos.json")
@@ -69,54 +72,6 @@ def save_posted_map(posted_map):
     os.makedirs(os.path.dirname(POSTED_PATH), exist_ok=True)
     with open(POSTED_PATH, "w", encoding="utf-8") as f:
         json.dump({str(k): v for k, v in posted_map.items()}, f, ensure_ascii=False, indent=2)
-
-
-def fmt_price(v):
-    try:
-        return f"{float(v):.2f}".replace(".", ",")
-    except (TypeError, ValueError):
-        return str(v)
-
-
-NICHE_EMOJI = {
-    "Beleza & Skincare": "🧴",
-    "Maquiagem": "💄",
-    "Moda Feminina": "👗",
-    "Calçados": "👟",
-    "Decoração de Casa": "🏠",
-    "Ferramentas": "🛠️",
-    "Iluminação": "💡",
-}
-
-
-def build_caption(p):
-    price_min = float(p["priceMin"])
-    discount = p["discountRate"]
-    original = price_min / (1 - discount / 100) if discount > 0 else None
-    niche_emoji = NICHE_EMOJI.get(p["niche"], "🛍️")
-
-    lines = []
-    if discount >= 50:
-        lines.append("🔥 <b>OFERTA RELÂMPAGO</b> 🔥")
-    else:
-        lines.append(f"{niche_emoji} <b>ACHADINHO DO DIA</b> {niche_emoji}")
-    if discount > 0:
-        lines.append(f"📉 <b>-{discount}% OFF</b>")
-    lines.append("")
-    lines.append(f"<b>{p['productName'].strip()}</b>")
-    lines.append("")
-    if original:
-        lines.append(f"💸 De: <s>R$ {fmt_price(original)}</s>")
-        lines.append(f"✅ Por: <b>R$ {fmt_price(price_min)}</b>")
-    else:
-        lines.append(f"✅ <b>R$ {fmt_price(price_min)}</b>")
-    lines.append("")
-    lines.append(f"⭐ {p['ratingStar']}  ·  🛍️ {p['sales']} vendidos  ·  {niche_emoji} {p['niche']}")
-    lines.append("")
-    lines.append(f"👉 <b>Garanta o seu aqui:</b>\n{p['offerLink']}")
-    lines.append("")
-    lines.append("⏳ <i>Oferta por tempo limitado, pode acabar a qualquer momento.</i>")
-    return "\n".join(lines)
 
 
 def send_photo(token, chat_id, photo_url, caption):
@@ -179,7 +134,7 @@ def main():
     log = []
     newly_posted = {}
     for i, p in enumerate(catalog, 1):
-        caption = build_caption(p)
+        caption = build_caption(p, style="telegram")
         print(f"\n[{i}/{len(catalog)}] {p['productName'][:60]}")
         print(caption)
 
