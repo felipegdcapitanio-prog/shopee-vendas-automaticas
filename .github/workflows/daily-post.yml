@@ -2,8 +2,10 @@ name: Postagem no Telegram a cada 8 min
 
 on:
   schedule:
-    - cron: "*/8 * * * *"  # a cada 8 minutos, 24h por dia (~180 posts/dia, teto)
-  workflow_dispatch: {}      # permite rodar manualmente pela aba Actions
+    - cron: "*/20 * * * *"  # fallback -- o GitHub atrasa cron muito frequente, então o
+                             # disparo de verdade a cada 8 min vem de fora (cron-job.org
+                             # chamando workflow_dispatch, que não sofre esse atraso)
+  workflow_dispatch: {}      # disparado pelo cron-job.org a cada 8 min, e manualmente pela aba Actions
 
 permissions:
   contents: write
