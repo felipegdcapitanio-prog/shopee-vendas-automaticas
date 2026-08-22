@@ -6,15 +6,24 @@ reciclar os já postados há mais tempo (respeitando um cooldown mínimo em
 dias), sempre desempatando por maior desconto. Isso permite rodar isto
 com alta frequência (ex: a cada 30 min, 48x/dia) sem esgotar o catálogo.
 
+O agendamento do GitHub Actions (cron) não tem garantia de disparar
+exatamente a cada 30 min — em período de fila alta ele atrasa ou pula
+execuções. Por isso o padrão aqui não é mais "postar sempre 1": o script
+calcula quantos posts JÁ deveriam ter saído hoje (com base na hora atual,
+meta de 48/dia = 1 a cada 30 min) e quantos realmente saíram, e posta a
+diferença de uma vez (até um teto de segurança por execução). Isso faz o
+volume diário se corrigir sozinho mesmo se o cron atrasar ou pular horários.
+
 Uso:
-    python scripts/post_to_telegram.py                  # posta 1 produto (padrão, pensado pra rodar de 30 em 30 min)
+    python scripts/post_to_telegram.py                  # modo automático: posta o que estiver atrasado pra bater a meta do dia
     python scripts/post_to_telegram.py --dry-run         # só mostra o que seria postado
     python scripts/post_to_telegram.py --niche "Maquiagem"
-    python scripts/post_to_telegram.py --limit 10
+    python scripts/post_to_telegram.py --limit 10        # força uma quantidade fixa, ignora o cálculo automático
     python scripts/post_to_telegram.py --cooldown-days 3 # muda o mínimo de dias antes de repetir um produto
 """
 
 import argparse
+import datetime
 import json
 import os
 import sys
@@ -36,8 +45,35 @@ LOG_PATH = os.path.join(ROOT, "data", "log_postagens.json")
 POSTED_PATH = os.path.join(ROOT, "data", "posted_ids.json")
 
 DELAY_BETWEEN_POSTS = 3  # segundos, evita rate limit do Telegram
-DEFAULT_LIMIT = 1  # 1 por execução, pensado pra rodar a cada 30 min (48/dia)
 DEFAULT_COOLDOWN_DAYS = 5  # dias mínimos antes de repetir um produto
+
+BR_UTC_OFFSET_HOURS = -3  # Brasil não tem mais horário de verão
+POSTS_PER_DAY_TARGET = 48
+SLOT_MINUTES = 24 * 60 / POSTS_PER_DAY_TARGET  # 30
+MAX_CATCHUP_PER_RUN = 10  # teto de segurança pra não inundar o canal se ficar horas sem rodar
+
+
+def br_now():
+    return datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=BR_UTC_OFFSET_HOURS)
+
+
+def br_date_str(ts):
+    dt = datetime.datetime.fromtimestamp(ts, datetime.timezone.utc) + datetime.timedelta(hours=BR_UTC_OFFSET_HOURS)
+    return dt.strftime("%Y-%m-%d")
+
+
+def expected_posts_so_far(dt):
+    minutes_since_midnight = dt.hour * 60 + dt.minute
+    slots = int(minutes_since_midnight // SLOT_MINUTES) + 1
+    return min(slots, POSTS_PER_DAY_TARGET)
+
+
+def count_posted_today(log_path, today_str):
+    if not os.path.exists(log_path):
+        return 0
+    with open(log_path, "r", encoding="utf-8") as f:
+        log = json.load(f)
+    return sum(1 for e in log if e.get("ok") and br_date_str(e.get("ts", 0)) == today_str)
 
 
 def load_env(path):
@@ -91,7 +127,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="não posta, só mostra o que seria enviado")
     parser.add_argument("--niche", default=None, help="filtra por nicho exato")
-    parser.add_argument("--limit", type=int, default=DEFAULT_LIMIT, help=f"quantidade máxima de posts (padrão {DEFAULT_LIMIT})")
+    parser.add_argument("--limit", type=int, default=None, help="quantidade fixa de posts nesta execução (se omitido, calcula automaticamente pra bater a meta diária)")
     parser.add_argument("--cooldown-days", type=float, default=DEFAULT_COOLDOWN_DAYS, help=f"dias mínimos antes de repetir um produto (padrão {DEFAULT_COOLDOWN_DAYS})")
     args = parser.parse_args()
 
@@ -114,6 +150,18 @@ def main():
     cooldown_seconds = args.cooldown_days * 86400
     now = time.time()
 
+    if args.limit is not None:
+        run_limit = args.limit
+    else:
+        today_str = br_date_str(now)
+        expected = expected_posts_so_far(br_now())
+        already = count_posted_today(LOG_PATH, today_str)
+        run_limit = max(0, min(expected - already, MAX_CATCHUP_PER_RUN))
+        print(f"[auto] esperado até agora hoje: {expected}, já postado hoje: {already} -> postando {run_limit} nesta execução")
+        if run_limit == 0:
+            print("Já está em dia com a meta de 48/dia neste horário. Nada a postar agora.")
+            return
+
     eligible = [
         p for p in catalog
         if (now - posted_map.get(p["itemId"], 0)) >= cooldown_seconds
@@ -123,8 +171,7 @@ def main():
     # desempate por maior desconto (gatilho de atração de lead)
     eligible.sort(key=lambda p: (posted_map.get(p["itemId"], 0), -p["discountRate"]))
 
-    if args.limit:
-        eligible = eligible[: args.limit]
+    eligible = eligible[:run_limit]
 
     if not eligible:
         print(f"Nada elegível pra postar agora (tudo em cooldown de {args.cooldown_days} dias). Rode find_products.py pra renovar o catálogo.")
