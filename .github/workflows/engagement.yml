@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: telegram-post
+  cancel-in-progress: false
+
 jobs:
   engage:
     runs-on: ubuntu-latest
