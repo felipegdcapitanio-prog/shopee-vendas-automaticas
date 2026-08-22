@@ -87,8 +87,14 @@ def main():
     html_path = os.path.join(OUT_DIR, f"whatsapp_{today}.html")
     write_html_page(selected, html_path, today)
 
+    # copia de nome fixo, sempre sobrescrita -- pra poder abrir com um atalho
+    # fixo (area de trabalho) sem precisar achar o arquivo do dia
+    stable_path = os.path.join(OUT_DIR, "fila_atual.html")
+    write_html_page(selected, stable_path, today)
+
     print(f"{len(selected)} produtos gerados em: {out_path}")
     print(f"Pagina de postagem (abra no navegador): {html_path}")
+    print(f"Atalho fixo (sempre a versao mais recente): {stable_path}")
 
 
 def write_html_page(products, out_path, date_label):

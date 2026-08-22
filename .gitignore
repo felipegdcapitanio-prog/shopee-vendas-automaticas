@@ -6,3 +6,4 @@ __pycache__/
 *.pyc
 data/daily-post-run.log
 data/refresh-catalog-run.log
+data/sync-run.log
