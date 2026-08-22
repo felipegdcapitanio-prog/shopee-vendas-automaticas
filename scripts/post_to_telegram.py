@@ -49,9 +49,10 @@ DELAY_BETWEEN_POSTS = 3  # segundos, evita rate limit do Telegram
 DEFAULT_COOLDOWN_DAYS = 3  # dias mínimos antes de repetir um produto (menos se ele estiver vendendo bem, ver sales_data.py)
 
 BR_UTC_OFFSET_HOURS = -3  # Brasil não tem mais horário de verão
-POSTS_PER_DAY_TARGET = 180  # a cada 8 min, 24h por dia
-SLOT_MINUTES = 8
-MAX_CATCHUP_PER_RUN = 25  # teto de segurança pra não inundar o canal se ficar horas sem rodar
+POSTS_PER_DAY_TARGET = 144  # a cada 10 min, 24h por dia -- disparo real vem do cron-job.org
+SLOT_MINUTES = 10
+MAX_CATCHUP_PER_RUN = 2  # o disparo externo já é pontual; isso é só uma folga pra um atraso raro,
+                          # não um jeito de despejar um lote grande de uma vez
 
 
 def br_now():
