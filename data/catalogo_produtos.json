@@ -1,5 +1,5 @@
 {
-  "generated_at": 1787359060,
+  "generated_at": 1787392415,
   "products": [
     {
       "niche": "Beleza & Skincare",
@@ -45,7 +45,7 @@
       "itemId": 43379191657,
       "productName": " Caneta Corretiva Hidratante ZVEV, Ilumina e Longa Duração, Ideal para Olheiras e Manchas",
       "priceMin": "6.05",
-      "priceMax": "20.67",
+      "priceMax": "11.95",
       "discountRate": 77,
       "commissionRate": 0.08,
       "sales": 9051,
@@ -161,7 +161,7 @@
       "niche": "Beleza & Skincare",
       "itemId": 58264684239,
       "productName": "Kit Clareador Facial - Sabonete Líquido + Protetor Solar Clareador 70 FPS + Sérum Multicorretivo Clareador",
-      "priceMin": "79.9",
+      "priceMin": "78.9",
       "priceMax": "193.9",
       "discountRate": 50,
       "commissionRate": 0.13,
@@ -198,19 +198,6 @@
     },
     {
       "niche": "Beleza & Skincare",
-      "itemId": 23394690451,
-      "productName": "Principia Kit Completo Peles Sensíveis c/ Gel de Limpeza GL-02 + Creme Hidratante CH-01 + Protetor Solar PS-01 FPS 60",
-      "priceMin": "93.99",
-      "priceMax": "93.99",
-      "discountRate": 38,
-      "commissionRate": 0.13,
-      "sales": 4051,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-mh9d339f89af1c",
-      "offerLink": "https://s.shopee.com.br/3Vje6iOF6D"
-    },
-    {
-      "niche": "Beleza & Skincare",
       "itemId": 24812465165,
       "productName": "Langmanni 12ml Creme Base Corretivo Hidratante-Ilumina O Tom Da Pele , Longa Duração",
       "priceMin": "9.03",
@@ -237,6 +224,19 @@
     },
     {
       "niche": "Beleza & Skincare",
+      "itemId": 28867680104,
+      "productName": "[NEW] NUMBUZIN No.9 NAD BIO Lifting Sil Essence 30ml, 50ml",
+      "priceMin": "63.99",
+      "priceMax": "93.99",
+      "discountRate": 34,
+      "commissionRate": 0.21,
+      "sales": 1649,
+      "ratingStar": "5",
+      "imageUrl": "https://cf.shopee.com.br/file/sg-11134207-8257x-mrgvlvtzbjt2da",
+      "offerLink": "https://s.shopee.com.br/7KwMm6r9C7"
+    },
+    {
+      "niche": "Beleza & Skincare",
       "itemId": 29239204253,
       "productName": "BB Cream Compre Um E Ganhe Outro Grátis Base De Maquiagem Hidratante Suave Creme Corretivo Almofada Nutritiva Em Pó",
       "priceMin": "37.99",
@@ -247,6 +247,19 @@
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/cn-11134211-820l4-mj3wz1153f2f8c",
       "offerLink": "https://s.shopee.com.br/60Qz5JIqlX"
+    },
+    {
+      "niche": "Beleza & Skincare",
+      "itemId": 25316598909,
+      "productName": "SKIN1004 Madagascar Centella Asiatica Ampoule Facial Serum 55ml, 100ml",
+      "priceMin": "58.99",
+      "priceMax": "89.99",
+      "discountRate": 32,
+      "commissionRate": 0.21,
+      "sales": 1815,
+      "ratingStar": "5",
+      "imageUrl": "https://cf.shopee.com.br/file/sg-11134207-825a7-mrh1civb1l36ec",
+      "offerLink": "https://s.shopee.com.br/6fgfystgY3"
     },
     {
       "niche": "Beleza & Skincare",
@@ -286,6 +299,19 @@
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820l6-mq3nf4vg8k5f75",
       "offerLink": "https://s.shopee.com.br/4LIl6FL4PC"
+    },
+    {
+      "niche": "Beleza & Skincare",
+      "itemId": 23394690451,
+      "productName": "Principia Kit Completo Peles Sensíveis c/ Gel de Limpeza GL-02 + Creme Hidratante CH-01 + Protetor Solar PS-01 FPS 60",
+      "priceMin": "114.74",
+      "priceMax": "114.74",
+      "discountRate": 24,
+      "commissionRate": 0.13,
+      "sales": 4051,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-mh9d339f89af1c",
+      "offerLink": "https://s.shopee.com.br/3Vje6iOF6D"
     },
     {
       "niche": "Beleza & Skincare",
@@ -409,7 +435,7 @@
       "itemId": 23698653822,
       "productName": "Corretivo Hidratante Belas Garden",
       "priceMin": "59.75",
-      "priceMax": "63",
+      "priceMax": "59.75",
       "discountRate": 12,
       "commissionRate": 0.11,
       "sales": 541,
@@ -496,32 +522,6 @@
       "offerLink": "https://s.shopee.com.br/9KhR9mans1"
     },
     {
-      "niche": "Beleza & Skincare",
-      "itemId": 40627735002,
-      "productName": "Principia Protetor Solar PS-05 Cor 2.0 c/ 14,5% Mix de Filtros UV + 5% Niacinamida FPS 70 - 30ml",
-      "priceMin": "49",
-      "priceMax": "49",
-      "discountRate": 9,
-      "commissionRate": 0.16,
-      "sales": 4336,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81ztc-mj22axqzf5dt68",
-      "offerLink": "https://s.shopee.com.br/9pdhkhYtr8"
-    },
-    {
-      "niche": "Beleza & Skincare",
-      "itemId": 8509877651,
-      "productName": "Sérum Principia 10% Niacinamida + 1% Zinco Pca NC-10",
-      "priceMin": "59",
-      "priceMax": "59",
-      "discountRate": 9,
-      "commissionRate": 0.16,
-      "sales": 3203,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-miajsqf4sgsm59",
-      "offerLink": "https://s.shopee.com.br/5LBIOQylFf"
-    },
-    {
       "niche": "Maquiagem",
       "itemId": 57404736397,
       "productName": " Life Girls Máscara de Cílios à Prova d'Água, à Prova de Manchas & Curvadora para Cílios Volumosos e Naturais, Com Base",
@@ -539,7 +539,7 @@
       "itemId": 47204031915,
       "productName": "Batom De Veludo Com Glitter Rosa Perolado-Brilho Metálico À Prova D'água De Longa Duração , Escolha Maquiagem Oficial Ac",
       "priceMin": "10.86",
-      "priceMax": "10.89",
+      "priceMax": "14.89",
       "discountRate": 84,
       "commissionRate": 0.09,
       "sales": 2509,
@@ -809,6 +809,19 @@
     },
     {
       "niche": "Maquiagem",
+      "itemId": 25583979154,
+      "productName": "120 Paleta De Sombra Colorida Mate Maquiagem Altamente Pigmentada Em Pó Longa Duração À Prova D'água",
+      "priceMin": "36.16",
+      "priceMax": "36.16",
+      "discountRate": 45,
+      "commissionRate": 0.11,
+      "sales": 429,
+      "ratingStar": "4.7",
+      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7rdyl-mcamfjuyaj3r09",
+      "offerLink": "https://s.shopee.com.br/4VcBIYbxxt"
+    },
+    {
+      "niche": "Maquiagem",
       "itemId": 21399092679,
       "productName": "Protetor Solar Facial com Base em Bastão FPS 50 Efeito Matte Sunless Stick Envio Imediato",
       "priceMin": "57.99",
@@ -871,19 +884,6 @@
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7rav2-mal7vfxkzytfaa",
       "offerLink": "https://s.shopee.com.br/AAGY2yBzdt"
-    },
-    {
-      "niche": "Maquiagem",
-      "itemId": 25583979154,
-      "productName": "120 Paleta De Sombra Colorida Mate Maquiagem Altamente Pigmentada Em Pó Longa Duração À Prova D'água",
-      "priceMin": "43.41",
-      "priceMax": "43.41",
-      "discountRate": 34,
-      "commissionRate": 0.11,
-      "sales": 429,
-      "ratingStar": "4.7",
-      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7rdyl-mcamfjuyaj3r09",
-      "offerLink": "https://s.shopee.com.br/4VcBIYbxxt"
     },
     {
       "niche": "Maquiagem",
@@ -955,26 +955,13 @@
       "itemId": 41728036780,
       "productName": "2/4 Pçs Moda Quadrada Relógios Femininos Casual Pulseira De Silicone Relógio De Pulso De Quartzo Com Coração Conjunto Me",
       "priceMin": "9.43",
-      "priceMax": "31.78",
+      "priceMax": "26.01",
       "discountRate": 89,
       "commissionRate": 0.09,
       "sales": 5453,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-82598-mrbb9hx9nri850",
       "offerLink": "https://s.shopee.com.br/5q7YzMjOLw"
-    },
-    {
-      "niche": "Moda Feminina",
-      "itemId": 23898670446,
-      "productName": "KIT 3 Blusas Feminina Manga Longa Cacharrel Confortável Básico Gola Alta",
-      "priceMin": "44.56",
-      "priceMax": "49.47",
-      "discountRate": 70,
-      "commissionRate": 0.19,
-      "sales": 4702,
-      "ratingStar": "4.7",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfes7idiiy9wa2",
-      "offerLink": "https://s.shopee.com.br/7AcwTSf0uz"
     },
     {
       "niche": "Moda Feminina",
@@ -988,6 +975,19 @@
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m04irv7zta3rc7",
       "offerLink": "https://s.shopee.com.br/7KwMfleNZy"
+    },
+    {
+      "niche": "Moda Feminina",
+      "itemId": 23898670446,
+      "productName": "KIT 3 Blusas Feminina Manga Longa Cacharrel Confortável Básico Gola Alta",
+      "priceMin": "49.47",
+      "priceMax": "49.47",
+      "discountRate": 67,
+      "commissionRate": 0.19,
+      "sales": 4702,
+      "ratingStar": "4.7",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfes7idiiy9wa2",
+      "offerLink": "https://s.shopee.com.br/7AcwTSf0uz"
     },
     {
       "niche": "Moda Feminina",
@@ -1006,9 +1006,9 @@
       "niche": "Moda Feminina",
       "itemId": 21498186108,
       "productName": "Kit 5 Calcinhas Sem costura Tanga corte a Laser Não Marca na Roupa Invisível Academia Justo Conforto",
-      "priceMin": "16.78",
+      "priceMin": "16.5",
       "priceMax": "23.49",
-      "discountRate": 66,
+      "discountRate": 67,
       "commissionRate": 0.13,
       "sales": 8812,
       "ratingStar": "4.3",
@@ -1059,7 +1059,7 @@
       "itemId": 22297711029,
       "productName": "KIT 3: Baby Tee Feminina - Blusa Slim Fit Manga Curta - Blusa de Compressão",
       "priceMin": "42.3",
-      "priceMax": "42.99",
+      "priceMax": "42.3",
       "discountRate": 53,
       "commissionRate": 0.16,
       "sales": 4830,
@@ -1098,7 +1098,7 @@
       "itemId": 49756027080,
       "productName": "Lovito Regata Moda Contrastante Basica Elegante Moda Feminina TKNS38BX002",
       "priceMin": "16.9",
-      "priceMax": "16.9",
+      "priceMax": "31.9",
       "discountRate": 47,
       "commissionRate": 0.18,
       "sales": 11565,
@@ -1137,7 +1137,7 @@
       "itemId": 44467503760,
       "productName": "Regata Alça Fina Fitness Blusa Feminino Liso Poliamida Tank Top Slim Camiseta Academia Verão",
       "priceMin": "37.9",
-      "priceMax": "37.9",
+      "priceMax": "39.9",
       "discountRate": 46,
       "commissionRate": 0.18,
       "sales": 4223,
@@ -1240,9 +1240,9 @@
       "niche": "Moda Feminina",
       "itemId": 21038591899,
       "productName": "Kit 6 Peças Roupa Infantil Menina Conjunto Verão Algodão 3 Camisetas + 3 Shorts",
-      "priceMin": "45.9",
-      "priceMax": "72.9",
-      "discountRate": 42,
+      "priceMin": "47.9",
+      "priceMax": "76.9",
+      "discountRate": 39,
       "commissionRate": 0.13,
       "sales": 2874,
       "ratingStar": "4.8",
@@ -1290,10 +1290,23 @@
     },
     {
       "niche": "Moda Feminina",
+      "itemId": 22894748403,
+      "productName": "Kit 3 Blusas Feminina Plus Size Gola V Básica Casual - H00",
+      "priceMin": "48.49",
+      "priceMax": "48.49",
+      "discountRate": 30,
+      "commissionRate": 0.08,
+      "sales": 3906,
+      "ratingStar": "4.8",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lb-moees5a8y32e94",
+      "offerLink": "https://s.shopee.com.br/2qTxJUvVi3"
+    },
+    {
+      "niche": "Moda Feminina",
       "itemId": 44410683550,
       "productName": "Conjunto Feminino Calça Pantalona com Blusa feminina Manga Curta",
       "priceMin": "59.93",
-      "priceMax": "69.9",
+      "priceMax": "69.89",
       "discountRate": 25,
       "commissionRate": 0.13,
       "sales": 4715,
@@ -1324,7 +1337,7 @@
       "commissionRate": 0.23,
       "sales": 5458,
       "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7rd52-m7wmqucrqn5354",
+      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7rd4k-m7wmqzkvz4x3e4",
       "offerLink": "https://s.shopee.com.br/3g34J1sL16"
     },
     {
@@ -1332,7 +1345,7 @@
       "itemId": 23597279828,
       "productName": "Pijama Hospitalar Cirúrgico Scrub Feminino Acinturado Varias Cores Tamanhos",
       "priceMin": "44.99",
-      "priceMax": "47.41",
+      "priceMax": "55.19",
       "discountRate": 25,
       "commissionRate": 0.1,
       "sales": 3144,
@@ -1352,19 +1365,6 @@
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820l6-mlcl7g3z7hms01",
       "offerLink": "https://s.shopee.com.br/6q064qgHax"
-    },
-    {
-      "niche": "Moda Feminina",
-      "itemId": 22894748403,
-      "productName": "Kit 3 Blusas Feminina Plus Size Gola V Básica Casual - H00",
-      "priceMin": "56.99",
-      "priceMax": "56.99",
-      "discountRate": 18,
-      "commissionRate": 0.08,
-      "sales": 3906,
-      "ratingStar": "4.8",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lb-moees5a8y32e94",
-      "offerLink": "https://s.shopee.com.br/2qTxJUvVi3"
     },
     {
       "niche": "Moda Feminina",
@@ -1394,29 +1394,29 @@
     },
     {
       "niche": "Calçados",
-      "itemId": 58263443418,
-      "productName": "Bota Infantil Menina Coturno Cano Curto Feminina Blogueira Juvenil Tratorada",
-      "priceMin": "19.89",
-      "priceMax": "19.89",
-      "discountRate": 72,
-      "commissionRate": 0.08,
-      "sales": 4162,
-      "ratingStar": "4.8",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820mf-mr7dzhf6p0cl83",
-      "offerLink": "https://s.shopee.com.br/4qF1nXHrMZ"
-    },
-    {
-      "niche": "Calçados",
       "itemId": 23093824562,
       "productName": "Tênis Casual Branco Feminino Masculino Conforto Premium Academia Original",
       "priceMin": "29.9",
-      "priceMax": "58.95",
+      "priceMax": "49.95",
       "discountRate": 70,
       "commissionRate": 0.08,
       "sales": 6685,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfn8h5ufyu4kb0",
       "offerLink": "https://s.shopee.com.br/2LXgia6HTk"
+    },
+    {
+      "niche": "Calçados",
+      "itemId": 58263443418,
+      "productName": "Bota Infantil Menina Coturno Cano Curto Feminina Blogueira Juvenil Tratorada",
+      "priceMin": "21.9",
+      "priceMax": "21.9",
+      "discountRate": 69,
+      "commissionRate": 0.08,
+      "sales": 4162,
+      "ratingStar": "4.8",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820mf-mr7dzhf6p0cl83",
+      "offerLink": "https://s.shopee.com.br/4qF1nXHrMZ"
     },
     {
       "niche": "Calçados",
@@ -1472,6 +1472,19 @@
     },
     {
       "niche": "Calçados",
+      "itemId": 23293827748,
+      "productName": "Bota Feminina GiGiL Cano Longo Enrugado Slouch Bico Fino Salto Bloco Médio Elegante Clássica Casual",
+      "priceMin": "119.55",
+      "priceMax": "119.55",
+      "discountRate": 60,
+      "commissionRate": 0.1,
+      "sales": 2457,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m8luys2i8oep28",
+      "offerLink": "https://s.shopee.com.br/40fuo0L23S"
+    },
+    {
+      "niche": "Calçados",
       "itemId": 23694995837,
       "productName": "Sandália babuche Feminino EVA Com enfeite Sapato Confortável Modinha Antiderrapante",
       "priceMin": "29.99",
@@ -1508,19 +1521,6 @@
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m85ec5iriju9db",
       "offerLink": "https://s.shopee.com.br/3LQE0mNZPO"
-    },
-    {
-      "niche": "Calçados",
-      "itemId": 23293827748,
-      "productName": "Bota Feminina GiGiL Cano Longo Enrugado Slouch Bico Fino Salto Bloco Médio Elegante Clássica Casual",
-      "priceMin": "139.99",
-      "priceMax": "139.99",
-      "discountRate": 53,
-      "commissionRate": 0.1,
-      "sales": 2457,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m8luys2i8oep28",
-      "offerLink": "https://s.shopee.com.br/40fuo0L23S"
     },
     {
       "niche": "Calçados",
@@ -1579,7 +1579,7 @@
       "itemId": 22793684140,
       "productName": "Tênis Feminino Esportivo Leve e mácio Academia Corrida",
       "priceMin": "29",
-      "priceMax": "50",
+      "priceMax": "32.5",
       "discountRate": 42,
       "commissionRate": 0.13,
       "sales": 5327,
@@ -1589,24 +1589,11 @@
     },
     {
       "niche": "Calçados",
-      "itemId": 14263042301,
-      "productName": "Tenis Infantil Feminino Menina Escolar Pronta Entrega",
-      "priceMin": "55.9",
-      "priceMax": "55.9",
-      "discountRate": 41,
-      "commissionRate": 0.1,
-      "sales": 2240,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lo-mrhgxq5hee4ke8",
-      "offerLink": "https://s.shopee.com.br/50YRtTw84W"
-    },
-    {
-      "niche": "Calçados",
       "itemId": 40360368378,
       "productName": "Sandalia Slide Feminina Ortopedica Palmilha Anatômica e Estilo Casual",
-      "priceMin": "91.99",
-      "priceMax": "99.9",
-      "discountRate": 41,
+      "priceMin": "89.99",
+      "priceMax": "91.99",
+      "discountRate": 43,
       "commissionRate": 0.1,
       "sales": 2348,
       "ratingStar": "5",
@@ -1617,9 +1604,9 @@
       "niche": "Calçados",
       "itemId": 19071764317,
       "productName": "Bota Feminina Lumiss Salto Alto Grosso Cano Curto Bico Quadrado Calce Fácil Zíper Confortável",
-      "priceMin": "99.9",
+      "priceMin": "82.37",
       "priceMax": "99.9",
-      "discountRate": 29,
+      "discountRate": 41,
       "commissionRate": 0.16,
       "sales": 1097,
       "ratingStar": "4.9",
@@ -1628,11 +1615,37 @@
     },
     {
       "niche": "Calçados",
+      "itemId": 14263042301,
+      "productName": "Tenis Infantil Feminino Menina Escolar Pronta Entrega",
+      "priceMin": "59.79",
+      "priceMax": "64.54",
+      "discountRate": 37,
+      "commissionRate": 0.1,
+      "sales": 2240,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lo-mrhgxq5hee4ke8",
+      "offerLink": "https://s.shopee.com.br/50YRtTw84W"
+    },
+    {
+      "niche": "Calçados",
+      "itemId": 22599442341,
+      "productName": "chinelo adulto feminino sandália feminina chinelo nuvem Eva",
+      "priceMin": "25.53",
+      "priceMax": "31.52",
+      "discountRate": 36,
+      "commissionRate": 0.08,
+      "sales": 4656,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820l7-mn4eom73zhtw70",
+      "offerLink": "https://s.shopee.com.br/4AzKtx3dIk"
+    },
+    {
+      "niche": "Calçados",
       "itemId": 58209320558,
       "productName": "chinelo nuvem chinelo adulto feminino sandália",
-      "priceMin": "29.92",
-      "priceMax": "31.92",
-      "discountRate": 25,
+      "priceMin": "28.32",
+      "priceMax": "31.52",
+      "discountRate": 29,
       "commissionRate": 0.08,
       "sales": 5717,
       "ratingStar": "4.8",
@@ -1653,19 +1666,6 @@
       "offerLink": "https://s.shopee.com.br/2BEGWH6uol"
     },
     {
-      "niche": "Calçados",
-      "itemId": 22599442341,
-      "productName": "chinelo adulto feminino sandália feminina chinelo nuvem Eva",
-      "priceMin": "31.52",
-      "priceMax": "39.9",
-      "discountRate": 21,
-      "commissionRate": 0.08,
-      "sales": 4656,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820l7-mn4eom73zhtw70",
-      "offerLink": "https://s.shopee.com.br/4AzKtx3dIk"
-    },
-    {
       "niche": "Decoração de Casa",
       "itemId": 21440444359,
       "productName": "KIT 10/20/30 Gancho Adesivo/ Parede Multifuncional Autocolante Casa Cozinha Quarto Banheiro Organizado",
@@ -1683,7 +1683,7 @@
       "itemId": 22798029642,
       "productName": "Papel Adesivo Mármore Dourado Exclusivo Lavável Quarto, Sala e Cozinha 1/2/3 Peças",
       "priceMin": "13.98",
-      "priceMax": "51.29",
+      "priceMax": "54.99",
       "discountRate": 73,
       "commissionRate": 0.08,
       "sales": 4118,
@@ -1774,7 +1774,7 @@
       "itemId": 47305656878,
       "productName": "Espelho Redondo Decorativo Adnet Alça Couro Suporte 60cm Sala Quarto Banheiro",
       "priceMin": "19.95",
-      "priceMax": "69.95",
+      "priceMax": "69.85",
       "discountRate": 55,
       "commissionRate": 0.13,
       "sales": 5774,
@@ -1807,6 +1807,19 @@
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m8ni4a7uqrgx6a",
       "offerLink": "https://s.shopee.com.br/1Lf9WkNHrG"
+    },
+    {
+      "niche": "Decoração de Casa",
+      "itemId": 23397600706,
+      "productName": "Cesto De Roupa 40x70 30x50Cm Caixa Dobrável Brinquedos Cesto Diversa Organizador Cozinha Quarto Casa",
+      "priceMin": "10.9",
+      "priceMax": "13.9",
+      "discountRate": 49,
+      "commissionRate": 0.13,
+      "sales": 4273,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-mabeeeswsx4mc1",
+      "offerLink": "https://s.shopee.com.br/60QzBgZHMl"
     },
     {
       "niche": "Decoração de Casa",
@@ -1846,19 +1859,6 @@
       "ratingStar": "4.6",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81ztc-mje7oh1367sye7",
       "offerLink": "https://s.shopee.com.br/2LXgowwAtw"
-    },
-    {
-      "niche": "Decoração de Casa",
-      "itemId": 23397600706,
-      "productName": "Cesto De Roupa 40x70 30x50Cm Caixa Dobrável Brinquedos Cesto Diversa Organizador Cozinha Quarto Casa",
-      "priceMin": "11.8",
-      "priceMax": "14.8",
-      "discountRate": 45,
-      "commissionRate": 0.13,
-      "sales": 4273,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-mabeeeswsx4mc1",
-      "offerLink": "https://s.shopee.com.br/60QzBgZHMl"
     },
     {
       "niche": "Decoração de Casa",
@@ -1929,7 +1929,7 @@
       "niche": "Decoração de Casa",
       "itemId": 22493572369,
       "productName": "Cortina Blackout Para Quarto Sala Cozinha PVC Corta 100% Luz 2,80 Largura X 2,30 Altura Grande",
-      "priceMin": "36.97",
+      "priceMin": "32.97",
       "priceMax": "71.97",
       "discountRate": 30,
       "commissionRate": 0.08,
@@ -1979,19 +1979,6 @@
     },
     {
       "niche": "Decoração de Casa",
-      "itemId": 19397983797,
-      "productName": "Trio de Vasos Decorativos Em Cerâmica Enfeite Sala De Estar Rack estante centro de mesa prateleira",
-      "priceMin": "66.01",
-      "priceMax": "84.87",
-      "discountRate": 30,
-      "commissionRate": 0.13,
-      "sales": 17,
-      "ratingStar": "5",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m301rjvh4ydv3d",
-      "offerLink": "https://s.shopee.com.br/7psdGh2sDU"
-    },
-    {
-      "niche": "Decoração de Casa",
       "itemId": 20598461061,
       "productName": "Cortina Voil Gaze De Linho 3,00 x 2,20/2,30/2,40/2,50/2,60/2,70/2,80 C/forro Blackout Grosso Original",
       "priceMin": "215.91",
@@ -2005,24 +1992,11 @@
     },
     {
       "niche": "Decoração de Casa",
-      "itemId": 20997975865,
-      "productName": "Dupla Vaso G Objeto Decorativo Escultura Abstrata decoração Sala de Estar Mesa Rack Estante Enfeite",
-      "priceMin": "79.04",
-      "priceMax": "88.92",
-      "discountRate": 20,
-      "commissionRate": 0.13,
-      "sales": 13,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m2iic8bwd56925",
-      "offerLink": "https://s.shopee.com.br/7fZD4O3VYT"
-    },
-    {
-      "niche": "Decoração de Casa",
       "itemId": 58203349505,
       "productName": "Porta Frios Duplo Preto para Presunto e Queijo Com Fundo Removível Para Conservar e Organizar a Geladeira Hermetico",
-      "priceMin": "17.89",
-      "priceMax": "17.89",
-      "discountRate": 0,
+      "priceMin": "17.7",
+      "priceMax": "17.7",
+      "discountRate": 1,
       "commissionRate": 0.13,
       "sales": 14261,
       "ratingStar": "4.6",
@@ -2043,6 +2017,32 @@
       "offerLink": "https://s.shopee.com.br/2Vr71FvXYz"
     },
     {
+      "niche": "Decoração de Casa",
+      "itemId": 19397983797,
+      "productName": "Trio de Vasos Decorativos Em Cerâmica Enfeite Sala De Estar Rack estante centro de mesa prateleira",
+      "priceMin": "84.87",
+      "priceMax": "84.87",
+      "discountRate": 10,
+      "commissionRate": 0.13,
+      "sales": 17,
+      "ratingStar": "5",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m301rjvh4ydv3d",
+      "offerLink": "https://s.shopee.com.br/7psdGh2sDU"
+    },
+    {
+      "niche": "Decoração de Casa",
+      "itemId": 20997975865,
+      "productName": "Dupla Vaso G Objeto Decorativo Escultura Abstrata decoração Sala de Estar Mesa Rack Estante Enfeite",
+      "priceMin": "88.92",
+      "priceMax": "88.92",
+      "discountRate": 10,
+      "commissionRate": 0.13,
+      "sales": 13,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m2iic8bwd56925",
+      "offerLink": "https://s.shopee.com.br/7fZD4O3VYT"
+    },
+    {
       "niche": "Ferramentas",
       "itemId": 47352531874,
       "productName": "Kit De Aglomerados De Cílios DIY 570 Unidades-Ferramenta De Vedação E Aplicador De Ligação Para Extensão Doméstica",
@@ -2053,7 +2053,7 @@
       "sales": 3394,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-823or-mp4mc3zxszke13",
-      "offerLink": "https://s.shopee.com.br/9zx7qg3UcU"
+      "offerLink": "https://s.shopee.com.br/50YSgqIIhM"
     },
     {
       "niche": "Ferramentas",
@@ -2079,7 +2079,7 @@
       "sales": 3473,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhzz99oj2n0mee",
-      "offerLink": "https://s.shopee.com.br/9V0rFl5OdT"
+      "offerLink": "https://s.shopee.com.br/4VcC5vKCiL"
     },
     {
       "niche": "Ferramentas",
@@ -2144,7 +2144,7 @@
       "sales": 6234,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lh-mmacchpnrcow45",
-      "offerLink": "https://s.shopee.com.br/gPSjWhHqJ"
+      "offerLink": "https://s.shopee.com.br/1VyaWPVcnX"
     },
     {
       "niche": "Ferramentas",
@@ -2241,8 +2241,8 @@
       "niche": "Ferramentas",
       "itemId": 47208059451,
       "productName": "Parafusadeira Furadeira 48V Sem Fio com 2 OU 1 Bateria, Acessórios Completos e Maleta de Transporte OU caixa de papelão",
-      "priceMin": "109.98",
-      "priceMax": "115.96",
+      "priceMin": "109.9",
+      "priceMax": "115.9",
       "discountRate": 30,
       "commissionRate": 0.11,
       "sales": 1550,
@@ -2541,13 +2541,13 @@
       "itemId": 58255995295,
       "productName": "Abajur de Mesa Recarregável com Toque | 3 Modos de Luz e Controle Remoto para Quarto",
       "priceMin": "23.9",
-      "priceMax": "23.9",
+      "priceMax": "27.9",
       "discountRate": 59,
       "commissionRate": 0.13,
       "sales": 597,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m4-ml8q7249p62v1f",
-      "offerLink": "https://s.shopee.com.br/LmcRHlmmx"
+      "offerLink": "https://s.shopee.com.br/904bSCTTGS"
     },
     {
       "niche": "Iluminação",
@@ -2566,8 +2566,8 @@
       "niche": "Iluminação",
       "itemId": 23099361328,
       "productName": "Abajur De Mesa Touch LED Recarregável 3 Cores De Luz Branco Quente Frio Para Quarto",
-      "priceMin": "25.8",
-      "priceMax": "25.8",
+      "priceMin": "25.9",
+      "priceMax": "25.9",
       "discountRate": 57,
       "commissionRate": 0.13,
       "sales": 2178,
@@ -2593,7 +2593,7 @@
       "itemId": 20452224775,
       "productName": "Kit 2 unidades Abajur La Finesse Cupula - Luminária Para Decoração Quarto e Sala",
       "priceMin": "56.8",
-      "priceMax": "57.9",
+      "priceMax": "56.8",
       "discountRate": 53,
       "commissionRate": 0.22,
       "sales": 1820,
@@ -2638,7 +2638,7 @@
       "sales": 1316,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-821e3-mglxtrrmns3tb2",
-      "offerLink": "https://s.shopee.com.br/50YRzrU1Jn"
+      "offerLink": "https://s.shopee.com.br/9fKIFQQvuW"
     },
     {
       "niche": "Iluminação",
@@ -2664,7 +2664,7 @@
       "sales": 1068,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134211-81ztc-mkxxhbqaqvia2d",
-      "offerLink": "https://s.shopee.com.br/5ArsCATNyo"
+      "offerLink": "https://s.shopee.com.br/AAGYqLP1tb"
     },
     {
       "niche": "Iluminação",
@@ -2696,9 +2696,9 @@
       "niche": "Iluminação",
       "itemId": 29490649664,
       "productName": "Abajur de Mesa Retrátil Recarregável LED Quente para Quarto/Escritório/Sala Onistek ON-LT043",
-      "priceMin": "36.5",
-      "priceMax": "36.5",
-      "discountRate": 32,
+      "priceMin": "35.77",
+      "priceMax": "35.77",
+      "discountRate": 34,
       "commissionRate": 0.13,
       "sales": 1022,
       "ratingStar": "4.9",
@@ -2716,7 +2716,7 @@
       "sales": 816,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-lw470rb67qut3a",
-      "offerLink": "https://s.shopee.com.br/W62dal9Ry"
+      "offerLink": "https://s.shopee.com.br/9V0s37RZFX"
     }
   ]
 }
