@@ -18,3 +18,10 @@ Secrets necessários no repositório: `SHOPEE_AFFILIATE_APP_ID`, `SHOPEE_AFFILIA
 ## Local
 
 Copie `.env.example` para `.env` e preencha com suas credenciais (o `.env` nunca é commitado).
+
+## Próximos passos gratuitos (ainda não ligados no fluxo ao vivo)
+
+- `docs/status.html` — painel de status grátis (ver `docs/README.md` pra ativar)
+- `supabase/schema.sql` — schema pronto pra quando conectar o Supabase
+- `tools/link-shortener/` — encurtador de link com contagem de clique (Cloudflare Workers, grátis)
+- `data/divulgacao_extra_copy.txt` — mensagem fixada de indicação, texto de troca de divulgação e lançamento da Comunidade do WhatsApp

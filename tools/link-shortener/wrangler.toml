@@ -1,0 +1,9 @@
+name = "achadinhos-links"
+main = "worker.js"
+compatibility_date = "2026-08-01"
+
+# Depois de rodar `wrangler kv namespace create LINKS`, cola o "id" que
+# ele devolver aqui embaixo.
+[[kv_namespaces]]
+binding = "LINKS"
+id = "COLE_AQUI_O_ID_DO_NAMESPACE"
