@@ -1,23 +1,19 @@
-# Painel de status (grátis)
+# Painel (grátis)
 
-`status.html` é um painel estático que lê os arquivos de `data/*.json` e
-mostra saúde do robô, tamanho do catálogo e vendas — sem precisar abrir
-o GitHub.
+`status.html` é o painel — lê os arquivos de `data/*.json` direto do
+repositório, sem precisar abrir o GitHub:
 
-## Pra ativar (GitHub Pages, grátis)
+- **Visão geral** — saúde do robô, tamanho do catálogo, posts enviados
+- **Grupos** — link do Telegram e do WhatsApp com botão de copiar
+- **Catálogo** — busca/filtro/ordenação nos produtos qualificados
+- **Vendas** — conversões, pedidos e comissão dos últimos 90 dias
+- **Cliques** — status honesto: ainda não é medido (falta plugar `tools/link-shortener/`)
+- **Adicionar produto** — formulário que joga um produto na fila do robô
+  (precisa do `tools/manual-queue/` publicado — ver README de lá)
 
-1. Settings → Pages → Source: "Deploy from a branch" → branch `master`,
-   pasta `/ (root)`.
-2. A página fica em `https://SEU-USUARIO.github.io/shopee-vendas-automaticas/docs/status.html`.
+Já está no ar em:
+`https://felipegdcapitanio-prog.github.io/shopee-vendas-automaticas/docs/status.html`
 
-**Atenção:** este repositório está **privado**. GitHub Pages em
-repositório privado só funciona em conta paga (Pro/Team). Duas opções:
-
-- Deixar o repositório público (o código não tem segredo nenhum — as
-  credenciais ficam nos *Secrets* do GitHub, nunca no código; mas vale
-  vocês decidirem juntos se tudo bem deixar público);
-- Ou manter privado e só abrir `docs/status.html` localmente / hospedar
-  em outro lugar grátis (ex: Cloudflare Pages também tem plano grátis
-  pra repositório privado).
-
-Nenhuma dessas duas coisas foi feita — fica pra vocês escolherem.
+Ativado via Settings → Pages → branch `master`, pasta `/ (root)`. O
+repositório está público (sem segredo no código — as credenciais ficam
+só nos *Secrets* do GitHub).

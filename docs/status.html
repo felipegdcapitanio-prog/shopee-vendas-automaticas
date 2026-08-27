@@ -3,79 +3,346 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Achadinhos da Sophia — status do robô</title>
+<title>Achadinhos da Sophia — painel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #f7f1e8; --surface: #fff; --ink: #241d1a; --ink-soft: #665c53;
-    --ink-faint: #9a8f83; --line: #e2d4bd; --accent: #8c2f52;
-    --good: #3c7a5b; --good-soft: #e2efe7; --warn: #a8671f; --warn-soft: #f4e7d3;
+    --bg: #f7f1e8; --surface: #fff; --surface-alt: #efe4d3;
+    --ink: #241d1a; --ink-soft: #665c53; --ink-faint: #9a8f83; --line: #e2d4bd;
+    --accent: #8c2f52; --accent-soft: #f3e2e9;
+    --good: #3c7a5b; --good-soft: #e2efe7;
+    --warn: #a8671f; --warn-soft: #f4e7d3;
     --bad: #a5393b; --bad-soft: #f7e3e3;
+    --shadow: 0 1px 2px rgba(36,29,26,0.04), 0 8px 24px -12px rgba(36,29,26,0.18);
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #211a1e; --surface: #2a2226; --ink: #f3e9e4; --ink-soft: #cbbdb8;
-      --ink-faint: #8d7d78; --line: #453940; --accent: #e8a0bd;
-      --good: #7dc19c; --good-soft: #263631; --warn: #e0ac5f; --warn-soft: #3a2f22;
+      --bg: #211a1e; --surface: #2a2226; --surface-alt: #342a2f;
+      --ink: #f3e9e4; --ink-soft: #cbbdb8; --ink-faint: #8d7d78; --line: #453940;
+      --accent: #e8a0bd; --accent-soft: #3c2b34;
+      --good: #7dc19c; --good-soft: #263631;
+      --warn: #e0ac5f; --warn-soft: #3a2f22;
       --bad: #e0898b; --bad-soft: #3a2626;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px -12px rgba(0,0,0,0.5);
     }
   }
   * { box-sizing: border-box; }
   body {
-    background: var(--bg); color: var(--ink); margin: 0; padding: 32px 20px 80px;
-    font-family: Georgia, "Times New Roman", serif; line-height: 1.55;
+    background: var(--bg); color: var(--ink); margin: 0; padding: 0 20px 100px;
+    font-family: "Source Serif 4", Georgia, serif; font-size: 16.5px; line-height: 1.55;
   }
-  .wrap { max-width: 720px; margin: 0 auto; }
-  .eyebrow {
-    font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
-    font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
-    color: var(--accent);
-  }
-  h1 { font-size: 32px; margin: 10px 0 6px; }
-  p.dek { color: var(--ink-soft); margin: 0 0 28px; max-width: 60ch; }
-  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line);
-    border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin-bottom: 24px; }
-  .stat { background: var(--surface); padding: 16px 14px; }
-  .stat .n { font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
-  .stat .label { font-family: ui-monospace, monospace; font-size: 10px; letter-spacing: 0.05em;
-    text-transform: uppercase; color: var(--ink-faint); margin-top: 6px; }
-  @media (max-width: 560px) { .stats { grid-template-columns: repeat(2, 1fr); } }
-  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
-    padding: 18px 20px; margin-bottom: 16px; }
-  .pill { display: inline-flex; align-items: center; gap: 6px; font-family: ui-monospace, monospace;
-    font-size: 12px; font-weight: 600; padding: 3px 10px 3px 8px; border-radius: 999px; }
-  .pill::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
-  .pill.good { background: var(--good-soft); color: var(--good); }
-  .pill.warn { background: var(--warn-soft); color: var(--warn); }
-  .pill.bad { background: var(--bad-soft); color: var(--bad); }
-  .muted { color: var(--ink-faint); font-family: ui-monospace, monospace; font-size: 12px; }
   a { color: var(--accent); }
+  .wrap { max-width: 920px; margin: 0 auto; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11.5px; font-weight: 600;
+    letter-spacing: 0.11em; text-transform: uppercase; color: var(--accent);
+  }
+  code {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.85em; background: var(--surface-alt);
+    padding: 0.1em 0.4em; border-radius: 4px;
+  }
+
+  header { padding: 48px 0 26px; border-bottom: 1px solid var(--line); }
+  header .eyebrow { display: block; margin-bottom: 12px; }
+  h1 {
+    font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: clamp(28px, 5vw, 40px);
+    line-height: 1.08; letter-spacing: -0.01em; margin: 0 0 10px;
+  }
+  .dek { color: var(--ink-soft); font-size: 16.5px; max-width: 62ch; margin: 0 0 20px; }
+
+  .status-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .pill {
+    display: inline-flex; align-items: center; gap: 7px; font-family: "IBM Plex Mono", monospace;
+    font-size: 12.5px; font-weight: 600; padding: 5px 11px 5px 9px; border-radius: 999px;
+  }
+  .pill::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+  .pill.good { background: var(--good-soft); color: var(--good); }
+  .pill.bad { background: var(--bad-soft); color: var(--bad); }
+  .pill.warn { background: var(--warn-soft); color: var(--warn); }
+  .status-row .detail { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-faint); }
+
+  .stats {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line);
+    border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin: 24px 0 4px;
+  }
+  .stat { background: var(--surface); padding: 16px 15px; }
+  .stat .n {
+    font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 25px;
+    font-variant-numeric: tabular-nums; line-height: 1;
+  }
+  .stat .label {
+    font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: 0.05em;
+    text-transform: uppercase; color: var(--ink-faint); margin-top: 7px; line-height: 1.4;
+  }
+  @media (max-width: 620px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+
+  nav.jump {
+    display: flex; gap: 4px; flex-wrap: wrap; padding: 14px 0; margin-bottom: 4px;
+    border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--bg); z-index: 5;
+  }
+  nav.jump a {
+    font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--ink-soft);
+    text-decoration: none; padding: 6px 11px; border-radius: 999px; border: 1px solid transparent;
+  }
+  nav.jump a:hover { border-color: var(--line); color: var(--ink); }
+
+  section { padding: 36px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: none; }
+  section > .eyebrow { margin-bottom: 8px; }
+  section h2 {
+    font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 22px;
+    margin: 0 0 6px; text-wrap: balance;
+  }
+  section p.hint { color: var(--ink-soft); font-size: 15px; margin: 0 0 18px; max-width: 66ch; }
+
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+    padding: 18px 20px; box-shadow: var(--shadow); }
+
+  /* grupos */
+  .group-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 620px) { .group-grid { grid-template-columns: 1fr; } }
+  .group-card { display: flex; flex-direction: column; gap: 10px; }
+  .group-card .name { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 17px; }
+  .group-card .link-row { display: flex; gap: 8px; align-items: center; }
+  .group-card input {
+    flex: 1; font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-soft);
+    background: var(--surface-alt); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px;
+  }
+  button.copy-btn, button.mini-btn {
+    font-family: "IBM Plex Mono", monospace; font-size: 12px; font-weight: 600;
+    background: var(--accent-soft); color: var(--accent); border: 1px solid transparent;
+    border-radius: 8px; padding: 8px 12px; cursor: pointer; white-space: nowrap;
+  }
+  button.copy-btn:hover, button.mini-btn:hover { border-color: var(--accent); }
+
+  /* catálogo */
+  .filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+  .filters input, .filters select {
+    font-family: "Source Serif 4", serif; font-size: 14.5px; color: var(--ink);
+    background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px;
+  }
+  .filters input { flex: 1; min-width: 180px; }
+  .table-scroll { max-height: 480px; overflow: auto; border: 1px solid var(--line); border-radius: 10px; }
+  table { border-collapse: collapse; width: 100%; min-width: 640px; background: var(--surface); }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 14px; }
+  th {
+    font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.05em; text-transform: uppercase;
+    color: var(--ink-faint); font-weight: 600; background: var(--surface-alt); position: sticky; top: 0;
+  }
+  tr:last-child td { border-bottom: none; }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td a.offer { font-family: "IBM Plex Mono", monospace; font-size: 12px; }
+  .count-note { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--ink-faint); margin-top: 8px; }
+
+  /* vendas */
+  .sales-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line);
+    border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin-bottom: 14px; }
+  .sales-grid .cell { background: var(--surface); padding: 14px; }
+  .sales-grid .cell .n { font-family: "Fraunces", serif; font-weight: 600; font-size: 21px; font-variant-numeric: tabular-nums; }
+  .sales-grid .cell .l { font-family: "IBM Plex Mono", monospace; font-size: 10px; text-transform: uppercase; color: var(--ink-faint); margin-top: 5px; }
+  @media (max-width: 620px) { .sales-grid { grid-template-columns: repeat(2, 1fr); } }
+
+  .empty-state { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--ink-faint); padding: 10px 2px; }
+
+  /* form manual */
+  .settings-row { display: grid; grid-template-columns: 2fr 1fr auto; gap: 10px; margin-bottom: 18px; }
+  @media (max-width: 700px) { .settings-row { grid-template-columns: 1fr; } }
+  .settings-row input {
+    font-family: "IBM Plex Mono", monospace; font-size: 13px; padding: 9px 11px;
+    border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink);
+  }
+  form.product-form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 620px) { form.product-form { grid-template-columns: 1fr; } }
+  form.product-form label {
+    display: flex; flex-direction: column; gap: 5px; font-size: 13.5px; color: var(--ink-soft);
+  }
+  form.product-form label.full { grid-column: 1 / -1; }
+  form.product-form input, form.product-form select {
+    font-family: "Source Serif 4", serif; font-size: 15px; color: var(--ink);
+    background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 9px 11px;
+  }
+  form.product-form .submit-row { grid-column: 1 / -1; display: flex; align-items: center; gap: 14px; }
+  button.primary {
+    font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 13.5px;
+    background: var(--accent); color: var(--surface); border: none; border-radius: 999px;
+    padding: 11px 22px; cursor: pointer;
+  }
+  button.primary:hover { opacity: 0.92; }
+  #form-msg { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; }
+  #form-msg.ok { color: var(--good); }
+  #form-msg.err { color: var(--bad); }
+
+  .queue-list { list-style: none; margin: 16px 0 0; padding: 0; }
+  .queue-list li {
+    display: flex; justify-content: space-between; gap: 10px; padding: 9px 0;
+    border-bottom: 1px dashed var(--line); font-size: 14px;
+  }
+  .queue-list li:last-child { border-bottom: none; }
+
+  footer { max-width: 920px; margin: 0 auto; padding-top: 36px; color: var(--ink-faint);
+    font-family: "IBM Plex Mono", monospace; font-size: 12px; }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <span class="eyebrow">Painel gratuito · lê os data/*.json do repositório</span>
-  <h1>Achadinhos da Sophia</h1>
-  <p class="dek">Status do robô, sem precisar abrir o GitHub. Atualiza sozinho porque lê os
-  mesmos arquivos que os scripts geram a cada execução.</p>
 
-  <div class="stats">
-    <div class="stat"><div class="n" id="s-catalog">—</div><div class="label">Produtos no catálogo</div></div>
-    <div class="stat"><div class="n" id="s-telegram">—</div><div class="label">Posts no Telegram</div></div>
-    <div class="stat"><div class="n" id="s-whatsapp">—</div><div class="label">Fila do WhatsApp</div></div>
-    <div class="stat"><div class="n" id="s-commission">—</div><div class="label">Comissão (90 dias)</div></div>
-  </div>
+  <header>
+    <span class="eyebrow">Achadinhos da Sophia · painel gratuito, lê os data/*.json do repositório</span>
+    <h1>Painel do robô</h1>
+    <p class="dek">Saúde, catálogo, vendas e divulgação num só lugar — sem precisar abrir o GitHub.</p>
 
-  <div class="card">
-    <div id="health-pill" class="pill warn">carregando…</div>
-    <p class="muted" id="health-detail" style="margin-top:10px;">verificando data/telegram_status.json…</p>
-  </div>
+    <div class="status-row">
+      <span id="health-pill" class="pill warn">carregando…</span>
+      <span class="detail" id="health-detail">verificando…</span>
+    </div>
 
-  <div class="card">
-    <strong>Vendas confirmadas (últimos 90 dias)</strong>
-    <p class="muted" id="sales-detail" style="margin-top:8px;">carregando data/relatorio_vendas.json…</p>
-  </div>
+    <div class="stats">
+      <div class="stat"><div class="n" id="s-catalog">—</div><div class="label">Produtos no catálogo</div></div>
+      <div class="stat"><div class="n" id="s-telegram">—</div><div class="label">Posts no Telegram</div></div>
+      <div class="stat"><div class="n" id="s-whatsapp">—</div><div class="label">Fila do WhatsApp</div></div>
+      <div class="stat"><div class="n" id="s-commission">—</div><div class="label">Comissão (90 dias)</div></div>
+    </div>
+  </header>
 
-  <p class="muted" id="error-note"></p>
+  <nav class="jump">
+    <a href="#grupos">Grupos</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#vendas">Vendas</a>
+    <a href="#cliques">Cliques</a>
+    <a href="#adicionar">Adicionar produto</a>
+  </nav>
+
+  <section id="grupos">
+    <span class="eyebrow">Divulgação</span>
+    <h2>Grupos e links</h2>
+    <p class="hint">Pra usar em bio, indicação e troca de divulgação com outros canais.</p>
+    <div class="group-grid">
+      <div class="card group-card">
+        <span class="name">📲 Telegram</span>
+        <div class="link-row">
+          <input readonly id="link-telegram" value="https://t.me/+eet9J4CDAmUxYWM5">
+          <button class="copy-btn" data-copy="link-telegram">copiar</button>
+        </div>
+      </div>
+      <div class="card group-card">
+        <span class="name">📲 WhatsApp</span>
+        <div class="link-row">
+          <input readonly id="link-whatsapp" value="https://whatsapp.com/channel/0029VbDT7xEChq6EsI4SO31v">
+          <button class="copy-btn" data-copy="link-whatsapp">copiar</button>
+        </div>
+      </div>
+    </div>
+    <p class="hint" style="margin-top:14px;">Textos prontos de descrição, mensagem fixada e proposta de troca de divulgação: <code>data/telegram_grupo_copy.txt</code>, <code>data/whatsapp_canal_copy.txt</code> e <code>data/divulgacao_extra_copy.txt</code>.</p>
+  </section>
+
+  <section id="catalogo">
+    <span class="eyebrow">O que está no garimpo</span>
+    <h2>Catálogo de produtos</h2>
+    <p class="hint">Os produtos qualificados agora (nota ≥4.0, ≥10 vendas, comissão ≥8%), prontos pra entrar na esteira de posts.</p>
+    <div class="filters">
+      <input type="text" id="filter-search" placeholder="Buscar por nome do produto…">
+      <select id="filter-niche"><option value="">Todos os nichos</option></select>
+      <select id="filter-sort">
+        <option value="discount">Maior desconto</option>
+        <option value="commission">Maior comissão</option>
+        <option value="sales">Mais vendidos</option>
+        <option value="price">Menor preço</option>
+      </select>
+    </div>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Produto</th><th>Nicho</th><th>Preço</th><th>Desc.</th><th>Comissão</th><th>Vendas</th><th></th></tr>
+        </thead>
+        <tbody id="catalog-body"><tr><td colspan="7" class="empty-state">carregando catálogo…</td></tr></tbody>
+      </table>
+    </div>
+    <p class="count-note" id="catalog-count"></p>
+  </section>
+
+  <section id="vendas">
+    <span class="eyebrow">O que já converteu</span>
+    <h2>Vendas confirmadas</h2>
+    <p class="hint" id="sales-period">últimos 90 dias — atualiza toda manhã junto com o catálogo.</p>
+    <div class="sales-grid">
+      <div class="cell"><div class="n" id="v-conversions">—</div><div class="l">Conversões</div></div>
+      <div class="cell"><div class="n" id="v-orders">—</div><div class="l">Pedidos</div></div>
+      <div class="cell"><div class="n" id="v-qty">—</div><div class="l">Itens vendidos</div></div>
+      <div class="cell"><div class="n" id="v-commission">—</div><div class="l">Comissão total</div></div>
+    </div>
+    <div id="sales-products"></div>
+  </section>
+
+  <section id="cliques">
+    <span class="eyebrow">O que falta</span>
+    <h2>Cliques</h2>
+    <p class="hint">Hoje só existe dado de venda confirmada (seção acima) — clique que <em>não</em> virou venda ainda não é medido.</p>
+    <div class="card">
+      <p style="margin:0;">Pra acompanhar clique de verdade, tem um encurtador de link pronto em <code>tools/link-shortener/</code> (Cloudflare Workers, grátis). Falta só: 1) fazer o deploy dele, 2) trocar o link nas legendas pelo link curto. Nenhuma das duas coisas foi feita ainda — o encurtador existe, mas não está plugado nos scripts que já rodam ao vivo.</p>
+    </div>
+  </section>
+
+  <section id="adicionar">
+    <span class="eyebrow">Colocar produto na fila</span>
+    <h2>Adicionar produto manualmente</h2>
+    <p class="hint">O robô confere <code>data/manual_products.json</code> a cada execução (~8 min) e posta o que estiver pendente — sem contar na meta diária automática, é sempre um extra.</p>
+
+    <div class="card" style="margin-bottom:18px;">
+      <span class="eyebrow" style="display:block;margin-bottom:10px;">Conexão (uma vez só, fica salva neste navegador)</span>
+      <div class="settings-row">
+        <input type="text" id="cfg-endpoint" placeholder="URL do worker (ex: https://achadinhos-manual-queue.SEU-USUARIO.workers.dev)">
+        <input type="password" id="cfg-token" placeholder="senha (ADMIN_TOKEN)">
+        <button class="mini-btn" id="cfg-save">salvar</button>
+      </div>
+      <p class="hint" style="margin:0;">Ainda não tem isso rodando? Passo a passo em <code>tools/manual-queue/README.md</code> — leva uns 5 minutos, grátis.</p>
+    </div>
+
+    <form class="product-form" id="product-form">
+      <label>Nicho
+        <select id="f-niche" required>
+          <option value="Beleza & Skincare">Beleza & Skincare</option>
+          <option value="Maquiagem">Maquiagem</option>
+          <option value="Moda Feminina">Moda Feminina</option>
+          <option value="Calçados">Calçados</option>
+          <option value="Decoração de Casa">Decoração de Casa</option>
+          <option value="Ferramentas">Ferramentas</option>
+          <option value="Iluminação">Iluminação</option>
+        </select>
+      </label>
+      <label>Preço (R$)
+        <input type="number" step="0.01" id="f-price" required placeholder="39.90">
+      </label>
+      <label class="full">Nome do produto
+        <input type="text" id="f-name" required placeholder="Ex: Sérum facial vitamina C 30ml">
+      </label>
+      <label class="full">Link de oferta (Shopee)
+        <input type="url" id="f-link" required placeholder="https://s.shopee.com.br/...">
+      </label>
+      <label class="full">Imagem (URL)
+        <input type="url" id="f-image" required placeholder="https://...">
+      </label>
+      <label>Desconto (%, opcional)
+        <input type="number" id="f-discount" placeholder="20">
+      </label>
+      <label>Vendas / nota (opcional)
+        <input type="text" id="f-social" placeholder="ex: 50 vendas, nota 4.8">
+      </label>
+      <div class="submit-row">
+        <button type="submit" class="primary">Adicionar à fila</button>
+        <span id="form-msg"></span>
+      </div>
+    </form>
+
+    <div style="margin-top:22px;">
+      <span class="eyebrow" style="display:block;margin-bottom:8px;">Fila atual</span>
+      <button class="mini-btn" id="queue-refresh">atualizar</button>
+      <ul class="queue-list" id="queue-list"></ul>
+    </div>
+  </section>
+
+  <footer>Achadinhos da Sophia — painel atualizado sozinho a partir do repositório</footer>
 </div>
 
 <script>
@@ -85,7 +352,106 @@ async function loadJSON(path) {
   return res.json();
 }
 
+function brl(n) {
+  return "R$ " + Number(n || 0).toFixed(2).replace(".", ",");
+}
+
+let CATALOG = [];
+
+function renderCatalog() {
+  const search = document.getElementById("filter-search").value.toLowerCase();
+  const niche = document.getElementById("filter-niche").value;
+  const sort = document.getElementById("filter-sort").value;
+
+  let rows = CATALOG.filter((p) => {
+    if (niche && p.niche !== niche) return false;
+    if (search && !p.productName.toLowerCase().includes(search)) return false;
+    return true;
+  });
+
+  const sorters = {
+    discount: (a, b) => b.discountRate - a.discountRate,
+    commission: (a, b) => b.commissionRate - a.commissionRate,
+    sales: (a, b) => b.sales - a.sales,
+    price: (a, b) => a.priceMin - b.priceMin,
+  };
+  rows.sort(sorters[sort]);
+
+  const shown = rows.slice(0, 200);
+  const tbody = document.getElementById("catalog-body");
+  if (!shown.length) {
+    tbody.innerHTML = '<tr><td colspan="7" class="empty-state">nenhum produto encontrado com esse filtro</td></tr>';
+  } else {
+    tbody.innerHTML = shown.map((p) => `
+      <tr>
+        <td>${p.productName}</td>
+        <td>${p.niche}</td>
+        <td class="num">${brl(p.priceMin)}</td>
+        <td class="num">${p.discountRate}%</td>
+        <td class="num">${(p.commissionRate * 100).toFixed(0)}%</td>
+        <td class="num">${p.sales}</td>
+        <td><a class="offer" href="${p.offerLink}" target="_blank" rel="noopener">abrir ↗</a></td>
+      </tr>
+    `).join("");
+  }
+  document.getElementById("catalog-count").textContent =
+    `mostrando ${shown.length} de ${rows.length} produto(s) filtrado(s) — ${CATALOG.length} no total`;
+}
+
+async function loadQueue() {
+  const list = document.getElementById("queue-list");
+  list.innerHTML = '<li class="empty-state">carregando…</li>';
+  try {
+    const items = await loadJSON("../data/manual_products.json?t=" + Date.now());
+    if (!items.length) {
+      list.innerHTML = '<li class="empty-state">nenhum produto manual adicionado ainda</li>';
+      return;
+    }
+    list.innerHTML = items.slice().reverse().map((m) => `
+      <li>
+        <span>${m.productName}</span>
+        <span class="pill ${m.posted ? "good" : "warn"}">${m.posted ? "postado" : "pendente"}</span>
+      </li>
+    `).join("");
+  } catch (e) {
+    list.innerHTML = '<li class="empty-state">não consegui carregar a fila agora</li>';
+  }
+}
+
+function loadConnSettings() {
+  try {
+    const raw = localStorage.getItem("achadinhos-manual-queue-settings");
+    if (!raw) return;
+    const cfg = JSON.parse(raw);
+    document.getElementById("cfg-endpoint").value = cfg.endpoint || "";
+    document.getElementById("cfg-token").value = cfg.token || "";
+  } catch (e) {}
+}
+
+function saveConnSettings() {
+  try {
+    localStorage.setItem("achadinhos-manual-queue-settings", JSON.stringify({
+      endpoint: document.getElementById("cfg-endpoint").value.trim(),
+      token: document.getElementById("cfg-token").value.trim(),
+    }));
+  } catch (e) {}
+}
+
 async function main() {
+  document.querySelectorAll(".copy-btn").forEach((btn) => {
+    btn.addEventListener("click", async () => {
+      const input = document.getElementById(btn.dataset.copy);
+      try {
+        await navigator.clipboard.writeText(input.value);
+        btn.textContent = "copiado!";
+        setTimeout(() => (btn.textContent = "copiar"), 1500);
+      } catch (e) {
+        input.select();
+        document.execCommand("copy");
+      }
+    });
+  });
+
   try {
     const [status, sales, catalog, posted, whatsapp] = await Promise.all([
       loadJSON("../data/telegram_status.json"),
@@ -98,8 +464,7 @@ async function main() {
     document.getElementById("s-catalog").textContent = catalog.products.length;
     document.getElementById("s-telegram").textContent = Object.keys(posted).length;
     document.getElementById("s-whatsapp").textContent = Object.keys(whatsapp).length;
-    document.getElementById("s-commission").textContent =
-      "R$ " + Number(sales.totals.commission || 0).toFixed(2);
+    document.getElementById("s-commission").textContent = brl(sales.totals.commission);
 
     const pill = document.getElementById("health-pill");
     const isOk = status.status === "ok";
@@ -109,15 +474,85 @@ async function main() {
       "última postagem há " + Number(status.minutes_since_last_post).toFixed(1) +
       " min (limite: " + status.threshold_minutes + " min)";
 
-    document.getElementById("sales-detail").textContent =
-      sales.totals.conversions + " conversões, " + sales.totals.orders +
-      " pedidos, R$ " + Number(sales.totals.commission || 0).toFixed(2) + " de comissão";
+    document.getElementById("v-conversions").textContent = sales.totals.conversions;
+    document.getElementById("v-orders").textContent = sales.totals.orders;
+    document.getElementById("v-qty").textContent = sales.totals.qty;
+    document.getElementById("v-commission").textContent = brl(sales.totals.commission);
+    document.getElementById("sales-period").textContent =
+      `últimos ${sales.period_days} dias — atualiza toda manhã junto com o catálogo.`;
+    const salesProducts = document.getElementById("sales-products");
+    if (!sales.products || !sales.products.length) {
+      salesProducts.innerHTML = '<p class="empty-state">Nenhuma venda registrada ainda nesse período — normal nos primeiros dias, a Shopee só confirma quando um clique vira pedido.</p>';
+    }
+
+    CATALOG = catalog.products;
+    const niches = [...new Set(CATALOG.map((p) => p.niche))].sort();
+    const nicheSelect = document.getElementById("filter-niche");
+    niches.forEach((n) => {
+      const opt = document.createElement("option");
+      opt.value = n; opt.textContent = n;
+      nicheSelect.appendChild(opt);
+    });
+    ["filter-search", "filter-niche", "filter-sort"].forEach((id) =>
+      document.getElementById(id).addEventListener("input", renderCatalog)
+    );
+    renderCatalog();
   } catch (e) {
-    document.getElementById("error-note").textContent =
-      "Não consegui carregar os dados (" + e.message + "). Se essa página está " +
-      "sendo servida pelo GitHub Pages, confira se o repositório está público " +
-      "ou se o plano permite Pages em repositório privado.";
+    document.getElementById("health-detail").textContent = "não consegui carregar os dados (" + e.message + ")";
   }
+
+  loadQueue();
+  document.getElementById("queue-refresh").addEventListener("click", loadQueue);
+
+  loadConnSettings();
+  document.getElementById("cfg-save").addEventListener("click", () => {
+    saveConnSettings();
+    const btn = document.getElementById("cfg-save");
+    btn.textContent = "salvo!";
+    setTimeout(() => (btn.textContent = "salvar"), 1500);
+  });
+
+  document.getElementById("product-form").addEventListener("submit", async (ev) => {
+    ev.preventDefault();
+    const msg = document.getElementById("form-msg");
+    msg.className = ""; msg.textContent = "enviando…";
+
+    let cfg = {};
+    try {
+      cfg = JSON.parse(localStorage.getItem("achadinhos-manual-queue-settings") || "{}");
+    } catch (e) {}
+    if (!cfg.endpoint || !cfg.token) {
+      msg.className = "err";
+      msg.textContent = "configura o endpoint e a senha ali em cima primeiro.";
+      return;
+    }
+
+    const body = {
+      niche: document.getElementById("f-niche").value,
+      productName: document.getElementById("f-name").value,
+      priceMin: document.getElementById("f-price").value,
+      offerLink: document.getElementById("f-link").value,
+      imageUrl: document.getElementById("f-image").value,
+      discountRate: document.getElementById("f-discount").value || 0,
+    };
+
+    try {
+      const res = await fetch(cfg.endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Authorization: "Bearer " + cfg.token },
+        body: JSON.stringify(body),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || res.status);
+      msg.className = "ok";
+      msg.textContent = "adicionado! sai no próximo ciclo do robô (até ~8 min).";
+      document.getElementById("product-form").reset();
+      loadQueue();
+    } catch (e) {
+      msg.className = "err";
+      msg.textContent = "falhou: " + e.message;
+    }
+  });
 }
 
 main();

@@ -44,9 +44,11 @@ ENV_PATH = os.path.join(ROOT, ".env")
 CATALOG_PATH = os.path.join(ROOT, "data", "catalogo_produtos.json")
 LOG_PATH = os.path.join(ROOT, "data", "log_postagens.json")
 POSTED_PATH = os.path.join(ROOT, "data", "posted_ids.json")
+MANUAL_PATH = os.path.join(ROOT, "data", "manual_products.json")
 
 DELAY_BETWEEN_POSTS = 3  # segundos, evita rate limit do Telegram
 DEFAULT_COOLDOWN_DAYS = 3  # dias mínimos antes de repetir um produto (menos se ele estiver vendendo bem, ver sales_data.py)
+MAX_MANUAL_PER_RUN = 5  # trava de segurança -- nunca despeja um lote gigante de uma vez só
 
 BR_UTC_OFFSET_HOURS = -3  # Brasil não tem mais horário de verão
 POSTS_PER_DAY_TARGET = 144  # a cada 10 min, 24h por dia -- disparo real vem do cron-job.org
@@ -112,6 +114,50 @@ def save_posted_map(posted_map):
         json.dump({str(k): v for k, v in posted_map.items()}, f, ensure_ascii=False, indent=2)
 
 
+def load_manual_queue():
+    if not os.path.exists(MANUAL_PATH):
+        return []
+    with open(MANUAL_PATH, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_manual_queue(items):
+    os.makedirs(os.path.dirname(MANUAL_PATH), exist_ok=True)
+    with open(MANUAL_PATH, "w", encoding="utf-8") as f:
+        json.dump(items, f, ensure_ascii=False, indent=2)
+
+
+def post_manual_queue(token, chat_id, dry_run):
+    """Produto adicionado à mão no painel (data/manual_products.json) --
+    sai o quanto antes, sem entrar na conta da meta diária do catálogo
+    normal (é um extra, não compete com o volume automático)."""
+    items = load_manual_queue()
+    pending = [m for m in items if not m.get("posted")]
+    if not pending:
+        return
+    print(f"\n[manual] {len(pending)} produto(s) manual(is) pendente(s)")
+    for m in pending[:MAX_MANUAL_PER_RUN]:
+        caption = build_caption(m, style="telegram")
+        print(f"\n[manual] {m.get('productName', '')[:60]}")
+        print(caption)
+        if dry_run:
+            continue
+        try:
+            result = send_photo(token, chat_id, m["imageUrl"], caption, offer_link=m.get("offerLink"))
+            ok = result.get("ok", False)
+            print(f"  -> {'enviado' if ok else 'falhou: ' + str(result)}")
+            if ok:
+                m["posted"] = True
+                m["posted_at"] = int(time.time())
+        except urllib.error.HTTPError as e:
+            print(f"  -> erro HTTP {e.code}: {e.read().decode('utf-8', errors='replace')}")
+        except urllib.error.URLError as e:
+            print(f"  -> erro: {e}")
+        time.sleep(DELAY_BETWEEN_POSTS)
+    if not dry_run:
+        save_manual_queue(items)
+
+
 def send_photo(token, chat_id, photo_url, caption, offer_link=None):
     url = f"https://api.telegram.org/bot{token}/sendPhoto"
     fields = {
@@ -147,6 +193,8 @@ def main():
         print("ERRO: TELEGRAM_BOT_TOKEN ou TELEGRAM_CHAT_ID não encontrados (.env local ou variável de ambiente)")
         print("Rode com --dry-run pra testar sem precisar do bot configurado.")
         return
+
+    post_manual_queue(token, chat_id, args.dry_run)
 
     with open(CATALOG_PATH, "r", encoding="utf-8") as f:
         catalog = json.load(f)["products"]

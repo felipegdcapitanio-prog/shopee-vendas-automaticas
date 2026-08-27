@@ -34,7 +34,7 @@ jobs:
         run: |
           git config user.name "shopee-autopilot-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/posted_ids.json data/log_postagens.json
+          git add data/posted_ids.json data/log_postagens.json data/manual_products.json
           git diff --cached --quiet || git commit -m "chore: registra postagens do dia"
           git pull --rebase --autostash origin master
           git push

@@ -19,9 +19,19 @@ Secrets necessários no repositório: `SHOPEE_AFFILIATE_APP_ID`, `SHOPEE_AFFILIA
 
 Copie `.env.example` para `.env` e preencha com suas credenciais (o `.env` nunca é commitado).
 
+## Painel
+
+`docs/status.html` — visão geral, links dos grupos, catálogo pesquisável,
+vendas, e formulário pra adicionar produto manualmente na fila do robô.
+Está no ar em `https://felipegdcapitanio-prog.github.io/shopee-vendas-automaticas/docs/status.html`
+(ver `docs/README.md`).
+
+O formulário de adicionar produto precisa do worker em
+`tools/manual-queue/` publicado (grátis, Cloudflare Workers — ver o
+README de lá) pra funcionar; sem isso, o resto do painel funciona normal.
+
 ## Próximos passos gratuitos (ainda não ligados no fluxo ao vivo)
 
-- `docs/status.html` — painel de status grátis (ver `docs/README.md` pra ativar)
 - `supabase/schema.sql` — schema pronto pra quando conectar o Supabase
 - `tools/link-shortener/` — encurtador de link com contagem de clique (Cloudflare Workers, grátis)
 - `data/divulgacao_extra_copy.txt` — mensagem fixada de indicação, texto de troca de divulgação e lançamento da Comunidade do WhatsApp
