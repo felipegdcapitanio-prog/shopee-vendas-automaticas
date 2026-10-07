@@ -44708,5 +44708,16 @@
     "itemId": 21440444359,
     "ok": true,
     "ts": 1791408710
+  },
+  {
+    "itemId": 23797386225,
+    "ok": false,
+    "error": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: failed to get HTTP URL content\"}",
+    "ts": 1791409221
+  },
+  {
+    "itemId": 58251620645,
+    "ok": true,
+    "ts": 1791409224
   }
 ]
