@@ -49664,5 +49664,16 @@
     "itemId": 24896210289,
     "ok": true,
     "ts": 1791679821
+  },
+  {
+    "itemId": 23797386225,
+    "ok": false,
+    "error": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: failed to get HTTP URL content\"}",
+    "ts": 1791680424
+  },
+  {
+    "itemId": 51508642635,
+    "ok": true,
+    "ts": 1791680427
   }
 ]
