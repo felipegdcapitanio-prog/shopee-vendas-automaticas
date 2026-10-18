@@ -1,0 +1,34 @@
+name: Catalogo tech da loja PULSO
+
+on:
+  schedule:
+    - cron: "30 9 * * 1"  # toda segunda, 06:30 (Brasilia)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  tech:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Buscar celulares, fones e carregadores
+        env:
+          SHOPEE_AFFILIATE_APP_ID: ${{ secrets.SHOPEE_AFFILIATE_APP_ID }}
+          SHOPEE_AFFILIATE_SECRET: ${{ secrets.SHOPEE_AFFILIATE_SECRET }}
+        run: python scripts/find_tech_products.py
+
+      - name: Salvar catalogo
+        run: |
+          git config user.name "shopee-autopilot-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/catalogo_pulso_tech.json
+          git diff --cached --quiet || git commit -m "chore: renova catalogo tech da PULSO"
+          git pull --rebase --autostash origin master
+          git push
