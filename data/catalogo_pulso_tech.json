@@ -1,5 +1,5 @@
 {
- "generated_at": 1792331068,
+ "generated_at": 1792341915,
  "categorias": {
   "celulares": "Celulares",
   "capinhas": "Capinhas",
@@ -16,6 +16,7 @@
  "produtos": [
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 58208171189,
    "nome": "Celular Smartphone Xiaomi Poco C71 128GB / 64GB Dual Sim Global",
    "precoMin": 799.9,
@@ -29,6 +30,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 58207581055,
    "nome": "Smartphone Celular Xiaomi Redmi 14c 256gb  8gb RAM 128gb 4gb Dual Sim 50MP Global 14 c Lançamento",
    "precoMin": 999.0,
@@ -42,6 +44,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 42479683672,
    "nome": "Smartphone Samsung Galaxy A17 5G 128GB 4GB 6,7”",
    "precoMin": 1099.0,
@@ -55,6 +58,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 23394679699,
    "nome": "Smartphone Samsung Galaxy A17 4G 128GB 4GB RAM Câmera Tripla Traseira de até 50MP Selfie 13MP 6.7\" Cinza",
    "precoMin": 1329.0,
@@ -64,10 +68,11 @@
    "ratingStar": "4.9",
    "loja": "MOBCOM STORE",
    "imagem": "https://cf.shopee.com.br/file/sg-11134201-821ga-mh0pxce13f2h4e",
-   "link": "https://s.shopee.com.br/9APTz5lYyL"
+   "link": "https://s.shopee.com.br/1BG6dQnB5"
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 58205404109,
    "nome": "Smartphone Xiaomi POCO C85 4G, NFC Tela LCD 6.9\", Câmera 50MP, Versão Global Original Lacrado",
    "precoMin": 1089.9,
@@ -81,6 +86,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 45665862180,
    "nome": "SMARTPHONE SAMSUNG GALAXY A17 128GB 4GB RAM 50MP TELA 6.7 IP54 PRETO",
    "precoMin": 957.9,
@@ -94,6 +100,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 20099832859,
    "nome": "! NOVO ! Celular Xiaomi Redmi Note 15 Pro 512GB OU 256GB com Nfc Global fonte brasil Original xiaomi oferta",
    "precoMin": 2099.0,
@@ -107,6 +114,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 25897561163,
    "nome": "Smartphone Xiaomi Poco C85 8GB/256GB Global Dual SIM LTE 6.88” – Potência e Desempenho",
    "precoMin": 1249.7,
@@ -120,6 +128,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 58203258316,
    "nome": "Celular Xiaomi Redmi 15C Dual SIM de 256GB 8GB RAM de 6.9\" 50MP 8MP Bateria 6000mAh, Proteção IP64 Lançamento 2025",
    "precoMin": 998.0,
@@ -133,6 +142,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 46916706072,
    "nome": "Smartphone Samsung Galaxy A36 5G 128GB — Verde",
    "precoMin": 1594.9,
@@ -142,10 +152,11 @@
    "ratingStar": "5",
    "loja": "NegociuN",
    "imagem": "https://cf.shopee.com.br/file/br-11134207-820ld-msbocxzhi1ad73",
-   "link": "https://s.shopee.com.br/8fTDOAnSzG"
+   "link": "https://s.shopee.com.br/1BNDUmMLoK"
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 58203289262,
    "nome": "Xiaomi Redmi Note 15 4G, Processador Mediatek Hélio G100-Ultra, Bateria 6000mAh, 128/6GB RAM- 256/8GB RAM",
    "precoMin": 1429.0,
@@ -159,6 +170,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 23194354372,
    "nome": "Smartphone Xiaomi POCO C85 4G Versão Global | Octa-Core Android 15 | Tela 6.9” 120Hz | Bateria 6000mAh",
    "precoMin": 1096.0,
@@ -172,6 +184,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 22398842892,
    "nome": "Xiaomi Redmi 15 4G, Processador Snapdragon® 685, Câmera 50MP, Bateria 7000mAh, Versão Global",
    "precoMin": 1249.0,
@@ -185,6 +198,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 58266837552,
    "nome": "Smartphone Samsung Galaxy A15 4g 128gb 4gb Ram",
    "precoMin": 939.0,
@@ -198,6 +212,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 58209914429,
    "nome": "Smartphone Samsung Galaxy A07 128gb/4gb  Nacional Com Anatel",
    "precoMin": 883.9,
@@ -207,10 +222,11 @@
    "ratingStar": "5",
    "loja": "Magazine Cristina",
    "imagem": "https://cf.shopee.com.br/file/sg-11134201-820of-mnohyc7hswec56",
-   "link": "https://s.shopee.com.br/2BFjeECDB9"
+   "link": "https://s.shopee.com.br/2LZAsvHuRh"
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 53200239950,
    "nome": "Smartphone Xiaomi Redmi 15C 4GB + 128GB – Tela 6.9\" Dual SIM LTE, Desempenho e Estilo Moderno",
    "precoMin": 997.56,
@@ -224,6 +240,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 58211425841,
    "nome": "Celular Xiaomi Redmi 15C 256GB 8GB RAM 4GB Lançamento 2025",
    "precoMin": 1005.0,
@@ -237,6 +254,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 22199521636,
    "nome": "Smartphone Xiaomi POCO C85 256GB 8GB Global Version Original Sealed, 6.9\" LCD Screen",
    "precoMin": 1065.0,
@@ -250,6 +268,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 51352143628,
    "nome": "Smartphone Xiaomi POCO C85 – 6GB RAM, 128GB, Tela 6.9\", Dual LTE, Super Desempenho",
    "precoMin": 1072.72,
@@ -263,6 +282,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 58257166621,
    "nome": "Smartphone Samsung Galaxy A07 6.7 128GB 4GB Câmera Dupla",
    "precoMin": 1155.9,
@@ -272,10 +292,11 @@
    "ratingStar": "4.9",
    "loja": "Gazin Oficial",
    "imagem": "https://cf.shopee.com.br/file/sg-11134201-8260j-mlzape4ehki0b7",
-   "link": "https://s.shopee.com.br/8AWwnFpN07"
+   "link": "https://s.shopee.com.br/Lo6VFPWV7"
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 58215123035,
    "nome": "Smartphone Xiaomi Poco M7 Pro 5G Dual SIM Tela 6.67\" AMOLED 120Hz 8GB + 256GB / 6GB + 128GB",
    "precoMin": 1149.99,
@@ -289,6 +310,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 58262444217,
    "nome": "Celular Smartphone Poco C81 Pro 256/4GB | 128/4GB | 64/4GB Global Lacrado de Fabrica",
    "precoMin": 1019.0,
@@ -302,6 +324,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 22394360531,
    "nome": "Novo Celular Smartphone Xiaomi Poco C85 4G NFC 256GB + 8GB de RAM Global Tela 6.9\" - Envio Imediato",
    "precoMin": 1149.0,
@@ -315,6 +338,7 @@
   },
   {
    "categoria": "celulares",
+   "plataforma": "shopee",
    "itemId": 58260367297,
    "nome": "Smartphone Samsung Galaxy A07 256GB",
    "precoMin": 1166.0,
@@ -324,10 +348,11 @@
    "ratingStar": "4.9",
    "loja": "Carrefour",
    "imagem": "https://cf.shopee.com.br/file/br-11134207-820l4-mo0319gugz5u32",
-   "link": "https://s.shopee.com.br/2LZ9qXBZq8"
+   "link": "https://s.shopee.com.br/1W03tOL58U"
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 58257659517,
    "nome": "Capa Capinha Magnética Space Transparente Anti Impacto TPU Case Apple IPhone 11 12 13 14 15 16 17 Pro Max 17 Air 7 8 XR",
    "precoMin": 9.99,
@@ -341,6 +366,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 23995790130,
    "nome": "2/5/10 Pcs Capa Celular Bolsa Case A Prova D'água Transparente Cor Universal Praia Piscina Viajar Promoção",
    "precoMin": 11.99,
@@ -354,6 +380,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 23793855522,
    "nome": "Capa Capinha com Cordão para iPhone 17 17 Air 16 16E/17E 15 14 13 12 11 Pro Max TPU Aveludada Antichoque",
    "precoMin": 9.99,
@@ -367,6 +394,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 22994046086,
    "nome": "Kit 2 Capinha Para Iphone Anti Impacto Transparente Tpu  Para IPhone 11 12 13 14 15 16 Pronto Entrega",
    "precoMin": 12.99,
@@ -380,6 +408,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 22799402472,
    "nome": "Capa Capinha Space Transparente Anti Impacto Compativel com iPhones X XR XSMAX 11 12 13 14 15 ProMax",
    "precoMin": 8.99,
@@ -393,6 +422,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 23697915127,
    "nome": "Capinha Capa Tpu Anti Impacto Transparente Para IPhone 7 8 XS XR 11 12 13 14 15 16 PLUS/PRO/PROMAX",
    "precoMin": 7.0,
@@ -406,6 +436,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 23693977556,
    "nome": "ALUBEN Capa De Carga Choque Magsafe de capinha celular fosca (1)De Celular compatível com iPhone 17 11 13 14 15 Pro Max",
    "precoMin": 11.6,
@@ -419,6 +450,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 58205601579,
    "nome": "Capa Silicone Aveludada para iPhone 17 / 17 Air / 17 Pro / 17 Pro Max Antichoque Premium Toque Macio",
    "precoMin": 9.99,
@@ -432,6 +464,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 58203954393,
    "nome": "Capa Magnética MagSafe Laranja para iPhone 13 14 15 16 17 Pro Max Antichoque com Proteção de Câmera",
    "precoMin": 23.89,
@@ -445,6 +478,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 58266024326,
    "nome": "Capa transparente MagSafe rosa lírio para celular, compatível com iPhone 18/17/Pro/Pro Max/16/15/14/13/12/11 série",
    "precoMin": 13.99,
@@ -458,6 +492,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 58254473856,
    "nome": "Capinha capa case magsafe eletroplateada com proteção de lente para iphone 11 12 13 14 15 16 17 18 7/8plus promax",
    "precoMin": 15.99,
@@ -471,6 +506,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 22299228079,
    "nome": "Capa Bolsa Prova d'Água Universal - KTransparente Impermeável para Celular",
    "precoMin": 12.9,
@@ -484,6 +520,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 23093194218,
    "nome": "Capa Capinha Anti Impacto Para Todos Samsung Galaxy A17 A07 A56 A36 A26 A16 A06 A55 A35 A25 A15 A05 A05s A54 A34",
    "precoMin": 6.98,
@@ -497,6 +534,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 23198205483,
    "nome": "Capa Magnética MagSafe para iPhone 11 12 13 14 15 16 17 Air Pro Max 16E17E Fosca Antichoque Proteção",
    "precoMin": 16.99,
@@ -510,6 +548,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 23898938046,
    "nome": "Capa Capinha Transparente Anti-Impacto Para iPhone 17 17 Air 17 Pro 17 Pro Max",
    "precoMin": 16.98,
@@ -523,6 +562,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 20999241187,
    "nome": "Capa Capinha Tpu Anti Impacto Transparente Para IPhone 17 XR 11 12 13 14 15 16 Pronto Entrega",
    "precoMin": 8.79,
@@ -536,6 +576,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 58259073303,
    "nome": "Capa iPhone 17 Pro Max MagSafe Space 2 em 1 Fosca Translúcida Premium Com Proteção Câmera Luxo",
    "precoMin": 25.99,
@@ -549,6 +590,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 58254224177,
    "nome": "Capa De Carga Choque Magsafe Magnética Case Capinha fosca (2)De Celular Para iPhone 16 11 12 13 14 17 Pro Max 15 17PRO",
    "precoMin": 19.99,
@@ -562,6 +604,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 22097699848,
    "nome": "Kit 3 Capas Transparente Antichoque TPU Cantos Reforçados iPhone 11 12 13 14 15 16 17 Pro Max",
    "precoMin": 12.99,
@@ -575,6 +618,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 22398991794,
    "nome": "BGM-Case Capa Space Collection Samsung Galaxy Linha A56 A36 A16 A54 A17 A32 4G A23 A22 A13 A12 A03 CORE Original Clear",
    "precoMin": 13.99,
@@ -588,6 +632,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 22492843217,
    "nome": "1/2/5 Unidades Capa Bolsa Prova Dágua Impermeável Celular Transparente Universal Promoção",
    "precoMin": 9.59,
@@ -601,6 +646,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 22193197578,
    "nome": "Capa Capinha Transparente Magnética Anti Impacto TPU Case Para IPhone 11 12 13 14 15 16 17 18Pro Max",
    "precoMin": 12.99,
@@ -614,6 +660,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 22893189024,
    "nome": "Kit 3 Capas Capinhas TPU Transparentes Antichoque Anti Impacto iPhone 17 16 15 14 13 12 11 XR Pro Max Plus Air",
    "precoMin": 12.99,
@@ -627,6 +674,7 @@
   },
   {
    "categoria": "capinhas",
+   "plataforma": "shopee",
    "itemId": 22098340287,
    "nome": "Capa Fosca Translúcida para iPhone 16E/17E/17 AIR com Proteção Antichoque",
    "precoMin": 11.88,
@@ -640,6 +688,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 23194154042,
    "nome": "Compatível linha IPhone11 a 18 Pro Max, Película 3D Vidro Temperado, Kit 5 Unid. Oferta",
    "precoMin": 9.99,
@@ -653,6 +702,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 58202171027,
    "nome": "Película de video para Privacidade iPhone 11/12/13/14/15 /16/17PRO MAX/XR/XS MAX Todos Modelos Privacidade Para Ios",
    "precoMin": 11.99,
@@ -666,6 +716,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 58258030129,
    "nome": "Película Protetora De Lentes Câmera Para iPhone11/12/13/14/15 Promax Protetor Metal",
    "precoMin": 9.99,
@@ -679,6 +730,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 7258027487,
    "nome": "4 OU 2 PELÍCULAS DE VIDRO 3D PARA IPHONE TODOS MODELOS PARA IOS 7 8 XS XR 11 12 13 14 15 16 17 MAX",
    "precoMin": 7.0,
@@ -692,6 +744,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 17556257382,
    "nome": "Película de vidro 3D Privacidade Anti Spy Para IPhone Todos Modelos XS XR 11 12 13 14 15 16 Pro Max",
    "precoMin": 5.6,
@@ -705,6 +758,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 23298190617,
    "nome": "Kit Película Lente De Câmera Compatível Com iphone 11 12 13 14 15 16 17 Pro Max Liso",
    "precoMin": 8.0,
@@ -718,6 +772,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 21998697037,
    "nome": "Kit 2 Película de Vidro 3D Privativa Anti Spy Para IPhone Todos Modelos Privacidade Para Ios XS XR 11 12 13 14 Pro Max",
    "precoMin": 9.98,
@@ -731,6 +786,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 23092857746,
    "nome": "KIT 3 Películas IPhone Fosca Privacidade Cerâmica Para Todos Modelos de IPhone Frontal 3D/9D",
    "precoMin": 12.99,
@@ -744,6 +800,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 15064408256,
    "nome": "kit 2 Película De Vidro Temperado 3D Para Iphone  6/7/8 Plus Xs Xr 11 Pro Max 12 13 14 Pro max",
    "precoMin": 5.59,
@@ -757,6 +814,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 23994140499,
    "nome": "Kit Vidro Película Lente De Câmera Brilho Diamante Para Iphone 11 12 13 14 15 Pro Max Luxo Bling Diamante Camera Lente",
    "precoMin": 10.0,
@@ -770,6 +828,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 23099248194,
    "nome": "Película Cerâmica Fosca Privacidade Motorola Moto G05 G06 G15 G35 G36 G56 G75 Proteção Anti Espião",
    "precoMin": 12.73,
@@ -783,6 +842,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 19373562714,
    "nome": "Kit 5 Película De Vidro Temperado 3D 9H Para iPhone 6/7/8 Plus Xs Xr 11 Pro Max 12 13 14 Pro Max",
    "precoMin": 6.98,
@@ -796,6 +856,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 21217398312,
    "nome": "Película De Gel Hidrogel Cerâmica 3D Flexível iPhone 7/8 PLUS 7/8 /Xs Xr/11 X MAX 11PRO 11PROMAX 12 PRO 12 PROMAX 13 PRO",
    "precoMin": 8.9,
@@ -809,6 +870,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 19598079440,
    "nome": "Kit 2 Pelicula de Vidro Temperado 3D Película Iphone 11 12 13 14 15 16 17 17e 18 Air Pro Max Plus",
    "precoMin": 12.99,
@@ -822,6 +884,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 22497903458,
    "nome": "Kit 3 Películas Privativas IPhone Privacidade de Vidro 3D Spy Para Todos Modelos de IPhone",
    "precoMin": 12.99,
@@ -835,6 +898,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 23998631965,
    "nome": "Película IPhone Privacidade de Vidro 3D Anti-Espião Todos Modelos IOS XS XR 11 12 13 14 15 16 17 18 Pro Max",
    "precoMin": 11.99,
@@ -848,6 +912,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 23594528468,
    "nome": "Película 9D Ceramica Privacidade Fosca Anti Spy para IPhone 18 17 16 15 14 13 Pro Max/ 12/ 11/ XR",
    "precoMin": 11.0,
@@ -861,6 +926,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 22793143320,
    "nome": "Película Privacidade Cerâmica Fosca Para iPhone 11 a 18 - Não Quebra",
    "precoMin": 11.9,
@@ -874,6 +940,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 18058588578,
    "nome": "KIT Pelicula Diamante lente  da câmera anel protetor de vidro para iphone 11/ 12 /13/ Pro Max 14 /Plus 14Pro Max",
    "precoMin": 10.0,
@@ -887,6 +954,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 22997494699,
    "nome": "Kit 5 Película 3D Vidro Temperado Compatível Com Todos Samsung Galaxy A56 A36 A26 A16 A06 A55 A35 A25 A15 A05 A05s A54",
    "precoMin": 9.99,
@@ -900,6 +968,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 23798978840,
    "nome": "KIT2 3D Premium Vidro Temperado Película para iPhone 17 Pro Max, 16, 15, 14, 13, 12, 11, XR, XS (Protección Completa)",
    "precoMin": 13.99,
@@ -913,6 +982,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 23694671344,
    "nome": "Película de Vidro 3D HD Transparente iPhone 17 16 15 14 13 12 11 XR XS Max – Alta Definição Toque Suave Sem Bolhas",
    "precoMin": 12.99,
@@ -926,6 +996,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 23898840408,
    "nome": "Película Ceramica Fosca Privacidade  iPhone IOS 6 7 8 X XS 11 12 13 14 15 16 17 Pro Max Anti-Impacto",
    "precoMin": 12.73,
@@ -939,6 +1010,7 @@
   },
   {
    "categoria": "peliculas",
+   "plataforma": "shopee",
    "itemId": 19597926227,
    "nome": "Kit 5 Películas 3D Vidro Full Cover iPhone 11 12 13 14 15 16 17 Pro Max Plus Tela Completa",
    "precoMin": 10.99,
@@ -952,6 +1024,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 58258956764,
    "nome": "Carregador rápido de 120W com 6A USB C cabo 1M para Mi Turbo Charge Turbo Power Cabo USB + Cabo Tipo C",
    "precoMin": 18.79,
@@ -965,6 +1038,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 22594276889,
    "nome": "Carregador rápido de 120W 67W com 6A USB C cabo 1M para Mi Turbo Charge Turbo Power Cabo USB + Cabo Tipo C",
    "precoMin": 19.9,
@@ -978,6 +1052,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 23297548294,
    "nome": "Carregador Original Para iPhone 11 12 13 14 15 16 Fonte + Cabo 20w PD Turbo Rapido Tipo C Lightning",
    "precoMin": 25.99,
@@ -991,6 +1066,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 22397182247,
    "nome": "Carregador iPhone Turbo Tipo-C 20W + Cabo Lightining para IPhone Carga rápida",
    "precoMin": 18.49,
@@ -1004,6 +1080,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 58200879255,
    "nome": "Carregador de Carregamento Turbo 30w Fonte 3A Torre Carregar Celular Tipo-C com Cabo Lightning(ios)",
    "precoMin": 24.99,
@@ -1017,6 +1094,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 58257222814,
    "nome": "Carregador Turbo 120w Fonte Usb Carregador + cabo Ultra Rápido 120w Usb C Turbo",
    "precoMin": 25.99,
@@ -1030,6 +1108,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 22393096204,
    "nome": "Carregador Super Rápido Turbo 50w / 68w / 125w e 168w Entrada e Saída de Carga Tipo C",
    "precoMin": 19.99,
@@ -1043,6 +1122,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 58253326285,
    "nome": "Carregador Lightning Turbo Para 11 12 13 14 Pro X XR 20W Cabo Tipo C Lightning",
    "precoMin": 39.9,
@@ -1056,6 +1136,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 22997182283,
    "nome": "Kit Carregador Para iPhone Fonte + Cabo 20w PD Turbo Rapido Tipo C Lightning",
    "precoMin": 10.0,
@@ -1069,19 +1150,21 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 58209770732,
    "nome": "Motorola Carregador Original Turbo Power 68W USB-C Tipo-C Super Carregamento Rápido 10X + Cabo Original Incluso",
    "precoMin": 27.9,
    "precoMax": 27.9,
    "discountRate": 15,
    "sales": 4664,
-   "ratingStar": "4.7",
+   "ratingStar": "4.8",
    "loja": "CLZ1987",
    "imagem": "https://cf.shopee.com.br/file/sg-11134201-82584-mrri594h5khs34",
    "link": "https://s.shopee.com.br/3g4XQzstkf"
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 23993101572,
    "nome": "Carregador Turbo Inteligente + V8/tipo c Turbo com Cabo Micro USB Novos Telefones Recomendados",
    "precoMin": 14.88,
@@ -1095,6 +1178,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 23898739327,
    "nome": "Cabo 4 em 1 Carregamento Rápido PD 65W USB Tipo C Lightning Duplo Nylon Trançado para Android e iOS",
    "precoMin": 15.99,
@@ -1108,6 +1192,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 58216030784,
    "nome": "Carregador Turbo 200W USB-C + USB-A QC 3.0 Power Delivery Compatível Xiaomi – Super Rápido",
    "precoMin": 24.89,
@@ -1121,6 +1206,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 23494302256,
    "nome": "Carregador Turbo 35W iPhone USB C Original Fonte PD Carregador iPhone 15 16 Carregamento rápido",
    "precoMin": 15.98,
@@ -1134,6 +1220,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 23394535462,
    "nome": "Carregador Turbo 45W USB-C Carregamento  Rápido com Cabo Tipo-C 1 Metro para Android galaxy",
    "precoMin": 29.9,
@@ -1147,6 +1234,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 58258491270,
    "nome": "Carregador Turbo 2 Saídas Fonte 50W 2 Entradas USB e USB-C com Cabo Lightning Ultra Rápido",
    "precoMin": 28.9,
@@ -1160,6 +1248,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 22097015797,
    "nome": "Carregador Magnético Sem Fio iPhone Magsafe 15W Carregamento Rápido",
    "precoMin": 25.98,
@@ -1173,6 +1262,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 22796088452,
    "nome": "Cabo Carregador USB Typo C 1 Metro Para Android Galaxy Xiomi Moto G Carregamento Turbo Reforçado",
    "precoMin": 10.0,
@@ -1186,6 +1276,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 18999071004,
    "nome": "Carregador 50W Turbo Power Carregamento Rápido USB-C+Cabo tipo-C",
    "precoMin": 22.99,
@@ -1199,6 +1290,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 23297127282,
    "nome": "Carregador iPhone Original Completo Turbo 20w iPhone 7 8 11 12 13 14 Promax X Xr Xs",
    "precoMin": 28.55,
@@ -1212,6 +1304,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 58213313121,
    "nome": "Carregador Turbo 40W USB-C com Cabo Tipo C 1M, Carregamento Rápido para iPhone 15/16/17/18",
    "precoMin": 19.99,
@@ -1225,6 +1318,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 58254472248,
    "nome": "5 Em 1 Fonte De Energia Carregador Turbo USB-A+USB-C Carregamento rápido 176W",
    "precoMin": 39.9,
@@ -1238,6 +1332,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 22999037202,
    "nome": "Carregador Por Indução 20W Turbo, Magnético Sem Fio Tipo C Compatível com MagSafe Carregamento Rápido 1M",
    "precoMin": 27.99,
@@ -1251,6 +1346,7 @@
   },
   {
    "categoria": "carregadores",
+   "plataforma": "shopee",
    "itemId": 23997680349,
    "nome": "Cabo de iPhone Turbo 30W PD USB C Para Lightning Qc 4.0 original A'GOLD Carregamento Super Rápido",
    "precoMin": 17.98,
@@ -1264,6 +1360,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 23995144850,
    "nome": "Mini Power Bank Carregador 10000mAh para iPhone eTouch-C 2 em 1",
    "precoMin": 27.88,
@@ -1277,6 +1374,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 22495070421,
    "nome": "Carregador Mini Power Bank 10000mAh Bateria Sem Fio 2em1 Carregador Portátil para iPhone e Tipo-C",
    "precoMin": 26.98,
@@ -1290,6 +1388,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 22499247158,
    "nome": "Carregador Portátil Mini Power Bank 10000mAh Com 02 Saídas Tipo-C / Lightning",
    "precoMin": 31.99,
@@ -1303,6 +1402,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 22299582170,
    "nome": "Mini Portátil Carregador Power Bank 10000mAh Com 02 Saídas Tipo-C / Lightning",
    "precoMin": 26.98,
@@ -1316,6 +1416,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 22993527703,
    "nome": "Carregador Portátil Bateria Power Bank 20000mah PN-959",
    "precoMin": 35.99,
@@ -1329,6 +1430,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 19598793518,
    "nome": "Carregador Portátil Power Bank Favo de Mel Bateria Externa 20000mah",
    "precoMin": 44.5,
@@ -1342,6 +1444,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 58252499506,
    "nome": "Bateria externa portátil de 5000/10000 mAh, com cabo de carregamento incluso.",
    "precoMin": 42.9,
@@ -1355,6 +1458,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 46111240879,
    "nome": "Carregador Power Bank Portátil de celular 20000mah Universal Saida 4 Cabos Cherrygo",
    "precoMin": 55.98,
@@ -1368,6 +1472,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 23398851761,
    "nome": "INOVA power bank 20000 mah turbo Carregador Portátil Universal Original Com cabo de dados 10000mAh",
    "precoMin": 116.97,
@@ -1381,6 +1486,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 18298127840,
    "nome": "Carregador Portátil Solar 20000mAh Power Bank com Cabos Embutidos Display Digital USB Rápido",
    "precoMin": 59.0,
@@ -1394,6 +1500,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 22692916661,
    "nome": "Carregador Portátil Powerbank 5000/10000 Mah",
    "precoMin": 24.99,
@@ -1407,6 +1514,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 19899609558,
    "nome": "Power Bank 20000mAh Carregador Portátil Sem Fio e Com Fio Indução para iPhone Android USB",
    "precoMin": 59.0,
@@ -1420,6 +1528,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 23894229861,
    "nome": "Mini Power Bank 10000mAh para Viagens Recarga Sem Fio e Cabo iPhone e Tipo-C 2em1",
    "precoMin": 24.99,
@@ -1433,6 +1542,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 56413992731,
    "nome": "Power Bank 50000mAh Turbo 22.5W PD com Cabos Integrados 4 em 1 e Lanterna LED – Carregamento Rápido",
    "precoMin": 99.98,
@@ -1446,6 +1556,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 23093480302,
    "nome": "Basike Carregador Portátil Power Bank 20000mAh Bateria Externa Para iPhone Samsung Pow079",
    "precoMin": 108.29,
@@ -1459,6 +1570,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 21797748168,
    "nome": "Power Bank 20000mAh com 3 Cabos Embutidos, Carregador Portátil para iPhone e Android PN-959",
    "precoMin": 35.98,
@@ -1472,6 +1584,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 18797674026,
    "nome": "PN-959/PN956 Carregador Portátil Bateria Power Bank 20000mah/10000mah",
    "precoMin": 25.47,
@@ -1485,19 +1598,21 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 21198268414,
    "nome": "BASIKE Carregador Portátil 20000mAh - Carregamento Rápido 22.5W Power Bank Carregador Saída dupla",
    "precoMin": 199.99,
    "precoMax": 199.99,
    "discountRate": 33,
    "sales": 2478,
-   "ratingStar": "5",
+   "ratingStar": "4.9",
    "loja": "Basike oficial",
    "imagem": "https://cf.shopee.com.br/file/br-11134207-820m7-mst7bfnjndon89",
    "link": "https://s.shopee.com.br/6L5Ibtvo9F"
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 23294401536,
    "nome": "Carregador Portátil Power Bank Solar 20.000mah Com cabos 5 Em1 LED lanterna",
    "precoMin": 62.99,
@@ -1511,6 +1626,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 17876763744,
    "nome": "Power Bank 10000mAh Pineng Portátil com Cabos Embutidos USB Tipo C e Lightning Carregador Rápido",
    "precoMin": 28.12,
@@ -1524,6 +1640,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 54901691561,
    "nome": "Carregador Portátil 5000/10000/20000mah PN-959/956/952/951 Bateria Power Bank 20000mah",
    "precoMin": 35.98,
@@ -1537,6 +1654,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 58260622031,
    "nome": "Carregador Portátil Power Bank Turbo 20000mAh 22.5W Premium iPhone Samsung Xiaomi",
    "precoMin": 79.99,
@@ -1550,6 +1668,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 22599042883,
    "nome": "BASIKE 2026 Carregador Portátil 20000mAh - Carregamento Rápido 22.5W Power Bank Carregador Saída dupla",
    "precoMin": 199.99,
@@ -1563,6 +1682,7 @@
   },
   {
    "categoria": "powerbank",
+   "plataforma": "shopee",
    "itemId": 58213608076,
    "nome": "Power Bank Mini 10000mAh para Viagens Recarga Sem Fio e Cabo iPhone e Tipo-C 2em1",
    "precoMin": 26.99,
@@ -1576,6 +1696,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 22094298275,
    "nome": "Carregador 168w  Para Celular Com Type C Tipo C",
    "precoMin": 25.88,
@@ -1589,6 +1710,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 22392685500,
    "nome": "Carregador iPhone Turbo Tipo-C 20W + Cabo Lightining para IPhone Carga rápida",
    "precoMin": 23.99,
@@ -1602,6 +1724,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 26879149264,
    "nome": "Cabo USB 3A LED Glow 1M-De Carregamento De Luz Fluida Luminosa Para Micro E Tipo C , Dados Rápido",
    "precoMin": 9.34,
@@ -1615,6 +1738,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 58267046897,
    "nome": "Cabo USB para Tipo‑C 1 Metro Trançado Preto e Branco Carregamento Rápido",
    "precoMin": 12.0,
@@ -1628,6 +1752,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 20599596759,
    "nome": "Cabo de iPhone 60W PD USB C cabo tipo c original para iPhone 15 16",
    "precoMin": 16.98,
@@ -1641,6 +1766,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 58215621878,
    "nome": "Cabo De Carregador 3 Em 1 100W 6A Tipo C Lightning Micro USB Carga Rápida Liga De Zinco 1,2M",
    "precoMin": 13.87,
@@ -1654,6 +1780,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 19772642745,
    "nome": "Cabo Carregador Iphone Lightning Usb-C Tipo C 1m USB de Carregamento Rápido/Dados para Iphone",
    "precoMin": 8.99,
@@ -1667,6 +1794,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 21497804431,
    "nome": "Carregador Turbo 50W Carregador Rápido Super Rápido Acompanha cabo USB C",
    "precoMin": 18.88,
@@ -1680,6 +1808,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 20597688217,
    "nome": "CABO PARA IOS USB-C LIGHTNING DE CARREGAMENTO RÁPIDO DADOS DE 1M OU 2M PARA IOS",
    "precoMin": 21.49,
@@ -1693,6 +1822,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 58252016104,
    "nome": "Carregador Veicular Turbo 87.5W USB-C USB-A Carregamento rápido Metal aeronáutico TIPO C",
    "precoMin": 29.98,
@@ -1706,6 +1836,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 22694681619,
    "nome": "Electro Nest Adaptador Conversor OTG Cabo Tipo-C Para Lightning ZHQ-25 ZHQ-26",
    "precoMin": 15.99,
@@ -1719,6 +1850,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 58203288339,
    "nome": "Kit 2 em 1 Power Bank Portátil   Pack MagSafe + Cabo de iphone Rápido 20W USB-C para Lightning 1m",
    "precoMin": 48.89,
@@ -1732,6 +1864,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 25469678972,
    "nome": "Cabo Carregador Greatatop USB C PD Trançado Tipo De Carregamento Rápido",
    "precoMin": 9.3,
@@ -1745,6 +1878,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 22997632498,
    "nome": "Cabo De Carregamento Turbo Rápido HB06-2 PD 27W Tipo c Lightning para iPhone 14 13 12 11 Pro Max",
    "precoMin": 21.99,
@@ -1758,6 +1892,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 58215022160,
    "nome": "Cabo USB C 60W PD Nylon Trançado Para iPhone 15 16 17 Pro Max Carregamento Rápido 1m",
    "precoMin": 9.99,
@@ -1771,6 +1906,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 16159899385,
    "nome": "Caixinha Carregador Turbo 20W - Fonte Tomada Tipo C Turbo X Cabo Lightning para iPhones",
    "precoMin": 12.87,
@@ -1784,6 +1920,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 22698058355,
    "nome": "Carregador Fonte Turbo Lightning Ou Tip-c com Cabo Ou Solto Carregamento Rápido 1m PD 20w - Promoção",
    "precoMin": 8.38,
@@ -1797,6 +1934,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 22498148869,
    "nome": "Carregador Turbo 35W iPhone USB C Original Fonte PD Carregador iPhone 15 iPhone 16",
    "precoMin": 15.98,
@@ -1810,6 +1948,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 7975402525,
    "nome": "UGREEN PD QC PPS 100W 60W USB-C Para Cabo De Carga Rápida Tipo 20V 5A USB Tipo C Para iPhone 15 Samsung Galaxy Tablet",
    "precoMin": 19.9,
@@ -1823,6 +1962,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 58264014663,
    "nome": "Cabo Usb Tipo C 100W 2 Metros turbo Compatível Samsung Galaxy iphone 15 16 17 Pro Max Carplay Auto Android Ps5 Dtimp",
    "precoMin": 19.9,
@@ -1836,6 +1976,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 23997010703,
    "nome": "Cabo de iPhone Lightning 20W Usb-C Tipo C  1M/2M USB de Carregamento Rápido/Dados",
    "precoMin": 12.87,
@@ -1849,6 +1990,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 19999495614,
    "nome": "Cabo De Carregamento 3 Em 1 De Liga De Zinco 100W 6A Carregador Super Rápido USB Proteção Para Micro Tipo C",
    "precoMin": 13.99,
@@ -1862,6 +2004,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 58263335250,
    "nome": "Carregador Turbo 20w Compatível iPhone + Cabo Lightning",
    "precoMin": 25.9,
@@ -1875,6 +2018,7 @@
   },
   {
    "categoria": "cabos",
+   "plataforma": "shopee",
    "itemId": 23098870906,
    "nome": "Carregador Iphone Turbo 45W 2 Entradas USB e USB-C + Cabo Lightning Iphone 6 7 8 X XR XS 11 12 13 14",
    "precoMin": 23.99,
@@ -1888,6 +2032,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 22993693932,
    "nome": "H'Maston CJ-02 Suporte Celular GPS Veicular Carro Universal 360° Trava Automática Ajustável",
    "precoMin": 19.99,
@@ -1901,6 +2046,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 19098752815,
    "nome": "Suporte Veicular Carro Para Celular 360 ° Giratório Universal Multifuncional Ventilacao Ar",
    "precoMin": 17.79,
@@ -1914,6 +2060,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 23499011933,
    "nome": "Suporte Magnético 360° Dobrável p/ Celular com Sucção a Vácuo Forte – Carro Mesa Parede",
    "precoMin": 15.78,
@@ -1927,6 +2074,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 22499533305,
    "nome": "Carregador Veicular Universal Turbo com 3 USB e 1 Porta QC3.0, Carregamento Rápido para Celulares",
    "precoMin": 12.5,
@@ -1940,6 +2088,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 23993565028,
    "nome": "Suporte Celular Carro Veicular Trava Automática anti queda",
    "precoMin": 24.98,
@@ -1953,6 +2102,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 19899587464,
    "nome": "1/2/3/4 Suporte magnético com poderoso imã neodimio p/celular universal - potente automotivo para carro Anjin",
    "precoMin": 11.39,
@@ -1966,6 +2116,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 58254766131,
    "nome": "Adaptador Bluetooth USB Para Carro Áudio Limpo Sem Interferências",
    "precoMin": 10.97,
@@ -1979,6 +2130,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 20999580796,
    "nome": "Carregador de carro retrátil com luz LED, carregador de carro rápido 4 em 1 de 120 W para iPhone e Android",
    "precoMin": 45.17,
@@ -1992,6 +2144,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 45754796089,
    "nome": "Tomada de Carregador para Carro com Dupla Entrada Tipo-C e Duplas USB, 4 Portas, Carregamento Rápido, à Prova d'Água",
    "precoMin": 23.69,
@@ -2005,6 +2158,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 21499360913,
    "nome": "Suporte Celular Para-brisa Super Fixador Para Painel Carro",
    "precoMin": 25.97,
@@ -2018,6 +2172,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 18597752657,
    "nome": "Adaptador Bluetooth 5.0 USB Transmissor Áudio Sem Fio para Notebook e Carros",
    "precoMin": 11.0,
@@ -2031,6 +2186,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 19299724564,
    "nome": "360°Suporte dobrável para celular Suporte magnético de adsorção de carro a vácuo dupla face",
    "precoMin": 14.99,
@@ -2044,6 +2200,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 14766183690,
    "nome": "Suporte Veicular Com Imã Magnético Painel Carro Discreto Gps",
    "precoMin": 13.86,
@@ -2057,6 +2214,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 23493907428,
    "nome": "Electro Nest Suporte Magnetico de Celular mini Suporte Celular Carro Veicular Forte adsorção CJ-50",
    "precoMin": 9.59,
@@ -2070,6 +2228,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 22694535605,
    "nome": "360 °Suporte Magnético Forte Para Telefone Carro Design Dobrável Vácuo Ajustável/Mesa/Uso Universal",
    "precoMin": 14.99,
@@ -2083,6 +2242,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 23694280961,
    "nome": "Suporte Magnético Veicular com Ventosa a Vácuo | Base Ajustável 360° para Celular | Fixação Forte e Compacto para Painel",
    "precoMin": 13.88,
@@ -2096,6 +2256,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 22192842652,
    "nome": "Suporte Anti Queda Pra Celular Veicular 360 ajustável carro painel vidro parabrisa universal mesa gravação anti queda GPS ventosa",
    "precoMin": 26.99,
@@ -2109,6 +2270,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 22198888640,
    "nome": "Carregador Veicular Carro Turbo Universal 3 Portas Usb 1 Porta 3.0 Quick Charger",
    "precoMin": 12.5,
@@ -2122,6 +2284,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 23998115427,
    "nome": "KIT led para carro farol MILHA LED auxiliar 99w redondo led 110mm ip67 PAR 2 corujinha para caminhao",
    "precoMin": 33.33,
@@ -2135,6 +2298,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 58262944076,
    "nome": "Carregador Turbo Veicular Carga Rápida com Cabo 2 Saídas USB 4.8A Cor aleatória",
    "precoMin": 21.99,
@@ -2148,6 +2312,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 21997617187,
    "nome": "Carregador Carro Transmissor Fm Bluetooth Veicular X8 Mp3 Rádio",
    "precoMin": 17.98,
@@ -2161,6 +2326,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 19797416287,
    "nome": "Suporte Celular E Gps Veicular Para Carro Saida de Ar condicionado Grampo Ajustável 360° H'MASTON",
    "precoMin": 12.49,
@@ -2174,6 +2340,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 22998858410,
    "nome": "Suporte Carro Celular GPS Universal Painel e Parabrisa Resistente Ventosa Ajustável Rotação 360°",
    "precoMin": 17.9,
@@ -2187,6 +2354,7 @@
   },
   {
    "categoria": "carro",
+   "plataforma": "shopee",
    "itemId": 22393824016,
    "nome": "Suporte Magnético de Celular GPS Universal para Carro 360° Imã Forte Para Carro Painel",
    "precoMin": 19.99,
@@ -2200,6 +2368,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 22792809253,
    "nome": "Fone de Ouvido Sem Fio  PRO5 airpods Com Cancelamento De Ruído Bluetooth Pop-Up para iOS e Android",
    "precoMin": 42.98,
@@ -2213,6 +2382,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 19899586753,
    "nome": "Fone de Ouvido Sem Fio Com Cancelamento De Ruído Bluetooth Pop-Up",
    "precoMin": 42.89,
@@ -2226,6 +2396,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 23399043568,
    "nome": "Fone Bluetooth Pro5 Premium | Imersão Total c Cancelamento Ruído Qualidade Superior p iPhoneAndroid",
    "precoMin": 66.88,
@@ -2239,6 +2410,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 58255641529,
    "nome": "Fone Pro Sem Fio Som HiFi 8D Pop-Up Automático Toque Inteligente Bateria 5–7h Bluetooth Universal",
    "precoMin": 16.99,
@@ -2252,6 +2424,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 58203212332,
    "nome": "Fone Bluetooth OWS Sem Fio 5.3 Open Ear Confortável para Academia Caminhada e Uso Diário",
    "precoMin": 22.99,
@@ -2265,6 +2438,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 22093823144,
    "nome": "Fone de Ouvido Sem Fio Airpods PRO 3 Com Cancelamento De Ruído Bluetooth Pop-Up para iOS e Android",
    "precoMin": 42.98,
@@ -2278,6 +2452,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 23694958937,
    "nome": "Fone De Ouvido Bluetooth Orelha Gatinho Infantil Led Sem Fio",
    "precoMin": 27.5,
@@ -2291,6 +2466,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 58200448338,
    "nome": "Fone de ouvido estéreo sem fio à prova d'água com Bluetooth caixa de carregamento longa duração T70",
    "precoMin": 32.99,
@@ -2304,6 +2480,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 43781714813,
    "nome": "Fone De Ouvido Inpods 13 Bluetooth Sem Fio Com Microfone Fones esportivos Adequado Branco",
    "precoMin": 19.99,
@@ -2317,6 +2494,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 20497723525,
    "nome": "Fone De Ouvido Earcuffs Condução De Ossos Sem Fio Bluetooth Auriculares TWS Earbuds",
    "precoMin": 21.88,
@@ -2330,6 +2508,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 58203749906,
    "nome": "2026 Novo Q71 Fones de ouvido Bluetooth sem fio OWS fones de ouvido esportivos com clipe",
    "precoMin": 42.8,
@@ -2343,6 +2522,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 26181234420,
    "nome": "Fone de Ouvido Sem Fio Bluetooth Pro 6 Com Cancelamento De Ruído Pop-Up para iOS -GPS",
    "precoMin": 42.99,
@@ -2356,6 +2536,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 54508095749,
    "nome": "Fone de Ouvido Sem Fio PODSPRO 6 Estereo Com Cancelamento De Ruído Bluetooth Pop-Up para iOS E Android",
    "precoMin": 42.98,
@@ -2369,6 +2550,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 22593832914,
    "nome": "Fones De Ouvido Bluetooth HiFi Estéreo Com Redução De Ruído ENC À Prova D'água i12 TWS  FON-I12",
    "precoMin": 21.99,
@@ -2382,6 +2564,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 29588922747,
    "nome": "Senbenbao X55 Fones De Ouvido TWS Sono Sem Fio Bluetooth Display Led Alta Fidelidade Estéreo Cancelamento Ruído À Prova",
    "precoMin": 16.47,
@@ -2395,6 +2578,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 58208889792,
    "nome": "Fone de Ouvido Bluetooth 5.0 Sem Fio Headset Bateria de Longa Duração Fone Corrida Academia",
    "precoMin": 40.99,
@@ -2408,6 +2592,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 22494456015,
    "nome": "Fone de ouvido Bluetooth Sem Fio Headphone Bluetooth Recarregável P9 Air Top Casual Esportivo",
    "precoMin": 24.87,
@@ -2421,6 +2606,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 23393102862,
    "nome": "13 TWS Sem Fio Bluetooth 5.0 Air Pro 3 Fone De Ouvido Esportivo Com Microfone",
    "precoMin": 16.99,
@@ -2434,6 +2620,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 27919039570,
    "nome": "Novos Fones De Ouvido i12 TWS Sem Fio Bluetooth HiFi Estéreo Com Redução De Ruído ENC À Prova D'água De Longa Duração Ch",
    "precoMin": 15.72,
@@ -2447,6 +2634,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 40670011384,
    "nome": "PRO 4/3 Mini TWS Fones De Ouvido Bluetooth 5.3 Estéreo Hi-Fi Sem Fio Intra-Auriculares Com MIC",
    "precoMin": 19.79,
@@ -2460,6 +2648,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 29364698440,
    "nome": "Fones X55: invisíveis, TWS, Bluetooth, HiFi, redução de ruído, ENC à prova d’água e bateria duradoura",
    "precoMin": 20.09,
@@ -2473,6 +2662,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 23893066508,
    "nome": "Air Pro 6 TWS Fones de ouvido Bluetooth sem fio Fones de ouvido esportivos  jorge",
    "precoMin": 18.66,
@@ -2486,6 +2676,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 41461046214,
    "nome": "E6S Fones De Ouvido TWS Sem Fio Display LED 9D Estéreo Redução Ruído Longo Tempo À Prova Dwaterproof Água HD Chamada Sma",
    "precoMin": 17.64,
@@ -2499,6 +2690,7 @@
   },
   {
    "categoria": "fones",
+   "plataforma": "shopee",
    "itemId": 21798200941,
    "nome": "Fone P47 Headphone Sem Fio Estéreo Redução de Ruídos Bluetooth 5.0 Universal",
    "precoMin": 18.98,
@@ -2512,6 +2704,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 23098440348,
    "nome": "K12 Caixa de som sem fio com microfone Karaokê, Mini Alto-falante Bluetooth portátil 1/2 Mic",
    "precoMin": 29.49,
@@ -2525,6 +2718,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 23897644397,
    "nome": "Caixa De Som Speaker Bluetooth RGB Portátil 10W usb/aux",
    "precoMin": 23.88,
@@ -2538,6 +2732,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 20997608223,
    "nome": "Caixa de som Bluetooth Portátil Com Led RGB Portátil FM USB TWS 30W Para Praia, Festa ou Viagem",
    "precoMin": 99.99,
@@ -2551,9 +2746,10 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 18598350302,
    "nome": "Alaxe5 Generation Original Speaker Immediate Shipping Best Price",
-   "precoMin": 46.98,
+   "precoMin": 46.99,
    "precoMax": 56.98,
    "discountRate": 57,
    "sales": 4160,
@@ -2564,6 +2760,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 58202148614,
    "nome": "Caixa de Som Bluetooth Portátil RGB com Microfone Sem Fio Karaokê USB TF AUX LED Colorido Mini Speaker Potente",
    "precoMin": 34.99,
@@ -2577,6 +2774,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 23300932279,
    "nome": "Caixa De Som Bluetooth Amplificada Potente LED RGB USB SD Radio Fm Mp3 Celular Note Tablet Conexão TWS",
    "precoMin": 27.99,
@@ -2590,6 +2788,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 58261888418,
    "nome": "Karaokê Bluetooth com 2 Microfones Sem Fio Caixa de Som Portátil ANJGG BRASIL",
    "precoMin": 34.99,
@@ -2603,6 +2802,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 20052547590,
    "nome": "Lampada Bluetooth De Led Caixa De Som C Controle Rgb 12W",
    "precoMin": 19.99,
@@ -2616,19 +2816,7 @@
   },
   {
    "categoria": "caixas",
-   "itemId": 58252248202,
-   "nome": "Karaokê Portátil Bluetooth com Duplo Microfone Sem Fio Caixa de Som LED",
-   "precoMin": 34.99,
-   "precoMax": 38.99,
-   "discountRate": 65,
-   "sales": 2477,
-   "ratingStar": "4.8",
-   "loja": "FERNANDA Store BR",
-   "imagem": "https://cf.shopee.com.br/file/sg-11134201-824ic-mpidogv1rg9941",
-   "link": "https://s.shopee.com.br/7Kxqddysnu"
-  },
-  {
-   "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 22194652188,
    "nome": "ORIGINAL - Caixa de som com Bluetooth, Led modelo Alexa DE UM APARELHO SUPER BASS",
    "precoMin": 46.99,
@@ -2642,6 +2830,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 49610876725,
    "nome": "Rádio Caixa de Som Bluetooth Recarregável  Lanterna Retro Portátil FM AM USB SD Pilha",
    "precoMin": 67.9,
@@ -2655,6 +2844,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 19498265311,
    "nome": "Caixa De Som LED Bluetooth magnético portátil atmosfera colorida RBG mini Speaker à prova d'água",
    "precoMin": 19.88,
@@ -2668,6 +2858,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 58254952015,
    "nome": "Caixa De Som C/ 2 Microfones Bluetooth 5.0 Karaokê Luzes led, Entretenimento em Casa",
    "precoMin": 28.99,
@@ -2681,6 +2872,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 22697307193,
    "nome": "Caixa de som Bluetooth Com Led RGB Portátil USB FM TWS",
    "precoMin": 99.99,
@@ -2694,6 +2886,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 23394735827,
    "nome": "Caixa de Som K12 Bluetooth Portátil com 1 ou 2 Microfones Mini Alto-Falante Karaokê",
    "precoMin": 25.99,
@@ -2707,6 +2900,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 23898040058,
    "nome": "Caixa de Som Portátil Bluetooth com LED Rádio FM USB e SD",
    "precoMin": 26.96,
@@ -2720,6 +2914,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 58210265912,
    "nome": "Caixa Caixinha de Som Potente Usb P2 Para Computador Pc Notebook Home Office 1020D",
    "precoMin": 18.9,
@@ -2733,6 +2928,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 22498072058,
    "nome": "Mini Caixa De Som Inpods Little Fun Macaron Portátil Bluetooth TWS",
    "precoMin": 18.88,
@@ -2746,6 +2942,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 19199870733,
    "nome": "INOVA Caixa De Som Bluetooth Tws Estéreo Alta Hifi Longa Duração IPX6 Speaker Portátil Som Potente Casa Caixa Som",
    "precoMin": 75.99,
@@ -2759,6 +2956,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 58254729932,
    "nome": "Caixinha Caixa De Som Bluetooth Portátil Speaker MP3 AL-006",
    "precoMin": 29.96,
@@ -2772,6 +2970,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 58258033165,
    "nome": "Mini Caixa De Som Computador Aitek ACS-4511 Potente 6W USB P2 Pronta Entrega",
    "precoMin": 19.89,
@@ -2785,6 +2984,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 22194037939,
    "nome": "Caixa de Som Bluetooth Potente Com 4 Alto Falantes 30W Soundbar PC Notebook TV",
    "precoMin": 79.88,
@@ -2798,6 +2998,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 23799552966,
    "nome": "Caixa de Som Bluetooth Potente KTS, Recarregável, Rádio FM e Design Compacto Alto Falante, Led",
    "precoMin": 29.99,
@@ -2811,6 +3012,7 @@
   },
   {
    "categoria": "caixas",
+   "plataforma": "shopee",
    "itemId": 58257809460,
    "nome": "Caixa de som Bluetooth portátil luzes LED RGB, rádio FM, USB, TWS, ideal para praia, festas, viagens, modelo MD‑B01/B02",
    "precoMin": 52.48,
@@ -2823,7 +3025,22 @@
    "link": "https://s.shopee.com.br/8V9o1myqFL"
   },
   {
+   "categoria": "caixas",
+   "plataforma": "shopee",
+   "itemId": 23998775294,
+   "nome": "Inova caixa de som blootooth Portátil Go 4 Com Bateria Esportiva À Prova D 'Água pen drive FM TWS caixinha de som",
+   "precoMin": 69.99,
+   "precoMax": 74.9,
+   "discountRate": 65,
+   "sales": 875,
+   "ratingStar": "4.9",
+   "loja": "Inova Loja Oficial",
+   "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mjqdt1hw2dc3ba",
+   "link": "https://s.shopee.com.br/8KqNpTzTaI"
+  },
+  {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 22093160276,
    "nome": "2026 Nova Série 8 Relógio T800 Ultra Smart Watch Esportivo Sem Fio À Prova D'água T800 Ultra2 MAX",
    "precoMin": 45.88,
@@ -2837,6 +3054,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 58204541630,
    "nome": "Relogio Smartwatch Feminino Masculino  Series 10 Para Android ios Faz Recebe Chamada",
    "precoMin": 39.99,
@@ -2850,6 +3068,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 58262895607,
    "nome": "Smartwatch WL23 PRO(46mm)2026 3 Pulseiras inteligente GPS unisex Esportes Faz Recebe Chamada",
    "precoMin": 44.98,
@@ -2863,6 +3082,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 18499604408,
    "nome": "2026 Novo Watch S20 PRO Max Relógio 10 Smart Watch Homens BT Chamada Sempre Em Exibição Temperatura",
    "precoMin": 39.88,
@@ -2876,6 +3096,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 22499056874,
    "nome": "Smartwatch MINI 38MM PRO Com monitor De Frequência Cardíaca Do Computador São Paulo pronta entrega",
    "precoMin": 53.99,
@@ -2889,6 +3110,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 23399193375,
    "nome": "2026 T800 Ultra 3 MAX Mais Recente Smartwatch Relógio Inteligente NFC Série 10 2.19Polegadas Sem Fio",
    "precoMin": 49.9,
@@ -2902,6 +3124,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 19999887950,
    "nome": "2026 Novo Relógio Smartwatch S20PROMAX,S20Ultra 7 Em 1Alças 49MM Tela De Toque Completo Esporte Smartwatch",
    "precoMin": 55.98,
@@ -2915,6 +3138,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 23392637020,
    "nome": "2026 Relógio T10 Ultra NPC 9 Novo Inteligente Watch 9 Ultra 2 Série 9 Bússola 2.2 Tela 49mm Homens",
    "precoMin": 58.6,
@@ -2928,6 +3152,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 58216027128,
    "nome": "Relógio Inteligente Ultra 2026 Série 10 Ultra com Chamadas Tela HD Monitor de Saúde Diário",
    "precoMin": 39.99,
@@ -2941,6 +3166,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 21099557497,
    "nome": "Smartwatch 7 Em 1 Alças 49mm Full Touch Screen Sport",
    "precoMin": 59.0,
@@ -2954,6 +3180,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 27893329314,
    "nome": "Lançamento De Smartwatch Relógio Inteligente Com Tela Infinita E Duas Alças , Estilo Tecnologia Para Homens Mulheres",
    "precoMin": 42.99,
@@ -2967,6 +3194,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 22194655193,
    "nome": "【Sete pulseiras】 Smartwatch S20 PRO MINI Watch Pro Série 10 Bluetooth Relógio inteligente Cardíaca Monitoramento NFC GPS",
    "precoMin": 39.88,
@@ -2980,6 +3208,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 20797795834,
    "nome": "2026 smartwatch 9 pro Carregamento sem fio relógio inteligente 2.02 inches Série 9 Bluetooth Call",
    "precoMin": 55.88,
@@ -2993,6 +3222,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 18399889068,
    "nome": "Smartwatch S10 Pro Relogio Inteligente Serie 10 Bluetooth Chamada Notificações NFC Chat Gpt Gps",
    "precoMin": 54.9,
@@ -3006,6 +3236,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 58202231060,
    "nome": "Novo Smartwatch Relógio Inteligente Assistente De Voz Bluetooth Chamada À Prova D'água Homens Mulheres Fitness Esportivo",
    "precoMin": 78.6,
@@ -3019,6 +3250,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 18799900509,
    "nome": "T900 Ultra Smartwatch Relógio Inteligente Prova Bluetooth Monitoramento De Saúde Exercício Contagem NFC",
    "precoMin": 39.9,
@@ -3032,6 +3264,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 44213872297,
    "nome": "Smartwatch GPS BETTDOW com aplicativo de IA integrado, 100 modos esportivos, resistência à água de 3 ATM e tela AMOLED",
    "precoMin": 315.0,
@@ -3045,6 +3278,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 25495970799,
    "nome": "Novo relógio inteligente monitoramento de freqüência cardíaca calculadora de carregamento– São Paulo, Estoque Disponível",
    "precoMin": 51.99,
@@ -3058,6 +3292,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 22198011290,
    "nome": "2024 Novo T800 Ultra 2 Series 9 Resposta Ao Gesto Smart Watch Carregador Sem Fio À Prova D'água SmartWatch Esportivo",
    "precoMin": 35.88,
@@ -3071,6 +3306,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 44110609035,
    "nome": "2026 Mais Recente Smartwatch S10 Pro Relógio Série 10 2.08 Polegadas Sem Fio Bluetooth Esportes ALKF",
    "precoMin": 43.99,
@@ -3084,6 +3320,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 22693741525,
    "nome": "Smartwatch Ultra 3 Max Carregamento sem fio relógio inteligente 2.18 inches Bluetooth AI Inteligente Esportivo",
    "precoMin": 45.99,
@@ -3097,6 +3334,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 41809564883,
    "nome": "2026 original Smartwatch S10 Pro Mini Chamada Bluetooth Com monitor De Frequência Cardíaca Do Calculadora",
    "precoMin": 43.98,
@@ -3110,6 +3348,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 21799026815,
    "nome": "T900 Ultra Smartwatch S9 Ultra Relógio Inteligente 49mm Estoque em São Paulo disponível para pronta entrega",
    "precoMin": 59.0,
@@ -3123,6 +3362,7 @@
   },
   {
    "categoria": "smartwatch",
+   "plataforma": "shopee",
    "itemId": 21098294107,
    "nome": "Smart Watch Q11 Três em Um Original Masculino Feminino Esportivo Tela de Toque HD de 1,83 inches",
    "precoMin": 69.9,
@@ -3136,6 +3376,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 18799077517,
    "nome": "Tripé Universal Com Nível Câmeras Celulares 1,02m Pronto Entrega",
    "precoMin": 19.0,
@@ -3149,6 +3390,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 22893478127,
    "nome": "Tripé de bastão de selfie para celular de 1,7 m, controle remoto integrado, portátil",
    "precoMin": 30.99,
@@ -3162,6 +3404,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 23297652837,
    "nome": "Bastão Pau de selfie Tripé Retrátil Com Luz LED Controle Bluetooth Celular",
    "precoMin": 17.99,
@@ -3175,6 +3418,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 22993695412,
    "nome": "Bastão de selfie telescópico Bluetooth com controle remoto para celular com suporte de tripé com luz para selfie",
    "precoMin": 14.99,
@@ -3188,6 +3432,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 17562162923,
    "nome": "Kit Completo Anel Luz12  30cm Com Tripé 2.1M Dimmer  suporte celular ming",
    "precoMin": 48.99,
@@ -3201,6 +3446,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 24094406781,
    "nome": "360 °Suporte Magnético Forte Para Telefone Carro Design Dobrável  Vácuo Ajustável/Mesa/Uso Universal",
    "precoMin": 23.99,
@@ -3214,6 +3460,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 58216412938,
    "nome": "PROMOÇÃO！Atualizar！Suporte Para Celular e Tablet Dobrável Portátil Ajustável Apoio Mesa",
    "precoMin": 11.99,
@@ -3227,6 +3474,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 58262904901,
    "nome": "Ring Light 10 Polegadas 26cm com Tripé 2,10m Suporte para Celular 3 Tons de Luz USB para Lives Fotos e Vídeos",
    "precoMin": 41.24,
@@ -3240,6 +3488,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 2934125379,
    "nome": "Suporte Para Celular E Tablet Ajustável Apoio Mesa",
    "precoMin": 10.09,
@@ -3253,6 +3502,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 16802970389,
    "nome": "suporte Ergonômico dobravel Portátil Celular/tablet - Ajustável Mesa/SUPORTE",
    "precoMin": 10.99,
@@ -3266,6 +3516,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 9226533847,
    "nome": "Ring Light Iluminador Anel Luz 30cm 12 Polegadas Tripé 2,1m MarisaStore",
    "precoMin": 46.99,
@@ -3279,6 +3530,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 22093190175,
    "nome": "Selfie stick 1.7M de comprimento sem fio Bluetooth tripé portátil retrátil",
    "precoMin": 30.99,
@@ -3292,6 +3544,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 23098550947,
    "nome": "Tripé Selfie Stick Extensível com Controle Remoto Sem Fio para Grupos de Selfies e Streaming ao Vivo",
    "precoMin": 24.99,
@@ -3305,6 +3558,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 58211027880,
    "nome": "Suporte Alumínio de Mesa Base Rotatória Ajustável 360º Para Smartphones e Tablets",
    "precoMin": 12.99,
@@ -3318,19 +3572,7 @@
   },
   {
    "categoria": "acessorios",
-   "itemId": 57700903327,
-   "nome": "Tripé Selfie para Celular com Luz LED e Controle Bluetooth – Bastão de Selfie Ajustável com Tripé",
-   "precoMin": 17.98,
-   "precoMax": 18.99,
-   "discountRate": 55,
-   "sales": 1965,
-   "ratingStar": "4.8",
-   "loja": "FLASH_DIGTAL.br",
-   "imagem": "https://cf.shopee.com.br/file/cn-11134207-820l4-mnzflbvt47idca",
-   "link": "https://s.shopee.com.br/AUusPTQMB2"
-  },
-  {
-   "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 58203023733,
    "nome": "Suporte de Mesa para Celular/Tablet | Alumínio Resistente + Rotatória 360º Ajustável",
    "precoMin": 9.88,
@@ -3344,6 +3586,21 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
+   "itemId": 57700903327,
+   "nome": "Tripé Selfie para Celular com Luz LED e Controle Bluetooth – Bastão de Selfie Ajustável com Tripé",
+   "precoMin": 17.98,
+   "precoMax": 18.99,
+   "discountRate": 55,
+   "sales": 1965,
+   "ratingStar": "4.7",
+   "loja": "FLASH_DIGTAL.br",
+   "imagem": "https://cf.shopee.com.br/file/cn-11134207-820l4-mnzflbvt47idca",
+   "link": "https://s.shopee.com.br/AUusPTQMB2"
+  },
+  {
+   "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 23599348005,
    "nome": "Tripé Bastão Para Celular Com Controle Portátil 1,70M Selfie Foto Vídeo Gravação Retrátil Ajustável Preto Extensível",
    "precoMin": 43.99,
@@ -3357,6 +3614,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 3183470707,
    "nome": "Bastão Pau de Selfie Retrátil Bluetooth suport tripé para celular com controle",
    "precoMin": 13.99,
@@ -3370,6 +3628,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 22798478118,
    "nome": "Mini Lâmpada De Mesa LED  Livro De Leitura com Clipe De suporte Luz Ajustável Portátil",
    "precoMin": 12.9,
@@ -3383,6 +3642,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 22894682170,
    "nome": "Ring Light Anel de Luz LED 10 Polegadas com Tripé 2,1m Suporte Celular Iluminador TikTok YouTube",
    "precoMin": 44.99,
@@ -3396,6 +3656,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 22292594641,
    "nome": "Suporte Tripé Celular Smartphone De Mesa Escritório 360º",
    "precoMin": 12.89,
@@ -3409,6 +3670,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 24196869611,
    "nome": "Suporte Magnético Maxmay Para Celular Universal C/ Ventosa Multiuso Mesa Carro",
    "precoMin": 18.4,
@@ -3422,6 +3684,7 @@
   },
   {
    "categoria": "acessorios",
+   "plataforma": "shopee",
    "itemId": 58265936504,
    "nome": "Suporte Articulado Flexivel Para Celular Cama Mesa E Cozinha",
    "precoMin": 13.25,
@@ -3435,16 +3698,17 @@
   },
   {
    "categoria": "acessorios",
-   "itemId": 58216194800,
-   "nome": "Suporte Magnético Forte Para Telefone Carro 360 ° Design Dobrável Vácuo Ajustável/Mesa/Uso Universal",
-   "precoMin": 13.99,
-   "precoMax": 25.99,
-   "discountRate": 50,
-   "sales": 1625,
-   "ratingStar": "4.6",
-   "loja": "TAYANSHOPPING",
-   "imagem": "https://cf.shopee.com.br/file/br-11134207-820lk-mtjagn536ayqc2",
-   "link": "https://s.shopee.com.br/30orTgoRNT"
+   "plataforma": "shopee",
+   "itemId": 12223765393,
+   "nome": "Tripé Para Iluminação Led 2.1 Metros Universal Tik Tok Celular",
+   "precoMin": 19.99,
+   "precoMax": 26.99,
+   "discountRate": 43,
+   "sales": 1863,
+   "ratingStar": "4.8",
+   "loja": "ANJ.GG store",
+   "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rbk4-lm99gep3ttl14d",
+   "link": "https://s.shopee.com.br/9064ciW4Dt"
   }
  ]
 }
