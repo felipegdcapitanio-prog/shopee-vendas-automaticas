@@ -35,7 +35,7 @@ CATEGORIES = {
         "nome": "Celulares",
         "keywords": ["smartphone samsung galaxy", "celular xiaomi redmi", "celular motorola moto g", "smartphone poco", "iphone"],
         "preco_min": 400,
-        "fora": ["capa", "capinha", "película", "pelicula", "suporte", "case ", "tablet", "pad ", "tela ", "display", "bateria", "carcaça", "peça"],
+        "fora": ["capa", "capinha", "película", "pelicula", "suporte", "case ", "tablet", "pad ", "carcaça", "peças", "peça de", "kit reparo"],
     },
     "capinhas": {
         "nome": "Capinhas",
