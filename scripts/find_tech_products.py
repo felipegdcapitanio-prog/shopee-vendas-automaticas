@@ -174,6 +174,7 @@ def main():
                     continue
                 pool[n["itemId"]] = {
                     "categoria": cat,
+                    "plataforma": "shopee",
                     "itemId": n["itemId"],
                     "nome": (n.get("productName") or "").strip(),
                     "precoMin": float(n.get("priceMin") or 0),
