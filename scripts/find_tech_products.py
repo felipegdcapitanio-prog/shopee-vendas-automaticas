@@ -1,9 +1,10 @@
-"""Garimpeiro de tecnologia pra vitrine "Achados Shopee" da loja PULSO.
+"""Garimpeiro de tecnologia pra loja online da PULSO.
 
-Busca celulares, fones e carregadores na Shopee Affiliate API, filtra por
-nota + vendas, e salva em data/catalogo_pulso_tech.json (arquivo separado:
-não mexe no catálogo do robô do Telegram). A loja lê esse arquivo direto
-do GitHub, então renovar aqui já atualiza a vitrine.
+Busca celulares, capinhas, carregadores, cabos, acessórios de carro, fones etc.
+na Shopee Affiliate API, filtra por nota + vendas, e salva em
+data/catalogo_pulso_tech.json (arquivo separado: não mexe no catálogo do robô do
+Telegram). A loja lê esse arquivo direto do GitHub, então renovar aqui já
+atualiza o catálogo da loja.
 
 Uso:
     python scripts/find_tech_products.py
@@ -26,22 +27,75 @@ if hasattr(sys.stdout, "reconfigure"):
 ENDPOINT = "https://open-api.affiliate.shopee.com.br/graphql"
 OUT_PATH = os.path.join(ROOT, "data", "catalogo_pulso_tech.json")
 
-# preco_min evita capinha/película aparecendo na busca de celular
+# A ordem daqui é a ordem das abas na loja.
+# preco_min evita peça/acessório aparecendo na busca de aparelho.
+# fora: palavras que descartam o anúncio (além das globais em FORA_GERAL).
 CATEGORIES = {
     "celulares": {
         "nome": "Celulares",
         "keywords": ["smartphone samsung galaxy", "celular xiaomi redmi", "celular motorola moto g", "smartphone poco", "iphone"],
         "preco_min": 400,
+        "fora": ["capa", "capinha", "película", "pelicula", "suporte", "case ", "tablet", "pad ", "tela ", "display", "bateria", "carcaça", "peça"],
+    },
+    "capinhas": {
+        "nome": "Capinhas",
+        "keywords": ["capa celular iphone antichoque", "capinha samsung galaxy", "capinha xiaomi redmi", "capa magsafe", "capa motorola moto g", "capinha transparente"],
+        "preco_min": 5,
+        "fora": ["película", "pelicula", "suporte", "carregador", "cabo", "fone"],
+    },
+    "peliculas": {
+        "nome": "Películas",
+        "keywords": ["película vidro 3d iphone", "película samsung galaxy", "película privacidade celular", "película hidrogel", "película câmera celular"],
+        "preco_min": 3,
+        "fora": ["capa", "capinha", "suporte", "carregador", "cabo"],
+    },
+    "carregadores": {
+        "nome": "Carregadores",
+        "keywords": ["carregador turbo usb c", "carregador iphone 20w", "carregador gan 65w", "carregador sem fio magnético", "fonte carregador celular"],
+        "preco_min": 10,
+        "fora": ["pilha", "power bank", "powerbank", "veicular", "carro", "automotivo", "isqueiro"],
+    },
+    "powerbank": {
+        "nome": "Carregador portátil",
+        "keywords": ["power bank 10000mah", "carregador portátil 20000mah", "power bank magnético", "power bank com cabo"],
+        "preco_min": 15,
+        "fora": ["pilha", "capa", "estojo", "case"],
+    },
+    "cabos": {
+        "nome": "Cabos",
+        "keywords": ["cabo usb c turbo", "cabo lightning iphone", "cabo usb c 100w", "cabo trançado usb c", "cabo usb c para usb c"],
+        "preco_min": 5,
+        "fora": ["carregador completo", "fone", "hdmi", "adaptador otg"],
+    },
+    "carro": {
+        "nome": "Para o carro",
+        "keywords": ["carregador veicular turbo", "suporte celular carro", "suporte veicular magnético", "transmissor bluetooth carro", "suporte celular painel"],
+        "preco_min": 8,
+        "fora": ["bicicleta", "moto ", "motocicleta", "guidão"],
     },
     "fones": {
         "nome": "Fones",
         "keywords": ["fone bluetooth tws", "fone de ouvido sem fio", "headphone bluetooth", "headset gamer", "fone com cancelamento de ruído"],
         "preco_min": 15,
+        "fora": ["capa", "case ", "estojo", "almofada", "espuma", "ponteira"],
     },
-    "carregadores": {
-        "nome": "Carregadores",
-        "keywords": ["carregador turbo usb c", "carregador iphone 20w", "power bank", "carregador sem fio magnético", "cabo usb c turbo"],
-        "preco_min": 10,
+    "caixas": {
+        "nome": "Caixas de som",
+        "keywords": ["caixa de som bluetooth", "caixa de som portátil", "mini caixa de som bluetooth", "caixa de som potente"],
+        "preco_min": 15,
+        "fora": ["suporte", "capa", "bolsa"],
+    },
+    "smartwatch": {
+        "nome": "Smartwatch",
+        "keywords": ["smartwatch", "relógio inteligente", "smartband pulseira inteligente"],
+        "preco_min": 25,
+        "fora": ["pulseira de reposição", "pulseira para", "película", "capa", "carregador para"],
+    },
+    "acessorios": {
+        "nome": "Acessórios",
+        "keywords": ["suporte celular mesa", "tripé celular", "ring light", "microfone de lapela celular", "pop socket"],
+        "preco_min": 8,
+        "fora": ["capa", "película"],
     },
 }
 
@@ -49,7 +103,6 @@ MIN_RATING = 4.5
 MIN_SALES = 20
 PER_KEYWORD_LIMIT = 30
 MAX_PER_CATEGORY = 24
-EXCLUDE = ["capa", "capinha", "película", "pelicula", "suporte", "case "]
 
 
 def query_with_shop(app_id, secret, keyword):
@@ -78,21 +131,14 @@ def query_with_shop(app_id, secret, keyword):
     return body.get("data", {}).get("productOfferV2", {}).get("nodes", []) or []
 
 
-EXCLUDE_BY_CAT = {
-    "celulares": EXCLUDE + ["tablet", "pad "],
-    "fones": EXCLUDE[:2],
-    "carregadores": EXCLUDE[:2] + ["pilha"],
-}
-
-
 def dedupe_key(name):
-    # o mesmo aparelho aparece em várias lojas: fica só o melhor anúncio
+    # o mesmo produto aparece em várias lojas: fica só o melhor anúncio
     return "".join(c for c in name.lower() if c.isalnum())[:28]
 
 
 def qualifies(node, cat):
     name = (node.get("productName") or "").lower()
-    if any(w in name for w in EXCLUDE_BY_CAT[cat]):
+    if any(w in name for w in CATEGORIES[cat]["fora"]):
         return False
     try:
         rating = float(node.get("ratingStar") or 0)
@@ -100,11 +146,11 @@ def qualifies(node, cat):
         price = float(node.get("priceMin") or 0)
     except (TypeError, ValueError):
         return False
-    return rating >= MIN_RATING and sales >= MIN_SALES and price >= CATEGORIES[cat]["preco_min"] and node.get("imageUrl") and node.get("offerLink")
+    return bool(rating >= MIN_RATING and sales >= MIN_SALES and price >= CATEGORIES[cat]["preco_min"] and node.get("imageUrl") and node.get("offerLink"))
 
 
 def score(p):
-    # aqui pesa mais a venda (prova social) do que o desconto
+    # pesa mais a venda (prova social) do que o desconto
     return min(p["sales"], 5000) / 50 + p["discountRate"] + float(p["ratingStar"] or 0) * 10
 
 
@@ -116,7 +162,7 @@ def main():
         print("ERRO: credenciais não encontradas")
         return
 
-    produtos = []
+    produtos, ja_usados = [], set()
     for cat, info in CATEGORIES.items():
         print(f"\n== {info['nome']} ==")
         pool = {}
@@ -124,7 +170,7 @@ def main():
             nodes = query_with_shop(app_id, secret, kw)
             print(f"  {kw}: {len(nodes)} retornados")
             for n in nodes:
-                if not qualifies(n, cat):
+                if n["itemId"] in ja_usados or not qualifies(n, cat):
                     continue
                 pool[n["itemId"]] = {
                     "categoria": cat,
@@ -140,15 +186,16 @@ def main():
                     "link": n["offerLink"],
                 }
             time.sleep(0.4)
-        ranked, seen = [], set()
+        ranked, vistos = [], set()
         for p in sorted(pool.values(), key=score, reverse=True):
             key = dedupe_key(p["nome"])
-            if key in seen:
+            if key in vistos:
                 continue
-            seen.add(key)
+            vistos.add(key)
             ranked.append(p)
         ranked = ranked[:MAX_PER_CATEGORY]
-        print(f"  -> {len(ranked)} na vitrine")
+        ja_usados.update(p["itemId"] for p in ranked)
+        print(f"  -> {len(ranked)} na loja")
         produtos.extend(ranked)
 
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
