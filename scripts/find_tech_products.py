@@ -78,11 +78,21 @@ def query_with_shop(app_id, secret, keyword):
     return body.get("data", {}).get("productOfferV2", {}).get("nodes", []) or []
 
 
+EXCLUDE_BY_CAT = {
+    "celulares": EXCLUDE + ["tablet", "pad "],
+    "fones": EXCLUDE[:2],
+    "carregadores": EXCLUDE[:2] + ["pilha"],
+}
+
+
+def dedupe_key(name):
+    # o mesmo aparelho aparece em várias lojas: fica só o melhor anúncio
+    return "".join(c for c in name.lower() if c.isalnum())[:28]
+
+
 def qualifies(node, cat):
     name = (node.get("productName") or "").lower()
-    if cat != "celulares" and any(w in name for w in EXCLUDE[:2]):
-        return False
-    if cat == "celulares" and any(w in name for w in EXCLUDE):
+    if any(w in name for w in EXCLUDE_BY_CAT[cat]):
         return False
     try:
         rating = float(node.get("ratingStar") or 0)
@@ -130,7 +140,14 @@ def main():
                     "link": n["offerLink"],
                 }
             time.sleep(0.4)
-        ranked = sorted(pool.values(), key=score, reverse=True)[:MAX_PER_CATEGORY]
+        ranked, seen = [], set()
+        for p in sorted(pool.values(), key=score, reverse=True):
+            key = dedupe_key(p["nome"])
+            if key in seen:
+                continue
+            seen.add(key)
+            ranked.append(p)
+        ranked = ranked[:MAX_PER_CATEGORY]
         print(f"  -> {len(ranked)} na vitrine")
         produtos.extend(ranked)
 
