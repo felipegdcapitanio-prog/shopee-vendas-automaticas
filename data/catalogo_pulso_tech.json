@@ -1,5 +1,5 @@
 {
- "generated_at": 1792330978,
+ "generated_at": 1792331068,
  "categorias": {
   "celulares": "Celulares",
   "capinhas": "Capinhas",
@@ -68,6 +68,32 @@
   },
   {
    "categoria": "celulares",
+   "itemId": 58205404109,
+   "nome": "Smartphone Xiaomi POCO C85 4G, NFC Tela LCD 6.9\", Câmera 50MP, Versão Global Original Lacrado",
+   "precoMin": 1089.9,
+   "precoMax": 1269.9,
+   "discountRate": 37,
+   "sales": 146,
+   "ratingStar": "4.9",
+   "loja": "VERIX SHOP",
+   "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztd-mkwvhwvrw7b54f",
+   "link": "https://s.shopee.com.br/3LRhsBcwEw"
+  },
+  {
+   "categoria": "celulares",
+   "itemId": 45665862180,
+   "nome": "SMARTPHONE SAMSUNG GALAXY A17 128GB 4GB RAM 50MP TELA 6.7 IP54 PRETO",
+   "precoMin": 957.9,
+   "precoMax": 957.9,
+   "discountRate": 36,
+   "sales": 133,
+   "ratingStar": "5",
+   "loja": "Tudão Tech  Ltda",
+   "imagem": "https://cf.shopee.com.br/file/sg-11134201-8259s-mrrj9ufby77q2c",
+   "link": "https://s.shopee.com.br/9zyayciOHO"
+  },
+  {
+   "categoria": "celulares",
    "itemId": 20099832859,
    "nome": "! NOVO ! Celular Xiaomi Redmi Note 15 Pro 512GB OU 256GB com Nfc Global fonte brasil Original xiaomi oferta",
    "precoMin": 2099.0,
@@ -94,16 +120,16 @@
   },
   {
    "categoria": "celulares",
-   "itemId": 56256347462,
-   "nome": "Smartphone Samsung Galaxy A17 128gb 4gb Ram Inteligência Artificial Gemini Nfc Original",
-   "precoMin": 1099.9,
-   "precoMax": 1099.9,
-   "discountRate": 33,
-   "sales": 46,
-   "ratingStar": "4.9",
-   "loja": "HJ Magazine",
-   "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztj-ml27jml2wk5ef4",
-   "link": "https://s.shopee.com.br/1qctFcDTqz"
+   "itemId": 58203258316,
+   "nome": "Celular Xiaomi Redmi 15C Dual SIM de 256GB 8GB RAM de 6.9\" 50MP 8MP Bateria 6000mAh, Proteção IP64 Lançamento 2025",
+   "precoMin": 998.0,
+   "precoMax": 998.0,
+   "discountRate": 23,
+   "sales": 738,
+   "ratingStar": "4.6",
+   "loja": "HK Elefante",
+   "imagem": "https://cf.shopee.com.br/file/sg-11134201-8262c-mjgylap1bwue7d",
+   "link": "https://s.shopee.com.br/8pmeQI9GhQ"
   },
   {
    "categoria": "celulares",
@@ -117,6 +143,45 @@
    "loja": "NegociuN",
    "imagem": "https://cf.shopee.com.br/file/br-11134207-820ld-msbocxzhi1ad73",
    "link": "https://s.shopee.com.br/8fTDOAnSzG"
+  },
+  {
+   "categoria": "celulares",
+   "itemId": 58203289262,
+   "nome": "Xiaomi Redmi Note 15 4G, Processador Mediatek Hélio G100-Ultra, Bateria 6000mAh, 128/6GB RAM- 256/8GB RAM",
+   "precoMin": 1429.0,
+   "precoMax": 1699.0,
+   "discountRate": 25,
+   "sales": 230,
+   "ratingStar": "4.9",
+   "loja": "Gamesow Store",
+   "imagem": "https://cf.shopee.com.br/file/br-11134207-820mg-mtqqf80gyp6q00",
+   "link": "https://s.shopee.com.br/W7WUyezc2"
+  },
+  {
+   "categoria": "celulares",
+   "itemId": 23194354372,
+   "nome": "Smartphone Xiaomi POCO C85 4G Versão Global | Octa-Core Android 15 | Tela 6.9” 120Hz | Bateria 6000mAh",
+   "precoMin": 1096.0,
+   "precoMax": 1326.0,
+   "discountRate": 23,
+   "sales": 28,
+   "ratingStar": "5",
+   "loja": "Loja Oficial Ouro",
+   "imagem": "https://cf.shopee.com.br/file/br-11134207-820m9-mub4lc9ov4e9f3",
+   "link": "https://s.shopee.com.br/1BFu3pd0U"
+  },
+  {
+   "categoria": "celulares",
+   "itemId": 22398842892,
+   "nome": "Xiaomi Redmi 15 4G, Processador Snapdragon® 685, Câmera 50MP, Bateria 7000mAh, Versão Global",
+   "precoMin": 1249.0,
+   "precoMax": 1539.0,
+   "discountRate": 17,
+   "sales": 153,
+   "ratingStar": "4.9",
+   "loja": "Gamesow Store",
+   "imagem": "https://cf.shopee.com.br/file/br-11134207-820m4-mtqqf80gvw1u84",
+   "link": "https://s.shopee.com.br/4fx5SdP8A1"
   },
   {
    "categoria": "celulares",
@@ -146,6 +211,19 @@
   },
   {
    "categoria": "celulares",
+   "itemId": 53200239950,
+   "nome": "Smartphone Xiaomi Redmi 15C 4GB + 128GB – Tela 6.9\" Dual SIM LTE, Desempenho e Estilo Moderno",
+   "precoMin": 997.56,
+   "precoMax": 1020.57,
+   "discountRate": 9,
+   "sales": 193,
+   "ratingStar": "4.9",
+   "loja": "BESTBYBRASILGOLD",
+   "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mgcct0bhqq6d85",
+   "link": "https://s.shopee.com.br/4B0oriR2Aq"
+  },
+  {
+   "categoria": "celulares",
    "itemId": 58211425841,
    "nome": "Celular Xiaomi Redmi 15C 256GB 8GB RAM 4GB Lançamento 2025",
    "precoMin": 1005.0,
@@ -172,6 +250,19 @@
   },
   {
    "categoria": "celulares",
+   "itemId": 51352143628,
+   "nome": "Smartphone Xiaomi POCO C85 – 6GB RAM, 128GB, Tela 6.9\", Dual LTE, Super Desempenho",
+   "precoMin": 1072.72,
+   "precoMax": 1080.0,
+   "discountRate": 1,
+   "sales": 97,
+   "ratingStar": "4.9",
+   "loja": "BESTBYBRASILGOLD",
+   "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhj70gfbokcmd5",
+   "link": "https://s.shopee.com.br/4qGVewXECN"
+  },
+  {
+   "categoria": "celulares",
    "itemId": 58257166621,
    "nome": "Smartphone Samsung Galaxy A07 6.7 128GB 4GB Câmera Dupla",
    "precoMin": 1155.9,
@@ -185,6 +276,19 @@
   },
   {
    "categoria": "celulares",
+   "itemId": 58215123035,
+   "nome": "Smartphone Xiaomi Poco M7 Pro 5G Dual SIM Tela 6.67\" AMOLED 120Hz 8GB + 256GB / 6GB + 128GB",
+   "precoMin": 1149.99,
+   "precoMax": 1149.99,
+   "discountRate": 0,
+   "sales": 82,
+   "ratingStar": "4.9",
+   "loja": "TECH TUDO",
+   "imagem": "https://cf.shopee.com.br/file/br-11134207-820lv-mr78ymsjk0sk36",
+   "link": "https://s.shopee.com.br/3Vl84UcItz"
+  },
+  {
+   "categoria": "celulares",
    "itemId": 58262444217,
    "nome": "Celular Smartphone Poco C81 Pro 256/4GB | 128/4GB | 64/4GB Global Lacrado de Fabrica",
    "precoMin": 1019.0,
@@ -195,6 +299,19 @@
    "loja": "Comprou Chegooou",
    "imagem": "https://cf.shopee.com.br/file/sg-11134201-824gy-mpfcn33uppn3fd",
    "link": "https://s.shopee.com.br/W7WUynizZ"
+  },
+  {
+   "categoria": "celulares",
+   "itemId": 22394360531,
+   "nome": "Novo Celular Smartphone Xiaomi Poco C85 4G NFC 256GB + 8GB de RAM Global Tela 6.9\" - Envio Imediato",
+   "precoMin": 1149.0,
+   "precoMax": 1389.0,
+   "discountRate": 0,
+   "sales": 50,
+   "ratingStar": "4.9",
+   "loja": "Ideal Store - ",
+   "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mdyy17p9t0cj9b",
+   "link": "https://s.shopee.com.br/gQwhHn5eg"
   },
   {
    "categoria": "celulares",
@@ -922,7 +1039,7 @@
    "ratingStar": "4.7",
    "loja": "Lily Space",
    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lwiueyaua06u52",
-   "link": "https://s.shopee.com.br/2LZ9qXxySX"
+   "link": "https://s.shopee.com.br/3B8HfyNwrg"
   },
   {
    "categoria": "carregadores",
@@ -935,7 +1052,7 @@
    "ratingStar": "4.8",
    "loja": "CasaTech Oficial",
    "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mjfmlxjdwt1d0f",
-   "link": "https://s.shopee.com.br/3Vl7EgtX5e"
+   "link": "https://s.shopee.com.br/1LgdUbUvaF"
   },
   {
    "categoria": "carregadores",
@@ -948,7 +1065,7 @@
    "ratingStar": "4.8",
    "loja": "ZSZ_brasil",
    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lsvdp1mfzd44da",
-   "link": "https://s.shopee.com.br/9zyboWFwBy"
+   "link": "https://s.shopee.com.br/9pfBcDlMzM"
   },
   {
    "categoria": "carregadores",
@@ -987,7 +1104,7 @@
    "ratingStar": "4.8",
    "loja": "Roweder Filial 2",
    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mckdfy7a3capa7",
-   "link": "https://s.shopee.com.br/qkM3n3gVO"
+   "link": "https://s.shopee.com.br/40hOfVKmB1"
   },
   {
    "categoria": "carregadores",
@@ -1026,7 +1143,7 @@
    "ratingStar": "4.8",
    "loja": "AcGeeki",
    "imagem": "https://cf.shopee.com.br/file/br-11134207-820mf-ms3e5fq877yf3b",
-   "link": "https://s.shopee.com.br/1gJT3K0VoT"
+   "link": "https://s.shopee.com.br/2gC153Pqsd"
   },
   {
    "categoria": "carregadores",
@@ -1065,7 +1182,7 @@
    "ratingStar": "4.8",
    "loja": "Lily Space",
    "imagem": "https://cf.shopee.com.br/file/br-11134201-820lh-mqy2kshjlo1x20",
-   "link": "https://s.shopee.com.br/2BFjeEybnW"
+   "link": "https://s.shopee.com.br/2qVRHMPDXe"
   },
   {
    "categoria": "carregadores",
@@ -1104,7 +1221,7 @@
    "ratingStar": "4.8",
    "loja": "TecnoExpressBR",
    "imagem": "https://cf.shopee.com.br/file/br-11134207-820m8-mpz1zlxiu60xc6",
-   "link": "https://s.shopee.com.br/AUurZYSstM"
+   "link": "https://s.shopee.com.br/5fpceZEQnR"
   },
   {
    "categoria": "carregadores",
@@ -1143,7 +1260,7 @@
    "ratingStar": "4.9",
    "loja": "CP-story",
    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lydwlfxn34f98d",
-   "link": "https://s.shopee.com.br/1BNCSP2PpQ"
+   "link": "https://s.shopee.com.br/4VdfGQIsA4"
   },
   {
    "categoria": "powerbank",
@@ -1403,7 +1520,7 @@
    "ratingStar": "4.6",
    "loja": "ANJ.GG store",
    "imagem": "https://cf.shopee.com.br/file/sg-11134201-824g2-meiubncsak1xcb",
-   "link": "https://s.shopee.com.br/4qGVf1rH8h"
+   "link": "https://s.shopee.com.br/5VWCSG1rmg"
   },
   {
    "categoria": "powerbank",
@@ -1585,7 +1702,7 @@
    "ratingStar": "4.9",
    "loja": "ENDLESS",
    "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mibg7m1hx3b555",
-   "link": "https://s.shopee.com.br/4LKF47JVV3"
+   "link": "https://s.shopee.com.br/8fTEE57LEl"
   },
   {
    "categoria": "cabos",
@@ -1962,7 +2079,7 @@
    "ratingStar": "4.6",
    "loja": "yaya.br",
    "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfuehv34wutga2",
-   "link": "https://s.shopee.com.br/1qcu5WbksO"
+   "link": "https://s.shopee.com.br/1gJTtEtW5L"
   },
   {
    "categoria": "carro",
@@ -1988,7 +2105,7 @@
    "ratingStar": "4.5",
    "loja": "ADS-store",
    "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rcbu-lrfzdemkecbt24",
-   "link": "https://s.shopee.com.br/8fTEE5Bk0p"
+   "link": "https://s.shopee.com.br/W7WV5xxSE"
   },
   {
    "categoria": "carro",
