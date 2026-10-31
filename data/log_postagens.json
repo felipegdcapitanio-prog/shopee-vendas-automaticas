@@ -82511,5 +82511,17 @@
     "ok": false,
     "error": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: failed to get HTTP URL content\"}",
     "ts": 1793467220
+  },
+  {
+    "itemId": 23797386225,
+    "ok": false,
+    "error": "{\"ok\":false,\"error_code\":502,\"description\":\"Bad Gateway\"}",
+    "ts": 1793467838
+  },
+  {
+    "itemId": 23794315908,
+    "ok": false,
+    "error": "{\"ok\":false,\"error_code\":502,\"description\":\"Bad Gateway\"}",
+    "ts": 1793467856
   }
 ]
