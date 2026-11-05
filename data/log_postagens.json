@@ -90632,5 +90632,16 @@
     "itemId": 21439079319,
     "ok": true,
     "ts": 1793908830
+  },
+  {
+    "itemId": 23797386225,
+    "ok": false,
+    "error": "<urlopen error [Errno 104] Connection reset by peer>",
+    "ts": 1793909418
+  },
+  {
+    "itemId": 23095930289,
+    "ok": true,
+    "ts": 1793909421
   }
 ]
