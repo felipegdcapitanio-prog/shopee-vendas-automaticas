@@ -93639,5 +93639,35 @@
     "itemId": 19399030572,
     "ok": true,
     "ts": 1794071422
+  },
+  {
+    "itemId": 23194710167,
+    "ok": false,
+    "error": "<urlopen error [Errno 104] Connection reset by peer>",
+    "ts": 1794071667
+  },
+  {
+    "itemId": 19199649259,
+    "ok": true,
+    "ts": 1794071671,
+    "special": "sabadao"
+  },
+  {
+    "itemId": 57503147803,
+    "ok": true,
+    "ts": 1794071674,
+    "special": "sabadao"
+  },
+  {
+    "itemId": 24714631849,
+    "ok": true,
+    "ts": 1794071678,
+    "special": "sabadao"
+  },
+  {
+    "itemId": 41728036780,
+    "ok": true,
+    "ts": 1794071681,
+    "special": "sabadao"
   }
 ]
