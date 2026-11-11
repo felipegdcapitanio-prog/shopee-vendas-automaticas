@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>Fila WhatsApp — 2026-11-11</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{ --paper:#FBF6F4; --ink:#2B1E22; --ink-soft:#6B585D; --line:#E9DBDD; --accent:#B23A63; --accent-strong:#8C2A4C; --ok:#3F7D5C; --ok-soft:#DCEEE3; }
+  *{box-sizing:border-box;}
+  body{ margin:0; background:var(--paper); color:var(--ink); font-family:system-ui,sans-serif; padding:24px; }
+  h1{ font-size:20px; margin:0 0 4px; }
+  p.sub{ color:var(--ink-soft); font-size:13.5px; margin:0 0 16px; }
+  .progress{ display:flex; align-items:center; gap:12px; margin:0 0 24px; max-width:1100px; }
+  .progress-bar{ flex:1; height:8px; background:var(--line); border-radius:99px; overflow:hidden; }
+  .progress-fill{ height:100%; width:0%; background:var(--ok); border-radius:99px; transition:width .3s ease; }
+  .progress-label{ font-size:13px; font-weight:700; color:var(--ink-soft); white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:18px; max-width:1100px; }
+  .card{ background:#fff; border:1px solid var(--line); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; }
+  .card.done{ opacity:.5; }
+  .media{ display:block; position:relative; aspect-ratio:1/1; background:#f2eae8; cursor:pointer; }
+  .media img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .posted-badge{ display:none; position:absolute; top:10px; left:10px; background:var(--ok); color:#fff; font-size:11.5px; font-weight:700; padding:4px 10px; border-radius:99px; }
+  .card.done .posted-badge{ display:inline-block; }
+  .body{ padding:14px 16px 16px; display:flex; flex-direction:column; gap:10px; }
+  .tag{ font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--accent-strong); }
+  .caption{ font-family:inherit; font-size:12.5px; white-space:pre-wrap; background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:10px; margin:0; max-height:220px; overflow-y:auto; }
+  .actions{ display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .copy-btn, .copy-img-btn{ font-family:inherit; font-size:13px; font-weight:700; padding:9px 14px; border-radius:8px; border:none; cursor:pointer; }
+  .copy-btn{ background:var(--accent); color:#fff; }
+  .copy-img-btn{ background:var(--accent-soft); color:var(--accent-strong); }
+  .copy-btn.copied, .copy-img-btn.copied{ background:var(--ok); color:#fff; }
+  .img-link{ font-size:12.5px; color:var(--accent-strong); }
+  .undo-btn{ display:none; font-family:inherit; font-size:12px; padding:6px 10px; border-radius:8px; border:1px solid var(--line); background:none; color:var(--ink-soft); cursor:pointer; }
+  .card.done .undo-btn{ display:inline-block; }
+</style></head>
+<body>
+  <h1>Fila de postagem — WhatsApp</h1>
+  <p class="sub">20 produtos. 1) Clica em "🖼️ Copiar imagem" — 2) cola direto no WhatsApp (Ctrl+V) — 3) clica em "Copiar legenda" e cola embaixo. Sem precisar baixar nem salvar nada na mão. A foto de cada card também é clicável e abre o produto na Shopee, pra conferir antes de postar. O card marca "✓ Postado" sozinho depois que você copiar — e continua marcado mesmo se a fila for atualizada de novo amanhã, então nunca fica em dúvida do que já foi postado.</p>
+  <div class="progress">
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    <span class="progress-label" id="progressLabel">0 de 20 já postados</span>
+  </div>
+  <div class="grid">
+    <article class="card" data-index="1" data-item-id="57404736397" data-image-url="https://cf.shopee.com.br/file/sg-11134201-8259x-mv5s9hg6kljab1">
+      <a class="media" href="https://s.shopee.com.br/906e5GFPBW" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/sg-11134201-8259x-mv5s9hg6kljab1" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Maquiagem &middot; 1/20</span>
+        <pre class="caption">Se você é apaixonada por make, guarda esse:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-84% OFF*
+
+*Life Girls Máscara de Cílios à Prova d&#x27;Água, à Prova de Manchas &amp; Curvadora para Cílios Volumosos e Naturais, Com Base*
+
+*R$ 11,72* _(de R$ 73,25)_
+
+⭐ 4.9  ·  🛍️ 2950 vendidos  ·  💄 Maquiagem
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/906e5GFPBW
+
+_Corre que costuma esgotar rápido!_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-8259x-mv5s9hg6kljab1" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="2" data-item-id="47204031915" data-image-url="https://cf.shopee.com.br/file/sg-11134201-82596-mv0239hh2yh0dd">
+      <a class="media" href="https://s.shopee.com.br/4LKoWg6qDf" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/sg-11134201-82596-mv0239hh2yh0dd" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Maquiagem &middot; 2/20</span>
+        <pre class="caption">Bora dar um upgrade na make de hoje?
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-81% OFF*
+
+*Batom De Veludo Com Glitter Rosa Perolado-Brilho Metálico À Prova D&#x27;água De Longa Duração , Escolha Maquiagem Oficial Ac*
+
+De ~R$ 67,63~ por *R$ 12,85*
+
+⭐ 4.7  ·  🛍️ 2260 vendidos  ·  💄 Maquiagem
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/4LKoWg6qDf
+
+_Enquanto durar o estoque, vale a pena garantir._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-82596-mv0239hh2yh0dd" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="3" data-item-id="52660324546" data-image-url="https://cf.shopee.com.br/file/br-11134207-820lo-mo4r6ryw8bgif4">
+      <a class="media" href="https://s.shopee.com.br/1BNkv2e7jT" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820lo-mo4r6ryw8bgif4" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Moda Feminina &middot; 3/20</span>
+        <pre class="caption">Aquela peça que combina com tudo:
+
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-67% OFF*
+
+*Blusa Manga 3/4 Feminina Elegante Casual Detalhe em V Moda Evangica Duna Social Básica Várias Cores*
+
+Tava R$ 90,88, agora só *R$ 29,99*
+
+⭐ 4.6  ·  🛍️ 4497 vendidos  ·  👗 Moda Feminina
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/1BNkv2e7jT
+
+_Corre que costuma esgotar rápido!_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820lo-mo4r6ryw8bgif4" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="4" data-item-id="58207087479" data-image-url="https://cf.shopee.com.br/file/br-11134207-820lq-mlxvxbp0xssk8f">
+      <a class="media" href="https://s.shopee.com.br/LodvVhIQE" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820lq-mlxvxbp0xssk8f" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Moda Feminina &middot; 4/20</span>
+        <pre class="caption">Aquela peça que combina com tudo:
+
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-61% OFF*
+
+*Camiseta Feminina Lisa 100% Algodão Premium Conforto Streetwear Fashion Urbano Casual Moda Diário Crt Unissex*
+
+De ~R$ 59,97~ por *R$ 23,39*
+
+⭐ 4.8  ·  🛍️ 4611 vendidos  ·  👗 Moda Feminina
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/LodvVhIQE
+
+_Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820lq-mlxvxbp0xssk8f" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="5" data-item-id="21299595782" data-image-url="https://cf.shopee.com.br/file/br-11134207-7r98o-m60j4ru5w9dx90">
+      <a class="media" href="https://s.shopee.com.br/9KjVtwLi5s" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-m60j4ru5w9dx90" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Moda Feminina &middot; 5/20</span>
+        <pre class="caption">Trocar de visual não precisa pesar no bolso:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-54% OFF*
+
+*Conjunto Blusa Regata e Short Saia com Cinto Plus Size Conjuntinho Feminino*
+
+*R$ 54,90* _(de R$ 119,35)_
+
+⭐ 4.8  ·  🛍️ 1991 vendidos  ·  👗 Moda Feminina
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/9KjVtwLi5s
+
+_Enquanto durar o estoque, vale a pena garantir._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-m60j4ru5w9dx90" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="6" data-item-id="58203391596" data-image-url="https://cf.shopee.com.br/file/br-11134207-81ztc-mjj7whhr045f82">
+      <a class="media" href="https://s.shopee.com.br/3VkfTgn295" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-81ztc-mjj7whhr045f82" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Calçados &middot; 6/20</span>
+        <pre class="caption">Conforto e estilo juntos, sem pesar no bolso:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-54% OFF*
+
+*pronta entrega envio imediato Sandália Saltinho 4 cm Tira de Strass Brilho  Calce Fácil Confortável elegante dia a dia*
+
+De ~R$ 79,96~ por *R$ 36,78*
+
+⭐ 4.8  ·  🛍️ 3827 vendidos  ·  👟 Calçados
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/3VkfTgn295
+
+_Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-81ztc-mjj7whhr045f82" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="7" data-item-id="23499346925" data-image-url="https://cf.shopee.com.br/file/sg-11134201-8261e-mkslp8xl6vwkd2">
+      <a class="media" href="https://s.shopee.com.br/8AXX5k9RXB" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/sg-11134201-8261e-mkslp8xl6vwkd2" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Moda Feminina &middot; 7/20</span>
+        <pre class="caption">Aquela peça que combina com tudo:
+
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-51% OFF*
+
+*Kit 4 Conjuntos Femininos Baby Doll Pijama Short Doll Estampado Sem Bojo Original*
+
+Tava R$ 101,84, agora só *R$ 49,90*
+
+⭐ 4.7  ·  🛍️ 3250 vendidos  ·  👗 Moda Feminina
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/8AXX5k9RXB
+
+_Esse tipo de oferta não dura muito, viu?_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-8261e-mkslp8xl6vwkd2" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="8" data-item-id="58206133056" data-image-url="https://cf.shopee.com.br/file/br-11134207-820m5-mtg2yqc5we0x69">
+      <a class="media" href="https://s.shopee.com.br/3LR5bakIKH" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820m5-mtg2yqc5we0x69" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Ferramentas &middot; 8/20</span>
+        <pre class="caption">Praticidade pra resolver aquele probleminha em casa:
+
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-51% OFF*
+
+*SOARFLY Parafusadeira Furadeira 48V 2 Baterias Com Maleta e Acessórios Completo 28pcs*
+
+Tava R$ 254,90, agora só *R$ 124,90*
+
+⭐ 4.9  ·  🛍️ 728 vendidos  ·  🛠️ Ferramentas
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/3LR5bakIKH
+
+_Enquanto durar o estoque, vale a pena garantir._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820m5-mtg2yqc5we0x69" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="9" data-item-id="58267262003" data-image-url="https://cf.shopee.com.br/file/br-11134201-820ls-msjaq23gpurofa">
+      <a class="media" href="https://s.shopee.com.br/40hwIKW3nk" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134201-820ls-msjaq23gpurofa" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Ferramentas &middot; 9/20</span>
+        <pre class="caption">Ferramenta boa facilita muito o dia a dia:
+
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-51% OFF*
+
+*Serra de Corrente Elétrica a Bateria 12 Polegadas Sem Fio Motosserra Portátil para Corte de Madeira e Jardinagem*
+
+*R$ 278,79* _(de R$ 568,96)_
+
+⭐ 4.8  ·  🛍️ 191 vendidos  ·  🛠️ Ferramentas
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/40hwIKW3nk
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134201-820ls-msjaq23gpurofa" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="10" data-item-id="27309424856" data-image-url="https://cf.shopee.com.br/file/sg-11134201-7rauh-ma9o2e1rbaycfb">
+      <a class="media" href="https://s.shopee.com.br/4qH6XciNtn" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/sg-11134201-7rauh-ma9o2e1rbaycfb" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Beleza &amp; Skincare &middot; 10/20</span>
+        <pre class="caption">Se cuidar também é sobre economizar sem abrir mão de qualidade.
+
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-50% OFF*
+
+*Base Líquida E Corretivo ANGMANNI-Cobertura Totalmente Fosca , Hidratante À Prova D&#x27;água , Brilho Diário , Escolha Maqui*
+
+Tava R$ 25,62, agora só *R$ 12,81*
+
+⭐ 4.8  ·  🛍️ 624 vendidos  ·  🧴 Beleza &amp; Skincare
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/4qH6XciNtn
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-7rauh-ma9o2e1rbaycfb" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="11" data-item-id="58215060692" data-image-url="https://cf.shopee.com.br/file/br-11134207-820mh-mr5zio0l3x8l73">
+      <a class="media" href="https://s.shopee.com.br/7KyRWHozHV" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820mh-mr5zio0l3x8l73" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Calçados &middot; 11/20</span>
+        <pre class="caption">Pra quem vive em pé o dia todo, esse aqui ajuda:
+
+👟 VALE A PENA CONFERIR 👟
+📉 *-39% OFF*
+
+*Sapatilha Feminina Tela Vazada Com Apliques Dourados Moda Confortavel 5701*
+
+Tava R$ 119,92, agora só *R$ 73,15*
+
+⭐ 4.9  ·  🛍️ 1358 vendidos  ·  👟 Calçados
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/7KyRWHozHV
+
+_Enquanto durar o estoque, vale a pena garantir._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820mh-mr5zio0l3x8l73" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="12" data-item-id="21440444359" data-image-url="https://cf.shopee.com.br/file/sg-11134201-825az-msdrska3sqgw8c">
+      <a class="media" href="https://s.shopee.com.br/1AfFtpNLd" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/sg-11134201-825az-msdrska3sqgw8c" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Decoração de Casa &middot; 12/20</span>
+        <pre class="caption">Pra deixar sua casa com a sua cara:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-81% OFF*
+
+*KIT 10/20/30 Gancho Adesivo/ Parede Multifuncional Autocolante Casa Cozinha Quarto Banheiro Organizado*
+
+*R$ 9,89* _(de R$ 52,05)_
+
+⭐ 4.8  ·  🛍️ 3863 vendidos  ·  🏠 Decoração de Casa
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/1AfFtpNLd
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-825az-msdrska3sqgw8c" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="13" data-item-id="23897615048" data-image-url="https://cf.shopee.com.br/file/sg-11134201-7rd5w-lx48yyw8p2me15">
+      <a class="media" href="https://s.shopee.com.br/AAI1xFPmkE" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/sg-11134201-7rd5w-lx48yyw8p2me15" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Beleza &amp; Skincare &middot; 13/20</span>
+        <pre class="caption">Se cuidar também é sobre economizar sem abrir mão de qualidade.
+
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-79% OFF*
+
+*Aparelho Peeling Ultrassônico Limpeza Facial Profunda Removedor de Cravos Esfoliante Facial Antirrugas Recarregável USB*
+
+De ~R$ 99,95~ por *R$ 20,99*
+
+⭐ 4.7  ·  🛍️ 682 vendidos  ·  🧴 Beleza &amp; Skincare
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/AAI1xFPmkE
+
+_Corre que costuma esgotar rápido!_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-7rd5w-lx48yyw8p2me15" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="14" data-item-id="47352531874" data-image-url="https://cf.shopee.com.br/file/sg-11134201-823or-mp4mc3zxszke13">
+      <a class="media" href="https://s.shopee.com.br/1Vznt9vFt3" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/sg-11134201-823or-mp4mc3zxszke13" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Ferramentas &middot; 14/20</span>
+        <pre class="caption">Ferramenta boa facilita muito o dia a dia:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-79% OFF*
+
+*Kit De Aglomerados De Cílios DIY 570 Unidades-Ferramenta De Vedação E Aplicador De Ligação Para Extensão Doméstica*
+
+De ~R$ 129,14~ por *R$ 27,12*
+
+⭐ 4.9  ·  🛍️ 4205 vendidos  ·  🛠️ Ferramentas
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/1Vznt9vFt3
+
+_Esse tipo de oferta não dura muito, viu?_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-823or-mp4mc3zxszke13" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="15" data-item-id="58251620645" data-image-url="https://cf.shopee.com.br/file/br-11134207-81z1k-mhzz99oj2n0mee">
+      <a class="media" href="https://s.shopee.com.br/Ln7NgbzL7" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-81z1k-mhzz99oj2n0mee" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Ferramentas &middot; 15/20</span>
+        <pre class="caption">Pra deixar tudo mais fácil aí na sua casa:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-78% OFF*
+
+*Kit 100/50/20/10Unidades Abraçadeira Nylon Enforca Gato Fivela Cinta Plástica Tipo T Universal Travamento Automático Car*
+
+Tava R$ 59,00, agora só *R$ 12,98*
+
+⭐ 4.8  ·  🛍️ 4077 vendidos  ·  🛠️ Ferramentas
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/Ln7NgbzL7
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-81z1k-mhzz99oj2n0mee" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="16" data-item-id="23798509847" data-image-url="https://cf.shopee.com.br/file/br-11134207-7r98o-m9sn66h21et51e">
+      <a class="media" href="https://s.shopee.com.br/4B1Ks5WeVS" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-m9sn66h21et51e" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Ferramentas &middot; 16/20</span>
+        <pre class="caption">Pra deixar tudo mais fácil aí na sua casa:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-78% OFF*
+
+*Nível a Laser 3 em 1 com Trena 2,5m, Tripé e Régua – Level Pro 03 Alinhador Horizontal e Vertical*
+
+Tava R$ 181,36, agora só *R$ 39,90*
+
+⭐ 4.8  ·  🛍️ 404 vendidos  ·  🛠️ Ferramentas
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/4B1Ks5WeVS
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-m9sn66h21et51e" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="17" data-item-id="58253299633" data-image-url="https://cf.shopee.com.br/file/br-11134207-81ztc-mjhpny09bwueb7">
+      <a class="media" href="https://s.shopee.com.br/8KplYn4eTV" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-81ztc-mjhpny09bwueb7" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Iluminação &middot; 17/20</span>
+        <pre class="caption">Ilumina o cantinho e ainda cabe no bolso:
+
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-78% OFF*
+
+*Vela LED Eletrônica Multicolorida com Número – Pisca-Pisca DIY para Festas e Decoração Noturna*
+
+Tava R$ 47,27, agora só *R$ 10,40*
+
+⭐ 4.9  ·  🛍️ 641 vendidos  ·  💡 Iluminação
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/8KplYn4eTV
+
+_Corre que costuma esgotar rápido!_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-81ztc-mjhpny09bwueb7" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="18" data-item-id="22193204521" data-image-url="https://cf.shopee.com.br/file/br-11134207-820m3-moys0e0tmc5i1f">
+      <a class="media" href="https://s.shopee.com.br/6VNUm2hkIw" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820m3-moys0e0tmc5i1f" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Beleza &amp; Skincare &middot; 18/20</span>
+        <pre class="caption">Separei esse aqui pensando em quem ama uma pele bem cuidada:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-75% OFF*
+
+*Koasis Blur Primer MINIMIZA POROS + CONTROLE DE BRILHO para TODAS as Peles 30ml Refinador de Poros e Hidratante*
+
+*R$ 19,50* _(de R$ 78,00)_
+
+⭐ 4.8  ·  🛍️ 695 vendidos  ·  🧴 Beleza &amp; Skincare
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/6VNUm2hkIw
+
+_Corre que costuma esgotar rápido!_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820m3-moys0e0tmc5i1f" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="19" data-item-id="58212424431" data-image-url="https://cf.shopee.com.br/file/br-11134207-820ll-mpe1a9n6spvp35">
+      <a class="media" href="https://s.shopee.com.br/1BMJd2YTg" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820ll-mpe1a9n6spvp35" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Calçados &middot; 19/20</span>
+        <pre class="caption">Achado pra completar o look com conforto:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-74% OFF*
+
+*Sandália Feminina EVA Plataforma Nuvem Confortável Com 10 Pins*
+
+Tava R$ 126,88, agora só *R$ 32,99*
+
+⭐ 4.9  ·  🛍️ 4320 vendidos  ·  👟 Calçados
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/1BMJd2YTg
+
+_Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820ll-mpe1a9n6spvp35" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="20" data-item-id="23694995837" data-image-url="https://cf.shopee.com.br/file/sg-11134201-8259r-ms431v6h0flsb9">
+      <a class="media" href="https://s.shopee.com.br/9fKSbsr8H4" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/sg-11134201-8259r-ms431v6h0flsb9" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Calçados &middot; 20/20</span>
+        <pre class="caption">Sapato bom é sinônimo de dia mais leve:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-73% OFF*
+
+*Sandália babuche Feminino EVA Com enfeite Sapato Confortável Modinha Antiderrapante*
+
+*R$ 19,99* _(de R$ 74,04)_
+
+⭐ 4.9  ·  🛍️ 3118 vendidos  ·  👟 Calçados
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/9fKSbsr8H4
+
+_Esse tipo de oferta não dura muito, viu?_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-8259r-ms431v6h0flsb9" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article></div>
+<script>
+var STORAGE_KEY = 'achadinhos_wpp_postados';
+
+function loadPosted(){
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+  catch(e) { return {}; }
+}
+function savePosted(map){
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(map)); } catch(e) {}
+}
+function updateProgress(){
+  var total = document.querySelectorAll('.card').length;
+  var done = document.querySelectorAll('.card.done').length;
+  document.getElementById('progressLabel').textContent = done + ' de ' + total + ' já postados';
+  document.getElementById('progressFill').style.width = (total ? (done/total*100) : 0) + '%';
+}
+
+var posted = loadPosted();
+document.querySelectorAll('.card').forEach(function(card){
+  var id = card.getAttribute('data-item-id');
+  if (posted[id]) {
+    card.classList.add('done');
+    card.querySelector('.copy-btn').textContent = 'Copiar de novo';
+  }
+});
+updateProgress();
+
+async function fetchAsPngBlob(url){
+  var resp = await fetch(url, { mode: 'cors' });
+  var blob = await resp.blob();
+  var bitmap = await createImageBitmap(blob);
+  var canvas = document.createElement('canvas');
+  canvas.width = bitmap.width;
+  canvas.height = bitmap.height;
+  canvas.getContext('2d').drawImage(bitmap, 0, 0);
+  return new Promise(function(resolve){ canvas.toBlob(resolve, 'image/png'); });
+}
+
+document.querySelectorAll('.copy-img-btn').forEach(function(btn){
+  btn.addEventListener('click', async function(){
+    var card = btn.closest('.card');
+    var url = card.getAttribute('data-image-url');
+    var original = btn.textContent;
+    try{
+      var pngBlob = await fetchAsPngBlob(url);
+      await navigator.clipboard.write([new ClipboardItem({ 'image/png': pngBlob })]);
+      btn.textContent = 'Imagem copiada!';
+      btn.classList.add('copied');
+      setTimeout(function(){ btn.textContent = original; btn.classList.remove('copied'); }, 2000);
+    } catch(e){
+      btn.textContent = 'Não deu, abrindo...';
+      window.open(url, '_blank');
+      setTimeout(function(){ btn.textContent = original; }, 2500);
+    }
+  });
+});
+
+document.querySelectorAll('.copy-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var card = btn.closest('.card');
+    var id = card.getAttribute('data-item-id');
+    var text = card.querySelector('.caption').textContent;
+    navigator.clipboard.writeText(text).then(function(){
+      var original = card.classList.contains('done') ? 'Copiar de novo' : 'Copiar legenda';
+      btn.textContent = 'Copiado!';
+      btn.classList.add('copied');
+      card.classList.add('done');
+      posted[id] = Date.now();
+      savePosted(posted);
+      updateProgress();
+      setTimeout(function(){ btn.textContent = 'Copiar de novo'; btn.classList.remove('copied'); }, 2000);
+    });
+  });
+});
+
+document.querySelectorAll('.undo-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var card = btn.closest('.card');
+    var id = card.getAttribute('data-item-id');
+    delete posted[id];
+    savePosted(posted);
+    card.classList.remove('done');
+    card.querySelector('.copy-btn').textContent = 'Copiar legenda';
+    updateProgress();
+  });
+});
+</script>
+</body></html>
