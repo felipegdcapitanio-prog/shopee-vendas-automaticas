@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>Fila WhatsApp — 2026-11-15</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{ --paper:#FBF6F4; --ink:#2B1E22; --ink-soft:#6B585D; --line:#E9DBDD; --accent:#B23A63; --accent-strong:#8C2A4C; --ok:#3F7D5C; --ok-soft:#DCEEE3; }
+  *{box-sizing:border-box;}
+  body{ margin:0; background:var(--paper); color:var(--ink); font-family:system-ui,sans-serif; padding:24px; }
+  h1{ font-size:20px; margin:0 0 4px; }
+  p.sub{ color:var(--ink-soft); font-size:13.5px; margin:0 0 16px; }
+  .progress{ display:flex; align-items:center; gap:12px; margin:0 0 24px; max-width:1100px; }
+  .progress-bar{ flex:1; height:8px; background:var(--line); border-radius:99px; overflow:hidden; }
+  .progress-fill{ height:100%; width:0%; background:var(--ok); border-radius:99px; transition:width .3s ease; }
+  .progress-label{ font-size:13px; font-weight:700; color:var(--ink-soft); white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:18px; max-width:1100px; }
+  .card{ background:#fff; border:1px solid var(--line); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; }
+  .card.done{ opacity:.5; }
+  .media{ display:block; position:relative; aspect-ratio:1/1; background:#f2eae8; cursor:pointer; }
+  .media img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .posted-badge{ display:none; position:absolute; top:10px; left:10px; background:var(--ok); color:#fff; font-size:11.5px; font-weight:700; padding:4px 10px; border-radius:99px; }
+  .card.done .posted-badge{ display:inline-block; }
+  .body{ padding:14px 16px 16px; display:flex; flex-direction:column; gap:10px; }
+  .tag{ font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--accent-strong); }
+  .caption{ font-family:inherit; font-size:12.5px; white-space:pre-wrap; background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:10px; margin:0; max-height:220px; overflow-y:auto; }
+  .actions{ display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .copy-btn, .copy-img-btn{ font-family:inherit; font-size:13px; font-weight:700; padding:9px 14px; border-radius:8px; border:none; cursor:pointer; }
+  .copy-btn{ background:var(--accent); color:#fff; }
+  .copy-img-btn{ background:var(--accent-soft); color:var(--accent-strong); }
+  .copy-btn.copied, .copy-img-btn.copied{ background:var(--ok); color:#fff; }
+  .img-link{ font-size:12.5px; color:var(--accent-strong); }
+  .undo-btn{ display:none; font-family:inherit; font-size:12px; padding:6px 10px; border-radius:8px; border:1px solid var(--line); background:none; color:var(--ink-soft); cursor:pointer; }
+  .card.done .undo-btn{ display:inline-block; }
+</style></head>
+<body>
+  <h1>Fila de postagem — WhatsApp</h1>
+  <p class="sub">20 produtos. 1) Clica em "🖼️ Copiar imagem" — 2) cola direto no WhatsApp (Ctrl+V) — 3) clica em "Copiar legenda" e cola embaixo. Sem precisar baixar nem salvar nada na mão. A foto de cada card também é clicável e abre o produto na Shopee, pra conferir antes de postar. O card marca "✓ Postado" sozinho depois que você copiar — e continua marcado mesmo se a fila for atualizada de novo amanhã, então nunca fica em dúvida do que já foi postado.</p>
+  <div class="progress">
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    <span class="progress-label" id="progressLabel">0 de 20 já postados</span>
+  </div>
+  <div class="grid">
+    <article class="card" data-index="1" data-item-id="23794516462" data-image-url="https://cf.shopee.com.br/file/br-11134207-81z1k-mf7iqnhjo7ph4c">
+      <a class="media" href="https://s.shopee.com.br/2BGGUKghLj" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-81z1k-mf7iqnhjo7ph4c" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Moda Feminina &middot; 1/20</span>
+        <pre class="caption">Pra renovar o guarda-roupa sem culpa no cartão:
+
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-51% OFF*
+
+*Espartilho Largo Feminino Cinto Elástico Cintura Chincher Para Vestidos e Bodycon*
+
+De ~R$ 40,00~ por *R$ 19,60*
+
+⭐ 4.8  ·  🛍️ 2791 vendidos  ·  👗 Moda Feminina
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/2BGGUKghLj
+
+_Esse tipo de oferta não dura muito, viu?_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-81z1k-mf7iqnhjo7ph4c" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="2" data-item-id="58267677572" data-image-url="https://cf.shopee.com.br/file/br-11134207-820l5-mstvok3nbrphf7">
+      <a class="media" href="https://s.shopee.com.br/6L5xYP9T0q" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820l5-mstvok3nbrphf7" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Moda Feminina &middot; 2/20</span>
+        <pre class="caption">Trocar de visual não precisa pesar no bolso:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-50% OFF*
+
+*Short Saída de Praia Feminino Crochê Rendado Preto Ajustável*
+
+Tava R$ 49,98, agora só *R$ 24,99*
+
+⭐ 4.8  ·  🛍️ 3803 vendidos  ·  👗 Moda Feminina
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/6L5xYP9T0q
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820l5-mstvok3nbrphf7" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="3" data-item-id="23397600706" data-image-url="https://cf.shopee.com.br/file/br-11134207-7r98o-mabeeeswsx4mc1">
+      <a class="media" href="https://s.shopee.com.br/3B8xLzRufa" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-mabeeeswsx4mc1" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Decoração de Casa &middot; 3/20</span>
+        <pre class="caption">Pra deixar sua casa com a sua cara:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-50% OFF*
+
+*Cesto De Roupa 40x70 30x50Cm Caixa Dobrável Brinquedos Cesto Diversa Organizador Cozinha Quarto Casa*
+
+De ~R$ 21,60~ por *R$ 10,80*
+
+⭐ 4.9  ·  🛍️ 8317 vendidos  ·  🏠 Decoração de Casa
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/3B8xLzRufa
+
+_Esse tipo de oferta não dura muito, viu?_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-mabeeeswsx4mc1" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="4" data-item-id="58268465498" data-image-url="https://cf.shopee.com.br/file/sg-11134201-8258g-mtaeyr990l4wf5">
+      <a class="media" href="https://s.shopee.com.br/70LWFJuezU" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/sg-11134201-8258g-mtaeyr990l4wf5" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Iluminação &middot; 4/20</span>
+        <pre class="caption">Uma luz certa muda todo o clima do ambiente:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-50% OFF*
+
+*Pisca Pisca Strobo Cordão 10/20/30m Enfeites de Natal Decoração Luzes Casa Lojas Fio de LED Natalino*
+
+Tava R$ 65,98, agora só *R$ 32,99*
+
+⭐ 4.9  ·  🛍️ 1182 vendidos  ·  💡 Iluminação
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/70LWFJuezU
+
+_Enquanto durar o estoque, vale a pena garantir._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-8258g-mtaeyr990l4wf5" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="5" data-item-id="19399030572" data-image-url="https://cf.shopee.com.br/file/br-11134207-820l7-mr7f0z6nrf2c89">
+      <a class="media" href="https://s.shopee.com.br/20vbb4tQxI" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820l7-mr7f0z6nrf2c89" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Decoração de Casa &middot; 5/20</span>
+        <pre class="caption">Detalhezinho que muda o clima do ambiente:
+
+🏠 ACHADINHO DO DIA 🏠
+📉 *-48% OFF*
+
+*Porta Papel Toalha Triplo Suporte Preto Rolos Para Cozinha 3 em 1*
+
+Tava R$ 30,00, agora só *R$ 15,60*
+
+⭐ 4.7  ·  🛍️ 2836 vendidos  ·  🏠 Decoração de Casa
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/20vbb4tQxI
+
+_Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820l7-mr7f0z6nrf2c89" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="6" data-item-id="18660205201" data-image-url="https://cf.shopee.com.br/file/br-11134207-820m7-mqqn6ty513b429">
+      <a class="media" href="https://s.shopee.com.br/5AsobiRZz4" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820m7-mqqn6ty513b429" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Decoração de Casa &middot; 6/20</span>
+        <pre class="caption">Se você ama enfeitar os cantinhos de casa, olha isso:
+
+🏠 ACHADINHO DO DIA 🏠
+📉 *-42% OFF*
+
+*Cortina Corta Luz Blecaute Blackout 2,20 x 1,30 m Diversas Cores*
+
+*R$ 34,90* _(de R$ 60,17)_
+
+⭐ 4.7  ·  🛍️ 2999 vendidos  ·  🏠 Decoração de Casa
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/5AsobiRZz4
+
+_Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820m7-mqqn6ty513b429" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="7" data-item-id="23394200396" data-image-url="https://cf.shopee.com.br/file/br-11134207-820lr-mqhpurv94nb423">
+      <a class="media" href="https://s.shopee.com.br/4qH6XdUR9i" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820lr-mqhpurv94nb423" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Beleza &amp; Skincare &middot; 7/20</span>
+        <pre class="caption">Não custa nada testar, o preço tá um convite:
+
+🧴 VALE A PENA CONFERIR 🧴
+📉 *-40% OFF*
+
+*Kit Sabonete + Hidratante + Esfoliante Rhenuks 200ml Corpo e Rosto 10 fragrâncias*
+
+Tava R$ 49,97, agora só *R$ 29,98*
+
+⭐ 4.8  ·  🛍️ 1346 vendidos  ·  🧴 Beleza &amp; Skincare
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/4qH6XdUR9i
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820lr-mqhpurv94nb423" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="8" data-item-id="21399672075" data-image-url="https://cf.shopee.com.br/file/br-11134207-81z1k-mf3vh8aclibq79">
+      <a class="media" href="https://s.shopee.com.br/5fovhZUvk8" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-81z1k-mf3vh8aclibq79" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Iluminação &middot; 8/20</span>
+        <pre class="caption">Ilumina o cantinho e ainda cabe no bolso:
+
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-77% OFF*
+
+*3 Cores Luminária De Teto Pendente Led Moderna Lustre para Corredor Sala Quarto Cozinha 127V/220V*
+
+De ~R$ 210,39~ por *R$ 48,39*
+
+⭐ 4.7  ·  🛍️ 304 vendidos  ·  💡 Iluminação
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/5fovhZUvk8
+
+_Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-81z1k-mf3vh8aclibq79" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="9" data-item-id="58266070880" data-image-url="https://cf.shopee.com.br/file/br-11134207-820lh-mtza8ww705q921">
+      <a class="media" href="https://s.shopee.com.br/AUvTI25Llu" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820lh-mtza8ww705q921" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Beleza &amp; Skincare &middot; 9/20</span>
+        <pre class="caption">Se cuidar também é sobre economizar sem abrir mão de qualidade.
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-69% OFF*
+
+*Kit Linha Coreana Hidrabene K-Sérum Harmonizador Facial + Sérum GHK-Cu + Sérum PDRN Skincare*
+
+*R$ 187,61* _(de R$ 605,19)_
+
+⭐ 4.9  ·  🛍️ 4645 vendidos  ·  🧴 Beleza &amp; Skincare
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/AUvTI25Llu
+
+_Corre que costuma esgotar rápido!_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820lh-mtza8ww705q921" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="10" data-item-id="20298320200" data-image-url="https://cf.shopee.com.br/file/br-11134207-81z1k-mhfp7x0vf1fo3c">
+      <a class="media" href="https://s.shopee.com.br/2BFfhgyiQI" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-81z1k-mhfp7x0vf1fo3c" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Iluminação &middot; 10/20</span>
+        <pre class="caption">Pra deixar seu cantinho mais aconchegante:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-68% OFF*
+
+*Luminária Led Escrever De Caneta Lousa Quadro Mesa Anotações*
+
+*R$ 35,49* _(de R$ 110,91)_
+
+⭐ 4.7  ·  🛍️ 2746 vendidos  ·  💡 Iluminação
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/2BFfhgyiQI
+
+_Enquanto durar o estoque, vale a pena garantir._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-81z1k-mhfp7x0vf1fo3c" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="11" data-item-id="40977846328" data-image-url="https://cf.shopee.com.br/file/cn-11134207-820l4-mj6hrjffs5xd42">
+      <a class="media" href="https://s.shopee.com.br/60RM9cShPz" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/cn-11134207-820l4-mj6hrjffs5xd42" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Maquiagem &middot; 11/20</span>
+        <pre class="caption">Combina com qualquer produção, e o preço ajuda:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-65% OFF*
+
+*Lakerain Neo Blurring Powder Oil-Control Compacto-Pó Solto Microfino Hidratante | , À Prova De Suor E Vazamentos Ácido H*
+
+De ~R$ 131,40~ por *R$ 45,99*
+
+⭐ 4.9  ·  🛍️ 328 vendidos  ·  💄 Maquiagem
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/60RM9cShPz
+
+_Esse tipo de oferta não dura muito, viu?_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/cn-11134207-820l4-mj6hrjffs5xd42" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="12" data-item-id="44031083109" data-image-url="https://cf.shopee.com.br/file/br-11134207-820m0-moioalo5ou85ea">
+      <a class="media" href="https://s.shopee.com.br/904lofBGl7" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820m0-moioalo5ou85ea" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Calçados &middot; 12/20</span>
+        <pre class="caption">Aquele calçado que dá pra usar com tudo:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-65% OFF*
+
+*Sapatilha Infantil Menina Feminina Antiderrapante Leve Confortável Do 20 ao 34 Direto da Fábrica*
+
+Tava R$ 99,86, agora só *R$ 34,95*
+
+⭐ 4.9  ·  🛍️ 1111 vendidos  ·  👟 Calçados
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/904lofBGl7
+
+_Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820m0-moioalo5ou85ea" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="13" data-item-id="41919952056" data-image-url="https://cf.shopee.com.br/file/sg-11134201-82619-mjl7s667d7uq27">
+      <a class="media" href="https://s.shopee.com.br/4VeEiykCyQ" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/sg-11134201-82619-mjl7s667d7uq27" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Beleza &amp; Skincare &middot; 13/20</span>
+        <pre class="caption">Se cuidar também é sobre economizar sem abrir mão de qualidade.
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-64% OFF*
+
+*Hoygi Retinal Eye Cream Suave Nutritivo Firmador Hidratante Cuidados Com Os Olhos*
+
+De ~R$ 45,50~ por *R$ 16,38*
+
+⭐ 4.8  ·  🛍️ 1494 vendidos  ·  🧴 Beleza &amp; Skincare
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/4VeEiykCyQ
+
+_Esse tipo de oferta não dura muito, viu?_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-82619-mjl7s667d7uq27" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="14" data-item-id="23393705263" data-image-url="https://cf.shopee.com.br/file/br-11134207-7r98o-mcv3e8iqbfupb8">
+      <a class="media" href="https://s.shopee.com.br/60R02X0w5y" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-mcv3e8iqbfupb8" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Moda Feminina &middot; 14/20</span>
+        <pre class="caption">Aquela peça que combina com tudo:
+
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-64% OFF*
+
+*Blusa Feminina Listrada Casual Com Manga Curta Moda Trico Tendência 2025 Super Fresca e Leve*
+
+De ~R$ 69,42~ por *R$ 24,99*
+
+⭐ 4.9  ·  🛍️ 3125 vendidos  ·  👗 Moda Feminina
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/60R02X0w5y
+
+_Corre que costuma esgotar rápido!_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-mcv3e8iqbfupb8" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="15" data-item-id="40977846328" data-image-url="https://cf.shopee.com.br/file/cn-11134207-820l4-mj6hrjffs5xd42">
+      <a class="media" href="https://s.shopee.com.br/9V12PZ5MzU" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/cn-11134207-820l4-mj6hrjffs5xd42" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Beleza &amp; Skincare &middot; 15/20</span>
+        <pre class="caption">Um mimo pra pele que cabe no bolso:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-63% OFF*
+
+*Lakerain Neo Blurring Powder Oil-Control Compacto-Pó Solto Microfino Hidratante | , À Prova De Suor E Vazamentos Ácido H*
+
+*R$ 48,99* _(de R$ 132,41)_
+
+⭐ 4.9  ·  🛍️ 346 vendidos  ·  🧴 Beleza &amp; Skincare
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/9V12PZ5MzU
+
+_Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/cn-11134207-820l4-mj6hrjffs5xd42" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="16" data-item-id="58218067880" data-image-url="https://cf.shopee.com.br/file/br-11134207-820lz-mt3kpmcva3nqf6">
+      <a class="media" href="https://s.shopee.com.br/7AewRcu1eX" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820lz-mt3kpmcva3nqf6" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Iluminação &middot; 16/20</span>
+        <pre class="caption">Uma luz certa muda todo o clima do ambiente:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-56% OFF*
+
+*600 LED Cortina 6x3 led pisca luz romântica para casamento de natal ao ar livre Branco Quente + Branco Frio*
+
+*R$ 35,00* _(de R$ 79,55)_
+
+⭐ 4.9  ·  🛍️ 1366 vendidos  ·  💡 Iluminação
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/7AewRcu1eX
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820lz-mt3kpmcva3nqf6" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="17" data-item-id="23394085205" data-image-url="https://cf.shopee.com.br/file/br-11134207-7r98o-masrmg6o514pf1">
+      <a class="media" href="https://s.shopee.com.br/50YyX9XzwL" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-masrmg6o514pf1" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Iluminação &middot; 17/20</span>
+        <pre class="caption">Uma luz certa muda todo o clima do ambiente:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-56% OFF*
+
+*Relé Pisca 2 Pinos Moto LED 12V com Controle de Velocidade e Chicote*
+
+Tava R$ 36,30, agora só *R$ 15,97*
+
+⭐ 4.9  ·  🛍️ 350 vendidos  ·  💡 Iluminação
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/50YyX9XzwL
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-masrmg6o514pf1" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="18" data-item-id="58205873852" data-image-url="https://cf.shopee.com.br/file/br-11134207-820l7-mlgfmo3aw16t84">
+      <a class="media" href="https://s.shopee.com.br/7puoPYVJws" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820l7-mlgfmo3aw16t84" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Moda Feminina &middot; 18/20</span>
+        <pre class="caption">Aquela peça que combina com tudo:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-52% OFF*
+
+*Kit 4 Blusas Feminina Ribana Canelado Básica Casual Estilosa Tendência Verão*
+
+Tava R$ 118,75, agora só *R$ 57,00*
+
+⭐ 4.9  ·  🛍️ 3476 vendidos  ·  👗 Moda Feminina
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/7puoPYVJws
+
+_Corre que costuma esgotar rápido!_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820l7-mlgfmo3aw16t84" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="19" data-item-id="19399049932" data-image-url="https://cf.shopee.com.br/file/br-11134207-7r98o-lnknon9m8edr46">
+      <a class="media" href="https://s.shopee.com.br/9zygdEEQ3c" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-lnknon9m8edr46" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Moda Feminina &middot; 19/20</span>
+        <pre class="caption">Trocar de visual não precisa pesar no bolso:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-51% OFF*
+
+*Cropped Feminina de Tule Transparente de Manga Roupa de academia Moda fitness*
+
+*R$ 19,64* _(de R$ 40,08)_
+
+⭐ 4.9  ·  🛍️ 1604 vendidos  ·  👗 Moda Feminina
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/9zygdEEQ3c
+
+_Enquanto durar o estoque, vale a pena garantir._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-lnknon9m8edr46" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="20" data-item-id="23099154378" data-image-url="https://cf.shopee.com.br/file/sg-11134201-821e3-mglxtrrmns3tb2">
+      <a class="media" href="https://s.shopee.com.br/4VeMRUtask" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/sg-11134201-821e3-mglxtrrmns3tb2" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Iluminação &middot; 20/20</span>
+        <pre class="caption">Pra deixar seu cantinho mais aconchegante:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-51% OFF*
+
+*Luminaria Projetor De Estrelas Galaxy Abajur Quarto Criancas Star Master Combinação de Duas Cores*
+
+*R$ 27,38* _(de R$ 55,88)_
+
+⭐ 4.9  ·  🛍️ 2347 vendidos  ·  💡 Iluminação
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/4VeMRUtask
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-821e3-mglxtrrmns3tb2" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article></div>
+<script>
+var STORAGE_KEY = 'achadinhos_wpp_postados';
+
+function loadPosted(){
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+  catch(e) { return {}; }
+}
+function savePosted(map){
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(map)); } catch(e) {}
+}
+function updateProgress(){
+  var total = document.querySelectorAll('.card').length;
+  var done = document.querySelectorAll('.card.done').length;
+  document.getElementById('progressLabel').textContent = done + ' de ' + total + ' já postados';
+  document.getElementById('progressFill').style.width = (total ? (done/total*100) : 0) + '%';
+}
+
+var posted = loadPosted();
+document.querySelectorAll('.card').forEach(function(card){
+  var id = card.getAttribute('data-item-id');
+  if (posted[id]) {
+    card.classList.add('done');
+    card.querySelector('.copy-btn').textContent = 'Copiar de novo';
+  }
+});
+updateProgress();
+
+async function fetchAsPngBlob(url){
+  var resp = await fetch(url, { mode: 'cors' });
+  var blob = await resp.blob();
+  var bitmap = await createImageBitmap(blob);
+  var canvas = document.createElement('canvas');
+  canvas.width = bitmap.width;
+  canvas.height = bitmap.height;
+  canvas.getContext('2d').drawImage(bitmap, 0, 0);
+  return new Promise(function(resolve){ canvas.toBlob(resolve, 'image/png'); });
+}
+
+document.querySelectorAll('.copy-img-btn').forEach(function(btn){
+  btn.addEventListener('click', async function(){
+    var card = btn.closest('.card');
+    var url = card.getAttribute('data-image-url');
+    var original = btn.textContent;
+    try{
+      var pngBlob = await fetchAsPngBlob(url);
+      await navigator.clipboard.write([new ClipboardItem({ 'image/png': pngBlob })]);
+      btn.textContent = 'Imagem copiada!';
+      btn.classList.add('copied');
+      setTimeout(function(){ btn.textContent = original; btn.classList.remove('copied'); }, 2000);
+    } catch(e){
+      btn.textContent = 'Não deu, abrindo...';
+      window.open(url, '_blank');
+      setTimeout(function(){ btn.textContent = original; }, 2500);
+    }
+  });
+});
+
+document.querySelectorAll('.copy-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var card = btn.closest('.card');
+    var id = card.getAttribute('data-item-id');
+    var text = card.querySelector('.caption').textContent;
+    navigator.clipboard.writeText(text).then(function(){
+      var original = card.classList.contains('done') ? 'Copiar de novo' : 'Copiar legenda';
+      btn.textContent = 'Copiado!';
+      btn.classList.add('copied');
+      card.classList.add('done');
+      posted[id] = Date.now();
+      savePosted(posted);
+      updateProgress();
+      setTimeout(function(){ btn.textContent = 'Copiar de novo'; btn.classList.remove('copied'); }, 2000);
+    });
+  });
+});
+
+document.querySelectorAll('.undo-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var card = btn.closest('.card');
+    var id = card.getAttribute('data-item-id');
+    delete posted[id];
+    savePosted(posted);
+    card.classList.remove('done');
+    card.querySelector('.copy-btn').textContent = 'Copiar legenda';
+    updateProgress();
+  });
+});
+</script>
+</body></html>
