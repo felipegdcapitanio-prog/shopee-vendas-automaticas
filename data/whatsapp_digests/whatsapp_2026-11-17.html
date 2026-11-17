@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>Fila WhatsApp — 2026-11-17</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{ --paper:#FBF6F4; --ink:#2B1E22; --ink-soft:#6B585D; --line:#E9DBDD; --accent:#B23A63; --accent-strong:#8C2A4C; --ok:#3F7D5C; --ok-soft:#DCEEE3; }
+  *{box-sizing:border-box;}
+  body{ margin:0; background:var(--paper); color:var(--ink); font-family:system-ui,sans-serif; padding:24px; }
+  h1{ font-size:20px; margin:0 0 4px; }
+  p.sub{ color:var(--ink-soft); font-size:13.5px; margin:0 0 16px; }
+  .progress{ display:flex; align-items:center; gap:12px; margin:0 0 24px; max-width:1100px; }
+  .progress-bar{ flex:1; height:8px; background:var(--line); border-radius:99px; overflow:hidden; }
+  .progress-fill{ height:100%; width:0%; background:var(--ok); border-radius:99px; transition:width .3s ease; }
+  .progress-label{ font-size:13px; font-weight:700; color:var(--ink-soft); white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:18px; max-width:1100px; }
+  .card{ background:#fff; border:1px solid var(--line); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; }
+  .card.done{ opacity:.5; }
+  .media{ display:block; position:relative; aspect-ratio:1/1; background:#f2eae8; cursor:pointer; }
+  .media img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .posted-badge{ display:none; position:absolute; top:10px; left:10px; background:var(--ok); color:#fff; font-size:11.5px; font-weight:700; padding:4px 10px; border-radius:99px; }
+  .card.done .posted-badge{ display:inline-block; }
+  .body{ padding:14px 16px 16px; display:flex; flex-direction:column; gap:10px; }
+  .tag{ font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--accent-strong); }
+  .caption{ font-family:inherit; font-size:12.5px; white-space:pre-wrap; background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:10px; margin:0; max-height:220px; overflow-y:auto; }
+  .actions{ display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .copy-btn, .copy-img-btn{ font-family:inherit; font-size:13px; font-weight:700; padding:9px 14px; border-radius:8px; border:none; cursor:pointer; }
+  .copy-btn{ background:var(--accent); color:#fff; }
+  .copy-img-btn{ background:var(--accent-soft); color:var(--accent-strong); }
+  .copy-btn.copied, .copy-img-btn.copied{ background:var(--ok); color:#fff; }
+  .img-link{ font-size:12.5px; color:var(--accent-strong); }
+  .undo-btn{ display:none; font-family:inherit; font-size:12px; padding:6px 10px; border-radius:8px; border:1px solid var(--line); background:none; color:var(--ink-soft); cursor:pointer; }
+  .card.done .undo-btn{ display:inline-block; }
+</style></head>
+<body>
+  <h1>Fila de postagem — WhatsApp</h1>
+  <p class="sub">20 produtos. 1) Clica em "🖼️ Copiar imagem" — 2) cola direto no WhatsApp (Ctrl+V) — 3) clica em "Copiar legenda" e cola embaixo. Sem precisar baixar nem salvar nada na mão. A foto de cada card também é clicável e abre o produto na Shopee, pra conferir antes de postar. O card marca "✓ Postado" sozinho depois que você copiar — e continua marcado mesmo se a fila for atualizada de novo amanhã, então nunca fica em dúvida do que já foi postado.</p>
+  <div class="progress">
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    <span class="progress-label" id="progressLabel">0 de 20 já postados</span>
+  </div>
+  <div class="grid">
+    <article class="card" data-index="1" data-item-id="58271164280" data-image-url="https://cf.shopee.com.br/file/sg-11134201-8258d-mumk93r22v40ef">
+      <a class="media" href="https://s.shopee.com.br/6fiuS13ibt" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/sg-11134201-8258d-mumk93r22v40ef" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Maquiagem &middot; 1/20</span>
+        <pre class="caption">Aquele produtinho que não pode faltar na nécessaire:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-84% OFF*
+
+*Boca Rosa Máscara de Cílios Meu Volumão By Payot*
+
+*R$ 12,99* _(de R$ 81,19)_
+
+⭐ 4.9  ·  🛍️ 652 vendidos  ·  💄 Maquiagem
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/6fiuS13ibt
+
+_Enquanto durar o estoque, vale a pena garantir._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-8258d-mumk93r22v40ef" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="2" data-item-id="58218259415" data-image-url="https://cf.shopee.com.br/file/br-11134207-820m8-mt7a89romk91b1">
+      <a class="media" href="https://s.shopee.com.br/3VlsgAyANm" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820m8-mt7a89romk91b1" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Beleza &amp; Skincare &middot; 2/20</span>
+        <pre class="caption">Sua pele merece esse tipo de carinho 💕
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-58% OFF*
+
+*Protetor Solar Facial Anasol Todo Santo Dia FPS 70 Clareador 40g - Ação Anti-Manchas - Antioleosidade*
+
+*R$ 36,90* _(de R$ 87,86)_
+
+⭐ 4.9  ·  🛍️ 1229 vendidos  ·  🧴 Beleza &amp; Skincare
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/3VlsgAyANm
+
+_Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820m8-mt7a89romk91b1" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="3" data-item-id="21298316310" data-image-url="https://cf.shopee.com.br/file/br-11134207-820ly-mtc98g6pvj7l3f">
+      <a class="media" href="https://s.shopee.com.br/7fbRdqzua3" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820ly-mtc98g6pvj7l3f" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Maquiagem &middot; 3/20</span>
+        <pre class="caption">Achado certeiro pra quem ama testar coisa nova:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-57% OFF*
+
+*Máscara para cílios SACE LADY resistente à água Cabelos longos e com cachos duradouros*
+
+*R$ 55,99* _(de R$ 130,21)_
+
+⭐ 4.8  ·  🛍️ 698 vendidos  ·  💄 Maquiagem
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/7fbRdqzua3
+
+_Esse tipo de oferta não dura muito, viu?_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820ly-mtc98g6pvj7l3f" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="4" data-item-id="58218169635" data-image-url="https://cf.shopee.com.br/file/br-11134207-820m2-mt5m3hxuij9g5b">
+      <a class="media" href="https://s.shopee.com.br/4B1ZTOvd1q" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820m2-mt5m3hxuij9g5b" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Beleza &amp; Skincare &middot; 4/20</span>
+        <pre class="caption">Um mimo pra pele que cabe no bolso:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-56% OFF*
+
+*Protetor Solar Facial Anasol FPS 70 Clareador Anti-Manchas Toque Seco 60g*
+
+Tava R$ 90,68, agora só *R$ 39,90*
+
+⭐ 4.9  ·  🛍️ 1357 vendidos  ·  🧴 Beleza &amp; Skincare
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/4B1ZTOvd1q
+
+_Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820m2-mt5m3hxuij9g5b" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="5" data-item-id="23494759005" data-image-url="https://cf.shopee.com.br/file/br-11134207-820le-mqq0z7tlwcg1ab">
+      <a class="media" href="https://s.shopee.com.br/9zzMQ9LpJM" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820le-mqq0z7tlwcg1ab" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Moda Feminina &middot; 5/20</span>
+        <pre class="caption">Aquela peça que combina com tudo:
+
+👗 ACHADINHO DO DIA 👗
+📉 *-40% OFF*
+
+*Camiseta Feminina Poderosas - Camisetão Levinho de Treino Algoão Premium*
+
+Tava R$ 33,17, agora só *R$ 19,90*
+
+⭐ 4.9  ·  🛍️ 2206 vendidos  ·  👗 Moda Feminina
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/9zzMQ9LpJM
+
+_Corre que costuma esgotar rápido!_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820le-mqq0z7tlwcg1ab" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="6" data-item-id="58269629179" data-image-url="https://cf.shopee.com.br/file/br-11134207-820m1-mtty6ka8az2a45">
+      <a class="media" href="https://s.shopee.com.br/3g5IsTxX2n" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820m1-mtty6ka8az2a45" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Beleza &amp; Skincare &middot; 6/20</span>
+        <pre class="caption">Um mimo pra pele que cabe no bolso:
+
+🧴 VALE A PENA CONFERIR 🧴
+📉 *-39% OFF*
+
+*Protetor Solar Facial Hidrabene FPS 60 Efeito Invisível Ácido Hialurônico Alistin Toque Seco 50g*
+
+De ~R$ 49,02~ por *R$ 29,90*
+
+⭐ 4.9  ·  🛍️ 1106 vendidos  ·  🧴 Beleza &amp; Skincare
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/3g5IsTxX2n
+
+_Enquanto durar o estoque, vale a pena garantir._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820m1-mtty6ka8az2a45" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="7" data-item-id="58212710640" data-image-url="https://cf.shopee.com.br/file/br-11134207-820la-mt5jyzj5gvesf1">
+      <a class="media" href="https://s.shopee.com.br/8fTypgw6Y5" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820la-mt5jyzj5gvesf1" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Maquiagem &middot; 7/20</span>
+        <pre class="caption">Bora dar um upgrade na make de hoje?
+
+💄 ACHADINHO DO DIA 💄
+📉 *-37% OFF*
+
+*Máscara de Cílios Lavável, Longa Duração, 9x Mais Volume, Cor Preto, The Colossal Volum&#x27; Express Maybelline NY, 8ml*
+
+*R$ 42,90* _(de R$ 68,10)_
+
+⭐ 4.9  ·  🛍️ 1429 vendidos  ·  💄 Maquiagem
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/8fTypgw6Y5
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820la-mt5jyzj5gvesf1" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="8" data-item-id="58212715148" data-image-url="https://cf.shopee.com.br/file/br-11134207-820lc-mt5lvcg7qhvp5f">
+      <a class="media" href="https://s.shopee.com.br/8Kr8R4xNE7" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820lc-mt5lvcg7qhvp5f" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Maquiagem &middot; 8/20</span>
+        <pre class="caption">Achado certeiro pra quem ama testar coisa nova:
+
+💄 ACHADINHO DO DIA 💄
+📉 *-37% OFF*
+
+*Máscara de Cílios À Prova d&#x27;Água Longa Duração 9x Mais Volume Cor Preto, The Colossal Volum&#x27; Express Maybelline NY, 8ml*
+
+Tava R$ 68,10, agora só *R$ 42,90*
+
+⭐ 4.9  ·  🛍️ 1453 vendidos  ·  💄 Maquiagem
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/8Kr8R4xNE7
+
+_Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820lc-mt5lvcg7qhvp5f" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="9" data-item-id="23398951924" data-image-url="https://cf.shopee.com.br/file/br-11134207-81z1k-mfeat3mz3h1j58">
+      <a class="media" href="https://s.shopee.com.br/50agSvsSKv" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-81z1k-mfeat3mz3h1j58" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Beleza &amp; Skincare &middot; 9/20</span>
+        <pre class="caption">Sua pele merece esse tipo de carinho 💕
+
+🧴 SEPARADINHO PRA VOCÊ 🧴
+📉 *-44% OFF*
+
+*Principia Kit Dupla Diária Todo Tipo de Pele c/ Protetor Solar Facial PS-01 FPS 60 + Creme Hidratante CH-01*
+
+*R$ 54,70* _(de R$ 97,68)_
+
+⭐ 4.9  ·  🛍️ 1289 vendidos  ·  🧴 Beleza &amp; Skincare
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/50agSvsSKv
+
+_Esse tipo de oferta não dura muito, viu?_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-81z1k-mfeat3mz3h1j58" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="10" data-item-id="24944549064" data-image-url="https://cf.shopee.com.br/file/sg-11134201-823qu-mp4n375j6l8sc8">
+      <a class="media" href="https://s.shopee.com.br/9AQFQbuCXC" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/sg-11134201-823qu-mp4n375j6l8sc8" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Maquiagem &middot; 10/20</span>
+        <pre class="caption">Achado certeiro pra quem ama testar coisa nova:
+
+🔥 OFERTA RELÂMPAGO 🔥
+📉 *-80% OFF*
+
+*Novo Primer de Rímel em Tubo de Aço Mantém o Curvado, À Prova d’Água, Antisudação, Alongador, Não Borra*
+
+De ~R$ 72,20~ por *R$ 14,44*
+
+⭐ 4.8  ·  🛍️ 2175 vendidos  ·  💄 Maquiagem
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/9AQFQbuCXC
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-823qu-mp4n375j6l8sc8" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="11" data-item-id="19897499204" data-image-url="https://cf.shopee.com.br/file/br-11134207-7r98o-ltgtase2vocf0e">
+      <a class="media" href="https://s.shopee.com.br/5VWx3qqYJy" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-ltgtase2vocf0e" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Beleza &amp; Skincare &middot; 11/20</span>
+        <pre class="caption">Um mimo pra pele que cabe no bolso:
+
+🧴 VALE A PENA CONFERIR 🧴
+📉 *-48% OFF*
+
+*Protetor Solar Facial c/ Cor Toque Seco FPS 50 Alta Proteção Efeito Natural Sunless Envio Imediato*
+
+Tava R$ 59,60, agora só *R$ 30,99*
+
+⭐ 4.9  ·  🛍️ 1648 vendidos  ·  🧴 Beleza &amp; Skincare
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/5VWx3qqYJy
+
+_Esse tipo de oferta não dura muito, viu?_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-ltgtase2vocf0e" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="12" data-item-id="19897499204" data-image-url="https://cf.shopee.com.br/file/br-11134207-7r98o-ltgtase2vocf0e">
+      <a class="media" href="https://s.shopee.com.br/5fqLSk4ZsP" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-7r98o-ltgtase2vocf0e" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Maquiagem &middot; 12/20</span>
+        <pre class="caption">Combina com qualquer produção, e o preço ajuda:
+
+💄 ACHADINHO DO DIA 💄
+📉 *-48% OFF*
+
+*Protetor Solar Facial c/ Cor Toque Seco FPS 50 Alta Proteção Efeito Natural Sunless Envio Imediato*
+
+*R$ 30,99* _(de R$ 59,60)_
+
+⭐ 4.9  ·  🛍️ 1505 vendidos  ·  💄 Maquiagem
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/5fqLSk4ZsP
+
+_Esse tipo de oferta não dura muito, viu?_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-7r98o-ltgtase2vocf0e" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="13" data-item-id="58253347883" data-image-url="https://cf.shopee.com.br/file/br-11134207-81ztc-mjis59nbonib20">
+      <a class="media" href="https://s.shopee.com.br/2VssYjexUi" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-81ztc-mjis59nbonib20" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Calçados &middot; 13/20</span>
+        <pre class="caption">Aquele calçado que dá pra usar com tudo:
+
+👟 VALE A PENA CONFERIR 👟
+📉 *-47% OFF*
+
+*Bota Feminina Cano Curto Preta Salto Grosso Tratorada Confortável Moda Inverno*
+
+Tava R$ 90,38, agora só *R$ 47,90*
+
+⭐ 4.8  ·  🛍️ 878 vendidos  ·  👟 Calçados
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/2VssYjexUi
+
+_Depois não diz que não avisei 👀_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-81ztc-mjis59nbonib20" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="14" data-item-id="58205320938" data-image-url="https://cf.shopee.com.br/file/br-11134207-81zup-mksih9pltgxsed">
+      <a class="media" href="https://s.shopee.com.br/6L522ta9HD" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-81zup-mksih9pltgxsed" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Moda Feminina &middot; 14/20</span>
+        <pre class="caption">Look novo com preço de amiga:
+
+👗 SEPARADINHO PRA VOCÊ 👗
+📉 *-44% OFF*
+
+*Kit 3 T-Shirt Algodão 30.1 Comfort Confortavel Estilosa Baby Look Casual Básica Urbana*
+
+Tava R$ 89,27, agora só *R$ 49,99*
+
+⭐ 4.8  ·  🛍️ 3630 vendidos  ·  👗 Moda Feminina
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/6L522ta9HD
+
+_Enquanto durar o estoque, vale a pena garantir._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-81zup-mksih9pltgxsed" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="15" data-item-id="58254271380" data-image-url="https://cf.shopee.com.br/file/sg-11134201-82617-mk1tb4jnu0ao7c">
+      <a class="media" href="https://s.shopee.com.br/4B1RLaV1Xd" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/sg-11134201-82617-mk1tb4jnu0ao7c" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Maquiagem &middot; 15/20</span>
+        <pre class="caption">Achado certeiro pra quem ama testar coisa nova:
+
+💄 VALE A PENA CONFERIR 💄
+📉 *-35% OFF*
+
+*Kit Máscara de Cílios Marrom + Delineador ChocoEyes 2 Peças Preciso e Resistente*
+
+De ~R$ 46,14~ por *R$ 29,99*
+
+⭐ 4.8  ·  🛍️ 1181 vendidos  ·  💄 Maquiagem
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/4B1RLaV1Xd
+
+_Enquanto durar o estoque, vale a pena garantir._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134201-82617-mk1tb4jnu0ao7c" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="16" data-item-id="58204543063" data-image-url="https://cf.shopee.com.br/file/br-11134207-81ztf-ml1zdh9onnr6dc">
+      <a class="media" href="https://s.shopee.com.br/6fir1RGsH8" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-81ztf-ml1zdh9onnr6dc" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Calçados &middot; 16/20</span>
+        <pre class="caption">Pra quem vive em pé o dia todo, esse aqui ajuda:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-81% OFF*
+
+*Combo 1,2 e 3 Pares Chinelo Feminino Casual Leve Antiderrapante Confortável*
+
+*R$ 16,90* _(de R$ 88,95)_
+
+⭐ 4.8  ·  🛍️ 2967 vendidos  ·  👟 Calçados
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/6fir1RGsH8
+
+_Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-81ztf-ml1zdh9onnr6dc" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="17" data-item-id="21698201803" data-image-url="https://cf.shopee.com.br/file/br-11134207-820ln-mt9tl7map7gi8a">
+      <a class="media" href="https://s.shopee.com.br/4fxN8jOTDx" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820ln-mt9tl7map7gi8a" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Ferramentas &middot; 17/20</span>
+        <pre class="caption">Pra deixar tudo mais fácil aí na sua casa:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-73% OFF*
+
+*Kit Reparo Salva Abas Tomadas Caixinha Luz 4x2 Expansível Compacto*
+
+Tava R$ 32,48, agora só *R$ 8,77*
+
+⭐ 4.7  ·  🛍️ 3591 vendidos  ·  🛠️ Ferramentas
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/4fxN8jOTDx
+
+_Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820ln-mt9tl7map7gi8a" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="18" data-item-id="58250922201" data-image-url="https://cf.shopee.com.br/file/br-11134207-820la-mp4lwvwhmbd28a">
+      <a class="media" href="https://s.shopee.com.br/2qUiacGexG" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-820la-mp4lwvwhmbd28a" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Ferramentas &middot; 18/20</span>
+        <pre class="caption">Praticidade pra resolver aquele probleminha em casa:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-54% OFF*
+
+*Parafusadeira Furadeira 48V 2 Baterias Com Maleta e Acessorios 24 peças*
+
+*R$ 119,99* _(de R$ 260,85)_
+
+⭐ 4.9  ·  🛍️ 1027 vendidos  ·  🛠️ Ferramentas
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/2qUiacGexG
+
+_Esse tipo de oferta não dura muito, viu?_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-820la-mp4lwvwhmbd28a" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="19" data-item-id="56102586912" data-image-url="https://cf.shopee.com.br/file/sg-11134301-8260u-mj9nkfgbry0z65">
+      <a class="media" href="https://s.shopee.com.br/9peHmCUs4K" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/sg-11134301-8260u-mj9nkfgbry0z65" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Beleza &amp; Skincare &middot; 19/20</span>
+        <pre class="caption">Separei esse aqui pensando em quem ama uma pele bem cuidada:
+
+🚨 DESCONTÃO DO DIA 🚨
+📉 *-53% OFF*
+
+*LAIKOU Facial de Vitamina C VC Clareador Anti-Envelhecimento Manchas Escuras Hidratante 17ml*
+
+Tava R$ 24,83, agora só *R$ 11,67*
+
+⭐ 5  ·  🛍️ 1666 vendidos  ·  🧴 Beleza &amp; Skincare
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/9peHmCUs4K
+
+_Corre que costuma esgotar rápido!_</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/sg-11134301-8260u-mj9nkfgbry0z65" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article>
+    <article class="card" data-index="20" data-item-id="22894786269" data-image-url="https://cf.shopee.com.br/file/br-11134207-81ztc-mjjby2c8otmuc4">
+      <a class="media" href="https://s.shopee.com.br/1gIQBXYNVf" target="_blank" rel="noopener" title="Abrir o produto na Shopee"><img src="https://cf.shopee.com.br/file/br-11134207-81ztc-mjjby2c8otmuc4" alt="" loading="lazy"><span class="posted-badge">✓ Postado</span></a>
+      <div class="body">
+        <span class="tag">Iluminação &middot; 20/20</span>
+        <pre class="caption">Pra deixar seu cantinho mais aconchegante:
+
+💥 PREÇO IMPERDÍVEL 💥
+📉 *-53% OFF*
+
+*Kit com 4 Luminárias Solares 180 LED｜Sensor e Controle Remoto para Poste e Parede*
+
+Tava R$ 60,43, agora só *R$ 28,40*
+
+⭐ 4.8  ·  🛍️ 2107 vendidos  ·  💡 Iluminação
+
+👉 *Garanta o seu aqui:*
+https://s.shopee.com.br/1gIQBXYNVf
+
+_Se ficar na dúvida, o preço pode voltar ao normal amanhã._</pre>
+        <div class="actions">
+          <button class="copy-img-btn">🖼️ Copiar imagem</button>
+          <button class="copy-btn">Copiar legenda</button>
+          <a class="img-link" href="https://cf.shopee.com.br/file/br-11134207-81ztc-mjjby2c8otmuc4" target="_blank" rel="noopener">Baixar imagem</a>
+          <button class="undo-btn" title="Marcar como não postado de novo">desfazer</button>
+        </div>
+      </div>
+    </article></div>
+<script>
+var STORAGE_KEY = 'achadinhos_wpp_postados';
+
+function loadPosted(){
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+  catch(e) { return {}; }
+}
+function savePosted(map){
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(map)); } catch(e) {}
+}
+function updateProgress(){
+  var total = document.querySelectorAll('.card').length;
+  var done = document.querySelectorAll('.card.done').length;
+  document.getElementById('progressLabel').textContent = done + ' de ' + total + ' já postados';
+  document.getElementById('progressFill').style.width = (total ? (done/total*100) : 0) + '%';
+}
+
+var posted = loadPosted();
+document.querySelectorAll('.card').forEach(function(card){
+  var id = card.getAttribute('data-item-id');
+  if (posted[id]) {
+    card.classList.add('done');
+    card.querySelector('.copy-btn').textContent = 'Copiar de novo';
+  }
+});
+updateProgress();
+
+async function fetchAsPngBlob(url){
+  var resp = await fetch(url, { mode: 'cors' });
+  var blob = await resp.blob();
+  var bitmap = await createImageBitmap(blob);
+  var canvas = document.createElement('canvas');
+  canvas.width = bitmap.width;
+  canvas.height = bitmap.height;
+  canvas.getContext('2d').drawImage(bitmap, 0, 0);
+  return new Promise(function(resolve){ canvas.toBlob(resolve, 'image/png'); });
+}
+
+document.querySelectorAll('.copy-img-btn').forEach(function(btn){
+  btn.addEventListener('click', async function(){
+    var card = btn.closest('.card');
+    var url = card.getAttribute('data-image-url');
+    var original = btn.textContent;
+    try{
+      var pngBlob = await fetchAsPngBlob(url);
+      await navigator.clipboard.write([new ClipboardItem({ 'image/png': pngBlob })]);
+      btn.textContent = 'Imagem copiada!';
+      btn.classList.add('copied');
+      setTimeout(function(){ btn.textContent = original; btn.classList.remove('copied'); }, 2000);
+    } catch(e){
+      btn.textContent = 'Não deu, abrindo...';
+      window.open(url, '_blank');
+      setTimeout(function(){ btn.textContent = original; }, 2500);
+    }
+  });
+});
+
+document.querySelectorAll('.copy-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var card = btn.closest('.card');
+    var id = card.getAttribute('data-item-id');
+    var text = card.querySelector('.caption').textContent;
+    navigator.clipboard.writeText(text).then(function(){
+      var original = card.classList.contains('done') ? 'Copiar de novo' : 'Copiar legenda';
+      btn.textContent = 'Copiado!';
+      btn.classList.add('copied');
+      card.classList.add('done');
+      posted[id] = Date.now();
+      savePosted(posted);
+      updateProgress();
+      setTimeout(function(){ btn.textContent = 'Copiar de novo'; btn.classList.remove('copied'); }, 2000);
+    });
+  });
+});
+
+document.querySelectorAll('.undo-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var card = btn.closest('.card');
+    var id = card.getAttribute('data-item-id');
+    delete posted[id];
+    savePosted(posted);
+    card.classList.remove('done');
+    card.querySelector('.copy-btn').textContent = 'Copiar legenda';
+    updateProgress();
+  });
+});
+</script>
+</body></html>
