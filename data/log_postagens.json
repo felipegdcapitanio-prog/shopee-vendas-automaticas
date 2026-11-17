@@ -109339,5 +109339,16 @@
     "ok": false,
     "error": "<urlopen error [Errno 104] Connection reset by peer>",
     "ts": 1794936022
+  },
+  {
+    "itemId": 23797386225,
+    "ok": false,
+    "error": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: failed to get HTTP URL content\"}",
+    "ts": 1794936622
+  },
+  {
+    "itemId": 58215726245,
+    "ok": true,
+    "ts": 1794936626
   }
 ]
