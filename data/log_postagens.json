@@ -111265,5 +111265,16 @@
     "ok": false,
     "error": "{\"ok\":false,\"error_code\":502,\"description\":\"Bad Gateway\"}",
     "ts": 1795044655
+  },
+  {
+    "itemId": 23797386225,
+    "ok": false,
+    "error": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: failed to get HTTP URL content\"}",
+    "ts": 1795045217
+  },
+  {
+    "itemId": 58257090824,
+    "ok": true,
+    "ts": 1795045220
   }
 ]
