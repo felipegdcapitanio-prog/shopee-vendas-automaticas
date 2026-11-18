@@ -111253,5 +111253,17 @@
     "itemId": 21197749562,
     "ok": true,
     "ts": 1795044021
+  },
+  {
+    "itemId": 23797386225,
+    "ok": false,
+    "error": "{\"ok\":false,\"error_code\":502,\"description\":\"Bad Gateway\"}",
+    "ts": 1795044636
+  },
+  {
+    "itemId": 58257090824,
+    "ok": false,
+    "error": "{\"ok\":false,\"error_code\":502,\"description\":\"Bad Gateway\"}",
+    "ts": 1795044655
   }
 ]
