@@ -1,5 +1,5 @@
 {
-  "generated_at": 1795632891,
+  "generated_at": 1795718602,
   "products": [
     {
       "niche": "Beleza & Skincare",
@@ -87,10 +87,10 @@
       "priceMax": "12.5",
       "discountRate": 79,
       "commissionRate": 0.09,
-      "sales": 1352,
+      "sales": 1370,
       "ratingStar": "5",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134207-825a3-mrjmp9omb8xta9",
-      "offerLink": "https://s.shopee.com.br/9fMhId7bbl"
+      "offerLink": "https://s.shopee.com.br/8AXyARSIOh"
     },
     {
       "niche": "Beleza & Skincare",
@@ -149,26 +149,26 @@
       "itemId": 27620799823,
       "productName": "Numbuzin No.9 NAD Bio Lifting Essence 2types 30ml/50ml",
       "priceMin": "95.97",
-      "priceMax": "129.98",
+      "priceMax": "129.97",
       "discountRate": 71,
       "commissionRate": 0.23,
-      "sales": 2814,
+      "sales": 2853,
       "ratingStar": "5",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134207-8259p-mr9kjx26bgu9b5",
-      "offerLink": "https://s.shopee.com.br/5q9yjaMCNs"
+      "offerLink": "https://s.shopee.com.br/6fjANgY0RG"
     },
     {
       "niche": "Beleza & Skincare",
       "itemId": 29564832567,
       "productName": "Medicube PDRN Pink Peptide Serum 10ml 30ml / Ultra Light PDRN Pink Peptide Serum 30ml",
-      "priceMin": "119",
+      "priceMin": "124.97",
       "priceMax": "124.97",
       "discountRate": 71,
       "commissionRate": 0.2,
-      "sales": 2149,
+      "sales": 2176,
       "ratingStar": "5",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134207-8259g-mrfasnpryjus9a",
-      "offerLink": "https://s.shopee.com.br/6L6FKVKIN3"
+      "offerLink": "https://s.shopee.com.br/7VIHNDUpkV"
     },
     {
       "niche": "Beleza & Skincare",
@@ -182,6 +182,32 @@
       "ratingStar": "5",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134207-7rfg5-m9ansxfgzjvd56",
       "offerLink": "https://s.shopee.com.br/4B0Cb5HKFG"
+    },
+    {
+      "niche": "Beleza & Skincare",
+      "itemId": 58266177953,
+      "productName": "Hidrabene Sérum Facial GHK-Cu Peptídeo de Cobre – Firmeza e Densidade 700 Nano Peptídeos",
+      "priceMin": "79.9",
+      "priceMax": "199.8",
+      "discountRate": 72,
+      "commissionRate": 0.13,
+      "sales": 2804,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lb-mul5tmdl5eyob2",
+      "offerLink": "https://s.shopee.com.br/7pv7lpTZ4X"
+    },
+    {
+      "niche": "Beleza & Skincare",
+      "itemId": 58266070880,
+      "productName": "Kit Linha Coreana Hidrabene K-Sérum Harmonizador Facial + Sérum GHK-Cu + Sérum PDRN Skincare",
+      "priceMin": "170.91",
+      "priceMax": "239.9",
+      "discountRate": 72,
+      "commissionRate": 0.13,
+      "sales": 3158,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lh-mtza8ww705q921",
+      "offerLink": "https://s.shopee.com.br/6q2aZzXN6J"
     },
     {
       "niche": "Beleza & Skincare",
@@ -208,32 +234,6 @@
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820mg-mqgkj5b64ef7ef",
       "offerLink": "https://s.shopee.com.br/5q9aTaEMjq"
-    },
-    {
-      "niche": "Beleza & Skincare",
-      "itemId": 58266177953,
-      "productName": "Hidrabene Sérum Facial GHK-Cu Peptídeo de Cobre – Firmeza e Densidade 700 Nano Peptídeos",
-      "priceMin": "79.9",
-      "priceMax": "199.8",
-      "discountRate": 67,
-      "commissionRate": 0.13,
-      "sales": 2779,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lb-mul5tmdl5eyob2",
-      "offerLink": "https://s.shopee.com.br/5LDi8fO6Op"
-    },
-    {
-      "niche": "Beleza & Skincare",
-      "itemId": 58266070880,
-      "productName": "Kit Linha Coreana Hidrabene K-Sérum Harmonizador Facial + Sérum GHK-Cu + Sérum PDRN Skincare",
-      "priceMin": "199.9",
-      "priceMax": "239.9",
-      "discountRate": 67,
-      "commissionRate": 0.13,
-      "sales": 3240,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lh-mtza8ww705q921",
-      "offerLink": "https://s.shopee.com.br/5fqYXHMpir"
     },
     {
       "niche": "Beleza & Skincare",
@@ -282,10 +282,10 @@
       "priceMax": "131.97",
       "discountRate": 61,
       "commissionRate": 0.23,
-      "sales": 1653,
+      "sales": 1664,
       "ratingStar": "5",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134207-823qx-mp98g129uwaob3",
-      "offerLink": "https://s.shopee.com.br/9zzXhF6Kvv"
+      "offerLink": "https://s.shopee.com.br/9pgC9VLx17"
     },
     {
       "niche": "Beleza & Skincare",
@@ -299,6 +299,19 @@
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-8258c-mfteoras61ak51",
       "offerLink": "https://s.shopee.com.br/4VdyW42or6"
+    },
+    {
+      "niche": "Beleza & Skincare",
+      "itemId": 58218259415,
+      "productName": "Protetor Solar Facial Anasol Todo Santo Dia FPS 70 Clareador 40g - Ação Anti-Manchas - Antioleosidade",
+      "priceMin": "36.9",
+      "priceMax": "88.26",
+      "discountRate": 63,
+      "commissionRate": 0.15,
+      "sales": 1414,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m8-mt7a89romk91b1",
+      "offerLink": "https://s.shopee.com.br/30ps0wUIUG"
     },
     {
       "niche": "Beleza & Skincare",
@@ -328,6 +341,19 @@
     },
     {
       "niche": "Beleza & Skincare",
+      "itemId": 23099869803,
+      "productName": "Kit Clareador Facial Completo Hidrabene – Sabonete, Sérum Multicorretivo, Hidratante e Protetor Solar FPS 70",
+      "priceMin": "92.91",
+      "priceMax": "224.91",
+      "discountRate": 63,
+      "commissionRate": 0.13,
+      "sales": 3011,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820ls-mvw1j732t05cfa",
+      "offerLink": "https://s.shopee.com.br/5qA3O9JVjY"
+    },
+    {
+      "niche": "Beleza & Skincare",
       "itemId": 22591584429,
       "productName": "[OFFICIAL] SKIN1004 Madagascar Centella Probio-Cica Intensive Ampoule 30ml,50ml,95ml",
       "priceMin": "56.98",
@@ -338,6 +364,19 @@
       "ratingStar": "5",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134207-823re-mp98qk0cxc7536",
       "offerLink": "https://s.shopee.com.br/9fKrZtVVPJ"
+    },
+    {
+      "niche": "Beleza & Skincare",
+      "itemId": 58218169635,
+      "productName": "Protetor Solar Facial Anasol FPS 70 Clareador Anti-Manchas Toque Seco 60g",
+      "priceMin": "44.9",
+      "priceMax": "103.41",
+      "discountRate": 62,
+      "commissionRate": 0.15,
+      "sales": 1658,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m2-mt5m3hxuij9g5b",
+      "offerLink": "https://s.shopee.com.br/4B1pP5Pr7P"
     },
     {
       "niche": "Beleza & Skincare",
@@ -364,6 +403,19 @@
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lt-mugginkhuayo03",
       "offerLink": "https://s.shopee.com.br/2qWOhH7VHp"
+    },
+    {
+      "niche": "Beleza & Skincare",
+      "itemId": 58268233715,
+      "productName": "Protetor Solar Facial Anasol Clareador FPS 90 Anti-Manchas Oil Free 60g",
+      "priceMin": "45.5",
+      "priceMax": "112.41",
+      "discountRate": 62,
+      "commissionRate": 0.1,
+      "sales": 2614,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lz-mt6s5eywqn7p9b",
+      "offerLink": "https://s.shopee.com.br/5VXCzXKmPW"
     },
     {
       "niche": "Beleza & Skincare",
@@ -399,10 +451,10 @@
       "priceMax": "29.98",
       "discountRate": 60,
       "commissionRate": 0.1,
-      "sales": 3824,
+      "sales": 3957,
       "ratingStar": "4.6",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820l4-mtqqf32ugr9d0e",
-      "offerLink": "https://s.shopee.com.br/4LLCU2NecN"
+      "offerLink": "https://s.shopee.com.br/8KrOMknaix"
     },
     {
       "niche": "Beleza & Skincare",
@@ -432,32 +484,6 @@
     },
     {
       "niche": "Beleza & Skincare",
-      "itemId": 58218259415,
-      "productName": "Protetor Solar Facial Anasol Todo Santo Dia FPS 70 Clareador 40g - Ação Anti-Manchas - Antioleosidade",
-      "priceMin": "39.9",
-      "priceMax": "99.9",
-      "discountRate": 58,
-      "commissionRate": 0.15,
-      "sales": 1391,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m8-mt7a89romk91b1",
-      "offerLink": "https://s.shopee.com.br/5VX8Ky5wCi"
-    },
-    {
-      "niche": "Beleza & Skincare",
-      "itemId": 23099869803,
-      "productName": "Kit Clareador Facial Completo Hidrabene – Sabonete, Sérum Multicorretivo, Hidratante e Protetor Solar FPS 70",
-      "priceMin": "99.9",
-      "priceMax": "249.9",
-      "discountRate": 58,
-      "commissionRate": 0.13,
-      "sales": 2785,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820ls-mvw1j732t05cfa",
-      "offerLink": "https://s.shopee.com.br/7fbcuxFDfB"
-    },
-    {
-      "niche": "Beleza & Skincare",
       "itemId": 23599023847,
       "productName": "Creme Hidratante Anti-Idade SIMU | Reduz Rugas e Linhas Finas | Rejuvenescimento Facial",
       "priceMin": "24.99",
@@ -471,55 +497,16 @@
     },
     {
       "niche": "Beleza & Skincare",
-      "itemId": 58218169635,
-      "productName": "Protetor Solar Facial Anasol FPS 70 Clareador Anti-Manchas Toque Seco 60g",
-      "priceMin": "44.9",
-      "priceMax": "119.7",
-      "discountRate": 56,
-      "commissionRate": 0.15,
-      "sales": 1598,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m2-mt5m3hxuij9g5b",
-      "offerLink": "https://s.shopee.com.br/9fMhIcq4kR"
-    },
-    {
-      "niche": "Beleza & Skincare",
-      "itemId": 58268233715,
-      "productName": "Protetor Solar Facial Anasol Clareador FPS 90 Anti-Manchas Oil Free 60g",
-      "priceMin": "49.9",
-      "priceMax": "129.7",
-      "discountRate": 57,
-      "commissionRate": 0.1,
-      "sales": 2525,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lz-mt6s5eywqn7p9b",
-      "offerLink": "https://s.shopee.com.br/8VAjuTuW74"
-    },
-    {
-      "niche": "Beleza & Skincare",
       "itemId": 58264684239,
       "productName": "Kit Hidrabene Clareador Skincare Clareador Facial: Sabonete, Protetor 70 FPS e Sérum Multicorretivo",
       "priceMin": "71.16",
       "priceMax": "170.91",
       "discountRate": 56,
       "commissionRate": 0.13,
-      "sales": 12918,
+      "sales": 12866,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m8-mvoyqqp7u5tt80",
-      "offerLink": "https://s.shopee.com.br/70Lw7jHl0z"
-    },
-    {
-      "niche": "Beleza & Skincare",
-      "itemId": 58261587690,
-      "productName": "Sérum Peptídeo de Cobre GHK-Cu Reduz Rugas Linhas Finas Firmeza e Hidratação Facial Zencial",
-      "priceMin": "137.9",
-      "priceMax": "137.9",
-      "discountRate": 54,
-      "commissionRate": 0.18,
-      "sales": 1589,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820me-mosqg5nsr6yt8c",
-      "offerLink": "https://s.shopee.com.br/8VAjuUC2ye"
+      "offerLink": "https://s.shopee.com.br/AKcSkPOqoM"
     },
     {
       "niche": "Beleza & Skincare",
@@ -536,16 +523,29 @@
     },
     {
       "niche": "Beleza & Skincare",
+      "itemId": 9350390417,
+      "productName": "Hidratante Renovador Para Área dos Olhos  Kokeshi Olhos de Gueixa 15g",
+      "priceMin": "17.9",
+      "priceMax": "17.9",
+      "discountRate": 51,
+      "commissionRate": 0.26,
+      "sales": 1952,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820la-mn60bp00ov7kac",
+      "offerLink": "https://s.shopee.com.br/60TTaSwTSn"
+    },
+    {
+      "niche": "Beleza & Skincare",
       "itemId": 58261454900,
       "productName": "Creme Facial Firmador Anti-Rugas Anti-idade Efeito Lifting para Rosto e Pescoço 50g",
       "priceMin": "36.99",
       "priceMax": "36.99",
       "discountRate": 63,
       "commissionRate": 0.08,
-      "sales": 300,
+      "sales": 302,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820ll-msz8rb3j0zrab0",
-      "offerLink": "https://s.shopee.com.br/7AfPOT3Swh"
+      "offerLink": "https://s.shopee.com.br/4qHWCJ1JqX"
     },
     {
       "niche": "Beleza & Skincare",
@@ -555,10 +555,23 @@
       "priceMax": "31.9",
       "discountRate": 50,
       "commissionRate": 0.27,
-      "sales": 8596,
+      "sales": 9115,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lp-mrvgs50iy8zr1f",
-      "offerLink": "https://s.shopee.com.br/8fUBdygosj"
+      "offerLink": "https://s.shopee.com.br/9V3LksS1VF"
+    },
+    {
+      "niche": "Beleza & Skincare",
+      "itemId": 22494941454,
+      "productName": "Kit Facial Kokeshi Completo 3 Passos Hidratação e Colágeno",
+      "priceMin": "44.9",
+      "priceMax": "44.9",
+      "discountRate": 52,
+      "commissionRate": 0.21,
+      "sales": 10469,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lx-mqbygibr40sg7a",
+      "offerLink": "https://s.shopee.com.br/AUvswiODTP"
     },
     {
       "niche": "Beleza & Skincare",
@@ -568,10 +581,10 @@
       "priceMax": "76.99",
       "discountRate": 56,
       "commissionRate": 0.08,
-      "sales": 3209,
+      "sales": 3408,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820la-mv5gkgvk50xt62",
-      "offerLink": "https://s.shopee.com.br/3B9F5tS5zG"
+      "offerLink": "https://s.shopee.com.br/90759yl3N9"
     },
     {
       "niche": "Beleza & Skincare",
@@ -614,29 +627,16 @@
     },
     {
       "niche": "Beleza & Skincare",
-      "itemId": 9350390417,
-      "productName": "Hidratante Renovador Para Área dos Olhos  Kokeshi Olhos de Gueixa 15g",
-      "priceMin": "19.17",
-      "priceMax": "19.17",
-      "discountRate": 48,
-      "commissionRate": 0.26,
-      "sales": 1865,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820la-mn60bp00ov7kac",
-      "offerLink": "https://s.shopee.com.br/40iNcegOv8"
-    },
-    {
-      "niche": "Beleza & Skincare",
       "itemId": 24066580690,
       "productName": "Corretivo Líquido Nude Matte De Alta Cobertura Hidratante De Longa Duração À Prova D'água",
-      "priceMin": "9.81",
+      "priceMin": "8.96",
       "priceMax": "20.7",
       "discountRate": 53,
       "commissionRate": 0.09,
-      "sales": 1462,
+      "sales": 1432,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134301-7rcez-lr9ih1isg84q57",
-      "offerLink": "https://s.shopee.com.br/9fMhIcYTaX"
+      "offerLink": "https://s.shopee.com.br/7KyrAtrnlk"
     },
     {
       "niche": "Beleza & Skincare",
@@ -659,10 +659,10 @@
       "priceMax": "34.5",
       "discountRate": 50,
       "commissionRate": 0.18,
-      "sales": 2044,
+      "sales": 2122,
       "ratingStar": "5",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820ma-mraccemjjsw5e8",
-      "offerLink": "https://s.shopee.com.br/9pg7Uw6yGm"
+      "offerLink": "https://s.shopee.com.br/80EXy8Svje"
     },
     {
       "niche": "Beleza & Skincare",
@@ -676,6 +676,19 @@
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-824ja-mfd6woytu7t755",
       "offerLink": "https://s.shopee.com.br/5fosKjYJ91"
+    },
+    {
+      "niche": "Beleza & Skincare",
+      "itemId": 58209766348,
+      "productName": "Kit Skincare Kokeshi Cosméticos Completo 6 Itens Hidratação e Tratamento Facial",
+      "priceMin": "92.91",
+      "priceMax": "92.91",
+      "discountRate": 48,
+      "commissionRate": 0.21,
+      "sales": 2893,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820la-mqbygibee3nm0d",
+      "offerLink": "https://s.shopee.com.br/7fbhZWUCPU"
     },
     {
       "niche": "Beleza & Skincare",
@@ -711,10 +724,10 @@
       "priceMax": "27.09",
       "discountRate": 50,
       "commissionRate": 0.13,
-      "sales": 527,
+      "sales": 521,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7rauh-ma9o2e1rbaycfb",
-      "offerLink": "https://s.shopee.com.br/7pv6Bh0val"
+      "offerLink": "https://s.shopee.com.br/4B1pP53rCL"
     },
     {
       "niche": "Beleza & Skincare",
@@ -750,10 +763,10 @@
       "priceMax": "26.99",
       "discountRate": 51,
       "commissionRate": 0.11,
-      "sales": 452,
+      "sales": 457,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-823p6-mp4n073qbor035",
-      "offerLink": "https://s.shopee.com.br/7Kypam2pbc"
+      "offerLink": "https://s.shopee.com.br/3g5YoA5lDC"
     },
     {
       "niche": "Beleza & Skincare",
@@ -763,10 +776,10 @@
       "priceMax": "39.99",
       "discountRate": 55,
       "commissionRate": 0.12,
-      "sales": 307,
+      "sales": 308,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/cn-11134207-820l4-mvrbeqya6sjo0f",
-      "offerLink": "https://s.shopee.com.br/3g5XE2Gn34"
+      "offerLink": "https://s.shopee.com.br/1CGRQJiee"
     },
     {
       "niche": "Beleza & Skincare",
@@ -789,10 +802,10 @@
       "priceMax": "21.54",
       "discountRate": 49,
       "commissionRate": 0.09,
-      "sales": 1022,
+      "sales": 993,
       "ratingStar": "4.6",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-82598-mtkotrnh55hfc3",
-      "offerLink": "https://s.shopee.com.br/1BO9B04ppw"
+      "offerLink": "https://s.shopee.com.br/2gD1cK9ZEu"
     },
     {
       "niche": "Beleza & Skincare",
@@ -810,28 +823,28 @@
     {
       "niche": "Beleza & Skincare",
       "itemId": 53961908887,
-      "productName": "Compre 1 Ganhe 1 Grátis ⚡ Retinol Coreano Creme Para Os Olhos De Cuidados Faciais Hidratação Profunda Envelhecimento",
+      "productName": "Retinol Coreano Creme Para Os Olhos De Cuidados Faciais Hidratação Profunda Envelhecimento Seco Facial Hidratante Essênc",
       "priceMin": "12.93",
       "priceMax": "25.76",
       "discountRate": 48,
       "commissionRate": 0.11,
-      "sales": 2545,
+      "sales": 2676,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-823rl-mp0hnprni77m39",
-      "offerLink": "https://s.shopee.com.br/4qHT4vvPfM"
+      "offerLink": "https://s.shopee.com.br/114ndFyNkw"
     },
     {
       "niche": "Beleza & Skincare",
-      "itemId": 19897499204,
-      "productName": "Protetor Solar Facial c/ Cor Toque Seco FPS 50 Alta Proteção Efeito Natural Sunless Envio Imediato",
-      "priceMin": "30.99",
-      "priceMax": "35.99",
-      "discountRate": 48,
-      "commissionRate": 0.09,
-      "sales": 2344,
+      "itemId": 9319243207,
+      "productName": "Hidratante Creme Facial Pele De Porcelana Kokeshi 30g Milagre do Arroz",
+      "priceMin": "24.9",
+      "priceMax": "24.9",
+      "discountRate": 42,
+      "commissionRate": 0.26,
+      "sales": 2831,
       "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-ltgtase2vocf0e",
-      "offerLink": "https://s.shopee.com.br/7pv37HEFXM"
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m6-mq3n8g0o1ama14",
+      "offerLink": "https://s.shopee.com.br/7VIHNDqlPw"
     },
     {
       "niche": "Beleza & Skincare",
@@ -874,16 +887,29 @@
     },
     {
       "niche": "Beleza & Skincare",
+      "itemId": 19897499204,
+      "productName": "Protetor Solar Facial c/ Cor Toque Seco FPS 50 Alta Proteção Efeito Natural Sunless Envio Imediato",
+      "priceMin": "31.99",
+      "priceMax": "35.99",
+      "discountRate": 47,
+      "commissionRate": 0.09,
+      "sales": 2353,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-ltgtase2vocf0e",
+      "offerLink": "https://s.shopee.com.br/4qHWCJNJlT"
+    },
+    {
+      "niche": "Beleza & Skincare",
       "itemId": 23298825465,
       "productName": "Geleia Hidratante My Sweet Delight Barbour's Beauty 200g Fragrância Doce Desodorante Corporal",
       "priceMin": "39.9",
       "priceMax": "39.9",
       "discountRate": 44,
       "commissionRate": 0.18,
-      "sales": 3440,
-      "ratingStar": "4.9",
+      "sales": 3550,
+      "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820l9-mso8wwe2hypz27",
-      "offerLink": "https://s.shopee.com.br/2gCyUyU009"
+      "offerLink": "https://s.shopee.com.br/9AQVMHkQ2A"
     },
     {
       "niche": "Beleza & Skincare",
@@ -893,10 +919,10 @@
       "priceMax": "61.99",
       "discountRate": 47,
       "commissionRate": 0.08,
-      "sales": 1690,
+      "sales": 1682,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-meq1dyaduzgic1",
-      "offerLink": "https://s.shopee.com.br/7AfMK3GmtI"
+      "offerLink": "https://s.shopee.com.br/3Vm8brSOTL"
     },
     {
       "niche": "Beleza & Skincare",
@@ -906,23 +932,23 @@
       "priceMax": "139.9",
       "discountRate": 45,
       "commissionRate": 0.13,
-      "sales": 29562,
+      "sales": 29686,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m1-mvp0dwbg6jgg0a",
-      "offerLink": "https://s.shopee.com.br/2BGgMqIcxf"
+      "offerLink": "https://s.shopee.com.br/5qA3O8fywR"
     },
     {
       "niche": "Beleza & Skincare",
       "itemId": 22195089880,
       "productName": "Retinol Creme Facial Anti-Envelhecimento Coreano Hidratante Anti-idade para Rosto Firmeza Lapace 30g",
-      "priceMin": "38.54",
+      "priceMin": "28.54",
       "priceMax": "38.54",
       "discountRate": 45,
       "commissionRate": 0.13,
-      "sales": 504,
+      "sales": 509,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-825a1-mq4cmm8xleyp46",
-      "offerLink": "https://s.shopee.com.br/114iyh5TAv"
+      "offerLink": "https://s.shopee.com.br/2qWRod8vtx"
     },
     {
       "niche": "Beleza & Skincare",
@@ -945,10 +971,10 @@
       "priceMax": "14.99",
       "discountRate": 44,
       "commissionRate": 0.13,
-      "sales": 1453,
+      "sales": 1436,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lo-mt9jxi3dyh35d9",
-      "offerLink": "https://s.shopee.com.br/6q2QvGgSEs"
+      "offerLink": "https://s.shopee.com.br/Lp6q2w7IO"
     },
     {
       "niche": "Beleza & Skincare",
@@ -962,6 +988,19 @@
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-me7kcdu7q3nn35",
       "offerLink": "https://s.shopee.com.br/40hgLSeO5I"
+    },
+    {
+      "niche": "Beleza & Skincare",
+      "itemId": 58269629179,
+      "productName": "Protetor Solar Facial Hidrabene FPS 60 Efeito Invisível Ácido Hialurônico Alistin Toque Seco 50g",
+      "priceMin": "27.9",
+      "priceMax": "92.91",
+      "discountRate": 43,
+      "commissionRate": 0.15,
+      "sales": 1243,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m1-mtty6ka8az2a45",
+      "offerLink": "https://s.shopee.com.br/3LSiPYT1oI"
     },
     {
       "niche": "Beleza & Skincare",
@@ -984,10 +1023,10 @@
       "priceMax": "21.41",
       "discountRate": 44,
       "commissionRate": 0.09,
-      "sales": 699,
+      "sales": 694,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-825zt-mjl7s9zgxn9da1",
-      "offerLink": "https://s.shopee.com.br/qlImO66Vu"
+      "offerLink": "https://s.shopee.com.br/30ps0w8IZ0"
     },
     {
       "niche": "Beleza & Skincare",
@@ -1001,19 +1040,6 @@
       "ratingStar": "5",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-823pu-mp4m6b8iy8764b",
       "offerLink": "https://s.shopee.com.br/8AVauO4VLZ"
-    },
-    {
-      "niche": "Beleza & Skincare",
-      "itemId": 58252760721,
-      "productName": "Kit Banho Premium Corpo e Rosto Sabonete 200ml, Esfoliante 170g e Hidratante 200ml",
-      "priceMin": "39.99",
-      "priceMax": "55.99",
-      "discountRate": 50,
-      "commissionRate": 0.11,
-      "sales": 292,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lj-mvx4iduu6hhc00",
-      "offerLink": "https://s.shopee.com.br/3qOxQLG9i7"
     },
     {
       "niche": "Beleza & Skincare",
@@ -1045,14 +1071,27 @@
       "niche": "Beleza & Skincare",
       "itemId": 25293647491,
       "productName": "Celimax The Vita A Retinal Shot Tightening Booster 15ml",
-      "priceMin": "136.5",
-      "priceMax": "136.5",
+      "priceMin": "136.49",
+      "priceMax": "136.49",
       "discountRate": 38,
-      "commissionRate": 0.25,
-      "sales": 15778,
+      "commissionRate": 0.26,
+      "sales": 16012,
       "ratingStar": "5",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134207-825ai-mr9pynhmd43k22",
-      "offerLink": "https://s.shopee.com.br/7AfMK2H7g0"
+      "offerLink": "https://s.shopee.com.br/AAJ2Y6PU9J"
+    },
+    {
+      "niche": "Beleza & Skincare",
+      "itemId": 58252760721,
+      "productName": "Kit Banho Premium Corpo e Rosto Sabonete 200ml, Esfoliante 170g e Hidratante 200ml",
+      "priceMin": "39.99",
+      "priceMax": "55.99",
+      "discountRate": 50,
+      "commissionRate": 0.11,
+      "sales": 286,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lj-mvx4iduu6hhc00",
+      "offerLink": "https://s.shopee.com.br/BVgdjJ5Jh"
     },
     {
       "niche": "Beleza & Skincare",
@@ -1069,19 +1108,6 @@
     },
     {
       "niche": "Beleza & Skincare",
-      "itemId": 9319243207,
-      "productName": "Hidratante Creme Facial Pele De Porcelana Kokeshi 30g Milagre do Arroz",
-      "priceMin": "26.87",
-      "priceMax": "26.87",
-      "discountRate": 37,
-      "commissionRate": 0.26,
-      "sales": 2871,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m6-mq3n8g0o1ama14",
-      "offerLink": "https://s.shopee.com.br/5fqbbia3XI"
-    },
-    {
-      "niche": "Beleza & Skincare",
       "itemId": 23294242505,
       "productName": "​​40g Creme para Pés Rachados 42% Ureia + Aloe Vera - Ultra-Hidratante Reparo Intenso Contra Fissuras e Ressecamento​​",
       "priceMin": "35",
@@ -1092,6 +1118,19 @@
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m8-mpdez1zzm5fqfa",
       "offerLink": "https://s.shopee.com.br/LmnUiDrte"
+    },
+    {
+      "niche": "Beleza & Skincare",
+      "itemId": 23994387054,
+      "productName": "Kit Dupla Renovadores Faciais Kokeshi Pele Porcelana Olhos Gueixa",
+      "priceMin": "31.9",
+      "priceMax": "31.9",
+      "discountRate": 36,
+      "commissionRate": 0.26,
+      "sales": 10461,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lg-mv7qrwedl8n5f6",
+      "offerLink": "https://s.shopee.com.br/9KjvYZSeqC"
     },
     {
       "niche": "Beleza & Skincare",
@@ -1108,42 +1147,16 @@
     },
     {
       "niche": "Beleza & Skincare",
-      "itemId": 58269629179,
-      "productName": "Protetor Solar Facial Hidrabene FPS 60 Efeito Invisível Ácido Hialurônico Alistin Toque Seco 50g",
-      "priceMin": "29.9",
-      "priceMax": "109.9",
-      "discountRate": 39,
-      "commissionRate": 0.15,
-      "sales": 1192,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m1-mtty6ka8az2a45",
-      "offerLink": "https://s.shopee.com.br/6VPfWo28As"
-    },
-    {
-      "niche": "Beleza & Skincare",
-      "itemId": 58209766348,
-      "productName": "Kit Skincare Kokeshi Cosméticos Completo 6 Itens Hidratação e Tratamento Facial",
-      "priceMin": "111.57",
-      "priceMax": "111.57",
-      "discountRate": 37,
-      "commissionRate": 0.21,
-      "sales": 2821,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820la-mqbygibee3nm0d",
-      "offerLink": "https://s.shopee.com.br/5VX8KyNT3q"
-    },
-    {
-      "niche": "Beleza & Skincare",
       "itemId": 58265464519,
       "productName": "Kit Retinol Anti-Envelhecimento Creme + Sérum Facial Coreano Hidratante Anti-idade para Rosto Firmeza Lapace",
       "priceMin": "38.54",
       "priceMax": "38.54",
       "discountRate": 45,
       "commissionRate": 0.15,
-      "sales": 293,
+      "sales": 294,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-82598-mrfc20vl20hu62",
-      "offerLink": "https://s.shopee.com.br/3LSgpQI3iy"
+      "offerLink": "https://s.shopee.com.br/50awOc0gVa"
     },
     {
       "niche": "Beleza & Skincare",
@@ -1153,23 +1166,10 @@
       "priceMax": "25.99",
       "discountRate": 37,
       "commissionRate": 0.15,
-      "sales": 1005,
+      "sales": 1029,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/cn-11134207-820l4-mtektwgo8zyg23",
-      "offerLink": "https://s.shopee.com.br/9zzXhEXCuZ"
-    },
-    {
-      "niche": "Beleza & Skincare",
-      "itemId": 58200486959,
-      "productName": "Protetor Solar Stick Tonalizante FPS 80",
-      "priceMin": "109",
-      "priceMax": "109",
-      "discountRate": 38,
-      "commissionRate": 0.09,
-      "sales": 1385,
-      "ratingStar": "5",
-      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-821ff-mh0kxuqjsikv32",
-      "offerLink": "https://s.shopee.com.br/6Amp8C3Oqm"
+      "offerLink": "https://s.shopee.com.br/70M0mHt4Re"
     },
     {
       "niche": "Maquiagem",
@@ -1179,10 +1179,10 @@
       "priceMax": "24.08",
       "discountRate": 90,
       "commissionRate": 0.14,
-      "sales": 1043,
+      "sales": 1062,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lg-mr23r2x91vr8b5",
-      "offerLink": "https://s.shopee.com.br/4Veb9AQbVa"
+      "offerLink": "https://s.shopee.com.br/7AfQydDHel"
     },
     {
       "niche": "Maquiagem",
@@ -1322,10 +1322,10 @@
       "priceMax": "12.99",
       "discountRate": 70,
       "commissionRate": 0.11,
-      "sales": 429,
+      "sales": 411,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-825aq-mtxa3jmyoqv9bd",
-      "offerLink": "https://s.shopee.com.br/W8SNoJLsI"
+      "offerLink": "https://s.shopee.com.br/AUvswkjL3z"
     },
     {
       "niche": "Maquiagem",
@@ -1335,10 +1335,10 @@
       "priceMax": "13.99",
       "discountRate": 67,
       "commissionRate": 0.11,
-      "sales": 2044,
+      "sales": 1945,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-824ge-mpx077bu42ks0c",
-      "offerLink": "https://s.shopee.com.br/8AXtVtqAJU"
+      "offerLink": "https://s.shopee.com.br/2BGl1RF3y6"
     },
     {
       "niche": "Maquiagem",
@@ -1368,29 +1368,29 @@
     },
     {
       "niche": "Maquiagem",
-      "itemId": 58265606207,
-      "productName": "Maleta Completa Maquiagem Luxo Sombra Blush Iluminador Paleta Multicor Presente Dia dos Namorados",
-      "priceMin": "197.78",
-      "priceMax": "197.78",
-      "discountRate": 69,
-      "commissionRate": 0.11,
-      "sales": 321,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-8258c-mrgtht5s5slj0f",
-      "offerLink": "https://s.shopee.com.br/3Vm71kLphr"
-    },
-    {
-      "niche": "Maquiagem",
       "itemId": 23595164478,
       "productName": "Paleta de Maquiagem 3 em 1 Sombras Blush e Pó Compacto Kit Completo com Pincéis e Esponja Portátil Viagem",
       "priceMin": "49.6",
       "priceMax": "49.6",
       "discountRate": 69,
       "commissionRate": 0.09,
-      "sales": 333,
+      "sales": 353,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-8259x-mrjzjjh924g09a",
-      "offerLink": "https://s.shopee.com.br/4qHUcCGl0F"
+      "offerLink": "https://s.shopee.com.br/8pnexgpgRl"
+    },
+    {
+      "niche": "Maquiagem",
+      "itemId": 58265606207,
+      "productName": "Maleta Completa Maquiagem Luxo Sombra Blush Iluminador Paleta Multicor Presente Dia dos Namorados",
+      "priceMin": "197.78",
+      "priceMax": "197.78",
+      "discountRate": 69,
+      "commissionRate": 0.11,
+      "sales": 332,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-8258c-mrgtht5s5slj0f",
+      "offerLink": "https://s.shopee.com.br/5VXCzYKVt1"
     },
     {
       "niche": "Maquiagem",
@@ -1426,10 +1426,10 @@
       "priceMax": "21",
       "discountRate": 62,
       "commissionRate": 0.1,
-      "sales": 982,
+      "sales": 1000,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7reof-m2qt1hr4xk13b3",
-      "offerLink": "https://s.shopee.com.br/AAJ0y0E7ZO"
+      "offerLink": "https://s.shopee.com.br/8KrOMlVFCu"
     },
     {
       "niche": "Maquiagem",
@@ -1465,10 +1465,10 @@
       "priceMax": "28.9",
       "discountRate": 60,
       "commissionRate": 0.13,
-      "sales": 682,
+      "sales": 686,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-mdevtyy7lpshd7",
-      "offerLink": "https://s.shopee.com.br/7VIFn66baU"
+      "offerLink": "https://s.shopee.com.br/7AfQycEAVB"
     },
     {
       "niche": "Maquiagem",
@@ -1547,19 +1547,6 @@
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820l7-mlvwrpqtp0jo78",
       "offerLink": "https://s.shopee.com.br/9fMJ2eqeA0"
-    },
-    {
-      "niche": "Maquiagem",
-      "itemId": 23892647514,
-      "productName": "Base Liquida Facial Solft Matte bege  Ruby Rose",
-      "priceMin": "12.99",
-      "priceMax": "14.99",
-      "discountRate": 57,
-      "commissionRate": 0.12,
-      "sales": 1583,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m4ozs3fxwz4126",
-      "offerLink": "https://s.shopee.com.br/7VICifFWDK"
     },
     {
       "niche": "Maquiagem",
@@ -1680,6 +1667,19 @@
     },
     {
       "niche": "Maquiagem",
+      "itemId": 23995148748,
+      "productName": "NOVA BASE STICK FPS 50 - Base em Bastão | Protetor Solar com Cor + Cobertura Alta + Toque Seco + Efeito Matte",
+      "priceMin": "68.31",
+      "priceMax": "184.9",
+      "discountRate": 53,
+      "commissionRate": 0.13,
+      "sales": 584,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-825ai-mrbw1rpciyo6fa",
+      "offerLink": "https://s.shopee.com.br/qlNQyxnQh"
+    },
+    {
+      "niche": "Maquiagem",
       "itemId": 27718800683,
       "productName": "Shu Zili Round Makeup Batom Hidratante Cosméticos Fácil De Aplicar Cor E Não Desbotar",
       "priceMin": "12.07",
@@ -1699,10 +1699,10 @@
       "priceMax": "48",
       "discountRate": 53,
       "commissionRate": 0.08,
-      "sales": 1062,
+      "sales": 1061,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-823p4-mpb79qz4jxfzbc",
-      "offerLink": "https://s.shopee.com.br/5AuHwOO49m"
+      "offerLink": "https://s.shopee.com.br/7pv7lrAkIx"
     },
     {
       "niche": "Maquiagem",
@@ -1745,16 +1745,29 @@
     },
     {
       "niche": "Maquiagem",
+      "itemId": 23892647514,
+      "productName": "Base Liquida Facial Solft Matte bege  Ruby Rose",
+      "priceMin": "14.99",
+      "priceMax": "14.99",
+      "discountRate": 50,
+      "commissionRate": 0.12,
+      "sales": 1563,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m4ozs3fxwz4126",
+      "offerLink": "https://s.shopee.com.br/7VIHNEYPtb"
+    },
+    {
+      "niche": "Maquiagem",
       "itemId": 23794156083,
       "productName": "Kit 10 Máscara Adesivo Removedor de Cravos a Base de Carvão de Bambu Limpeza Profunda dos Poros Nose Pore ORIGINAL",
       "priceMin": "14.9",
       "priceMax": "14.9",
       "discountRate": 49,
       "commissionRate": 0.15,
-      "sales": 2556,
+      "sales": 2578,
       "ratingStar": "4.5",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-8258i-mq5tjcs6rua5b4",
-      "offerLink": "https://s.shopee.com.br/80ETJaDcCN"
+      "offerLink": "https://s.shopee.com.br/7fbhZXXmYa"
     },
     {
       "niche": "Maquiagem",
@@ -1777,36 +1790,10 @@
       "priceMax": "20.9",
       "discountRate": 50,
       "commissionRate": 0.11,
-      "sales": 485,
+      "sales": 481,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-8258k-mrsw7zn0sjyeea",
-      "offerLink": "https://s.shopee.com.br/9zzXhGjBb3"
-    },
-    {
-      "niche": "Maquiagem",
-      "itemId": 58211739274,
-      "productName": "Pó Compacto Lua&Neve Toque Aveludado Efeito Matte Controle de Oleosidade",
-      "priceMin": "24.9",
-      "priceMax": "24.9",
-      "discountRate": 49,
-      "commissionRate": 0.12,
-      "sales": 1196,
-      "ratingStar": "4.8",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820ll-mpt45yc90etcda",
-      "offerLink": "https://s.shopee.com.br/8VAjuVotda"
-    },
-    {
-      "niche": "Maquiagem",
-      "itemId": 58213009964,
-      "productName": "Pó Compacto Matte Controle de Oleosidade Toque Aveludado Longa Duração - Lua&Neve",
-      "priceMin": "24.9",
-      "priceMax": "24.9",
-      "discountRate": 49,
-      "commissionRate": 0.12,
-      "sales": 569,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lc-mpt45yc9d1xc98",
-      "offerLink": "https://s.shopee.com.br/9fMhIekSGx"
+      "offerLink": "https://s.shopee.com.br/1CGRSNJMt"
     },
     {
       "niche": "Maquiagem",
@@ -1842,10 +1829,10 @@
       "priceMax": "35.99",
       "discountRate": 49,
       "commissionRate": 0.13,
-      "sales": 467,
+      "sales": 476,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98r-lmep6t0291d7d8",
-      "offerLink": "https://s.shopee.com.br/Lp2BVJzDH"
+      "offerLink": "https://s.shopee.com.br/9KjvYbnmQm"
     },
     {
       "niche": "Maquiagem",
@@ -1881,23 +1868,36 @@
       "priceMax": "14.83",
       "discountRate": 47,
       "commissionRate": 0.13,
-      "sales": 626,
+      "sales": 652,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820mc-mosfz9j612bq8b",
-      "offerLink": "https://s.shopee.com.br/1BOCFSmNpl"
+      "offerLink": "https://s.shopee.com.br/AAJ2Y8OGUN"
     },
     {
       "niche": "Maquiagem",
-      "itemId": 19897499204,
-      "productName": "Protetor Solar Facial c/ Cor Toque Seco FPS 50 Alta Proteção Efeito Natural Sunless Envio Imediato",
-      "priceMin": "30.99",
-      "priceMax": "35.99",
-      "discountRate": 48,
-      "commissionRate": 0.09,
-      "sales": 2344,
+      "itemId": 58211739274,
+      "productName": "Pó Compacto Lua&Neve Toque Aveludado Efeito Matte Controle de Oleosidade",
+      "priceMin": "25.9",
+      "priceMax": "25.9",
+      "discountRate": 47,
+      "commissionRate": 0.12,
+      "sales": 1262,
+      "ratingStar": "4.8",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820ll-mpt45yc90etcda",
+      "offerLink": "https://s.shopee.com.br/1qducpGKe4"
+    },
+    {
+      "niche": "Maquiagem",
+      "itemId": 58213009964,
+      "productName": "Pó Compacto Matte Controle de Oleosidade Toque Aveludado Longa Duração - Lua&Neve",
+      "priceMin": "25.9",
+      "priceMax": "25.9",
+      "discountRate": 47,
+      "commissionRate": 0.12,
+      "sales": 594,
       "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-ltgtase2vocf0e",
-      "offerLink": "https://s.shopee.com.br/7pv37HEFXM"
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lc-mpt45yc9d1xc98",
+      "offerLink": "https://s.shopee.com.br/W8X2NLPLw"
     },
     {
       "niche": "Maquiagem",
@@ -1914,16 +1914,16 @@
     },
     {
       "niche": "Maquiagem",
-      "itemId": 23995148748,
-      "productName": "NOVA BASE STICK FPS 50 - Base em Bastão | Protetor Solar com Cor + Cobertura Alta + Toque Seco + Efeito Matte",
-      "priceMin": "75.9",
-      "priceMax": "185.9",
-      "discountRate": 46,
-      "commissionRate": 0.13,
-      "sales": 712,
+      "itemId": 19897499204,
+      "productName": "Protetor Solar Facial c/ Cor Toque Seco FPS 50 Alta Proteção Efeito Natural Sunless Envio Imediato",
+      "priceMin": "31.99",
+      "priceMax": "35.99",
+      "discountRate": 47,
+      "commissionRate": 0.09,
+      "sales": 2353,
       "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-825ai-mrbw1rpciyo6fa",
-      "offerLink": "https://s.shopee.com.br/8VAi3StBLX"
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-ltgtase2vocf0e",
+      "offerLink": "https://s.shopee.com.br/7pv7lqX9Dd"
     },
     {
       "niche": "Maquiagem",
@@ -1933,10 +1933,10 @@
       "priceMax": "61.99",
       "discountRate": 47,
       "commissionRate": 0.08,
-      "sales": 1690,
+      "sales": 1682,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-meq1dyaduzgic1",
-      "offerLink": "https://s.shopee.com.br/7AfMK3GmtI"
+      "offerLink": "https://s.shopee.com.br/7AfQycZgZZ"
     },
     {
       "niche": "Maquiagem",
@@ -1998,10 +1998,10 @@
       "priceMax": "58.98",
       "discountRate": 45,
       "commissionRate": 0.1,
-      "sales": 553,
+      "sales": 566,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/cn-11134207-820l4-mu1pchzsnshz93",
-      "offerLink": "https://s.shopee.com.br/1LhcRllkUs"
+      "offerLink": "https://s.shopee.com.br/114ndHxA5g"
     },
     {
       "niche": "Maquiagem",
@@ -2024,10 +2024,10 @@
       "priceMax": "44.99",
       "discountRate": 44,
       "commissionRate": 0.11,
-      "sales": 719,
+      "sales": 717,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lc-mtodwvxd3vnm4d",
-      "offerLink": "https://s.shopee.com.br/7Kypan7EvT"
+      "offerLink": "https://s.shopee.com.br/6fjANhG4W6"
     },
     {
       "niche": "Maquiagem",
@@ -2050,23 +2050,10 @@
       "priceMax": "10.2",
       "discountRate": 44,
       "commissionRate": 0.09,
-      "sales": 6317,
+      "sales": 6011,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134301-7rati-mb3tfn8u2lw132",
-      "offerLink": "https://s.shopee.com.br/2gCwxnXaE5"
-    },
-    {
-      "niche": "Maquiagem",
-      "itemId": 25743424811,
-      "productName": "Paleta De Sombras De 15 Cores UCANBE-Matte , Shimmer , Glitter-Rosa , Roxo , Vermelho , Azul , Amarelo , Verde , Smokey ",
-      "priceMin": "40.99",
-      "priceMax": "40.99",
-      "discountRate": 49,
-      "commissionRate": 0.09,
-      "sales": 345,
-      "ratingStar": "5",
-      "imageUrl": "https://cf.shopee.com.br/file/cn-11134207-820l4-mqlkaxklu32nd7",
-      "offerLink": "https://s.shopee.com.br/Lp5FvXt8W"
+      "offerLink": "https://s.shopee.com.br/5fqdBsIzhK"
     },
     {
       "niche": "Maquiagem",
@@ -2076,10 +2063,10 @@
       "priceMax": "13.99",
       "discountRate": 44,
       "commissionRate": 0.08,
-      "sales": 1411,
+      "sales": 1431,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134201-23030-oyu0r4heegov9c",
-      "offerLink": "https://s.shopee.com.br/3qOuLwT8rO"
+      "offerLink": "https://s.shopee.com.br/6VPkBPFp0Z"
     },
     {
       "niche": "Maquiagem",
@@ -2154,10 +2141,10 @@
       "priceMax": "10.99",
       "discountRate": 42,
       "commissionRate": 0.11,
-      "sales": 1469,
+      "sales": 1582,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-8262f-mjl6qtqfdix0cb",
-      "offerLink": "https://s.shopee.com.br/30pnMPWJYB"
+      "offerLink": "https://s.shopee.com.br/60TTaUHj1Q"
     },
     {
       "niche": "Maquiagem",
@@ -2219,10 +2206,10 @@
       "priceMax": "38.99",
       "discountRate": 44,
       "commissionRate": 0.13,
-      "sales": 367,
+      "sales": 369,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m12mm8dggck305",
-      "offerLink": "https://s.shopee.com.br/2BGgMsD0Um"
+      "offerLink": "https://s.shopee.com.br/80EXy9sr8e"
     },
     {
       "niche": "Maquiagem",
@@ -2245,23 +2232,10 @@
       "priceMax": "29.99",
       "discountRate": 40,
       "commissionRate": 0.11,
-      "sales": 1795,
+      "sales": 1908,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134201-7r98o-mcbvmwwk696314",
-      "offerLink": "https://s.shopee.com.br/8KrJiCpWyZ"
-    },
-    {
-      "niche": "Maquiagem",
-      "itemId": 58218876854,
-      "productName": "Pó Compacto SACE LADY Longa Duração Controle Oleosidade Acabamento Matte Maquiagem",
-      "priceMin": "75.99",
-      "priceMax": "75.99",
-      "discountRate": 41,
-      "commissionRate": 0.08,
-      "sales": 590,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820mg-mthqbn9vj18iec",
-      "offerLink": "https://s.shopee.com.br/AUvoIBhHaA"
+      "offerLink": "https://s.shopee.com.br/1gKUQWGxz3"
     },
     {
       "niche": "Maquiagem",
@@ -2291,16 +2265,42 @@
     },
     {
       "niche": "Maquiagem",
+      "itemId": 25743424811,
+      "productName": "Paleta De Sombras De 15 Cores UCANBE-Matte , Shimmer , Glitter-Rosa , Roxo , Vermelho , Azul , Amarelo , Verde , Smokey ",
+      "priceMin": "43.99",
+      "priceMax": "43.99",
+      "discountRate": 45,
+      "commissionRate": 0.09,
+      "sales": 344,
+      "ratingStar": "5",
+      "imageUrl": "https://cf.shopee.com.br/file/cn-11134207-820l4-mqlkaxklu32nd7",
+      "offerLink": "https://s.shopee.com.br/2VtbQ2Vvyi"
+    },
+    {
+      "niche": "Maquiagem",
       "itemId": 25583979154,
       "productName": "120 Paleta De Sombra Colorida Mate Maquiagem Altamente Pigmentada Em Pó Longa Duração À Prova D'água",
       "priceMin": "66.12",
       "priceMax": "66.12",
       "discountRate": 44,
       "commissionRate": 0.11,
-      "sales": 355,
+      "sales": 353,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7rdyl-mcamfjuyaj3r09",
-      "offerLink": "https://s.shopee.com.br/gRveXWcSY"
+      "offerLink": "https://s.shopee.com.br/80EXy9Azok"
+    },
+    {
+      "niche": "Maquiagem",
+      "itemId": 58218876854,
+      "productName": "Pó Compacto SACE LADY Longa Duração Controle Oleosidade Acabamento Matte Maquiagem",
+      "priceMin": "76.99",
+      "priceMax": "76.99",
+      "discountRate": 40,
+      "commissionRate": 0.08,
+      "sales": 611,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820mg-mthqbn9vj18iec",
+      "offerLink": "https://s.shopee.com.br/9zzcLplF4q"
     },
     {
       "niche": "Maquiagem",
@@ -2310,10 +2310,10 @@
       "priceMax": "50.99",
       "discountRate": 35,
       "commissionRate": 0.23,
-      "sales": 1198,
+      "sales": 1195,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-82617-mk1tb4jnu0ao7c",
-      "offerLink": "https://s.shopee.com.br/50ark5OhUl"
+      "offerLink": "https://s.shopee.com.br/80EXyAA6y0"
     },
     {
       "niche": "Maquiagem",
@@ -2336,10 +2336,10 @@
       "priceMax": "76.98",
       "discountRate": 41,
       "commissionRate": 0.08,
-      "sales": 430,
+      "sales": 464,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lq-mtc90xwdbmkh47",
-      "offerLink": "https://s.shopee.com.br/9AQQhjmMHm"
+      "offerLink": "https://s.shopee.com.br/1BODpbIs00"
     },
     {
       "niche": "Moda Feminina",
@@ -2414,10 +2414,23 @@
       "priceMax": "30.6",
       "discountRate": 69,
       "commissionRate": 0.23,
-      "sales": 6158,
+      "sales": 6217,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lo-mo4r6ryw8bgif4",
-      "offerLink": "https://s.shopee.com.br/9AQQhkZATb"
+      "offerLink": "https://s.shopee.com.br/4fy602nCNi"
+    },
+    {
+      "niche": "Moda Feminina",
+      "itemId": 22597777290,
+      "productName": "Regata Blusa Gola Alta  Tecido DUNA",
+      "priceMin": "17.99",
+      "priceMax": "24.99",
+      "discountRate": 70,
+      "commissionRate": 0.17,
+      "sales": 3194,
+      "ratingStar": "4.8",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m04irv7zta3rc7",
+      "offerLink": "https://s.shopee.com.br/W8X2O33qD"
     },
     {
       "niche": "Moda Feminina",
@@ -2479,10 +2492,10 @@
       "priceMax": "56.99",
       "discountRate": 68,
       "commissionRate": 0.18,
-      "sales": 2342,
+      "sales": 2713,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lf-mtsdfy218r294f",
-      "offerLink": "https://s.shopee.com.br/8pnTjlzylE"
+      "offerLink": "https://s.shopee.com.br/1W14EEGqxe"
     },
     {
       "niche": "Moda Feminina",
@@ -2492,10 +2505,10 @@
       "priceMax": "49.5",
       "discountRate": 69,
       "commissionRate": 0.1,
-      "sales": 4490,
+      "sales": 4450,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820l8-mqowz34schkx16",
-      "offerLink": "https://s.shopee.com.br/2La6ZBzBLP"
+      "offerLink": "https://s.shopee.com.br/3LSiPasH5a"
     },
     {
       "niche": "Moda Feminina",
@@ -2505,10 +2518,10 @@
       "priceMax": "19.99",
       "discountRate": 67,
       "commissionRate": 0.16,
-      "sales": 3976,
+      "sales": 4073,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81ztj-mkjrao3naps256",
-      "offerLink": "https://s.shopee.com.br/1gKPly1ihL"
+      "offerLink": "https://s.shopee.com.br/1Lhe1uzt9G"
     },
     {
       "niche": "Moda Feminina",
@@ -2635,10 +2648,10 @@
       "priceMax": "23.39",
       "discountRate": 61,
       "commissionRate": 0.16,
-      "sales": 3772,
+      "sales": 3718,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lq-mlxvxbp0xssk8f",
-      "offerLink": "https://s.shopee.com.br/1CBmu8457"
+      "offerLink": "https://s.shopee.com.br/Lp6q53hBA"
     },
     {
       "niche": "Moda Feminina",
@@ -2717,19 +2730,6 @@
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820l6-mtsh7y2aam0y19",
       "offerLink": "https://s.shopee.com.br/5VWlupxWlp"
-    },
-    {
-      "niche": "Moda Feminina",
-      "itemId": 22597777290,
-      "productName": "Regata Blusa Gola Alta  Tecido DUNA",
-      "priceMin": "24.69",
-      "priceMax": "24.99",
-      "discountRate": 58,
-      "commissionRate": 0.17,
-      "sales": 3251,
-      "ratingStar": "4.8",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m04irv7zta3rc7",
-      "offerLink": "https://s.shopee.com.br/W8SNp6A4E"
     },
     {
       "niche": "Moda Feminina",
@@ -2817,10 +2817,10 @@
       "priceMax": "55",
       "discountRate": 55,
       "commissionRate": 0.17,
-      "sales": 4602,
+      "sales": 4638,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134201-820lq-mvl1869ko9vma4",
-      "offerLink": "https://s.shopee.com.br/8AXtVucyVR"
+      "offerLink": "https://s.shopee.com.br/30ps0ytXlQ"
     },
     {
       "niche": "Moda Feminina",
@@ -2856,10 +2856,10 @@
       "priceMax": "47.65",
       "discountRate": 55,
       "commissionRate": 0.11,
-      "sales": 3325,
+      "sales": 3333,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820mg-mn8n4mhy64uc40",
-      "offerLink": "https://s.shopee.com.br/4fy1LTqIc5"
+      "offerLink": "https://s.shopee.com.br/114ndJ19pM"
     },
     {
       "niche": "Moda Feminina",
@@ -2895,10 +2895,10 @@
       "priceMax": "63.9",
       "discountRate": 52,
       "commissionRate": 0.16,
-      "sales": 3957,
+      "sales": 3604,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820mh-mqhklo0catj7ba",
-      "offerLink": "https://s.shopee.com.br/gRm0lV4KQ"
+      "offerLink": "https://s.shopee.com.br/AKcSkSjE29"
     },
     {
       "niche": "Moda Feminina",
@@ -2973,10 +2973,10 @@
       "priceMax": "99.99",
       "discountRate": 52,
       "commissionRate": 0.11,
-      "sales": 3771,
+      "sales": 3800,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820l7-mlgfmo3aw16t84",
-      "offerLink": "https://s.shopee.com.br/114iyk4G3H"
+      "offerLink": "https://s.shopee.com.br/20xKp8xLnS"
     },
     {
       "niche": "Moda Feminina",
@@ -3045,29 +3045,16 @@
     },
     {
       "niche": "Moda Feminina",
-      "itemId": 22398543547,
-      "productName": "Blusa Regata Feminina do G1 ao G5 Regata PLUS SIZE DUNA TOP",
-      "priceMin": "23.99",
-      "priceMax": "45",
-      "discountRate": 47,
-      "commissionRate": 0.2,
-      "sales": 4710,
-      "ratingStar": "4.8",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lx-mmqva92gkirr28",
-      "offerLink": "https://s.shopee.com.br/8KrJiDcLAU"
-    },
-    {
-      "niche": "Moda Feminina",
       "itemId": 23499346925,
       "productName": "Kit 4 Conjuntos Femininos Baby Doll Pijama Short Doll Estampado Sem Bojo Original",
-      "priceMin": "49.97",
-      "priceMax": "54.97",
+      "priceMin": "49.9",
+      "priceMax": "49.9",
       "discountRate": 51,
       "commissionRate": 0.08,
-      "sales": 2492,
+      "sales": 2258,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-8261e-mkslp8xl6vwkd2",
-      "offerLink": "https://s.shopee.com.br/80EMkF39S9"
+      "offerLink": "https://s.shopee.com.br/2BGl1SEJbq"
     },
     {
       "niche": "Moda Feminina",
@@ -3090,10 +3077,10 @@
       "priceMax": "19.95",
       "discountRate": 50,
       "commissionRate": 0.11,
-      "sales": 6181,
+      "sales": 6184,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lh-mrgp2tovku115a",
-      "offerLink": "https://s.shopee.com.br/8pnaJ8aR9V"
+      "offerLink": "https://s.shopee.com.br/50awOelvhk"
     },
     {
       "niche": "Moda Feminina",
@@ -3207,10 +3194,10 @@
       "priceMax": "139",
       "discountRate": 50,
       "commissionRate": 0.08,
-      "sales": 7391,
+      "sales": 7991,
       "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-824he-mfo1di4agjd7d4",
-      "offerLink": "https://s.shopee.com.br/8fUA6pb4US"
+      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-824j3-mfo1d0tts1l4ea",
+      "offerLink": "https://s.shopee.com.br/4B1pP7p6OZ"
     },
     {
       "niche": "Moda Feminina",
@@ -3227,16 +3214,29 @@
     },
     {
       "niche": "Moda Feminina",
+      "itemId": 22398543547,
+      "productName": "Blusa Regata Feminina do G1 ao G5 Regata PLUS SIZE DUNA TOP",
+      "priceMin": "24.99",
+      "priceMax": "45",
+      "discountRate": 44,
+      "commissionRate": 0.2,
+      "sales": 4772,
+      "ratingStar": "4.8",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lx-mmqva92gkirr28",
+      "offerLink": "https://s.shopee.com.br/3B9IDHsuQT"
+    },
+    {
+      "niche": "Moda Feminina",
       "itemId": 44553066762,
       "productName": "Regata Feminina Blusa Alça fina Poliamida Premium Fitness Casual com Bojo Removível",
       "priceMin": "54.95",
       "priceMax": "54.95",
       "discountRate": 45,
       "commissionRate": 0.17,
-      "sales": 8387,
+      "sales": 8271,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81ztc-mjughleg1zwic3",
-      "offerLink": "https://s.shopee.com.br/9070VRZnoY"
+      "offerLink": "https://s.shopee.com.br/5AuMaxlIMn"
     },
     {
       "niche": "Moda Feminina",
@@ -3363,10 +3363,10 @@
       "priceMax": "35.96",
       "discountRate": 42,
       "commissionRate": 0.1601,
-      "sales": 4168,
+      "sales": 4155,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-mcmm114w01dt6a",
-      "offerLink": "https://s.shopee.com.br/20xGAa0S1J"
+      "offerLink": "https://s.shopee.com.br/3g5YoCr0Pc"
     },
     {
       "niche": "Moda Feminina",
@@ -3402,10 +3402,23 @@
       "priceMax": "79.99",
       "discountRate": 43,
       "commissionRate": 0.11,
-      "sales": 2918,
+      "sales": 3217,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-mh6lnpjrx2x137",
-      "offerLink": "https://s.shopee.com.br/W8LoSVhfR"
+      "offerLink": "https://s.shopee.com.br/8VAoZ5qCkq"
+    },
+    {
+      "niche": "Moda Feminina",
+      "itemId": 58254632176,
+      "productName": "Conjunto de Academia Feminino Short com Bolso Zero Transparência e Cintura Alta + Top com Forro Duplo",
+      "priceMin": "45.6",
+      "priceMax": "50.3",
+      "discountRate": 43,
+      "commissionRate": 0.09,
+      "sales": 4789,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-8261i-mkb5a24w7zlz6d",
+      "offerLink": "https://s.shopee.com.br/9fMlxEllNx"
     },
     {
       "niche": "Moda Feminina",
@@ -3428,10 +3441,10 @@
       "priceMax": "24.9",
       "discountRate": 40,
       "commissionRate": 0.13,
-      "sales": 3288,
+      "sales": 3401,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820le-mqq0z7tlwcg1ab",
-      "offerLink": "https://s.shopee.com.br/5AuHwOoObC"
+      "offerLink": "https://s.shopee.com.br/1BODpc0WUP"
     },
     {
       "niche": "Moda Feminina",
@@ -3499,19 +3512,6 @@
       "offerLink": "https://s.shopee.com.br/9Kj1QmFktf"
     },
     {
-      "niche": "Moda Feminina",
-      "itemId": 29042426965,
-      "productName": "Vestido Midi Linho Feminino Elegante Casual Alfaiataria Bolsos Laterais Atemporal",
-      "priceMin": "60.99",
-      "priceMax": "69.99",
-      "discountRate": 39,
-      "commissionRate": 0.11,
-      "sales": 4325,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lm-mnn3ubx5q1og78",
-      "offerLink": "https://s.shopee.com.br/W8VSFk38M"
-    },
-    {
       "niche": "Calçados",
       "itemId": 58204543063,
       "productName": "Combo 1,2 e 3 Pares Chinelo Feminino Casual Leve Antiderrapante Confortável",
@@ -3519,10 +3519,10 @@
       "priceMax": "29.99",
       "discountRate": 82,
       "commissionRate": 0.13,
-      "sales": 3230,
+      "sales": 3322,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81ztf-ml1zdh9onnr6dc",
-      "offerLink": "https://s.shopee.com.br/1W116tJcrA"
+      "offerLink": "https://s.shopee.com.br/3LSiPcMfZB"
     },
     {
       "niche": "Calçados",
@@ -3584,10 +3584,10 @@
       "priceMax": "34.99",
       "discountRate": 74,
       "commissionRate": 0.08,
-      "sales": 4218,
+      "sales": 4107,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81ztc-mjipn5aiikuef0",
-      "offerLink": "https://s.shopee.com.br/3B9F5xDHTO"
+      "offerLink": "https://s.shopee.com.br/50awOgGKBP"
     },
     {
       "niche": "Calçados",
@@ -3688,10 +3688,10 @@
       "priceMax": "49.95",
       "discountRate": 70,
       "commissionRate": 0.08,
-      "sales": 1852,
+      "sales": 1863,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfn939o7xlvp9d",
-      "offerLink": "https://s.shopee.com.br/7VIFn90zgC"
+      "offerLink": "https://s.shopee.com.br/6fjANjSOWc"
     },
     {
       "niche": "Calçados",
@@ -3740,23 +3740,10 @@
       "priceMax": "38.97",
       "discountRate": 65,
       "commissionRate": 0.14,
-      "sales": 2679,
+      "sales": 2686,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820le-mpwabid27s3n3f",
-      "offerLink": "https://s.shopee.com.br/AAJ0y2qqGS"
-    },
-    {
-      "niche": "Calçados",
-      "itemId": 58262387784,
-      "productName": "Tênis O2x Feminino Esportivo Confortável Leve Treino Caminhada Fitness",
-      "priceMin": "34.99",
-      "priceMax": "52.95",
-      "discountRate": 65,
-      "commissionRate": 0.12,
-      "sales": 2914,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820mc-mo0j5ap2qi2p7f",
-      "offerLink": "https://s.shopee.com.br/9pgAZQs6wM"
+      "offerLink": "https://s.shopee.com.br/9KjvYdIF6s"
     },
     {
       "niche": "Calçados",
@@ -3844,10 +3831,10 @@
       "priceMax": "49.99",
       "discountRate": 64,
       "commissionRate": 0.08,
-      "sales": 2680,
+      "sales": 2755,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820l8-mq94rs8p9d6q4b",
-      "offerLink": "https://s.shopee.com.br/9073ZtvHd9"
+      "offerLink": "https://s.shopee.com.br/AUvswmDnk1"
     },
     {
       "niche": "Calçados",
@@ -3857,10 +3844,10 @@
       "priceMax": "49.99",
       "discountRate": 64,
       "commissionRate": 0.08,
-      "sales": 2548,
+      "sales": 2578,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820ma-mq94rs8pm0aq0a",
-      "offerLink": "https://s.shopee.com.br/9KjtyVu0xF"
+      "offerLink": "https://s.shopee.com.br/AAJ2YAF4Pz"
     },
     {
       "niche": "Calçados",
@@ -3896,10 +3883,23 @@
       "priceMax": "79.59",
       "discountRate": 60,
       "commissionRate": 0.13,
-      "sales": 4184,
+      "sales": 4385,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-mbsaq93mmr3b3c",
-      "offerLink": "https://s.shopee.com.br/5AuJTd5fPi"
+      "offerLink": "https://s.shopee.com.br/Lp6q6Y5eR"
+    },
+    {
+      "niche": "Calçados",
+      "itemId": 58262387784,
+      "productName": "Tênis O2x Feminino Esportivo Confortável Leve Treino Caminhada Fitness",
+      "priceMin": "39.99",
+      "priceMax": "52.95",
+      "discountRate": 60,
+      "commissionRate": 0.12,
+      "sales": 2893,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820mc-mo0j5ap2qi2p7f",
+      "offerLink": "https://s.shopee.com.br/9fMlxFGyQu"
     },
     {
       "niche": "Calçados",
@@ -4000,10 +4000,10 @@
       "priceMax": "46.8",
       "discountRate": 59,
       "commissionRate": 0.11,
-      "sales": 1972,
+      "sales": 2027,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81zu8-ml3h6soz65fke2",
-      "offerLink": "https://s.shopee.com.br/70LzCE2th5"
+      "offerLink": "https://s.shopee.com.br/7AfQyeQUVh"
     },
     {
       "niche": "Calçados",
@@ -4013,10 +4013,10 @@
       "priceMax": "39.95",
       "discountRate": 60,
       "commissionRate": 0.08,
-      "sales": 4040,
+      "sales": 4246,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lm-mqgm5w9cn4001e",
-      "offerLink": "https://s.shopee.com.br/2gCyV2FBUH"
+      "offerLink": "https://s.shopee.com.br/5AuMazFgqQ"
     },
     {
       "niche": "Calçados",
@@ -4052,10 +4052,10 @@
       "priceMax": "157.89",
       "discountRate": 55,
       "commissionRate": 0.17,
-      "sales": 2483,
+      "sales": 2539,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lt-mozs1uwb0nwjfd",
-      "offerLink": "https://s.shopee.com.br/6AmsCh64No"
+      "offerLink": "https://s.shopee.com.br/80EXyBNJok"
     },
     {
       "niche": "Calçados",
@@ -4091,10 +4091,10 @@
       "priceMax": "129.9",
       "discountRate": 54,
       "commissionRate": 0.18,
-      "sales": 2033,
+      "sales": 2048,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820la-mt6my45qxb0ne7",
-      "offerLink": "https://s.shopee.com.br/7AfPOX2GM6"
+      "offerLink": "https://s.shopee.com.br/70M0mLR7qe"
     },
     {
       "niche": "Calçados",
@@ -4257,13 +4257,13 @@
       "itemId": 23294741602,
       "productName": "Tênis Feminino Corrida Run Esportivo Caminhada Casual Academia Treino Fitness Crossfit Leve Premium Respirável Ultra",
       "priceMin": "49.9",
-      "priceMax": "68.93",
+      "priceMax": "69.93",
       "discountRate": 50,
       "commissionRate": 0.15,
-      "sales": 2485,
+      "sales": 2478,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-81zva-mmuvx89kb3sz10",
-      "offerLink": "https://s.shopee.com.br/60TS0O6hin"
+      "offerLink": "https://s.shopee.com.br/8AXyAUMgTn"
     },
     {
       "niche": "Calçados",
@@ -4501,6 +4501,19 @@
     },
     {
       "niche": "Calçados",
+      "itemId": 53906798892,
+      "productName": "Sapato Feminino Vizzano Casual Modelagem Clássica Solado Sintético Original",
+      "priceMin": "103.24",
+      "priceMax": "103.24",
+      "discountRate": 45,
+      "commissionRate": 0.1,
+      "sales": 2374,
+      "ratingStar": "5",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lz-mu9absqxz9j43f",
+      "offerLink": "https://s.shopee.com.br/7fbhZZOaUi"
+    },
+    {
+      "niche": "Calçados",
       "itemId": 29842462469,
       "productName": "Sandália Saltinho Tira de Strass Brilho Feminina Luxo Calce Fácil Confortável",
       "priceMin": "41.75",
@@ -4546,10 +4559,10 @@
       "priceMax": "42",
       "discountRate": 41,
       "commissionRate": 0.18,
-      "sales": 5595,
+      "sales": 5846,
       "ratingStar": "4.6",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m9t94f0t2lo94f",
-      "offerLink": "https://s.shopee.com.br/5qA0Gr383f"
+      "offerLink": "https://s.shopee.com.br/1W14EFTeHU"
     },
     {
       "niche": "Calçados",
@@ -4585,10 +4598,10 @@
       "priceMax": "36",
       "discountRate": 42,
       "commissionRate": 0.13,
-      "sales": 8101,
+      "sales": 8185,
       "ratingStar": "4.4",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m5tyxgjeaxz9d5",
-      "offerLink": "https://s.shopee.com.br/8KrMmfxoyx"
+      "offerLink": "https://s.shopee.com.br/Lp6q5qVMz"
     },
     {
       "niche": "Calçados",
@@ -4657,29 +4670,16 @@
     },
     {
       "niche": "Calçados",
-      "itemId": 53906798892,
-      "productName": "Sapato Feminino Vizzano Casual Modelagem Clássica Solado Sintético Original",
-      "priceMin": "113.4",
-      "priceMax": "113.4",
-      "discountRate": 40,
-      "commissionRate": 0.1,
-      "sales": 2322,
-      "ratingStar": "5",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lz-mu9absqxz9j43f",
-      "offerLink": "https://s.shopee.com.br/6VPibJ4nhu"
-    },
-    {
-      "niche": "Calçados",
-      "itemId": 58213752303,
-      "productName": "Sapatilha Feminina Mary Jane Confortável Luxo Elegante Sapato Feminino Boneca  Bico Quadrado Malbec",
-      "priceMin": "47.9",
-      "priceMax": "47.9",
-      "discountRate": 40,
-      "commissionRate": 0.08,
-      "sales": 2243,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-8257u-mqbvss8r4f0ie7",
-      "offerLink": "https://s.shopee.com.br/3qOvtBO0mR"
+      "itemId": 22895975988,
+      "productName": "Tênis Feminino casual confortável e leve para trabalho e lazer barato lançamento 2023",
+      "priceMin": "36.9",
+      "priceMax": "36.9",
+      "discountRate": 39,
+      "commissionRate": 0.13,
+      "sales": 2231,
+      "ratingStar": "4.8",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7qukw-li3p8dqyzbzz7b",
+      "offerLink": "https://s.shopee.com.br/7pv7lsNx9l"
     },
     {
       "niche": "Decoração de Casa",
@@ -4728,10 +4728,10 @@
       "priceMax": "13.9",
       "discountRate": 80,
       "commissionRate": 0.13,
-      "sales": 1390,
+      "sales": 1407,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m0oxl1vahn5tf1",
-      "offerLink": "https://s.shopee.com.br/9zzXhK8N9m"
+      "offerLink": "https://s.shopee.com.br/9KjvYf3p7S"
     },
     {
       "niche": "Decoração de Casa",
@@ -4750,14 +4750,14 @@
       "niche": "Decoração de Casa",
       "itemId": 21797728567,
       "productName": "Arara 4/5 Andares Multiuso c/ Sapateira, Cabideiro e Suporte p/ Roupas, Tênis e Closet Quarto",
-      "priceMin": "40.99",
-      "priceMax": "43.99",
-      "discountRate": 77,
+      "priceMin": "40.49",
+      "priceMax": "45.48",
+      "discountRate": 76,
       "commissionRate": 0.09,
-      "sales": 5369,
+      "sales": 5506,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7req6-m8dk5gglfv7k20",
-      "offerLink": "https://s.shopee.com.br/5AuJTdf0D0"
+      "offerLink": "https://s.shopee.com.br/2LaBDmqsGJ"
     },
     {
       "niche": "Decoração de Casa",
@@ -4787,19 +4787,6 @@
     },
     {
       "niche": "Decoração de Casa",
-      "itemId": 19199068724,
-      "productName": "Fita LED RGB 3528 5m 300 Leds com Controle Decoração Casa Loja Gesso Teto Sanca Vitrine",
-      "priceMin": "10.98",
-      "priceMax": "27.99",
-      "discountRate": 73,
-      "commissionRate": 0.11,
-      "sales": 3636,
-      "ratingStar": "4.6",
-      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7rbks-lnuai947xors77",
-      "offerLink": "https://s.shopee.com.br/114kVyurfL"
-    },
-    {
-      "niche": "Decoração de Casa",
       "itemId": 23692982923,
       "productName": "Kit 3 Quadros Decorativos Leão de Judá Frase Nunca Foi Sorte Mosaico Sala Quarto Escritório Hall",
       "priceMin": "16.9",
@@ -4819,10 +4806,10 @@
       "priceMax": "44.9",
       "discountRate": 72,
       "commissionRate": 0.13,
-      "sales": 892,
+      "sales": 944,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820md-mtxu41ez5k3mc4",
-      "offerLink": "https://s.shopee.com.br/1BO9B5g05B"
+      "offerLink": "https://s.shopee.com.br/8VAoZ86zoP"
     },
     {
       "niche": "Decoração de Casa",
@@ -4871,36 +4858,36 @@
       "priceMax": "20",
       "discountRate": 71,
       "commissionRate": 0.13,
-      "sales": 1293,
+      "sales": 1332,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820ld-mvm1lczr9af69c",
-      "offerLink": "https://s.shopee.com.br/8AXtVxFLsN"
+      "offerLink": "https://s.shopee.com.br/6AmtmqFsXn"
     },
     {
       "niche": "Decoração de Casa",
-      "itemId": 22597699817,
-      "productName": "Tapete Passadeira Corredor Quarto Sala Felpudo Várias Cores E Tamanhos",
-      "priceMin": "12.9",
-      "priceMax": "38.9",
-      "discountRate": 68,
-      "commissionRate": 0.13,
-      "sales": 5281,
-      "ratingStar": "4.4",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lf-mtz1sta57xtt5c",
-      "offerLink": "https://s.shopee.com.br/3g5XE8nZ28"
+      "itemId": 19199068724,
+      "productName": "Fita LED RGB 3528 5m 300 Leds com Controle Decoração Casa Loja Gesso Teto Sanca Vitrine",
+      "priceMin": "11.48",
+      "priceMax": "27.98",
+      "discountRate": 71,
+      "commissionRate": 0.11,
+      "sales": 3677,
+      "ratingStar": "4.6",
+      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7rbks-lnuai947xors77",
+      "offerLink": "https://s.shopee.com.br/2qWRohoyFY"
     },
     {
       "niche": "Decoração de Casa",
       "itemId": 22897685273,
       "productName": "Tapete Passadeira Vários Tamanhos Corredor Quarto Sala Beira de Cama Felpudo Peludo",
       "priceMin": "12.9",
-      "priceMax": "42.9",
+      "priceMax": "36.5",
       "discountRate": 68,
       "commissionRate": 0.13,
-      "sales": 4099,
+      "sales": 4008,
       "ratingStar": "4.5",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m4-mtz1sta56j9db6",
-      "offerLink": "https://s.shopee.com.br/3LSgpWopi6"
+      "offerLink": "https://s.shopee.com.br/7AfQygTfe5"
     },
     {
       "niche": "Decoração de Casa",
@@ -4917,29 +4904,29 @@
     },
     {
       "niche": "Decoração de Casa",
-      "itemId": 23092802554,
-      "productName": "Quadro Personalizado Unidades - COM SUA FOTO 80X50 cm 5 Peças Decorativo",
-      "priceMin": "30.9",
-      "priceMax": "67.9",
-      "discountRate": 68,
-      "commissionRate": 0.08,
-      "sales": 1089,
-      "ratingStar": "4.7",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lt-mm8vcmibpjwna8",
-      "offerLink": "https://s.shopee.com.br/9V3H6PAHAl"
-    },
-    {
-      "niche": "Decoração de Casa",
       "itemId": 23994335646,
       "productName": "Quadro Decorativo em MDF 10x15– Árvore com Molduras para Fotos de Família",
       "priceMin": "13.8",
       "priceMax": "17.5",
       "discountRate": 66,
       "commissionRate": 0.1201,
-      "sales": 1724,
+      "sales": 1734,
       "ratingStar": "4.6",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820mc-mszitm3y756v50",
-      "offerLink": "https://s.shopee.com.br/8fUA6sDRrO"
+      "offerLink": "https://s.shopee.com.br/5LDmnJJ3EY"
+    },
+    {
+      "niche": "Decoração de Casa",
+      "itemId": 23092802554,
+      "productName": "Quadro Personalizado Unidades - COM SUA FOTO 80X50 cm 5 Peças Decorativo Natal",
+      "priceMin": "32.9",
+      "priceMax": "68.9",
+      "discountRate": 67,
+      "commissionRate": 0.08,
+      "sales": 1096,
+      "ratingStar": "4.7",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lx-mw02yqsrs1z5ff",
+      "offerLink": "https://s.shopee.com.br/AAJ2YC0eQh"
     },
     {
       "niche": "Decoração de Casa",
@@ -5021,16 +5008,29 @@
     },
     {
       "niche": "Decoração de Casa",
+      "itemId": 22597699817,
+      "productName": "Tapete Passadeira Corredor Quarto Sala Felpudo Várias Cores E Tamanhos",
+      "priceMin": "14.3",
+      "priceMax": "38.9",
+      "discountRate": 64,
+      "commissionRate": 0.13,
+      "sales": 5233,
+      "ratingStar": "4.4",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lf-mtz1sta57xtt5c",
+      "offerLink": "https://s.shopee.com.br/8pnexkNKGN"
+    },
+    {
+      "niche": "Decoração de Casa",
       "itemId": 58200459415,
       "productName": "Papel De Parede Premiun Ripado Adesivo Cabeceira Com Faixa Meia Parede Luxo Quarto Casa",
       "priceMin": "13.91",
       "priceMax": "16.92",
       "discountRate": 64,
       "commissionRate": 0.13,
-      "sales": 5129,
+      "sales": 5089,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-mgtijylwhn9gbb",
-      "offerLink": "https://s.shopee.com.br/Lp3ikxP19"
+      "offerLink": "https://s.shopee.com.br/3Vm8bvmQtc"
     },
     {
       "niche": "Decoração de Casa",
@@ -5079,10 +5079,10 @@
       "priceMax": "71.9",
       "discountRate": 64,
       "commissionRate": 0.09,
-      "sales": 5448,
+      "sales": 5541,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lq-mndneuqbbbwh90",
-      "offerLink": "https://s.shopee.com.br/W8Tv3wlgA"
+      "offerLink": "https://s.shopee.com.br/1gKUQYtPcF"
     },
     {
       "niche": "Decoração de Casa",
@@ -5105,10 +5105,10 @@
       "priceMax": "71.88",
       "discountRate": 64,
       "commissionRate": 0.08,
-      "sales": 4177,
+      "sales": 4252,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820l5-mo3px2q6o6bk9d",
-      "offerLink": "https://s.shopee.com.br/1LhauatazR"
+      "offerLink": "https://s.shopee.com.br/3B9IDJnhZe"
     },
     {
       "niche": "Decoração de Casa",
@@ -5131,10 +5131,10 @@
       "priceMax": "16.89",
       "discountRate": 62,
       "commissionRate": 0.13,
-      "sales": 1914,
+      "sales": 1901,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820mb-mpfg3kdjavb595",
-      "offerLink": "https://s.shopee.com.br/6q2VvVKQZz"
+      "offerLink": "https://s.shopee.com.br/7VIHNIAnpv"
     },
     {
       "niche": "Decoração de Casa",
@@ -5144,10 +5144,10 @@
       "priceMax": "22.8",
       "discountRate": 62,
       "commissionRate": 0.1201,
-      "sales": 2560,
+      "sales": 2532,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820md-mnaclbr7hdz407",
-      "offerLink": "https://s.shopee.com.br/70Lw7oJnEy"
+      "offerLink": "https://s.shopee.com.br/7fbhZbAAUu"
     },
     {
       "niche": "Decoração de Casa",
@@ -5183,10 +5183,10 @@
       "priceMax": "39.89",
       "discountRate": 60,
       "commissionRate": 0.13,
-      "sales": 1253,
+      "sales": 1291,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m0-mqnsofkoxybk75",
-      "offerLink": "https://s.shopee.com.br/Lp2BYjAm4"
+      "offerLink": "https://s.shopee.com.br/9075A355nY"
     },
     {
       "niche": "Decoração de Casa",
@@ -5196,10 +5196,10 @@
       "priceMax": "33.9",
       "discountRate": 60,
       "commissionRate": 0.13,
-      "sales": 1330,
+      "sales": 1268,
       "ratingStar": "4.4",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lo-mtn9hzzlckjm8a",
-      "offerLink": "https://s.shopee.com.br/9fMhIi9dpk"
+      "offerLink": "https://s.shopee.com.br/AKcSkV015g"
     },
     {
       "niche": "Decoração de Casa",
@@ -5222,10 +5222,10 @@
       "priceMax": "42.9",
       "discountRate": 60,
       "commissionRate": 0.11,
-      "sales": 4373,
+      "sales": 4363,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m9-mmm1sfjpscna7b",
-      "offerLink": "https://s.shopee.com.br/1W116tsxeS"
+      "offerLink": "https://s.shopee.com.br/2gD1cOpbaX"
     },
     {
       "niche": "Decoração de Casa",
@@ -5326,10 +5326,10 @@
       "priceMax": "58.9",
       "discountRate": 56,
       "commissionRate": 0.13,
-      "sales": 1577,
+      "sales": 1624,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820li-ms32z8f1n7rb12",
-      "offerLink": "https://s.shopee.com.br/8pnaJBCoWR"
+      "offerLink": "https://s.shopee.com.br/5VXCzcIPtb"
     },
     {
       "niche": "Decoração de Casa",
@@ -5369,19 +5369,6 @@
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lg-mo43lb7xnnk066",
       "offerLink": "https://s.shopee.com.br/70KNyKEjm9"
-    },
-    {
-      "niche": "Decoração de Casa",
-      "itemId": 23193632988,
-      "productName": "Quadro Decorativo Leão De Judá Nunca Foi Sorte Sempre Foi Deus Mosaico Sala Quarto Escritório",
-      "priceMin": "12",
-      "priceMax": "24",
-      "discountRate": 51,
-      "commissionRate": 0.21,
-      "sales": 857,
-      "ratingStar": "4.6",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lw-mvojdwn2xe6894",
-      "offerLink": "https://s.shopee.com.br/W8SNriXR7"
     },
     {
       "niche": "Decoração de Casa",
@@ -5518,13 +5505,26 @@
       "itemId": 23499138848,
       "productName": "1/5/8 Peças  Fios De Fada 2 Metros Led Para DecoraçãO",
       "priceMin": "7.99",
-      "priceMax": "21.99",
+      "priceMax": "23.99",
       "discountRate": 50,
       "commissionRate": 0.13,
-      "sales": 10506,
+      "sales": 10893,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-8257w-msmaja7lcjrdf4",
-      "offerLink": "https://s.shopee.com.br/2gCyV2oWHJ"
+      "offerLink": "https://s.shopee.com.br/9fMlxGOxNW"
+    },
+    {
+      "niche": "Decoração de Casa",
+      "itemId": 23397600706,
+      "productName": "Cesto De Roupa 40x70 30x50Cm Caixa Dobrável Brinquedos Cesto Diversa Organizador Cozinha Quarto Casa",
+      "priceMin": "10.8",
+      "priceMax": "14.8",
+      "discountRate": 50,
+      "commissionRate": 0.13,
+      "sales": 7238,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-mabeeeswsx4mc1",
+      "offerLink": "https://s.shopee.com.br/gRxEixDdp"
     },
     {
       "niche": "Decoração de Casa",
@@ -5573,10 +5573,10 @@
       "priceMax": "51.9",
       "discountRate": 48,
       "commissionRate": 0.14,
-      "sales": 790,
+      "sales": 869,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lj-murriqbnllohca",
-      "offerLink": "https://s.shopee.com.br/8KrJiGEiXM"
+      "offerLink": "https://s.shopee.com.br/6L6Jz9FFCm"
     },
     {
       "niche": "Decoração de Casa",
@@ -5638,10 +5638,10 @@
       "priceMax": "17.94",
       "discountRate": 43,
       "commissionRate": 0.23,
-      "sales": 1223,
+      "sales": 1301,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-82596-muhotptymsjn5a",
-      "offerLink": "https://s.shopee.com.br/gRsaAhu66"
+      "offerLink": "https://s.shopee.com.br/80EXyD8tpK"
     },
     {
       "niche": "Decoração de Casa",
@@ -5668,19 +5668,6 @@
       "ratingStar": "4.6",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81ztc-mje7oh1367sye7",
       "offerLink": "https://s.shopee.com.br/4B0fbQZu4i"
-    },
-    {
-      "niche": "Decoração de Casa",
-      "itemId": 23397600706,
-      "productName": "Cesto De Roupa 40x70 30x50Cm Caixa Dobrável Brinquedos Cesto Diversa Organizador Cozinha Quarto Casa",
-      "priceMin": "11.8",
-      "priceMax": "14.8",
-      "discountRate": 45,
-      "commissionRate": 0.13,
-      "sales": 7355,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-mabeeeswsx4mc1",
-      "offerLink": "https://s.shopee.com.br/3Vm5UZlLaW"
     },
     {
       "niche": "Decoração de Casa",
@@ -5820,10 +5807,10 @@
       "priceMax": "42.99",
       "discountRate": 43,
       "commissionRate": 0.13,
-      "sales": 7234,
+      "sales": 7613,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-825av-mtol4wyyb1tu03",
-      "offerLink": "https://s.shopee.com.br/3LSfIGlyvV"
+      "offerLink": "https://s.shopee.com.br/1BODpdvJcw"
     },
     {
       "niche": "Decoração de Casa",
@@ -5852,6 +5839,19 @@
       "offerLink": "https://s.shopee.com.br/2BFngqeP0n"
     },
     {
+      "niche": "Decoração de Casa",
+      "itemId": 58255488276,
+      "productName": "Painel Ripado autoadesivo 3D 3m x 60cm Grosso Revestimento Amadeirado Madeira Parede Autocolante Quarto Sala",
+      "priceMin": "79.8",
+      "priceMax": "79.8",
+      "discountRate": 43,
+      "commissionRate": 0.1,
+      "sales": 5879,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81zug-mkwz5xpqeio1dd",
+      "offerLink": "https://s.shopee.com.br/Lp6q6yUJr"
+    },
+    {
       "niche": "Ferramentas",
       "itemId": 58202377499,
       "productName": "Kit 6 Pontas Phillips PH2 Pontas Impacto Anti Derrapante Encaixe Preciso Anti choque (25-150mm)",
@@ -5859,10 +5859,10 @@
       "priceMax": "17.9",
       "discountRate": 82,
       "commissionRate": 0.13,
-      "sales": 5232,
+      "sales": 5348,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-mipa7vseswzne6",
-      "offerLink": "https://s.shopee.com.br/50atHLf5yq"
+      "offerLink": "https://s.shopee.com.br/9075A3j27D"
     },
     {
       "niche": "Ferramentas",
@@ -5911,10 +5911,10 @@
       "priceMax": "38.59",
       "discountRate": 80,
       "commissionRate": 0.14,
-      "sales": 1350,
+      "sales": 1401,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m82q4qcabtw1a5",
-      "offerLink": "https://s.shopee.com.br/3qOuM0Ij87"
+      "offerLink": "https://s.shopee.com.br/1qductryBS"
     },
     {
       "niche": "Ferramentas",
@@ -5950,10 +5950,10 @@
       "priceMax": "19.99",
       "discountRate": 78,
       "commissionRate": 0.13,
-      "sales": 1231,
+      "sales": 1306,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-mip9qmrivmyuc0",
-      "offerLink": "https://s.shopee.com.br/9KjtyYnzSt"
+      "offerLink": "https://s.shopee.com.br/114ndMZUGJ"
     },
     {
       "niche": "Ferramentas",
@@ -6002,10 +6002,10 @@
       "priceMax": "19.99",
       "discountRate": 78,
       "commissionRate": 0.08,
-      "sales": 1811,
+      "sales": 1860,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820l9-ms2zdi1q2bd0c9",
-      "offerLink": "https://s.shopee.com.br/4Veb9EGBmB"
+      "offerLink": "https://s.shopee.com.br/2VtbQ7pQpW"
     },
     {
       "niche": "Ferramentas",
@@ -6022,6 +6022,19 @@
     },
     {
       "niche": "Ferramentas",
+      "itemId": 22192884554,
+      "productName": "Chave de Impacto Sem Fio 350Nm 3200RPM Kit Completo Com Maleta e Soquetes + 2 Baterias Hagra",
+      "priceMin": "133.2",
+      "priceMax": "176.4",
+      "discountRate": 73,
+      "commissionRate": 0.16,
+      "sales": 687,
+      "ratingStar": "4.8",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lj-mvoxdk92zt3585",
+      "offerLink": "https://s.shopee.com.br/9zzcLuMscC"
+    },
+    {
+      "niche": "Ferramentas",
       "itemId": 23394239273,
       "productName": "Kit Jogo Broca Escariadora 8 Peças Madeira Piloto Chanfro para Madeira Aço HSS 3 a 10mm",
       "priceMin": "25.9",
@@ -6032,19 +6045,6 @@
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7rdvx-mchapvnkvmbb21",
       "offerLink": "https://s.shopee.com.br/5VW1O5ElmG"
-    },
-    {
-      "niche": "Ferramentas",
-      "itemId": 22192884554,
-      "productName": "Chave de Impacto Sem Fio 350Nm 3200RPM Kit Completo Com Maleta e Soquetes + 2 Baterias Hagra",
-      "priceMin": "147.99",
-      "priceMax": "189",
-      "discountRate": 70,
-      "commissionRate": 0.16,
-      "sales": 685,
-      "ratingStar": "4.8",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lj-mvoxdk92zt3585",
-      "offerLink": "https://s.shopee.com.br/70Lw7p6fhu"
     },
     {
       "niche": "Ferramentas",
@@ -6087,16 +6087,29 @@
     },
     {
       "niche": "Ferramentas",
+      "itemId": 18698826077,
+      "productName": "Parafusadeira Furadeira Sem Fio 12V Com Maleta Brocas e Acessórios BPF 12K3 Wap",
+      "priceMin": "104.9",
+      "priceMax": "104.9",
+      "discountRate": 69,
+      "commissionRate": 0.12,
+      "sales": 1549,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7qvdh-lkbb0guky0lu75",
+      "offerLink": "https://s.shopee.com.br/gRxEkakwD"
+    },
+    {
+      "niche": "Ferramentas",
       "itemId": 58217601055,
       "productName": "Parafusadeira Furadeira 1X Bateria 25V Nakasaki Sem Fio Profissional Kit Completo com Maleta",
       "priceMin": "95.99",
       "priceMax": "95.99",
       "discountRate": 68,
       "commissionRate": 0.13,
-      "sales": 5747,
+      "sales": 5904,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m5-mv3iib53t4owb4",
-      "offerLink": "https://s.shopee.com.br/gRvedKz2s"
+      "offerLink": "https://s.shopee.com.br/3Vm8bxPyBU"
     },
     {
       "niche": "Ferramentas",
@@ -6119,10 +6132,10 @@
       "priceMax": "162.99",
       "discountRate": 68,
       "commissionRate": 0.11,
-      "sales": 2091,
+      "sales": 2097,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m8-mlczxisdlt6sf6",
-      "offerLink": "https://s.shopee.com.br/2BGjROFH0J"
+      "offerLink": "https://s.shopee.com.br/Lp6q8xgE3"
     },
     {
       "niche": "Ferramentas",
@@ -6132,10 +6145,10 @@
       "priceMax": "19",
       "discountRate": 68,
       "commissionRate": 0.1,
-      "sales": 18802,
+      "sales": 19004,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7reom-m8urr8l8bo2x62",
-      "offerLink": "https://s.shopee.com.br/1qdrVWr9P3"
+      "offerLink": "https://s.shopee.com.br/AAJ2YCeakG"
     },
     {
       "niche": "Ferramentas",
@@ -6210,10 +6223,10 @@
       "priceMax": "19.9",
       "discountRate": 67,
       "commissionRate": 0.08,
-      "sales": 6461,
+      "sales": 6662,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7reqp-m8urru64pcpdff",
-      "offerLink": "https://s.shopee.com.br/30potfmi2O"
+      "offerLink": "https://s.shopee.com.br/8KrOMplZT1"
     },
     {
       "niche": "Ferramentas",
@@ -6249,10 +6262,10 @@
       "priceMax": "139.99",
       "discountRate": 63,
       "commissionRate": 0.13,
-      "sales": 984,
+      "sales": 1038,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m3-msq8pkzcrgg7b0",
-      "offerLink": "https://s.shopee.com.br/AAJ0y5kom6"
+      "offerLink": "https://s.shopee.com.br/W8X2RbOHG"
     },
     {
       "niche": "Ferramentas",
@@ -6292,19 +6305,6 @@
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m0ommf0cmjbx79",
       "offerLink": "https://s.shopee.com.br/5fofKMrrXq"
-    },
-    {
-      "niche": "Ferramentas",
-      "itemId": 58270813462,
-      "productName": "Chave de Impacto Parafusadeira e Furadeira 3 EM 1 Brushless Sem Fio 68V Com 4 Soquetes",
-      "priceMin": "164.99",
-      "priceMax": "278",
-      "discountRate": 60,
-      "commissionRate": 0.16,
-      "sales": 855,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820l8-muhk3lcmhgjk03",
-      "offerLink": "https://s.shopee.com.br/8KrLFToXdo"
     },
     {
       "niche": "Ferramentas",
@@ -6370,6 +6370,19 @@
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820l7-mq5wk9ti0s1vf7",
       "offerLink": "https://s.shopee.com.br/8fTp6m0Dl0"
+    },
+    {
+      "niche": "Ferramentas",
+      "itemId": 58270813462,
+      "productName": "Chave de Impacto Sem Escovas 3 EM 1 Parafusadeira e Furadeira Brushless Sem Fio 68V Com 4 Soquetes",
+      "priceMin": "173.63",
+      "priceMax": "279",
+      "discountRate": 57,
+      "commissionRate": 0.16,
+      "sales": 888,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820l8-muhk3lcmhgjk03",
+      "offerLink": "https://s.shopee.com.br/2LaBDoUPYh"
     },
     {
       "niche": "Ferramentas",
@@ -6448,19 +6461,6 @@
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/cn-11134207-820l4-mokwnfybeya55b",
       "offerLink": "https://s.shopee.com.br/9zzR7ycK5O"
-    },
-    {
-      "niche": "Ferramentas",
-      "itemId": 18698826077,
-      "productName": "Parafusadeira Furadeira Sem Fio 12V Com Maleta Brocas e Acessórios BPF 12K3 Wap",
-      "priceMin": "148.7",
-      "priceMax": "148.7",
-      "discountRate": 56,
-      "commissionRate": 0.12,
-      "sales": 1533,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7qvdh-lkbb0guky0lu75",
-      "offerLink": "https://s.shopee.com.br/9fMkNAmimv"
     },
     {
       "niche": "Ferramentas",
@@ -6587,10 +6587,10 @@
       "priceMax": "38.98",
       "discountRate": 54,
       "commissionRate": 0.1,
-      "sales": 1125,
+      "sales": 1137,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7rfhx-m9bbbrv1pe5jab",
-      "offerLink": "https://s.shopee.com.br/2qWNAAMX9x"
+      "offerLink": "https://s.shopee.com.br/8fUElSRxJo"
     },
     {
       "niche": "Ferramentas",
@@ -6678,10 +6678,10 @@
       "priceMax": "37.99",
       "discountRate": 53,
       "commissionRate": 0.1,
-      "sales": 3685,
+      "sales": 3616,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-md1js8nzgjr517",
-      "offerLink": "https://s.shopee.com.br/1qdt2mGXg9"
+      "offerLink": "https://s.shopee.com.br/3g5YoGPKqZ"
     },
     {
       "niche": "Ferramentas",
@@ -6743,10 +6743,10 @@
       "priceMax": "49.98",
       "discountRate": 52,
       "commissionRate": 0.08,
-      "sales": 1431,
+      "sales": 1487,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81ztc-mjkwo7rwcv0hf7",
-      "offerLink": "https://s.shopee.com.br/3LSdl5Kd8y"
+      "offerLink": "https://s.shopee.com.br/2LaBDoq4AV"
     },
     {
       "niche": "Ferramentas",
@@ -6756,10 +6756,10 @@
       "priceMax": "39.9",
       "discountRate": 52,
       "commissionRate": 0.08,
-      "sales": 3557,
+      "sales": 3544,
       "ratingStar": "4.8",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-me00pzi5xkow75",
-      "offerLink": "https://s.shopee.com.br/5VX9sGdBy8"
+      "offerLink": "https://s.shopee.com.br/6Amtmqtors"
     },
     {
       "niche": "Ferramentas",
@@ -6906,19 +6906,6 @@
     },
     {
       "niche": "Ferramentas",
-      "itemId": 52768536168,
-      "productName": "Parafusadeira e Furadeira a Bateria 12V 25Nm WF 12K3.2 com Maleta e Acessórios WAP",
-      "priceMin": "124.9",
-      "priceMax": "124.9",
-      "discountRate": 49,
-      "commissionRate": 0.1,
-      "sales": 3494,
-      "ratingStar": "5",
-      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-82582-mto6hokrg4xv56",
-      "offerLink": "https://s.shopee.com.br/1W12eAHoM7"
-    },
-    {
-      "niche": "Ferramentas",
       "itemId": 22097381191,
       "productName": "Mini Motosserra Elétrica 8 Polegadas Recarregável Bivolt 110v/220v 2 Baterias + Maleta",
       "priceMin": "169.99",
@@ -7020,6 +7007,19 @@
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81zue-mkkd6gucm4g2e5",
       "offerLink": "https://s.shopee.com.br/2qUFbACA6a"
+    },
+    {
+      "niche": "Ferramentas",
+      "itemId": 58203254207,
+      "productName": "Kit Parafusadeira/furadeira 48 pçs Portátil carregador Usb Leve Forte Desmontar e montar",
+      "priceMin": "37.98",
+      "priceMax": "37.98",
+      "discountRate": 43,
+      "commissionRate": 0.1,
+      "sales": 1065,
+      "ratingStar": "4.7",
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81ztc-mjgn4186mjup7b",
+      "offerLink": "https://s.shopee.com.br/8pnexlRJyr"
     },
     {
       "niche": "Iluminação",
@@ -7441,14 +7441,14 @@
       "niche": "Iluminação",
       "itemId": 19259956668,
       "productName": "Kit 2 Abajur Clássico de Cabeceira MDF Madeira Luminária de Mesa Quarto Sala Decoração",
-      "priceMin": "49.9",
+      "priceMin": "49.8",
       "priceMax": "49.9",
       "discountRate": 58,
       "commissionRate": 0.22,
-      "sales": 669,
+      "sales": 707,
       "ratingStar": "4.8",
-      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m9-mv522h9juj9eef",
-      "offerLink": "https://s.shopee.com.br/7AfNrMERNU"
+      "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lq-mvz24twvo64j32",
+      "offerLink": "https://s.shopee.com.br/9KjvYguYkE"
     },
     {
       "niche": "Iluminação",
@@ -7523,10 +7523,10 @@
       "priceMax": "23.9",
       "discountRate": 59,
       "commissionRate": 0.13,
-      "sales": 882,
+      "sales": 918,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m4-ml8q7249p62v1f",
-      "offerLink": "https://s.shopee.com.br/7VIEFyDAhW"
+      "offerLink": "https://s.shopee.com.br/9fMlxItI4G"
     },
     {
       "niche": "Iluminação",
@@ -7536,10 +7536,10 @@
       "priceMax": "233.99",
       "discountRate": 60,
       "commissionRate": 0.1,
-      "sales": 4231,
+      "sales": 4400,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820mg-mtgwtlf6mjurf5",
-      "offerLink": "https://s.shopee.com.br/5LDi8mYbwW"
+      "offerLink": "https://s.shopee.com.br/6AmtmsOHcW"
     },
     {
       "niche": "Iluminação",
@@ -7640,10 +7640,10 @@
       "priceMax": "29.8",
       "discountRate": 59,
       "commissionRate": 0.08,
-      "sales": 1269,
+      "sales": 1272,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-81z1k-mgenceybeo0503",
-      "offerLink": "https://s.shopee.com.br/4LLCU9PE7h"
+      "offerLink": "https://s.shopee.com.br/6q2aa644oV"
     },
     {
       "niche": "Iluminação",
@@ -7705,10 +7705,10 @@
       "priceMax": "52.99",
       "discountRate": 57,
       "commissionRate": 0.12,
-      "sales": 6066,
+      "sales": 6318,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820m8-msnpda76ji100f",
-      "offerLink": "https://s.shopee.com.br/9V3H6RIkUD"
+      "offerLink": "https://s.shopee.com.br/7KyrB1JqFd"
     },
     {
       "niche": "Iluminação",
@@ -7744,10 +7744,23 @@
       "priceMax": "299.99",
       "discountRate": 57,
       "commissionRate": 0.1,
-      "sales": 3676,
+      "sales": 3628,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820lg-mu2deg1ohybl3b",
-      "offerLink": "https://s.shopee.com.br/4fy2slk1a5"
+      "offerLink": "https://s.shopee.com.br/5fqdBxQBdX"
+    },
+    {
+      "niche": "Iluminação",
+      "itemId": 20452224775,
+      "productName": "Kit 2 unidades Abajur La Finesse Cupula - Luminária Para Decoração Quarto e Sala",
+      "priceMin": "56.8",
+      "priceMax": "56.8",
+      "discountRate": 53,
+      "commissionRate": 0.22,
+      "sales": 1012,
+      "ratingStar": "4.9",
+      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-8260p-mkcfopp4p5hc85",
+      "offerLink": "https://s.shopee.com.br/7KyrB12Ane"
     },
     {
       "niche": "Iluminação",
@@ -7761,19 +7774,6 @@
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-7r98o-m7vxepzntm2997",
       "offerLink": "https://s.shopee.com.br/7KwuuLggF7"
-    },
-    {
-      "niche": "Iluminação",
-      "itemId": 20452224775,
-      "productName": "Kit 2 unidades Abajur La Finesse Cupula - Luminária Para Decoração Quarto e Sala",
-      "priceMin": "57.9",
-      "priceMax": "57.9",
-      "discountRate": 52,
-      "commissionRate": 0.22,
-      "sales": 1004,
-      "ratingStar": "4.9",
-      "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-8260p-mkcfopp4p5hc85",
-      "offerLink": "https://s.shopee.com.br/6VPh48GyjA"
     },
     {
       "niche": "Iluminação",
@@ -8066,13 +8066,13 @@
       "itemId": 58254342229,
       "productName": "Luminaria Projetor De Estrelas Galaxy Abajur Quarto Criancas Star Master Combinação de Duas Cores",
       "priceMin": "27.48",
-      "priceMax": "32.49",
+      "priceMax": "34.49",
       "discountRate": 51,
       "commissionRate": 0.09,
-      "sales": 1829,
+      "sales": 1807,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-82624-mk398rzlko3m67",
-      "offerLink": "https://s.shopee.com.br/50atHNMgll"
+      "offerLink": "https://s.shopee.com.br/6Amtms6cAJ"
     },
     {
       "niche": "Iluminação",
@@ -8082,10 +8082,10 @@
       "priceMax": "101.98",
       "discountRate": 51,
       "commissionRate": 0.09,
-      "sales": 2377,
+      "sales": 2364,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-821e3-mglxtrrmns3tb2",
-      "offerLink": "https://s.shopee.com.br/5AuJTgM3Qm"
+      "offerLink": "https://s.shopee.com.br/60TTaZ7FVG"
     },
     {
       "niche": "Iluminação",
@@ -8147,10 +8147,10 @@
       "priceMax": "21.66",
       "discountRate": 46,
       "commissionRate": 0.21,
-      "sales": 3767,
+      "sales": 3889,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-7rdxm-m1661eh4u5sj62",
-      "offerLink": "https://s.shopee.com.br/60TOw0W4ai"
+      "offerLink": "https://s.shopee.com.br/5VXCzeQoyS"
     },
     {
       "niche": "Iluminação",
@@ -8160,10 +8160,10 @@
       "priceMax": "67.9",
       "discountRate": 46,
       "commissionRate": 0.18,
-      "sales": 3722,
+      "sales": 3822,
       "ratingStar": "4.9",
       "imageUrl": "https://cf.shopee.com.br/file/sg-11134201-8225z-mhtnyl02l0jocd",
-      "offerLink": "https://s.shopee.com.br/5AuJTgi7ZC"
+      "offerLink": "https://s.shopee.com.br/4LLFbVVGLI"
     },
     {
       "niche": "Iluminação",
@@ -8189,7 +8189,7 @@
       "sales": 1402,
       "ratingStar": "4.7",
       "imageUrl": "https://cf.shopee.com.br/file/br-11134207-820la-mphyhjqp1on7e3",
-      "offerLink": "https://s.shopee.com.br/4fy2slNxRj"
+      "offerLink": "https://s.shopee.com.br/7AfQyi2o8X"
     }
   ]
 }
