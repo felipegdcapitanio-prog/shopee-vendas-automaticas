@@ -123408,5 +123408,17 @@
     "itemId": 58270614501,
     "ok": true,
     "ts": 1795708221
+  },
+  {
+    "itemId": 23797386225,
+    "ok": false,
+    "error": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: failed to get HTTP URL content\"}",
+    "ts": 1795708829
+  },
+  {
+    "itemId": 19597455368,
+    "ok": false,
+    "error": "<urlopen error [Errno 104] Connection reset by peer>",
+    "ts": 1795708832
   }
 ]
